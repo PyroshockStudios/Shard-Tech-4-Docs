@@ -178,7 +178,7 @@ Controls how the tessellation factors are interpreted when dividing an edge, dic
 
 *Note: Only active when Tessellation Mode is not set to 'No Tessellation'.*
 
-#### Multi Sample State
+### Multi Sample State
 
 #### MSAA Mode
 
