@@ -21,8 +21,6 @@ Material Shaders have several domains, each with a different underlying purpose:
 
 ## Surface Pipeline Signature
 
-Here is the Markdown documentation structured from your ImGui code snippet. I've populated the descriptions using the tooltips provided in the code, added the available options for dropdowns, noted conditional UI states, and left placeholders for you to fill in the rest.
-
 ### Render Pass
 
 #### Pass Mode
@@ -131,7 +129,7 @@ Enables subdivision of vertices for improved geometry quality. Note that perform
 - Triangles
 - Quads
 
-#### Tessellation Partitioning**
+#### Tessellation Partitioning
 *[Add description here]*
 
 **Options:**
