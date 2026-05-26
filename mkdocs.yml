@@ -6,6 +6,23 @@ nav:
   - Home: index.md
   - Installation: installation.md
   - Getting started: gettingstarted.md
-  - Reference: reference.md
+  - Project Setup: reference/projectsetup.md
+  - Reference:
+    - Editor: 
+      - Environment: reference/editor/environment.md 
+      - Scene: reference/editor/scene.md 
+      - Visual Script: reference/editor/visualscript.md 
+      - Assets:
+        - Prefab: reference/editor/asset/prefab.md 
+        - Texture2D: reference/editor/asset/texture2d.md 
+        - Material Shader: reference/editor/asset/materialshader.md 
+        - Material: reference/editor/asset/material.md 
+        - Model: reference/editor/asset/model.md 
+        - Environment Map: reference/editor/asset/environmentmap.md 
+      - Asset Authoring: reference/editor/assetauthoring.md 
+    - ECS: reference/actorcomponents.md
+    - Scripting: reference/scripting.md
+    - Renderer: reference/renderer.md
+    - Packaging: reference/packaging.md
   - Credits: credits.md
   - License: license.md
