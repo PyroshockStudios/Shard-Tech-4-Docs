@@ -20,7 +20,32 @@ nav:
         - Model: reference/editor/asset/model.md 
         - Environment Map: reference/editor/asset/environmentmap.md 
       - Asset Authoring: reference/editor/assetauthoring.md 
-    - ECS: reference/actorcomponents.md
+    - ACS:
+      - CameraComponent: reference/acs/cameracomponent.md
+      - DeferredDecalComponent: reference/acs/deferreddecalcomponent.md
+      - DirectionalLightComponent: reference/acs/directionallightcomponent.md
+      - DrawMaskComponent: reference/acs/drawmaskcomponent.md
+      - LightCookieComponent: reference/acs/lightcookiecomponent.md
+      - LightFlareComponent: reference/acs/lightflarecomponent.md
+      - LightmapComponent: reference/acs/lightmapcomponent.md
+      - Mesh3DComponent: reference/acs/mesh3dcomponent.md
+      - ParticleEmitterComponent: reference/acs/particleemittercomponent.md
+      - PointLightComponent: reference/acs/pointlightcomponent.md
+      - PostProcessingComponent: reference/acs/postprocessingcomponent.md
+      - PrefabComponent: reference/acs/prefabcomponent.md
+      - RendererPropertyComponent: reference/acs/rendererpropertycomponent.md
+      - RigidBody3DComponent: reference/acs/rigidbody3dcomponent.md
+      - RigidConstraintComponent: reference/acs/rigidconstraintcomponent.md
+      - ShadowMapComponent: reference/acs/shadowmapcomponent.md
+      - SkeletonRigComponent: reference/acs/skeletonrigcomponent.md
+      - SkyAtmosphereComponent: reference/acs/skyatmospherecomponent.md
+      - SkyboxComponent: reference/acs/skyboxcomponent.md
+      - SkyLightComponent: reference/acs/skylightcomponent.md
+      - SpotLightComponent: reference/acs/spotlightcomponent.md
+      - Transform3DComponent: reference/acs/transform3dcomponent.md
+      - VehicleComponent: reference/acs/vehiclecomponent.md
+      - ViewportComponent: reference/acs/viewportcomponent.md
+      - WaypointComponent: reference/acs/waypointcomponent.md
     - Scripting: reference/scripting.md
     - Renderer: reference/renderer.md
     - Packaging: reference/packaging.md

@@ -1,3 +1,3 @@
 # Importing
 
-# Configutation
+# Configuration

@@ -24,200 +24,228 @@ Material Shaders have several domains, each with a different underlying purpose:
 ### Render Pass
 
 #### Pass Mode
-[Add description here]
+Controls which pass the material shader will be rendered in. This will have an influence on the possible features that this shader may access.
 
 **Options:**
 
-- Opaque G-Buffer
+- Opaque G-Buffer (Default)
+    - Renders the material data to the G-Buffer. Shaders can only have *Opaque* or *Alpha Clip* blend modes, and participate in the Early Z pass. Material parameters may be limited due to G-Buffer constraints.
 - Transparent T-Buffer
+    - Renders the shaded material data to the order-independent transparency buffer. Requires *OIT Blend* and does not support depth writes. 
 - Forward
+    - Directly shades the material data with the lighting information to the lighting buffer. Shaders can have any blend mode except *OIT Blend* and participate in the Early Z pass. Does not support MSAA.
 - Forward No Early Z
+    - Supports same features as *Forward*, except depth is not written in the Early Z pass. MSAA is supported.
 - Post Composite Overlay
+    - Renders the material after all post processing effects, with a low dynamic colour range [0, 1]. Recommended for UI-like elements that shouldn't be affected by post processing such as bloom. Shaders can have any blend mode except *OIT Blend*. 
 
 ### Shading
 
 #### Lighting Model
-[Add description here]*
+Controls how the material will be shaded, and enables usage of certain material parameters.
 
 **Options:** 
 
 - Unlit BSDF
-- Standard BSDF
+    - Does not perform shading, and outputs a single colour.
+- Standard BSDF (Default)
+    - Recommended option for most materials, is the cheapest lit shading model, and supports common material parameters. 
 - Clearcoat BSDF
+    - Contains the same parameters as *Standard BSDF- but with *Clear Coat* parameters. Specular lighting is more costly, as lighting is computed twice for the base layer and the clear coat layer. 
 - Cloth BSDF
+    - Contains the same parameters as *Standard BSDF* but with *Sheen* parameters. 
 - Anisotropic BSDF
-- Thin Subsurface BSDF
+    - Contains the same parameters as *Standard BSDF* but with an *Anisotropic* parameter. Lighting is significantly more expensive as it must be evaluated from multiple angles.
+- Subsurface BSDF
+    - Adds subsurface shading parameters to give the material translucent effects. 
 - Thin Translucent BSDF
-
+    - Simplified version of *Surface BSDF* that assumes a thin surface. Lighting is more costly as it computes front and back side lighting simulatenously. Recommended for foliage.
 
 ### Blend State
 
 #### Blend Mode
-*[Add description here]*
 
-**Options:** 
+Changes how the material's output colour is combined with the colours already present in the background render target.
 
-- Opaque
-- Masked
+**Options:**
+
+- Opaque (Default)
+    - Directly draws object onto the scene with no alpha information, and is thus the cheapest.
+- Alpha Clip
+    - Discards fragments if *Opacity Mask* falls below the *Alpha Cuttoff* threshold. When multi sampled *A2C* is enabled, this maps to a tight coverage based on [Esoteric Alpha To Coverage](https://bgolus.medium.com/anti-aliased-alpha-test-the-esoteric-alpha-to-coverage-8b177335ae4f)
 - Alpha Blend
+    - Blends fragments with the standard linear interpolation. *Note: not order independent and may cause geometry to artifact*
 - Additive Blend
+    - Blends fragments with an additive blend operation.
 - Multiplicative Blend
+    - Blends fragments with a multiplicative blend operation.
 - OIT Blend
-
+    - Uses order independent rendering techniques to perform transparency effects. *Note: only enabled if Pass Type is set to Transparent T-Buffer*
 
 #### Alpha Cutoff
-*[Add description here]*
 
+Determines the threshold value at which pixels are completely discarded (clipped) when rendering. Any alpha value below this threshold will not be drawn, resulting in sharp, hard edges instead of smooth gradients.
 
-*Note: Only active when Blend Mode is set to 'Masked'.*
-
+*Note: Only active when Blend Mode is set to 'Alpha Clip'.*
 
 #### Draw Order Hint
-*[Add description here]*
 
+Provides a manual sorting priority offset for transparent or overlapping objects. This is useful for resolving depth sorting artifacts where the engine struggles to automatically determine which transparent material should render in front of another.
 
 ### Rasteriser State
 
 #### Polygon Mode
-*[Add description here]*
 
+Defines how the rasteriser translates the geometry's vertices into pixels on the screen. Usually modified for debugging purposes or specific stylistic wireframe effects.
 
-**Options:** 
+**Options:**
 
-- Filled
+- Filled (Default)
+    - Fills the polygons of the mesh entirely.
 - Wireframe
-
+    - Only renders edges of polygons. Significantly increases rasteriser load.
 
 #### Culling
-*[Add description here]*
 
-**Options:** 
+Determines which faces of a polygon are discarded (culled) based on their normal direction relative to the camera. This optimises performance by skipping faces that point away from the viewer. Assumed winding order is *Clockwise*.
+
+**Options:**
 
 - None
-- Back
+    - Both front and back sides are visible.
+- Back (Default)
+    - Back side is culled, only front side is visible.
 - Front
+    - Front side is culled, Only back side is visible.
 
 ### Depth State
 
 #### Depth Modify
-Allows modification of depth values through Pixel Depth Offset. Note that the pixel depth is Reverse Z, meaning negative values move further *away* from the camera.
 
-**Options:** 
+Allows modification of depth values through Pixel Depth Offset. Note that the pixel depth is Reverse Z, meaning negative values move further *away* from the camera. Note that on pass mode *Opaque G-Buffer* this can visually alter lighting information, as position information is inferred from depth.
 
-- No Modify
-- Modify,
+**Options:**
+
+- No Modify (Default)
+    - Disables depth modification.
+- Modify
+    - Allows changing depth values to be either larger or smaller. Not recommended as this disables any depth test optimisations.
 - Conservative Less Equal
+    - Allows changing depth values to only be smaller or equal (further from the camera).
 - Conservative Greater Equal
+    - Allows changing depth values only to be larger or equal (closer to the camera).
 
 ### Geometry Manipulation
 
 #### Vertex Offset Mode
+
 Allows modification of vertex positions, and that the node either designates local or world offset. Note that Local offset is post-skinning! This is due to vertex transform caching for improved efficiency!
 
 **Options:** 
 
-- No Offset
+- No Offset (Default)
+    - Disables custom vertex transforms and displacement.
 - Local Position Offset
+    - Maps *Vertex Position Offset* to be relative to the local pose (pre transform). 
 - World Position Offset
+    - Maps *Vertex Position Offset* to be relative to the world pose (post transform). 
 
 #### Tessellation Mode
+
 Enables subdivision of vertices for improved geometry quality. Note that performance may significantly degrade with this rendering feature! Please use with caution! Consider using more subdivided meshes instead.
 
 **Options:**
 
-- No Tessellation
+- No Tessellation (Default)
+    - Disables tessellation.
 - Triangles
+    - Uses 3 control points for tessellation. This is to be used on common triangle based meshes.
 - Quads
+    - Uses 4 control points for tessellation. (Not usable at the moment)
 
 #### Tessellation Partitioning
-*[Add description here]*
+
+Controls how the tessellation factors are interpreted when dividing an edge, dictating how new vertices are introduced and how smoothly geometry transitions between different levels of detail.
 
 **Options:**
 
 - Integer
+    - Uses integer partitioning.
 - Fractional Even
+    - Uses even fractioning.
 - Fractional Odd
+    - Uses odd fractioning.
 
 *Note: Only active when Tessellation Mode is not set to 'No Tessellation'.*
 
 #### Multi Sample State
 
 #### MSAA Mode
+
 Enhance quality through MSAA usage. Only supported on Forward render modes.
 
 **Options:**
-- No MSAA,
+
+- No MSAA (Default)
+    - Disables MSAA
 - MSAA Only
+    - Uses multiple samples to evaluate geometric anti-aliasing.
 - A2C Only
+    - Maps output alpha values to MSAA coverage. *Note, different renderer backends as well as different vendors may implement this visually differently, causing potential visual differences.*
 
 *Note: Only active when Pass Mode is set to 'Forward No Early Z'.*
-
 
 ### Render Systems
 
 - **Orthogonal Shadows**
-    - *[Add description here]*
-
-
+    - Determines if this material casts shadows from directional lights (which use orthogonal projections).
 - **Perspective Shadows**
-    - *[Add description here]*
-
-
+    - Determines if this material casts shadows from local light sources, such as point lights or spot lights (which use perspective projections).
 - **Reflective Shadows**
-    - *[Add description here]* *(Currently Disabled)*
-
-
+    - Determines if this material generates *Global Illumination* data on shadow maps. *(Currently Disabled)*
 - **Transparent Shadows**
-    - *[Add description here]* *(Currently Disabled)*
-
-
+    - Enables the material to cast coloured or partial shadows based on its transparency/alpha values. *(Currently Disabled)*
 - **Primary Viewports**
     - Draws the scene through the standard render pipeline path, for regular possessed camera viewports.
-
-
 - **Secondary Viewports**
     - Renders in a low-quality Forward+ style, no early depth and aggressive MSAA usage. Typically used for dynamic reflection cubemaps.
-
 
 
 ### Renderer Features
 
 - **Enable Lightmapping**
-    - *[Add description here]*
-
-
+    - Allows the material to receive baked, static lighting information from pre-computed lightmaps.
 - **Receive Opaque Shadows**
-    - *[Add description here]*
-
-
+    - Enables the material to receive shadows cast by opaque objects in the scene. Increases fragment shader load.
 - **Receive Transparent Shadows**
-    - *[Add description here]*
-
-
+    - Enables the material to receive soft or coloured shadows cast by transparent objects. Increases fragment shader load.
 - **Enable Skinned Velocities**
-    - *[Add description here]*
-
-
+    - Calculates accurate per-vertex motion vectors for animated models. This is essential for rendering high-quality motion blur on moving characters. Increases memory usage and vertex shader load.
 
 ### Supported Geometry
 
 - **Static Meshes**
-    - *[Add description here]*
-
+    - Standard 3D geometry with rigid transforms and no skeletal animation.
 - **Skinned Meshes**
-    - *[Add description here]* *(Currently Disabled)*
-
+    - 3D models driven by a skeletal hierarchy (bones) for complex character animations. *(Currently Disabled)*
 - **Terrain**
-    - *[Add description here]* *(Currently Disabled)*
-
+    - Landscape geometry generated dynamically from heightmap data. *(Currently Disabled)*
 - **Billboards**
-    - *[Add description here]* *(Currently Disabled)*
-
+    - 2D camera-facing quads, typically used for distant imposters or foliage. *(Currently Disabled)*
 - **Particles**
-    - *[Add description here]* *(Currently Disabled)*
+    - Dynamic geometry spawned and managed by visual effects particle emitters. *(Currently Disabled)*
 
 ## Decal Pipeline Signature
 
-##  Pipeline Signature
+## Volumetric Pipeline Signature
+## Post Processing Pipeline Signature
+## RML Pipeline Signature
+## Brush Pipeline Signature
 
 # Input Parameters
+
+To allow reusing shaders across multiple materials, input parameters are a powerful way of sending data to the GPU.
+
+# Shader Editor
+
+Material Shaders are written by method of visual nodes. This is a restriction imposed to optimise shader permutation.
