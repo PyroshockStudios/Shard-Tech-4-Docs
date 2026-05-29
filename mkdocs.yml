@@ -2,6 +2,9 @@ site_name: Shard Tech 4 SDK
 
 theme: windmill
 
+markdown_extensions:
+  - admonition
+
 nav:
   - Home: index.md
   - Installation: installation.md
@@ -20,6 +23,7 @@ nav:
         - Model: reference/editor/asset/model.md 
         - Environment Map: reference/editor/asset/environmentmap.md 
       - Asset Authoring: reference/editor/assetauthoring.md 
+      - Asset Explorer: reference/editor/assetexplorer.md 
     - ACS:
       - CameraComponent: reference/acs/cameracomponent.md
       - DeferredDecalComponent: reference/acs/deferreddecalcomponent.md
@@ -46,7 +50,44 @@ nav:
       - VehicleComponent: reference/acs/vehiclecomponent.md
       - ViewportComponent: reference/acs/viewportcomponent.md
       - WaypointComponent: reference/acs/waypointcomponent.md
-    - Scripting: reference/scripting.md
+    - Scripting: 
+      - Basics: 
+        - Entry Point:  reference/scripting/basics/entrypoint.md
+        - Scene:
+          - Loading your Scene: reference/scripting/basics/scene/loading.md
+          - Lifecycle: reference/scripting/basics/scene/lifecycle.md
+        - Actors:
+          - Hierarchy: reference/scripting/basics/actors/hierarchy.md
+          - Components: reference/scripting/basics/actors/components.md
+        - Scripts:
+          - SceneScript, PropScript and ActorScript: reference/scripting/basics/scripts/scenepropactorscript.md
+          - Spawning Scripts: reference/scripting/basics/scripts/spawningscripts.md
+        - Viewports:
+          - Attaching Main Window: reference/scripting/basics/viewports/attachingmainwindow.md
+          - Split-Screen: reference/scripting/basics/scripts/splitscreen.md
+      - Advanced:
+        - UI: 
+          - RmlUi: reference/scripting/advanced/ui/rmlui.md
+          - Context: reference/scripting/advanced/ui/context.md
+          - Document: reference/scripting/advanced/ui/document.md
+          - Element: reference/scripting/advanced/ui/element.md
+          - Data Model: reference/scripting/advanced/ui/datamodel.md
+        - Networking:
+          - Session: reference/scripting/advanced/networking/session.md
+          - Server-Client: reference/scripting/advanced/networking/serverclient.md
+          - Peer-to-Peer: reference/scripting/advanced/networking/peertopeer.md
+          - Replication: reference/scripting/advanced/networking/replication.md
+          - Remote Procedure Calls: reference/scripting/advanced/networking/remoteprocedurecalls.md
+        - Renderer: 
+          - Material Instances: reference/scripting/advanced/renderer/materialinstances.md
+          - Dynamic Textures: reference/scripting/advanced/renderer/dynamictextures.md
+          - Dynamic Models: reference/scripting/advanced/renderer/dynamicmodels.md
+          - XRP Frame Graph: reference/scripting/advanced/renderer/xrpframegraph.md
+      - Compilation: reference/scripting/compilation.md
+      - Module API Reference:
+        - SDT4.Managed.Core:
+          - "Overview": reference/scripting/modules/sdt4.managed.core/index.md
+      # - Extension API reference:
     - Renderer: reference/renderer.md
     - Packaging: reference/packaging.md
   - Credits: credits.md

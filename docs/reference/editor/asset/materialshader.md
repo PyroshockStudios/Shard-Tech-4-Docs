@@ -74,19 +74,24 @@ Changes how the material's output colour is combined with the colours already pr
 - Alpha Clip
     - Discards fragments if *Opacity Mask* falls below the *Alpha Cuttoff* threshold. When multi sampled *A2C* is enabled, this maps to a tight coverage based on [Esoteric Alpha To Coverage](https://bgolus.medium.com/anti-aliased-alpha-test-the-esoteric-alpha-to-coverage-8b177335ae4f)
 - Alpha Blend
-    - Blends fragments with the standard linear interpolation. *Note: not order independent and may cause geometry to artifact*
+    - Blends fragments with the standard linear interpolation. 
+    !!! note
+        This blend mode is **not** order independent and may cause primitives to artifact.
 - Additive Blend
     - Blends fragments with an additive blend operation.
 - Multiplicative Blend
     - Blends fragments with a multiplicative blend operation.
 - OIT Blend
-    - Uses order independent rendering techniques to perform transparency effects. *Note: only enabled if Pass Type is set to Transparent T-Buffer*
+    - Uses order independent rendering techniques to perform transparency effects. 
+    !!! note 
+        This blend is only enabled if *Pass Type* is set to **Transparent T-Buffer**
 
 #### Alpha Cutoff
 
 Determines the threshold value at which pixels are completely discarded (clipped) when rendering. Any alpha value below this threshold will not be drawn, resulting in sharp, hard edges instead of smooth gradients.
 
-*Note: Only active when Blend Mode is set to 'Alpha Clip'.*
+!!! note
+    This is only active when Blend Mode is set to **Alpha Clip**.
 
 #### Draw Order Hint
 
@@ -122,7 +127,12 @@ Determines which faces of a polygon are discarded (culled) based on their normal
 
 #### Depth Modify
 
-Allows modification of depth values through Pixel Depth Offset. Note that the pixel depth is Reverse Z, meaning negative values move further *away* from the camera. Note that on pass mode *Opaque G-Buffer* this can visually alter lighting information, as position information is inferred from depth.
+Allows modification of depth values through Pixel Depth Offset. 
+
+!!! note
+    Since Shard Tech 4 is primarily Reverse Z, negative values move further *away* from the camera. 
+!!! note 
+    On pass mode **Opaque G-Buffer** this can visually alter lighting information, as position information is inferred from depth.
 
 **Options:**
 
@@ -139,7 +149,9 @@ Allows modification of depth values through Pixel Depth Offset. Note that the pi
 
 #### Vertex Offset Mode
 
-Allows modification of vertex positions, and that the node either designates local or world offset. Note that Local offset is post-skinning! This is due to vertex transform caching for improved efficiency!
+Allows modification of vertex positions, and that the node either designates local or world offset. 
+!!! note
+    Local offset is **post-skinning**! This is due to vertex transform caching for improved efficiency!
 
 **Options:** 
 
@@ -152,7 +164,9 @@ Allows modification of vertex positions, and that the node either designates loc
 
 #### Tessellation Mode
 
-Enables subdivision of vertices for improved geometry quality. Note that performance may significantly degrade with this rendering feature! Please use with caution! Consider using more subdivided meshes instead.
+Enables subdivision of vertices for improved geometry quality. 
+!!! warning
+    Performance may significantly degrade with this rendering feature! Please use with caution! Consider using more subdivided meshes instead.
 
 **Options:**
 
@@ -176,7 +190,8 @@ Controls how the tessellation factors are interpreted when dividing an edge, dic
 - Fractional Odd
     - Uses odd fractioning.
 
-*Note: Only active when Tessellation Mode is not set to 'No Tessellation'.*
+!!! note
+    These settings are only available when *Tessellation Mode* is **not** set to **No Tessellation**.
 
 #### Multi Sample State
 
@@ -191,9 +206,12 @@ Enhance quality through MSAA usage. Only supported on Forward render modes.
 - MSAA Only
     - Uses multiple samples to evaluate geometric anti-aliasing.
 - A2C Only
-    - Maps output alpha values to MSAA coverage. *Note, different renderer backends as well as different vendors may implement this visually differently, causing potential visual differences.*
+    - Maps output alpha values to MSAA coverage. 
+    !!! note
+        Different renderer backends as well as different vendors **may** implement this visually differently, causing potential visual differences.
 
-*Note: Only active when Pass Mode is set to 'Forward No Early Z'.*
+!!! note
+    MSAA is only available when *Pass Mode* is set to **Forward No Early Z**.
 
 ### Render Systems
 
@@ -248,4 +266,4 @@ To allow reusing shaders across multiple materials, input parameters are a power
 
 # Shader Editor
 
-Material Shaders are written by method of visual nodes. This is a restriction imposed to optimise shader permutation.
+Material Shaders are written by method of visual nodes. This is a restriction imposed to optimise shader permutation optimisation.

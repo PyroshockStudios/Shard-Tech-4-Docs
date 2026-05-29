@@ -1,5 +1,0 @@
-# Best Practises
-
-# Limitations
-
-# Features
