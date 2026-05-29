@@ -8,27 +8,29 @@
 | --- | --- |
 | [Actor](./actor.md) |  |
 | [AppInstance](./appinstance.md) |  |
+| [Deferrable](./deferrable.md) |  |
 | [Game](./game.md) |  |
-| [ILocale](./ilocale.md) |  |
-| [INetworkSession](./inetworksession.md) |  |
 | [InstanceEnvironment](./instanceenvironment.md) |  |
-| [IRenderer](./irenderer.md) |  |
+| [IResourceManager](./iresourcemanager.md) |  |
 | [Scene](./scene.md) |  |
+| [Thread](./thread.md) |  |
 
 ### `SDT4.Managed.Core.Asset`
 
 | Type | Description |
 | --- | --- |
 | [AssetErrorCode](./asset/asseterrorcode.md) |  |
-| [AssetId](./asset/assetid.md) |  |
+| [AssetID](./asset/assetid.md) |  |
+| [AssetLoadResult&lt;TResource&gt;](./asset/assetloadresult`1.md) |  |
 | [AssetType](./asset/assettype.md) |  |
+| [IConvexHull](./asset/iconvexhull.md) |  |
 | [IMaterial](./asset/imaterial.md) |  |
 | [IModel](./asset/imodel.md) |  |
 | [IPrefab](./asset/iprefab.md) |  |
 | [IResource](./asset/iresource.md) |  |
 | [ISkeleton](./asset/iskeleton.md) |  |
 | [ITexture2D](./asset/itexture2d.md) |  |
-| [ResourceManager](./asset/resourcemanager.md) |  |
+| [ITrimesh](./asset/itrimesh.md) |  |
 
 ### `SDT4.Managed.Core.Attributes`
 
@@ -44,6 +46,16 @@
 | [ScriptHiddenAttribute](./attributes/scripthiddenattribute.md) |  |
 | [ScriptPure](./attributes/scriptpure.md) |  |
 | [ScriptWildcardAttribute](./attributes/scriptwildcardattribute.md) |  |
+
+### `SDT4.Managed.Core.Capabilities`
+
+| Type | Description |
+| --- | --- |
+| [ICapability](./capabilities/icapability.md) | Base capabilities indicator |
+| [ILocalizationCapability](./capabilities/ilocalizationcapability.md) | Defines a localisation capability |
+| [INetworkingCapability](./capabilities/inetworkingcapability.md) | Defines a networking capability |
+| [IRendererCapability](./capabilities/irenderercapability.md) | Defines a renderer capability |
+| [IWindowingCapability](./capabilities/iwindowingcapability.md) |  |
 
 ### `SDT4.Managed.Core.Components`
 
@@ -80,28 +92,23 @@
 
 | Type | Description |
 | --- | --- |
-| [Bezier](./math/bezier.md) |  |
+| [AABB](./math/aabb.md) |  |
+| [Bool2](./math/bool2.md) |  |
+| [Bool3](./math/bool3.md) |  |
+| [Bool4](./math/bool4.md) |  |
+| [Double2](./math/double2.md) |  |
+| [Double3](./math/double3.md) |  |
+| [Double4](./math/double4.md) |  |
+| [Float2](./math/float2.md) |  |
+| [Float3](./math/float3.md) |  |
+| [Float3x3](./math/float3x3.md) |  |
+| [Float4](./math/float4.md) |  |
+| [Float4x4](./math/float4x4.md) |  |
+| [ITransform3D](./math/itransform3d.md) |  |
+| [IVectorComparable](./math/ivectorcomparable.md) |  |
+| [IVectorSpacial&lt;TGenType&gt;](./math/ivectorspacial`1.md) |  |
+| [Quaternion](./math/quaternion.md) |  |
 | [SMath](./math/smath.md) |  |
-
-### `SDT4.Managed.Core.Math.Types`
-
-| Type | Description |
-| --- | --- |
-| [Bool2](./math/types/bool2.md) |  |
-| [Bool3](./math/types/bool3.md) |  |
-| [Bool4](./math/types/bool4.md) |  |
-| [Double2](./math/types/double2.md) |  |
-| [Double3](./math/types/double3.md) |  |
-| [Double4](./math/types/double4.md) |  |
-| [Float2](./math/types/float2.md) |  |
-| [Float3](./math/types/float3.md) |  |
-| [Float3x3](./math/types/float3x3.md) |  |
-| [Float4](./math/types/float4.md) |  |
-| [Float4x4](./math/types/float4x4.md) |  |
-| [ITransform3D](./math/types/itransform3d.md) |  |
-| [IVectorComparable](./math/types/ivectorcomparable.md) |  |
-| [IVectorSpacial&lt;TGenType&gt;](./math/types/ivectorspacial`1.md) |  |
-| [Quaternion](./math/types/quaternion.md) |  |
 
 ### `SDT4.Managed.Core.Native`
 
@@ -121,17 +128,10 @@
 | Type | Description |
 | --- | --- |
 | [ActorScript](./script/actorscript.md) |  |
-| [ControllerScript](./script/controllerscript.md) |  |
 | [IScriptTarget](./script/iscripttarget.md) |  |
 | [PropScript](./script/propscript.md) |  |
 | [SceneScript](./script/scenescript.md) |  |
 | [ScriptPayload](./script/scriptpayload.md) |  |
-
-### `SDT4.Managed.Core.Throws`
-
-| Type | Description |
-| --- | --- |
-| [ConditionalThrows](./throws/conditionalthrows.md) |  |
 
 ### `SDT4.Managed.Core.Utility`
 

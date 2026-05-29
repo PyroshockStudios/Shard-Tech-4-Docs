@@ -8,4 +8,4 @@
 - [NO MESH](https://github.com/Stanlyhalo)
 
 ### Special thanks:
-- [DevsOutOfBounds](https://github.com/DevsOutOfBounds)
+- [DevsOutOfBounds](https://devsoutofbounds.com)

@@ -1,0 +1,44 @@
+# DeferredDecalComponent
+
+
+
+## Definition
+
+**Namespace:** `SDT4.Managed.Core.Components`  
+**Assembly:** `SDT4.Managed.Core.dll`
+
+```csharp
+sealed class DeferredDecalComponent
+```
+**Inheritance:**
+
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [AbstractComponent](./abstractcomponent.md) ➔  **DeferredDecalComponent**
+**Implements:**
+
+##### 
+---
+
+## Fields
+
+| Name | Type | Description |
+| --- | --- | --- |
+
+
+---
+
+## Properties
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `public get; set; Material` | [IMaterial](../asset/imaterial.md) |  |
+| `public get; set; Color` | [Float4](../math/float4.md) |  |
+| `public get; set; DrawOrder` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+
+
+---
+
+## Methods
+
+
+
+---
