@@ -18,7 +18,7 @@ enum AssetType
 | Name | Type | Description |
 | --- | --- | --- |
 | `Unknown` | [AssetType](./assettype.md) |  |
-| `Level` | [AssetType](./assettype.md) |  |
+| `Scene` | [AssetType](./assettype.md) |  |
 | `Prefab` | [AssetType](./assettype.md) |  |
 | `Texture1D` | [AssetType](./assettype.md) |  |
 | `Texture2D` | [AssetType](./assettype.md) |  |

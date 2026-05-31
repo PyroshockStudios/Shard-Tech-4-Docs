@@ -1,4 +1,4 @@
-# ITrimesh
+# IPrefabAsset
 
 
 
@@ -8,11 +8,11 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-interface ITrimesh
+interface IPrefabAsset
 ```
 **Implements:**
 
-##### [IResource](./iresource.md)
+##### [IResource](./iresource.md), [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 ---
 
 ## Fields

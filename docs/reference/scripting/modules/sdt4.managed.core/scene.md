@@ -15,7 +15,7 @@ class Scene
 ##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔  **Scene**
 **Implements:**
 
-##### 
+##### [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 ---
 
 ## Fields
@@ -69,11 +69,11 @@ Gets the <see cref="T:SDT4.Managed.Core.Script.SceneScript" /> instance of this 
 - [Actor](./actor.md): 
 
 ---
-#### public [Actor](./actor.md) CreateActorFromPrefab([IPrefab](./asset/iprefab.md) prefab, [String](https://learn.microsoft.com/dotnet/api/system.string) tag, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) stationary, [Object?](https://learn.microsoft.com/dotnet/api/system.object) state)
+#### public [Actor](./actor.md) CreateActorFromPrefab([IPrefabAsset](./asset/iprefabasset.md) prefab, [String](https://learn.microsoft.com/dotnet/api/system.string) tag, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) stationary, [Object?](https://learn.microsoft.com/dotnet/api/system.object) state)
 
 **Parameters:**
 
-- `prefab` ([IPrefab](./asset/iprefab.md)): 
+- `prefab` ([IPrefabAsset](./asset/iprefabasset.md)): 
 
 - `tag` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
 
@@ -141,6 +141,20 @@ Gets the <see cref="T:SDT4.Managed.Core.Script.SceneScript" /> instance of this 
 
 - `actor` ([Actor](./actor.md)): 
 
+
+---
+#### protected virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) Dispose([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) disposing)
+
+**Parameters:**
+
+- `disposing` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): 
+
+
+---
+#### protected virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) Finalize()
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Dispose()
 
 ---
 

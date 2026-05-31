@@ -1,24 +1,24 @@
-# IMaterial
+# AppExitRequest
 
 
 
 ## Definition
 
-**Namespace:** `SDT4.Managed.Core.Asset`  
+**Namespace:** `SDT4.Managed.Core`  
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-interface IMaterial
+enum AppExitRequest
 ```
-**Implements:**
 
-##### [IResource](./iresource.md)
 ---
 
 ## Fields
 
 | Name | Type | Description |
 | --- | --- | --- |
+| `Success` | [AppExitRequest](./appexitrequest.md) |  |
+| `Failed` | [AppExitRequest](./appexitrequest.md) |  |
 
 
 ---

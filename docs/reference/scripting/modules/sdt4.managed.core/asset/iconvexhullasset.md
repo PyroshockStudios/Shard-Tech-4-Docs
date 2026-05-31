@@ -1,18 +1,18 @@
-# IVectorSpacial&lt;&gt;
+# IConvexHullAsset
 
 
 
 ## Definition
 
-**Namespace:** `SDT4.Managed.Core.Math`  
+**Namespace:** `SDT4.Managed.Core.Asset`  
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-interface IVectorSpacial<>
+interface IConvexHullAsset
 ```
 **Implements:**
 
-##### 
+##### [IResource](./iresource.md), [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 ---
 
 ## Fields
@@ -33,13 +33,6 @@ interface IVectorSpacial<>
 
 ## Methods
 
-#### public TGenType Length()
-
-**Returns:**
-
-- TGenType: 
-
----
 
 
 ---

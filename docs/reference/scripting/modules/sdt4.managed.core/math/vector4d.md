@@ -12,7 +12,7 @@ struct Vector4d
 ```
 **Implements:**
 
-##### [IVectorSpacial&lt;Double&gt;](./ivectorspacial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
+##### [IVectorSpatial&lt;Double&gt;](./ivectorspatial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
 ---
 
 ## Fields

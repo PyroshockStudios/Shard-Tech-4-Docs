@@ -1,4 +1,4 @@
-# IConvexHull
+# ISceneAsset
 
 
 
@@ -8,11 +8,11 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-interface IConvexHull
+interface ISceneAsset
 ```
 **Implements:**
 
-##### [IResource](./iresource.md)
+##### [IResource](./iresource.md), [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 ---
 
 ## Fields
@@ -33,6 +33,13 @@ interface IConvexHull
 
 ## Methods
 
+#### public [Scene](../scene.md) CreateScene()
+
+**Returns:**
+
+- [Scene](../scene.md): 
+
+---
 
 
 ---

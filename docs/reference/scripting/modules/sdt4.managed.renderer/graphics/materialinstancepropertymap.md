@@ -31,7 +31,7 @@ sealed class MaterialInstancePropertyMap
 | Name | Type | Description |
 | --- | --- | --- |
 | `public get; set; Item` | [MaterialInstanceProperty](./materialinstanceproperty.md) |  |
-| `public set; Item` | [ITexture2D](../../sdt4.managed.core/asset/itexture2d.md) |  |
+| `public set; Item` | [ITexture2DAsset](../../sdt4.managed.core/asset/itexture2dasset.md) |  |
 
 
 ---
@@ -108,13 +108,13 @@ sealed class MaterialInstancePropertyMap
 
 
 ---
-#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) SetParameter([String](https://learn.microsoft.com/dotnet/api/system.string) name, [ITexture2D](../../sdt4.managed.core/asset/itexture2d.md) value)
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) SetParameter([String](https://learn.microsoft.com/dotnet/api/system.string) name, [ITexture2DAsset](../../sdt4.managed.core/asset/itexture2dasset.md) value)
 
 **Parameters:**
 
 - `name` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
 
-- `value` ([ITexture2D](../../sdt4.managed.core/asset/itexture2d.md)): 
+- `value` ([ITexture2DAsset](../../sdt4.managed.core/asset/itexture2dasset.md)): 
 
 
 ---

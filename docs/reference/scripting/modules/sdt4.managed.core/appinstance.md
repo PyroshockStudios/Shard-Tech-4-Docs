@@ -53,6 +53,16 @@ sealed class AppInstance
 - [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
 
 ---
+#### public [Task&lt;AppExitRequest&gt;](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1) RequestAppExist()
+
+**Returns:**
+
+- [Task&lt;AppExitRequest&gt;](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1): 
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Terminate()
+
+---
 
 
 ---

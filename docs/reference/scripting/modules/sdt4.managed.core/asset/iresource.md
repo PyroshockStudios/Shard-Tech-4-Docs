@@ -12,7 +12,7 @@ interface IResource
 ```
 **Implements:**
 
-##### 
+##### [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 ---
 
 ## Fields

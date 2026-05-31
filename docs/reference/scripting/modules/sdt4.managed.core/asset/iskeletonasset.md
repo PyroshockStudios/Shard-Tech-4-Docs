@@ -1,4 +1,4 @@
-# ISkeleton
+# ISkeletonAsset
 
 
 
@@ -8,11 +8,11 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-interface ISkeleton
+interface ISkeletonAsset
 ```
 **Implements:**
 
-##### [IResource](./iresource.md)
+##### [IResource](./iresource.md), [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 ---
 
 ## Fields

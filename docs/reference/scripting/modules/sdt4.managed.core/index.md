@@ -7,8 +7,9 @@
 | Type | Description |
 | --- | --- |
 | [Actor](./actor.md) |  |
+| [AppExitRequest](./appexitrequest.md) |  |
 | [AppInstance](./appinstance.md) |  |
-| [Game](./game.md) |  |
+| [AppLoadContext](./apploadcontext.md) | Contains the application load information when the game initially loads. |
 | [InstanceEnvironment](./instanceenvironment.md) |  |
 | [IResourceManager](./iresourcemanager.md) |  |
 | [Scene](./scene.md) |  |
@@ -22,14 +23,15 @@
 | [AssetID](./asset/assetid.md) |  |
 | [AssetLoadResult&lt;TResource&gt;](./asset/assetloadresult`1.md) |  |
 | [AssetType](./asset/assettype.md) |  |
-| [IConvexHull](./asset/iconvexhull.md) |  |
-| [IMaterial](./asset/imaterial.md) |  |
-| [IModel](./asset/imodel.md) |  |
-| [IPrefab](./asset/iprefab.md) |  |
+| [IConvexHullAsset](./asset/iconvexhullasset.md) |  |
+| [IMaterialAsset](./asset/imaterialasset.md) |  |
+| [IModelAsset](./asset/imodelasset.md) |  |
+| [IPrefabAsset](./asset/iprefabasset.md) |  |
 | [IResource](./asset/iresource.md) |  |
-| [ISkeleton](./asset/iskeleton.md) |  |
-| [ITexture2D](./asset/itexture2d.md) |  |
-| [ITrimesh](./asset/itrimesh.md) |  |
+| [ISceneAsset](./asset/isceneasset.md) |  |
+| [ISkeletonAsset](./asset/iskeletonasset.md) |  |
+| [ITexture2DAsset](./asset/itexture2dasset.md) |  |
+| [ITrimeshAsset](./asset/itrimeshasset.md) |  |
 
 ### `SDT4.Managed.Core.Attributes`
 
@@ -38,6 +40,7 @@
 | [AssetStringFieldEditPropertiesAttribute](./attributes/assetstringfieldeditpropertiesattribute.md) |  |
 | [ExposeFieldAttribute](./attributes/exposefieldattribute.md) |  |
 | [ExposeMethodAttribute](./attributes/exposemethodattribute.md) |  |
+| [GameEntryAttribute](./attributes/gameentryattribute.md) | Defines the application entry point. Can only be applied on one single method in the entire application. Must be applied on a static method with a single <see cref="T:SDT4.Managed.Core.AppLoadContext" /> input parameter. |
 | [NumericFieldEditPropertiesAttribute](./attributes/numericfieldeditpropertiesattribute.md) |  |
 | [ReturnPinNameAttribute](./attributes/returnpinnameattribute.md) |  |
 | [ScriptEventAttribute](./attributes/scripteventattribute.md) |  |
@@ -94,7 +97,7 @@
 | [AxisAlignedBox](./math/axisalignedbox.md) |  |
 | [ITransform3D](./math/itransform3d.md) |  |
 | [IVectorComparable](./math/ivectorcomparable.md) |  |
-| [IVectorSpacial&lt;TGenType&gt;](./math/ivectorspacial`1.md) |  |
+| [IVectorSpatial&lt;TGenType&gt;](./math/ivectorspatial`1.md) |  |
 | [Matrix3x3f](./math/matrix3x3f.md) |  |
 | [Matrix4x4f](./math/matrix4x4f.md) |  |
 | [Quaternion](./math/quaternion.md) |  |

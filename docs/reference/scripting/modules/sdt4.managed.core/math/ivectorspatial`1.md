@@ -1,18 +1,18 @@
-# IPrefab
+# IVectorSpatial&lt;&gt;
 
 
 
 ## Definition
 
-**Namespace:** `SDT4.Managed.Core.Asset`  
+**Namespace:** `SDT4.Managed.Core.Math`  
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-interface IPrefab
+interface IVectorSpatial<>
 ```
 **Implements:**
 
-##### [IResource](./iresource.md)
+##### 
 ---
 
 ## Fields
@@ -33,6 +33,13 @@ interface IPrefab
 
 ## Methods
 
+#### public TGenType Length()
+
+**Returns:**
+
+- TGenType: 
+
+---
 
 
 ---

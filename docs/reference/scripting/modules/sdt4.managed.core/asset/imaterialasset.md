@@ -1,4 +1,4 @@
-# ITexture2D
+# IMaterialAsset
 
 
 
@@ -8,11 +8,11 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-interface ITexture2D
+interface IMaterialAsset
 ```
 **Implements:**
 
-##### [IResource](./iresource.md)
+##### [IResource](./iresource.md), [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 ---
 
 ## Fields

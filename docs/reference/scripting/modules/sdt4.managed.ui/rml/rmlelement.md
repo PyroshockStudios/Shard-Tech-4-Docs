@@ -15,7 +15,7 @@ class RMLElement
 ##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔  **RMLElement**
 **Implements:**
 
-##### 
+##### [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 ---
 
 ## Fields
@@ -60,9 +60,6 @@ class RMLElement
 
 ## Methods
 
-#### protected virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) Finalize()
-
----
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Blur()
 
 ---
@@ -275,6 +272,20 @@ Retrieve a set of all descendant elements matching the provided RCSS selector(s)
 **Returns:**
 
 - [String](https://learn.microsoft.com/dotnet/api/system.string): 
+
+---
+#### protected virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) Dispose([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) disposing)
+
+**Parameters:**
+
+- `disposing` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): 
+
+
+---
+#### protected virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) Finalize()
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Dispose()
 
 ---
 

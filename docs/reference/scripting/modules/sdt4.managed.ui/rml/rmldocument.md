@@ -15,7 +15,7 @@ class RMLDocument
 ##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [RMLElement](./rmlelement.md) ➔  **RMLDocument**
 **Implements:**
 
-##### 
+##### [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 ---
 
 ## Fields

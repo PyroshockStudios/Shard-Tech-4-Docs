@@ -15,7 +15,7 @@ class SceneScript
 ##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Scene](../scene.md) ➔  **SceneScript**
 **Implements:**
 
-##### [IScriptTarget](./iscripttarget.md)
+##### [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable), [IScriptTarget](./iscripttarget.md)
 ---
 
 ## Fields
