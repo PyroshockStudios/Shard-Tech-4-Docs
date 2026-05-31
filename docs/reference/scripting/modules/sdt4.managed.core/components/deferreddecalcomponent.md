@@ -31,7 +31,7 @@ sealed class DeferredDecalComponent
 | Name | Type | Description |
 | --- | --- | --- |
 | `public get; set; Material` | [IMaterial](../asset/imaterial.md) |  |
-| `public get; set; Color` | [Float4](../math/float4.md) |  |
+| `public get; set; Color` | [Vector4f](../math/vector4f.md) |  |
 | `public get; set; DrawOrder` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
 

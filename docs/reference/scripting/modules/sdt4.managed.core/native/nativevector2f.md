@@ -1,4 +1,4 @@
-# NativeDouble2
+# NativeVector2f
 
 
 
@@ -8,7 +8,7 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-struct NativeDouble2
+struct NativeVector2f
 ```
 **Implements:**
 
@@ -19,8 +19,8 @@ struct NativeDouble2
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public x` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
-| `public y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
 
 ---

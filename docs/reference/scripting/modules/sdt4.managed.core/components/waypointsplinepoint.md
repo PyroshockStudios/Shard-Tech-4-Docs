@@ -19,7 +19,7 @@ struct WaypointSplinePoint
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public Position` | [Float3](../math/float3.md) |  |
+| `public Position` | [Vector3f](../math/vector3f.md) |  |
 | `public Radius` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
 

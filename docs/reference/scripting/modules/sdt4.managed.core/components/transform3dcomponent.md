@@ -30,15 +30,15 @@ sealed class Transform3DComponent
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; Right` | [Float3](../math/float3.md) |  |
-| `public get; Up` | [Float3](../math/float3.md) |  |
-| `public get; Forward` | [Float3](../math/float3.md) |  |
-| `public get; set; Translation` | [Double3](../math/double3.md) |  |
+| `public get; Right` | [Vector3f](../math/vector3f.md) |  |
+| `public get; Up` | [Vector3f](../math/vector3f.md) |  |
+| `public get; Forward` | [Vector3f](../math/vector3f.md) |  |
+| `public get; set; Translation` | [Vector3d](../math/vector3d.md) |  |
 | `public get; set; Rotation` | [Quaternion](../math/quaternion.md) |  |
-| `public get; set; Scale` | [Float3](../math/float3.md) |  |
-| `public get; set; WorldTranslation` | [Double3](../math/double3.md) |  |
+| `public get; set; Scale` | [Vector3f](../math/vector3f.md) |  |
+| `public get; set; WorldTranslation` | [Vector3d](../math/vector3d.md) |  |
 | `public get; set; WorldRotation` | [Quaternion](../math/quaternion.md) |  |
-| `public get; set; WorldRotationMatrix` | [Float3x3](../math/float3x3.md) |  |
+| `public get; set; WorldRotationMatrix` | [Matrix3x3f](../math/matrix3x3f.md) |  |
 
 
 ---

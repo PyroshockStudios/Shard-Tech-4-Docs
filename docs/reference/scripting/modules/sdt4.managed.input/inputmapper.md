@@ -90,7 +90,7 @@ Maps a button binding to a gamepad input.
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindButtonMapping&lt;TEnum&gt;(TEnum mapping, [MouseMotionInput](./mousemotioninput.md) input)
 
-Maps a button binding to a mouse movement/scroll.<br /> <strong>NOTE:</strong> This will only trigger upon <strong>POSITIVE</strong> values! <strong>ZERO</strong> values will <strong>NOT</strong> It is thus recommended to use this solely for things such as event triggers, as opposed to field values
+Maps a button binding to a mouse movement/scroll.<br /> <strong>NOTE:</strong> This will only trigger upon <strong>POSITIVE</strong> values! <strong>ZERO</strong> values will <strong>NOT</strong> It is thus recommended to use this solely for things such as event triggers, as opposed to field values
 
 **Parameters:**
 
@@ -156,7 +156,7 @@ Maps an axis binding to a joystick boolean input<br />
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindAxisMapping&lt;TEnum&gt;(TEnum mapping, [GamepadAnalogInput](./gamepadanaloginput.md) input, [Int32](https://learn.microsoft.com/dotnet/api/system.int32) gamepadIndex, [Single](https://learn.microsoft.com/dotnet/api/system.single) scale)
 
-Maps an axis binding to a joystick movement (thumbstick or triggers).<br /> This will trigger upon all movement deltas
+Maps an axis binding to a joystick movement (thumbstick or triggers).<br /> This will trigger upon all movement deltas
 
 **Parameters:**
 
@@ -172,7 +172,7 @@ Maps an axis binding to a joystick movement (thumbstick or triggers).<br /> This
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindAxisMapping&lt;TEnum&gt;(TEnum mapping, [MouseMotionInput](./mousemotioninput.md) input, [Single](https://learn.microsoft.com/dotnet/api/system.single) sensitivity)
 
-Maps an axis binding to a mouse movement/scroll.<br /> <strong>NOTE:</strong> This will only trigger upon <strong>POSITIVE</strong> values! <strong>ZERO</strong> values will <strong>NOT</strong> It is thus recommended to use this solely for things such as event triggers, as opposed to field values
+Maps an axis binding to a mouse movement/scroll.<br /> <strong>NOTE:</strong> This will only trigger upon <strong>POSITIVE</strong> values! <strong>ZERO</strong> values will <strong>NOT</strong> It is thus recommended to use this solely for things such as event triggers, as opposed to field values
 
 **Parameters:**
 

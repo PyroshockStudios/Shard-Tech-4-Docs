@@ -1,4 +1,4 @@
-# Float3
+# Vector2f
 
 
 
@@ -8,11 +8,11 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-struct Float3
+struct Vector2f
 ```
 **Implements:**
 
-##### [IVectorSpacial&lt;Single&gt;](./ivectorspacial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), [IEquatable&lt;Float3&gt;](https://learn.microsoft.com/dotnet/api/system.iequatable-1)
+##### [IVectorSpacial&lt;Single&gt;](./ivectorspacial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
 ---
 
 ## Fields
@@ -29,7 +29,6 @@ struct Float3
 | --- | --- | --- |
 | `public get; x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public get; z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
 
@@ -46,7 +45,7 @@ struct Float3
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
-In format of (x, y, z)
+In format of (x, y)
 
 **Returns:**
 
@@ -80,18 +79,6 @@ In format of (x, y, z)
 
 - `context` ([StreamingContext](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext)): 
 
-
----
-#### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Float3](./float3.md) other)
-
-**Parameters:**
-
-- `other` ([Float3](./float3.md)): 
-
-
-**Returns:**
-
-- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
 
 ---
 

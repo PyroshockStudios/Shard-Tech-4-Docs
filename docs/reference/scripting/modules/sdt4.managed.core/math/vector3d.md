@@ -1,4 +1,4 @@
-# Double4
+# Vector3d
 
 
 
@@ -8,7 +8,7 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-struct Double4
+struct Vector3d
 ```
 **Implements:**
 
@@ -30,7 +30,6 @@ struct Double4
 | `public get; x` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 | `public get; y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 | `public get; z` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
-| `public get; w` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 | `public get; Item` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
 
@@ -47,7 +46,7 @@ struct Double4
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
-In format of (x, y, z, w)
+In format of (x, y, z)
 
 **Returns:**
 

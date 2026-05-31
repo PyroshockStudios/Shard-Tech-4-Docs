@@ -1,4 +1,4 @@
-# NativeFloat2
+# NativeVector2d
 
 
 
@@ -8,7 +8,7 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-struct NativeFloat2
+struct NativeVector2d
 ```
 **Implements:**
 
@@ -19,8 +19,8 @@ struct NativeFloat2
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public x` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
 
 ---

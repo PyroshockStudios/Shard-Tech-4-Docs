@@ -37,37 +37,6 @@ static class Input
 
 ## Methods
 
-#### public static [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) IsKeyDown([KeyInput](./keyinput.md) key)
-
-**Parameters:**
-
-- `key` ([KeyInput](./keyinput.md)): 
-
-
-**Returns:**
-
-- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
-
----
-#### public static [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) IsMouseButtonDown([MouseInput](./mouseinput.md) mouseBtn)
-
-**Parameters:**
-
-- `mouseBtn` ([MouseInput](./mouseinput.md)): 
-
-
-**Returns:**
-
-- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
-
----
-#### public static [Float2](../sdt4.managed.core/math/float2.md) GetMousePosition()
-
-**Returns:**
-
-- [Float2](../sdt4.managed.core/math/float2.md): 
-
----
 
 
 ---

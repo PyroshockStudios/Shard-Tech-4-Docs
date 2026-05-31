@@ -36,19 +36,19 @@ sealed class WindowResizeCallback
 
 ## Methods
 
-#### public virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) Invoke([Float2](../sdt4.managed.core/math/float2.md) newSize)
+#### public virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) Invoke([Vector2f](../sdt4.managed.core/math/vector2f.md) newSize)
 
 **Parameters:**
 
-- `newSize` ([Float2](../sdt4.managed.core/math/float2.md)): 
+- `newSize` ([Vector2f](../sdt4.managed.core/math/vector2f.md)): 
 
 
 ---
-#### public virtual [IAsyncResult](https://learn.microsoft.com/dotnet/api/system.iasyncresult) BeginInvoke([Float2](../sdt4.managed.core/math/float2.md) newSize, [AsyncCallback](https://learn.microsoft.com/dotnet/api/system.asynccallback) callback, [Object](https://learn.microsoft.com/dotnet/api/system.object) object)
+#### public virtual [IAsyncResult](https://learn.microsoft.com/dotnet/api/system.iasyncresult) BeginInvoke([Vector2f](../sdt4.managed.core/math/vector2f.md) newSize, [AsyncCallback](https://learn.microsoft.com/dotnet/api/system.asynccallback) callback, [Object](https://learn.microsoft.com/dotnet/api/system.object) object)
 
 **Parameters:**
 
-- `newSize` ([Float2](../sdt4.managed.core/math/float2.md)): 
+- `newSize` ([Vector2f](../sdt4.managed.core/math/vector2f.md)): 
 
 - `callback` ([AsyncCallback](https://learn.microsoft.com/dotnet/api/system.asynccallback)): 
 

@@ -359,52 +359,52 @@ static class SMath
 - [Single](https://learn.microsoft.com/dotnet/api/system.single): 
 
 ---
-#### public static [Float2](./float2.md) Lerp([Float2](./float2.md) begin, [Float2](./float2.md) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) alpha)
+#### public static [Vector2f](./vector2f.md) Lerp([Vector2f](./vector2f.md) begin, [Vector2f](./vector2f.md) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) alpha)
 
 **Parameters:**
 
-- `begin` ([Float2](./float2.md)): 
+- `begin` ([Vector2f](./vector2f.md)): 
 
-- `end` ([Float2](./float2.md)): 
+- `end` ([Vector2f](./vector2f.md)): 
 
 - `alpha` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): 
 
 
 **Returns:**
 
-- [Float2](./float2.md): 
+- [Vector2f](./vector2f.md): 
 
 ---
-#### public static [Float3](./float3.md) Lerp([Float3](./float3.md) begin, [Float3](./float3.md) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) alpha)
+#### public static [Vector3f](./vector3f.md) Lerp([Vector3f](./vector3f.md) begin, [Vector3f](./vector3f.md) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) alpha)
 
 **Parameters:**
 
-- `begin` ([Float3](./float3.md)): 
+- `begin` ([Vector3f](./vector3f.md)): 
 
-- `end` ([Float3](./float3.md)): 
+- `end` ([Vector3f](./vector3f.md)): 
 
 - `alpha` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): 
 
 
 **Returns:**
 
-- [Float3](./float3.md): 
+- [Vector3f](./vector3f.md): 
 
 ---
-#### public static [Float4](./float4.md) Lerp([Float4](./float4.md) begin, [Float4](./float4.md) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) alpha)
+#### public static [Vector4f](./vector4f.md) Lerp([Vector4f](./vector4f.md) begin, [Vector4f](./vector4f.md) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) alpha)
 
 **Parameters:**
 
-- `begin` ([Float4](./float4.md)): 
+- `begin` ([Vector4f](./vector4f.md)): 
 
-- `end` ([Float4](./float4.md)): 
+- `end` ([Vector4f](./vector4f.md)): 
 
 - `alpha` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): 
 
 
 **Returns:**
 
-- [Float4](./float4.md): 
+- [Vector4f](./vector4f.md): 
 
 ---
 #### public static [Quaternion](./quaternion.md) Slerp([Quaternion](./quaternion.md) begin, [Quaternion](./quaternion.md) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) alpha)
@@ -423,7 +423,7 @@ static class SMath
 - [Quaternion](./quaternion.md): 
 
 ---
-#### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) LerpOverTime([Single](https://learn.microsoft.com/dotnet/api/system.single) begin, [Single](https://learn.microsoft.com/dotnet/api/system.single) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) delta)
+#### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) LerpTowards([Single](https://learn.microsoft.com/dotnet/api/system.single) begin, [Single](https://learn.microsoft.com/dotnet/api/system.single) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) delta)
 
 **Parameters:**
 
@@ -439,55 +439,55 @@ static class SMath
 - [Single](https://learn.microsoft.com/dotnet/api/system.single): 
 
 ---
-#### public static [Float2](./float2.md) LerpOverTime([Float2](./float2.md) begin, [Float2](./float2.md) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) delta)
+#### public static [Vector2f](./vector2f.md) LerpTowards([Vector2f](./vector2f.md) begin, [Vector2f](./vector2f.md) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) delta)
 
 **Parameters:**
 
-- `begin` ([Float2](./float2.md)): 
+- `begin` ([Vector2f](./vector2f.md)): 
 
-- `end` ([Float2](./float2.md)): 
+- `end` ([Vector2f](./vector2f.md)): 
 
 - `delta` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): 
 
 
 **Returns:**
 
-- [Float2](./float2.md): 
+- [Vector2f](./vector2f.md): 
 
 ---
-#### public static [Float3](./float3.md) LerpOverTime([Float3](./float3.md) begin, [Float3](./float3.md) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) delta)
+#### public static [Vector3f](./vector3f.md) LerpTowards([Vector3f](./vector3f.md) begin, [Vector3f](./vector3f.md) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) delta)
 
 **Parameters:**
 
-- `begin` ([Float3](./float3.md)): 
+- `begin` ([Vector3f](./vector3f.md)): 
 
-- `end` ([Float3](./float3.md)): 
+- `end` ([Vector3f](./vector3f.md)): 
 
 - `delta` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): 
 
 
 **Returns:**
 
-- [Float3](./float3.md): 
+- [Vector3f](./vector3f.md): 
 
 ---
-#### public static [Float4](./float4.md) LerpOverTime([Float4](./float4.md) begin, [Float4](./float4.md) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) delta)
+#### public static [Vector4f](./vector4f.md) LerpTowards([Vector4f](./vector4f.md) begin, [Vector4f](./vector4f.md) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) delta)
 
 **Parameters:**
 
-- `begin` ([Float4](./float4.md)): 
+- `begin` ([Vector4f](./vector4f.md)): 
 
-- `end` ([Float4](./float4.md)): 
+- `end` ([Vector4f](./vector4f.md)): 
 
 - `delta` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): 
 
 
 **Returns:**
 
-- [Float4](./float4.md): 
+- [Vector4f](./vector4f.md): 
 
 ---
-#### public static [Quaternion](./quaternion.md) SlerpOverTime([Quaternion](./quaternion.md) begin, [Quaternion](./quaternion.md) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) delta)
+#### public static [Quaternion](./quaternion.md) SlerpTowards([Quaternion](./quaternion.md) begin, [Quaternion](./quaternion.md) end, [Single](https://learn.microsoft.com/dotnet/api/system.single) delta)
 
 **Parameters:**
 
@@ -517,13 +517,13 @@ static class SMath
 - [Single](https://learn.microsoft.com/dotnet/api/system.single): 
 
 ---
-#### public static [Quaternion](./quaternion.md) RotateAround([Quaternion](./quaternion.md) q, [Float3](./float3.md) axis, [Single](https://learn.microsoft.com/dotnet/api/system.single) angle)
+#### public static [Quaternion](./quaternion.md) RotateAround([Quaternion](./quaternion.md) q, [Vector3f](./vector3f.md) axis, [Single](https://learn.microsoft.com/dotnet/api/system.single) angle)
 
 **Parameters:**
 
 - `q` ([Quaternion](./quaternion.md)): 
 
-- `axis` ([Float3](./float3.md)): 
+- `axis` ([Vector3f](./vector3f.md)): 
 
 - `angle` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): 
 
@@ -533,11 +533,11 @@ static class SMath
 - [Quaternion](./quaternion.md): 
 
 ---
-#### public static [Quaternion](./quaternion.md) ToQuat([Float3](./float3.md) axis, [Single](https://learn.microsoft.com/dotnet/api/system.single) angle)
+#### public static [Quaternion](./quaternion.md) ToQuat([Vector3f](./vector3f.md) axis, [Single](https://learn.microsoft.com/dotnet/api/system.single) angle)
 
 **Parameters:**
 
-- `axis` ([Float3](./float3.md)): 
+- `axis` ([Vector3f](./vector3f.md)): 
 
 - `angle` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): 
 
@@ -547,13 +547,13 @@ static class SMath
 - [Quaternion](./quaternion.md): 
 
 ---
-#### public static [Quaternion](./quaternion.md) LookAt([Float3](./float3.md) direction, [Nullable&lt;Float3&gt;](https://learn.microsoft.com/dotnet/api/system.nullable-1) up)
+#### public static [Quaternion](./quaternion.md) LookAt([Vector3f](./vector3f.md) direction, [Nullable&lt;Vector3f&gt;](https://learn.microsoft.com/dotnet/api/system.nullable-1) up)
 
 **Parameters:**
 
-- `direction` ([Float3](./float3.md)): 
+- `direction` ([Vector3f](./vector3f.md)): 
 
-- `up` ([Nullable&lt;Float3&gt;](https://learn.microsoft.com/dotnet/api/system.nullable-1)): 
+- `up` ([Nullable&lt;Vector3f&gt;](https://learn.microsoft.com/dotnet/api/system.nullable-1)): 
 
 
 **Returns:**
@@ -561,11 +561,11 @@ static class SMath
 - [Quaternion](./quaternion.md): 
 
 ---
-#### public static [Quaternion](./quaternion.md) EulerYxzToQuat([Float3](./float3.md) eulerYxz)
+#### public static [Quaternion](./quaternion.md) EulerYxzToQuat([Vector3f](./vector3f.md) eulerYxz)
 
 **Parameters:**
 
-- `eulerYxz` ([Float3](./float3.md)): 
+- `eulerYxz` ([Vector3f](./vector3f.md)): 
 
 
 **Returns:**
@@ -573,7 +573,7 @@ static class SMath
 - [Quaternion](./quaternion.md): 
 
 ---
-#### public static [Float3](./float3.md) ToEulerYxz([Quaternion](./quaternion.md) q)
+#### public static [Vector3f](./vector3f.md) ToEulerYxz([Quaternion](./quaternion.md) q)
 
 **Parameters:**
 
@@ -582,14 +582,14 @@ static class SMath
 
 **Returns:**
 
-- [Float3](./float3.md): 
+- [Vector3f](./vector3f.md): 
 
 ---
-#### public static [Quaternion](./quaternion.md) ToQuat([Float3x3](./float3x3.md) m)
+#### public static [Quaternion](./quaternion.md) ToQuat([Matrix3x3f](./matrix3x3f.md) m)
 
 **Parameters:**
 
-- `m` ([Float3x3](./float3x3.md)): 
+- `m` ([Matrix3x3f](./matrix3x3f.md)): 
 
 
 **Returns:**
@@ -597,7 +597,7 @@ static class SMath
 - [Quaternion](./quaternion.md): 
 
 ---
-#### public static [Float3x3](./float3x3.md) ToRotationMatrix([Quaternion](./quaternion.md) q)
+#### public static [Matrix3x3f](./matrix3x3f.md) ToRotationMatrix([Quaternion](./quaternion.md) q)
 
 **Parameters:**
 
@@ -606,7 +606,7 @@ static class SMath
 
 **Returns:**
 
-- [Float3x3](./float3x3.md): 
+- [Matrix3x3f](./matrix3x3f.md): 
 
 ---
 #### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) Step([Single](https://learn.microsoft.com/dotnet/api/system.single) edge, [Single](https://learn.microsoft.com/dotnet/api/system.single) x)
@@ -671,40 +671,40 @@ static class SMath
 - [Single](https://learn.microsoft.com/dotnet/api/system.single): 
 
 ---
-#### public static [Float2](./float2.md) Normalize([Float2](./float2.md) f2)
+#### public static [Vector2f](./vector2f.md) Normalize([Vector2f](./vector2f.md) f2)
 
 **Parameters:**
 
-- `f2` ([Float2](./float2.md)): 
+- `f2` ([Vector2f](./vector2f.md)): 
 
 
 **Returns:**
 
-- [Float2](./float2.md): 
+- [Vector2f](./vector2f.md): 
 
 ---
-#### public static [Float3](./float3.md) Normalize([Float3](./float3.md) f3)
+#### public static [Vector3f](./vector3f.md) Normalize([Vector3f](./vector3f.md) f3)
 
 **Parameters:**
 
-- `f3` ([Float3](./float3.md)): 
+- `f3` ([Vector3f](./vector3f.md)): 
 
 
 **Returns:**
 
-- [Float3](./float3.md): 
+- [Vector3f](./vector3f.md): 
 
 ---
-#### public static [Float4](./float4.md) Normalize([Float4](./float4.md) f4)
+#### public static [Vector4f](./vector4f.md) Normalize([Vector4f](./vector4f.md) f4)
 
 **Parameters:**
 
-- `f4` ([Float4](./float4.md)): 
+- `f4` ([Vector4f](./vector4f.md)): 
 
 
 **Returns:**
 
-- [Float4](./float4.md): 
+- [Vector4f](./vector4f.md): 
 
 ---
 #### public static [Quaternion](./quaternion.md) Normalize([Quaternion](./quaternion.md) q)
@@ -719,13 +719,13 @@ static class SMath
 - [Quaternion](./quaternion.md): 
 
 ---
-#### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) Dot([Float2](./float2.md) fa, [Float2](./float2.md) fb)
+#### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) Dot([Vector2f](./vector2f.md) fa, [Vector2f](./vector2f.md) fb)
 
 **Parameters:**
 
-- `fa` ([Float2](./float2.md)): 
+- `fa` ([Vector2f](./vector2f.md)): 
 
-- `fb` ([Float2](./float2.md)): 
+- `fb` ([Vector2f](./vector2f.md)): 
 
 
 **Returns:**
@@ -733,13 +733,13 @@ static class SMath
 - [Single](https://learn.microsoft.com/dotnet/api/system.single): 
 
 ---
-#### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) Dot([Float3](./float3.md) fa, [Float3](./float3.md) fb)
+#### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) Dot([Vector3f](./vector3f.md) fa, [Vector3f](./vector3f.md) fb)
 
 **Parameters:**
 
-- `fa` ([Float3](./float3.md)): 
+- `fa` ([Vector3f](./vector3f.md)): 
 
-- `fb` ([Float3](./float3.md)): 
+- `fb` ([Vector3f](./vector3f.md)): 
 
 
 **Returns:**
@@ -747,13 +747,13 @@ static class SMath
 - [Single](https://learn.microsoft.com/dotnet/api/system.single): 
 
 ---
-#### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) Dot([Float4](./float4.md) fa, [Float4](./float4.md) fb)
+#### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) Dot([Vector4f](./vector4f.md) fa, [Vector4f](./vector4f.md) fb)
 
 **Parameters:**
 
-- `fa` ([Float4](./float4.md)): 
+- `fa` ([Vector4f](./vector4f.md)): 
 
-- `fb` ([Float4](./float4.md)): 
+- `fb` ([Vector4f](./vector4f.md)): 
 
 
 **Returns:**
@@ -761,41 +761,27 @@ static class SMath
 - [Single](https://learn.microsoft.com/dotnet/api/system.single): 
 
 ---
-#### public static [Float3](./float3.md) Cross([Float3](./float3.md) fa, [Float3](./float3.md) fb)
+#### public static [Vector3f](./vector3f.md) Cross([Vector3f](./vector3f.md) fa, [Vector3f](./vector3f.md) fb)
 
 **Parameters:**
 
-- `fa` ([Float3](./float3.md)): 
+- `fa` ([Vector3f](./vector3f.md)): 
 
-- `fb` ([Float3](./float3.md)): 
+- `fb` ([Vector3f](./vector3f.md)): 
 
 
 **Returns:**
 
-- [Float3](./float3.md): 
+- [Vector3f](./vector3f.md): 
 
 ---
-#### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) Distance([Float2](./float2.md) fa, [Float2](./float2.md) fb)
+#### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) Distance([Vector2f](./vector2f.md) fa, [Vector2f](./vector2f.md) fb)
 
 **Parameters:**
 
-- `fa` ([Float2](./float2.md)): 
+- `fa` ([Vector2f](./vector2f.md)): 
 
-- `fb` ([Float2](./float2.md)): 
-
-
-**Returns:**
-
-- [Single](https://learn.microsoft.com/dotnet/api/system.single): 
-
----
-#### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) Distance([Float3](./float3.md) fa, [Float3](./float3.md) fb)
-
-**Parameters:**
-
-- `fa` ([Float3](./float3.md)): 
-
-- `fb` ([Float3](./float3.md)): 
+- `fb` ([Vector2f](./vector2f.md)): 
 
 
 **Returns:**
@@ -803,13 +789,27 @@ static class SMath
 - [Single](https://learn.microsoft.com/dotnet/api/system.single): 
 
 ---
-#### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) Distance([Float4](./float4.md) fa, [Float4](./float4.md) fb)
+#### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) Distance([Vector3f](./vector3f.md) fa, [Vector3f](./vector3f.md) fb)
 
 **Parameters:**
 
-- `fa` ([Float4](./float4.md)): 
+- `fa` ([Vector3f](./vector3f.md)): 
 
-- `fb` ([Float4](./float4.md)): 
+- `fb` ([Vector3f](./vector3f.md)): 
+
+
+**Returns:**
+
+- [Single](https://learn.microsoft.com/dotnet/api/system.single): 
+
+---
+#### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) Distance([Vector4f](./vector4f.md) fa, [Vector4f](./vector4f.md) fb)
+
+**Parameters:**
+
+- `fa` ([Vector4f](./vector4f.md)): 
+
+- `fb` ([Vector4f](./vector4f.md)): 
 
 
 **Returns:**

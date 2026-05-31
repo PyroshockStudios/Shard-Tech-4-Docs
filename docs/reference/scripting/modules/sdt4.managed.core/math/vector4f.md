@@ -1,4 +1,4 @@
-# Float2
+# Vector4f
 
 
 
@@ -8,11 +8,11 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-struct Float2
+struct Vector4f
 ```
 **Implements:**
 
-##### [IVectorSpacial&lt;Single&gt;](./ivectorspacial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
+##### [IVectorSpacial&lt;Single&gt;](./ivectorspacial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), [IEquatable&lt;Vector4f&gt;](https://learn.microsoft.com/dotnet/api/system.iequatable-1)
 ---
 
 ## Fields
@@ -29,6 +29,8 @@ struct Float2
 | --- | --- | --- |
 | `public get; x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public get; z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public get; w` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
 
@@ -45,7 +47,7 @@ struct Float2
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
-In format of (x, y)
+In format of (x, y, z, w)
 
 **Returns:**
 
@@ -79,6 +81,18 @@ In format of (x, y)
 
 - `context` ([StreamingContext](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext)): 
 
+
+---
+#### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Vector4f](./vector4f.md) other)
+
+**Parameters:**
+
+- `other` ([Vector4f](./vector4f.md)): 
+
+
+**Returns:**
+
+- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
 
 ---
 

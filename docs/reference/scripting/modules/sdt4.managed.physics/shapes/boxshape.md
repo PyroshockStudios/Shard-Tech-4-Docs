@@ -22,7 +22,7 @@ sealed class BoxShape
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public HalfExtents` | [Float3](../../sdt4.managed.core/math/float3.md) |  |
+| `public HalfExtents` | [Vector3f](../../sdt4.managed.core/math/vector3f.md) |  |
 
 
 ---

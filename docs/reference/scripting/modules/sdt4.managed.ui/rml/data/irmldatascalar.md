@@ -39,7 +39,7 @@ Called by the DOM when the value is accessed.
 
 **Returns:**
 
-- [RMLVariant](../rmlvariant.md): Value that can be read in the DOM. Return <c>[RMLVariant](../rmlvariant.md).Empty</c> if this should not be accessed.
+- [RMLVariant](../rmlvariant.md): Value that can be read in the DOM. Return <c><see cref="T:SDT4.Managed.UI.RML.RMLVariant" />.Empty</c> if this should not be accessed.
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Set([RMLVariant](../rmlvariant.md) data)

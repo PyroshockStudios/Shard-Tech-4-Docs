@@ -10,6 +10,7 @@
 | [INetworkSession](./inetworksession.md) |  |
 | [IRemoteConnection](./iremoteconnection.md) |  |
 | [PacketBroadcast](./packetbroadcast.md) |  |
+| [PacketListenerDelegate](./packetlistenerdelegate.md) |  |
 | [PacketProtocol](./packetprotocol.md) |  |
 | [RemoteConnectionStatus](./remoteconnectionstatus.md) |  |
 | [RemoteConnectionStatusDelegate](./remoteconnectionstatusdelegate.md) |  |
@@ -25,6 +26,6 @@
 | [ReplicateFieldAttribute](./attributes/replicatefieldattribute.md) |  |
 | [ReplicationPolicy](./attributes/replicationpolicy.md) |  |
 | [ReplicationQuantization](./attributes/replicationquantization.md) |  |
-| [RPCAttribute](./attributes/rpcattribute.md) |  |
-| [StringPacketAttribute](./attributes/stringpacketattribute.md) |  |
+| [RPCAttribute](./attributes/rpcattribute.md) | Defines a method to be treated as a remote callable procedure. This restricts certain capabilities, such as requiring  <strong>strict</strong> memory layouts on input parameters, having limited managed data type usage, and argument size. |
+| [StringPacketAttribute](./attributes/stringpacketattribute.md) | Allows managed strings to be sent to remote connections. |
 

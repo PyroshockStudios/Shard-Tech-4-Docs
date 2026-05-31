@@ -15,7 +15,7 @@ class RMLDocument
 ##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [RMLElement](./rmlelement.md) ➔  **RMLDocument**
 **Implements:**
 
-##### [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
+##### 
 ---
 
 ## Fields
@@ -56,7 +56,7 @@ class RMLDocument
 ---
 #### public [RMLElement](./rmlelement.md) CreateElement([String](https://learn.microsoft.com/dotnet/api/system.string) name)
 
-Creates a new orphan element. This element has no parent and must be assigned immediately otherwise, it will be destroyed
+Creates a new orphan element. This element has no parent and must be assigned immediately otherwise, it will be destroyed
 
 **Parameters:**
 

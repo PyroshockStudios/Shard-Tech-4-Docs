@@ -30,7 +30,7 @@ class RMLCanvas
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; PrimaryCanvas` | [RMLCanvas](./rmlcanvas.md) |  |
+| `public static get; PrimaryCanvas` | [RMLCanvas](./rmlcanvas.md) |  |
 | `public get; Themes` | [RMLThemeQuery](./rmlthemequery.md) |  |
 
 

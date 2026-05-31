@@ -30,7 +30,7 @@ abstract class AbstractComponent
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; set; ComponentActor` | [Actor](../actor.md) |  |
+| `public get; set; Owner` | [Actor](../actor.md) | Actor owning the component |
 
 
 ---

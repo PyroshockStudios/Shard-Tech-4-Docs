@@ -30,6 +30,7 @@ interface IWindowPlatform
 | `public get; PrimaryWindow` | [Window](./window.md) |  |
 | `public get; PrimaryMonitor` | [Monitor](./monitor.md) | The primary monitor |
 | `public get; Monitors` | [Monitor[]](./monitor.md) | List of monitors that are available |
+| `public get; Windows` | [Window[]](./window.md) | List of windows that are available |
 
 
 ---

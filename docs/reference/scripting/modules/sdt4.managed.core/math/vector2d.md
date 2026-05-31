@@ -1,4 +1,4 @@
-# Float4x4
+# Vector2d
 
 
 
@@ -8,21 +8,17 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-struct Float4x4
+struct Vector2d
 ```
 **Implements:**
 
-##### [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
+##### [IVectorSpacial&lt;Double&gt;](./ivectorspacial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
 ---
 
 ## Fields
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public x` | [Float4](./float4.md) |  |
-| `public y` | [Float4](./float4.md) |  |
-| `public z` | [Float4](./float4.md) |  |
-| `public w` | [Float4](./float4.md) |  |
 
 
 ---
@@ -31,18 +27,29 @@ struct Float4x4
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; set; Item` | [Float4](./float4.md) |  |
+| `public get; x` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public get; y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public get; Item` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
 
 ---
 
 ## Methods
 
-#### public [Float4x4](./float4x4.md) Transpose()
+#### public [Double](https://learn.microsoft.com/dotnet/api/system.double) Length()
 
 **Returns:**
 
-- [Float4x4](./float4x4.md): 
+- [Double](https://learn.microsoft.com/dotnet/api/system.double): 
+
+---
+#### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
+
+In format of (x, y)
+
+**Returns:**
+
+- [String](https://learn.microsoft.com/dotnet/api/system.string): 
 
 ---
 #### public virtual [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Object?](https://learn.microsoft.com/dotnet/api/system.object) obj)
@@ -62,13 +69,6 @@ struct Float4x4
 **Returns:**
 
 - [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
-
----
-#### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
-
-**Returns:**
-
-- [String](https://learn.microsoft.com/dotnet/api/system.string): 
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) GetObjectData([SerializationInfo](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo) info, [StreamingContext](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext) context)

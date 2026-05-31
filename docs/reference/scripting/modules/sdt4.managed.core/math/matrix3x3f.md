@@ -1,4 +1,4 @@
-# Bool2
+# Matrix3x3f
 
 
 
@@ -8,17 +8,20 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-struct Bool2
+struct Matrix3x3f
 ```
 **Implements:**
 
-##### [IVectorComparable](./ivectorcomparable.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
+##### [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
 ---
 
 ## Fields
 
 | Name | Type | Description |
 | --- | --- | --- |
+| `public x` | [Vector3f](./vector3f.md) |  |
+| `public y` | [Vector3f](./vector3f.md) |  |
+| `public z` | [Vector3f](./vector3f.md) |  |
 
 
 ---
@@ -27,32 +30,40 @@ struct Bool2
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; x` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
-| `public get; y` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
-| `public get; Item` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
+| `public get; set; Item` | [Vector3f](./vector3f.md) |  |
 
 
 ---
 
 ## Methods
 
-#### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) All()
+#### public [Matrix3x3f](./matrix3x3f.md) Transpose()
+
+**Returns:**
+
+- [Matrix3x3f](./matrix3x3f.md): 
+
+---
+#### public virtual [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Object?](https://learn.microsoft.com/dotnet/api/system.object) obj)
+
+**Parameters:**
+
+- `obj` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): 
+
 
 **Returns:**
 
 - [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
 
 ---
-#### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Any()
+#### public virtual [Int32](https://learn.microsoft.com/dotnet/api/system.int32) GetHashCode()
 
 **Returns:**
 
-- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
+- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
 
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
-
-In format of (x, y)
 
 **Returns:**
 

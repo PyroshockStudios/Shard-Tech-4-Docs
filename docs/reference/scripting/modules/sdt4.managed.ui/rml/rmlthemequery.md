@@ -30,7 +30,7 @@ sealed class RMLThemeQuery
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; Item` | [RmlTheme](./rmltheme.md) |  |
+| `public get; Item` | [RMLTheme](./rmltheme.md) |  |
 
 
 ---

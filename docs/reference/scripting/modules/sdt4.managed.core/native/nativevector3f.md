@@ -1,4 +1,4 @@
-# NativeFloat4
+# NativeVector3f
 
 
 
@@ -8,7 +8,7 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-struct NativeFloat4
+struct NativeVector3f
 ```
 **Implements:**
 
@@ -22,7 +22,6 @@ struct NativeFloat4
 | `public x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public w` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
 
 ---

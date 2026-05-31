@@ -48,33 +48,33 @@ sealed class MaterialInstancePropertyMap
 
 
 ---
-#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) SetParameter([String](https://learn.microsoft.com/dotnet/api/system.string) name, [Float2](../../sdt4.managed.core/math/float2.md) value)
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) SetParameter([String](https://learn.microsoft.com/dotnet/api/system.string) name, [Vector2f](../../sdt4.managed.core/math/vector2f.md) value)
 
 **Parameters:**
 
 - `name` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
 
-- `value` ([Float2](../../sdt4.managed.core/math/float2.md)): 
+- `value` ([Vector2f](../../sdt4.managed.core/math/vector2f.md)): 
 
 
 ---
-#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) SetParameter([String](https://learn.microsoft.com/dotnet/api/system.string) name, [Float3](../../sdt4.managed.core/math/float3.md) value)
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) SetParameter([String](https://learn.microsoft.com/dotnet/api/system.string) name, [Vector3f](../../sdt4.managed.core/math/vector3f.md) value)
 
 **Parameters:**
 
 - `name` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
 
-- `value` ([Float3](../../sdt4.managed.core/math/float3.md)): 
+- `value` ([Vector3f](../../sdt4.managed.core/math/vector3f.md)): 
 
 
 ---
-#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) SetParameter([String](https://learn.microsoft.com/dotnet/api/system.string) name, [Float4](../../sdt4.managed.core/math/float4.md) value)
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) SetParameter([String](https://learn.microsoft.com/dotnet/api/system.string) name, [Vector4f](../../sdt4.managed.core/math/vector4f.md) value)
 
 **Parameters:**
 
 - `name` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
 
-- `value` ([Float4](../../sdt4.managed.core/math/float4.md)): 
+- `value` ([Vector4f](../../sdt4.managed.core/math/vector4f.md)): 
 
 
 ---

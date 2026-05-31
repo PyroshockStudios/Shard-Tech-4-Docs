@@ -1,4 +1,4 @@
-# RmlVariantType
+# RMLVariantType
 
 
 
@@ -8,7 +8,7 @@
 **Assembly:** `SDT4.Managed.UI.dll`
 
 ```csharp
-enum RmlVariantType
+enum RMLVariantType
 ```
 
 ---
@@ -17,32 +17,32 @@ enum RmlVariantType
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `None` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `Bool` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `Byte` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `Char` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `Float` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `Double` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `Int` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `Int64` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `Uint` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `Uint64` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `String` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `Vector2` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `Vector3` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `Vector4` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `Colourf` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `Colourb` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `ScriptInterface` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `TransformPtr` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `TransitionList` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `AnimationList` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `DecoratorsPtr` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `FiltersPtr` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `FonteffectsPtr` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `ColorstopList` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `BoxshadowList` | [RmlVariantType](./rmlvarianttype.md) |  |
-| `VoidPtr` | [RmlVariantType](./rmlvarianttype.md) |  |
+| `None` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `Bool` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `Byte` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `Char` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `Float` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `Double` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `Int` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `Int64` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `Uint` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `Uint64` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `String` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `Vector2` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `Vector3` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `Vector4` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `Colourf` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `Colourb` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `ScriptInterface` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `TransformPtr` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `TransitionList` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `AnimationList` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `DecoratorsPtr` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `FiltersPtr` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `FonteffectsPtr` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `ColorstopList` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `BoxshadowList` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `VoidPtr` | [RMLVariantType](./rmlvarianttype.md) |  |
 
 
 ---

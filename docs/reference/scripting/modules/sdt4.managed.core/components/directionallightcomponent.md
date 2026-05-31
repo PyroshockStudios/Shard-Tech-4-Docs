@@ -30,7 +30,7 @@ sealed class DirectionalLightComponent
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; set; Color` | [Float3](../math/float3.md) |  |
+| `public get; set; Color` | [Vector3f](../math/vector3f.md) |  |
 | `public get; set; Intensity` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
 

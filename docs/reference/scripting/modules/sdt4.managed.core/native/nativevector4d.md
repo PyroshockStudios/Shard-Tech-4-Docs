@@ -1,4 +1,4 @@
-# NativeDouble3
+# NativeVector4d
 
 
 
@@ -8,7 +8,7 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-struct NativeDouble3
+struct NativeVector4d
 ```
 **Implements:**
 
@@ -22,6 +22,7 @@ struct NativeDouble3
 | `public x` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 | `public y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 | `public z` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public w` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
 
 ---

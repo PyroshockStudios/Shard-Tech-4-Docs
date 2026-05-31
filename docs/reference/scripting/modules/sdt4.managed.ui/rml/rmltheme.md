@@ -1,4 +1,4 @@
-# RmlTheme
+# RMLTheme
 
 
 
@@ -8,11 +8,11 @@
 **Assembly:** `SDT4.Managed.UI.dll`
 
 ```csharp
-sealed class RmlTheme
+sealed class RMLTheme
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔  **RmlTheme**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔  **RMLTheme**
 **Implements:**
 
 ##### 

@@ -64,7 +64,7 @@ nav:
           - Spawning Scripts: reference/scripting/basics/scripts/spawningscripts.md
         - Viewports:
           - Attaching Main Window: reference/scripting/basics/viewports/attachingmainwindow.md
-          - Split-Screen: reference/scripting/basics/scripts/viewports/splitscreen.md
+          - Split-Screen: reference/scripting/basics/viewports/splitscreen.md
       - Advanced:
         - UI: 
           - RmlUi: reference/scripting/advanced/ui/rmlui.md
@@ -89,7 +89,6 @@ nav:
           - "Overview": reference/scripting/modules/sdt4.managed.core/index.md
           - "Actor": reference/scripting/modules/sdt4.managed.core/actor.md
           - "AppInstance": reference/scripting/modules/sdt4.managed.core/appinstance.md
-          - "Deferrable": reference/scripting/modules/sdt4.managed.core/deferrable.md
           - "Game": reference/scripting/modules/sdt4.managed.core/game.md
           - "InstanceEnvironment": reference/scripting/modules/sdt4.managed.core/instanceenvironment.md
           - "IResourceManager": reference/scripting/modules/sdt4.managed.core/iresourcemanager.md
@@ -149,32 +148,31 @@ nav:
           - Graphics:
             - "CameraProjection": reference/scripting/modules/sdt4.managed.core/graphics/cameraprojection.md
           - Math:
-            - "AABB": reference/scripting/modules/sdt4.managed.core/math/aabb.md
-            - "Bool2": reference/scripting/modules/sdt4.managed.core/math/bool2.md
-            - "Bool3": reference/scripting/modules/sdt4.managed.core/math/bool3.md
-            - "Bool4": reference/scripting/modules/sdt4.managed.core/math/bool4.md
-            - "Double2": reference/scripting/modules/sdt4.managed.core/math/double2.md
-            - "Double3": reference/scripting/modules/sdt4.managed.core/math/double3.md
-            - "Double4": reference/scripting/modules/sdt4.managed.core/math/double4.md
-            - "Float2": reference/scripting/modules/sdt4.managed.core/math/float2.md
-            - "Float3": reference/scripting/modules/sdt4.managed.core/math/float3.md
-            - "Float3x3": reference/scripting/modules/sdt4.managed.core/math/float3x3.md
-            - "Float4": reference/scripting/modules/sdt4.managed.core/math/float4.md
-            - "Float4x4": reference/scripting/modules/sdt4.managed.core/math/float4x4.md
+            - "AxisAlignedBox": reference/scripting/modules/sdt4.managed.core/math/axisalignedbox.md
             - "ITransform3D": reference/scripting/modules/sdt4.managed.core/math/itransform3d.md
             - "IVectorComparable": reference/scripting/modules/sdt4.managed.core/math/ivectorcomparable.md
             - "IVectorSpacial&lt;TGenType&gt;": reference/scripting/modules/sdt4.managed.core/math/ivectorspacial`1.md
+            - "Matrix3x3f": reference/scripting/modules/sdt4.managed.core/math/matrix3x3f.md
+            - "Matrix4x4f": reference/scripting/modules/sdt4.managed.core/math/matrix4x4f.md
             - "Quaternion": reference/scripting/modules/sdt4.managed.core/math/quaternion.md
             - "SMath": reference/scripting/modules/sdt4.managed.core/math/smath.md
+            - "Vector2b": reference/scripting/modules/sdt4.managed.core/math/vector2b.md
+            - "Vector2d": reference/scripting/modules/sdt4.managed.core/math/vector2d.md
+            - "Vector2f": reference/scripting/modules/sdt4.managed.core/math/vector2f.md
+            - "Vector3b": reference/scripting/modules/sdt4.managed.core/math/vector3b.md
+            - "Vector3d": reference/scripting/modules/sdt4.managed.core/math/vector3d.md
+            - "Vector3f": reference/scripting/modules/sdt4.managed.core/math/vector3f.md
+            - "Vector4b": reference/scripting/modules/sdt4.managed.core/math/vector4b.md
+            - "Vector4d": reference/scripting/modules/sdt4.managed.core/math/vector4d.md
+            - "Vector4f": reference/scripting/modules/sdt4.managed.core/math/vector4f.md
           - Native:
-            - "NativeDouble2": reference/scripting/modules/sdt4.managed.core/native/nativedouble2.md
-            - "NativeDouble3": reference/scripting/modules/sdt4.managed.core/native/nativedouble3.md
-            - "NativeDouble4": reference/scripting/modules/sdt4.managed.core/native/nativedouble4.md
-            - "NativeFloat2": reference/scripting/modules/sdt4.managed.core/native/nativefloat2.md
-            - "NativeFloat3": reference/scripting/modules/sdt4.managed.core/native/nativefloat3.md
-            - "NativeFloat4": reference/scripting/modules/sdt4.managed.core/native/nativefloat4.md
-            - "NativeFuture": reference/scripting/modules/sdt4.managed.core/native/nativefuture.md
             - "NativeQuaternion": reference/scripting/modules/sdt4.managed.core/native/nativequaternion.md
+            - "NativeVector2d": reference/scripting/modules/sdt4.managed.core/native/nativevector2d.md
+            - "NativeVector2f": reference/scripting/modules/sdt4.managed.core/native/nativevector2f.md
+            - "NativeVector3d": reference/scripting/modules/sdt4.managed.core/native/nativevector3d.md
+            - "NativeVector3f": reference/scripting/modules/sdt4.managed.core/native/nativevector3f.md
+            - "NativeVector4d": reference/scripting/modules/sdt4.managed.core/native/nativevector4d.md
+            - "NativeVector4f": reference/scripting/modules/sdt4.managed.core/native/nativevector4f.md
           - Script:
             - "ActorScript": reference/scripting/modules/sdt4.managed.core/script/actorscript.md
             - "IScriptTarget": reference/scripting/modules/sdt4.managed.core/script/iscripttarget.md
@@ -213,7 +211,6 @@ nav:
             - "InputMapperAttribute": reference/scripting/modules/sdt4.managed.input/attributes/inputmapperattribute.md
         - SDT4.Managed.Locale:
           - "Overview": reference/scripting/modules/sdt4.managed.locale/index.md
-          - "ClientLocale": reference/scripting/modules/sdt4.managed.locale/clientlocale.md
           - "ILocale": reference/scripting/modules/sdt4.managed.locale/ilocale.md
         - SDT4.Managed.Network:
           - "Overview": reference/scripting/modules/sdt4.managed.network/index.md
@@ -221,6 +218,7 @@ nav:
           - "INetworkSession": reference/scripting/modules/sdt4.managed.network/inetworksession.md
           - "IRemoteConnection": reference/scripting/modules/sdt4.managed.network/iremoteconnection.md
           - "PacketBroadcast": reference/scripting/modules/sdt4.managed.network/packetbroadcast.md
+          - "PacketListenerDelegate": reference/scripting/modules/sdt4.managed.network/packetlistenerdelegate.md
           - "PacketProtocol": reference/scripting/modules/sdt4.managed.network/packetprotocol.md
           - "RemoteConnectionStatus": reference/scripting/modules/sdt4.managed.network/remoteconnectionstatus.md
           - "RemoteConnectionStatusDelegate": reference/scripting/modules/sdt4.managed.network/remoteconnectionstatusdelegate.md
@@ -238,8 +236,6 @@ nav:
           - "Overview": reference/scripting/modules/sdt4.managed.network.client/index.md
           - "ClientNetworkSession": reference/scripting/modules/sdt4.managed.network.client/clientnetworksession.md
           - "P2PNetworkSession": reference/scripting/modules/sdt4.managed.network.client/p2pnetworksession.md
-        - SDT4.Managed.Network.Server:
-          - "Overview": reference/scripting/modules/sdt4.managed.network.server/index.md
         - SDT4.Managed.Physics:
           - "Overview": reference/scripting/modules/sdt4.managed.physics/index.md
           - "PhysicsConstraint": reference/scripting/modules/sdt4.managed.physics/physicsconstraint.md
@@ -301,15 +297,15 @@ nav:
             - "RMLDocument": reference/scripting/modules/sdt4.managed.ui/rml/rmldocument.md
             - "RMLElement": reference/scripting/modules/sdt4.managed.ui/rml/rmlelement.md
             - "RMLEvent": reference/scripting/modules/sdt4.managed.ui/rml/rmlevent.md
-            - "RmlEventId": reference/scripting/modules/sdt4.managed.ui/rml/rmleventid.md
-            - "RmlEventListener": reference/scripting/modules/sdt4.managed.ui/rml/rmleventlistener.md
+            - "RMLEventID": reference/scripting/modules/sdt4.managed.ui/rml/rmleventid.md
+            - "RMLEventListener": reference/scripting/modules/sdt4.managed.ui/rml/rmleventlistener.md
             - "RMLEventParameters": reference/scripting/modules/sdt4.managed.ui/rml/rmleventparameters.md
-            - "RmlEventPhase": reference/scripting/modules/sdt4.managed.ui/rml/rmleventphase.md
+            - "RMLEventPhase": reference/scripting/modules/sdt4.managed.ui/rml/rmleventphase.md
             - "RMLNamedNodeMap": reference/scripting/modules/sdt4.managed.ui/rml/rmlnamednodemap.md
-            - "RmlTheme": reference/scripting/modules/sdt4.managed.ui/rml/rmltheme.md
+            - "RMLTheme": reference/scripting/modules/sdt4.managed.ui/rml/rmltheme.md
             - "RMLThemeQuery": reference/scripting/modules/sdt4.managed.ui/rml/rmlthemequery.md
             - "RMLVariant": reference/scripting/modules/sdt4.managed.ui/rml/rmlvariant.md
-            - "RmlVariantType": reference/scripting/modules/sdt4.managed.ui/rml/rmlvarianttype.md
+            - "RMLVariantType": reference/scripting/modules/sdt4.managed.ui/rml/rmlvarianttype.md
             - Attributes:
               - "RMLDataEventAttribute": reference/scripting/modules/sdt4.managed.ui/rml/attributes/rmldataeventattribute.md
               - "RMLDataVariableAttribute": reference/scripting/modules/sdt4.managed.ui/rml/attributes/rmldatavariableattribute.md

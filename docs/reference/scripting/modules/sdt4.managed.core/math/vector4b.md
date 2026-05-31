@@ -1,4 +1,4 @@
-# Bool3
+# Vector4b
 
 
 
@@ -8,7 +8,7 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-struct Bool3
+struct Vector4b
 ```
 **Implements:**
 
@@ -30,6 +30,7 @@ struct Bool3
 | `public get; x` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 | `public get; y` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 | `public get; z` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
+| `public get; w` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 | `public get; Item` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
 
@@ -53,7 +54,7 @@ struct Bool3
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
-In format of (x, y, z)
+In format of (x, y, z, w)
 
 **Returns:**
 

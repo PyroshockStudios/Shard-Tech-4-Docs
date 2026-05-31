@@ -1,4 +1,4 @@
-# Float4
+# Vector4d
 
 
 
@@ -8,11 +8,11 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-struct Float4
+struct Vector4d
 ```
 **Implements:**
 
-##### [IVectorSpacial&lt;Single&gt;](./ivectorspacial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), [IEquatable&lt;Float4&gt;](https://learn.microsoft.com/dotnet/api/system.iequatable-1)
+##### [IVectorSpacial&lt;Double&gt;](./ivectorspacial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
 ---
 
 ## Fields
@@ -27,22 +27,22 @@ struct Float4
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public get; y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public get; z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public get; w` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public get; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public get; x` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public get; y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public get; z` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public get; w` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public get; Item` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
 
 ---
 
 ## Methods
 
-#### public [Single](https://learn.microsoft.com/dotnet/api/system.single) Length()
+#### public [Double](https://learn.microsoft.com/dotnet/api/system.double) Length()
 
 **Returns:**
 
-- [Single](https://learn.microsoft.com/dotnet/api/system.single): 
+- [Double](https://learn.microsoft.com/dotnet/api/system.double): 
 
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
@@ -81,18 +81,6 @@ In format of (x, y, z, w)
 
 - `context` ([StreamingContext](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext)): 
 
-
----
-#### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Float4](./float4.md) other)
-
-**Parameters:**
-
-- `other` ([Float4](./float4.md)): 
-
-
-**Returns:**
-
-- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
 
 ---
 

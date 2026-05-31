@@ -8,7 +8,6 @@
 | --- | --- |
 | [Actor](./actor.md) |  |
 | [AppInstance](./appinstance.md) |  |
-| [Deferrable](./deferrable.md) |  |
 | [Game](./game.md) |  |
 | [InstanceEnvironment](./instanceenvironment.md) |  |
 | [IResourceManager](./iresourcemanager.md) |  |
@@ -92,36 +91,35 @@
 
 | Type | Description |
 | --- | --- |
-| [AABB](./math/aabb.md) |  |
-| [Bool2](./math/bool2.md) |  |
-| [Bool3](./math/bool3.md) |  |
-| [Bool4](./math/bool4.md) |  |
-| [Double2](./math/double2.md) |  |
-| [Double3](./math/double3.md) |  |
-| [Double4](./math/double4.md) |  |
-| [Float2](./math/float2.md) |  |
-| [Float3](./math/float3.md) |  |
-| [Float3x3](./math/float3x3.md) |  |
-| [Float4](./math/float4.md) |  |
-| [Float4x4](./math/float4x4.md) |  |
+| [AxisAlignedBox](./math/axisalignedbox.md) |  |
 | [ITransform3D](./math/itransform3d.md) |  |
 | [IVectorComparable](./math/ivectorcomparable.md) |  |
 | [IVectorSpacial&lt;TGenType&gt;](./math/ivectorspacial`1.md) |  |
+| [Matrix3x3f](./math/matrix3x3f.md) |  |
+| [Matrix4x4f](./math/matrix4x4f.md) |  |
 | [Quaternion](./math/quaternion.md) |  |
 | [SMath](./math/smath.md) |  |
+| [Vector2b](./math/vector2b.md) |  |
+| [Vector2d](./math/vector2d.md) |  |
+| [Vector2f](./math/vector2f.md) |  |
+| [Vector3b](./math/vector3b.md) |  |
+| [Vector3d](./math/vector3d.md) |  |
+| [Vector3f](./math/vector3f.md) |  |
+| [Vector4b](./math/vector4b.md) |  |
+| [Vector4d](./math/vector4d.md) |  |
+| [Vector4f](./math/vector4f.md) |  |
 
 ### `SDT4.Managed.Core.Native`
 
 | Type | Description |
 | --- | --- |
-| [NativeDouble2](./native/nativedouble2.md) |  |
-| [NativeDouble3](./native/nativedouble3.md) |  |
-| [NativeDouble4](./native/nativedouble4.md) |  |
-| [NativeFloat2](./native/nativefloat2.md) |  |
-| [NativeFloat3](./native/nativefloat3.md) |  |
-| [NativeFloat4](./native/nativefloat4.md) |  |
-| [NativeFuture](./native/nativefuture.md) |  |
 | [NativeQuaternion](./native/nativequaternion.md) |  |
+| [NativeVector2d](./native/nativevector2d.md) |  |
+| [NativeVector2f](./native/nativevector2f.md) |  |
+| [NativeVector3d](./native/nativevector3d.md) |  |
+| [NativeVector3f](./native/nativevector3f.md) |  |
+| [NativeVector4d](./native/nativevector4d.md) |  |
+| [NativeVector4f](./native/nativevector4f.md) |  |
 
 ### `SDT4.Managed.Core.Script`
 

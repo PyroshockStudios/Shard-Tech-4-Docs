@@ -1,4 +1,4 @@
-# Double2
+# Vector3f
 
 
 
@@ -8,11 +8,11 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-struct Double2
+struct Vector3f
 ```
 **Implements:**
 
-##### [IVectorSpacial&lt;Double&gt;](./ivectorspacial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
+##### [IVectorSpacial&lt;Single&gt;](./ivectorspacial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), [IEquatable&lt;Vector3f&gt;](https://learn.microsoft.com/dotnet/api/system.iequatable-1)
 ---
 
 ## Fields
@@ -27,25 +27,26 @@ struct Double2
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; x` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
-| `public get; y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
-| `public get; Item` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public get; x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public get; y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public get; z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public get; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
 
 ---
 
 ## Methods
 
-#### public [Double](https://learn.microsoft.com/dotnet/api/system.double) Length()
+#### public [Single](https://learn.microsoft.com/dotnet/api/system.single) Length()
 
 **Returns:**
 
-- [Double](https://learn.microsoft.com/dotnet/api/system.double): 
+- [Single](https://learn.microsoft.com/dotnet/api/system.single): 
 
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
-In format of (x, y)
+In format of (x, y, z)
 
 **Returns:**
 
@@ -79,6 +80,18 @@ In format of (x, y)
 
 - `context` ([StreamingContext](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext)): 
 
+
+---
+#### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Vector3f](./vector3f.md) other)
+
+**Parameters:**
+
+- `other` ([Vector3f](./vector3f.md)): 
+
+
+**Returns:**
+
+- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
 
 ---
 

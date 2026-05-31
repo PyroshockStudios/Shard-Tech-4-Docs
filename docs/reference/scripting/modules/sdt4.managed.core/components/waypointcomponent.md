@@ -80,11 +80,11 @@ sealed class WaypointComponent
 - [Single](https://learn.microsoft.com/dotnet/api/system.single): 
 
 ---
-#### public [WaypointSplinePathPoint](./waypointsplinepathpoint.md) GetNearestPoint([Float3](../math/float3.md) sourcePoint, out [Single](https://learn.microsoft.com/dotnet/api/system.single) t, [Int32](https://learn.microsoft.com/dotnet/api/system.int32) maxKdTreeNeighbourChecks)
+#### public [WaypointSplinePathPoint](./waypointsplinepathpoint.md) GetNearestPoint([Vector3f](../math/vector3f.md) sourcePoint, out [Single](https://learn.microsoft.com/dotnet/api/system.single) t, [Int32](https://learn.microsoft.com/dotnet/api/system.int32) maxKdTreeNeighbourChecks)
 
 **Parameters:**
 
-- `sourcePoint` ([Float3](../math/float3.md)): 
+- `sourcePoint` ([Vector3f](../math/vector3f.md)): 
 
 - `t` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): 
 

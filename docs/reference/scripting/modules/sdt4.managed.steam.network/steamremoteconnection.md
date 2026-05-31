@@ -39,6 +39,9 @@ class SteamRemoteConnection
 
 ## Methods
 
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) StartListeningAsync()
+
+---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Disconnect()
 
 ---
@@ -49,6 +52,22 @@ class SteamRemoteConnection
 - `data` ([Byte[]](https://learn.microsoft.com/dotnet/api/system.byte)): 
 
 - `protocol` ([PacketProtocol](../sdt4.managed.network/packetprotocol.md)): 
+
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) AddPacketListener([PacketListenerDelegate](../sdt4.managed.network/packetlistenerdelegate.md) listener)
+
+**Parameters:**
+
+- `listener` ([PacketListenerDelegate](../sdt4.managed.network/packetlistenerdelegate.md)): 
+
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) RemovePacketListener([PacketListenerDelegate](../sdt4.managed.network/packetlistenerdelegate.md) listener)
+
+**Parameters:**
+
+- `listener` ([PacketListenerDelegate](../sdt4.managed.network/packetlistenerdelegate.md)): 
 
 
 ---

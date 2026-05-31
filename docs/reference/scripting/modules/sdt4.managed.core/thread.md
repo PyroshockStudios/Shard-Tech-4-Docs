@@ -36,11 +36,13 @@ static class Thread
 
 ## Methods
 
-#### public static [Void](https://learn.microsoft.com/dotnet/api/system.void) DoLater([Deferrable](./deferrable.md) function)
+#### public static [Void](https://learn.microsoft.com/dotnet/api/system.void) RunLater([ThreadStart](https://learn.microsoft.com/dotnet/api/system.threading.threadstart) thread)
+
+Executes a <see cref="T:SDT4.Managed.Core.Thread" /> on the main thread.
 
 **Parameters:**
 
-- `function` ([Deferrable](./deferrable.md)): 
+- `thread` ([ThreadStart](https://learn.microsoft.com/dotnet/api/system.threading.threadstart)): Runnable function to call.
 
 
 ---

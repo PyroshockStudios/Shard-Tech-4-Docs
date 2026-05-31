@@ -38,7 +38,7 @@ class Scene
 
 #### public T AsScript&lt;T&gt;()
 
-Gets the [SceneScript](./script/scenescript.md) instance of this [Scene](./scene.md) class.
+Gets the <see cref="T:SDT4.Managed.Core.Script.SceneScript" /> instance of this <see cref="T:SDT4.Managed.Core.Scene" /> class.
 
 **Returns:**
 

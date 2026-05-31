@@ -1,4 +1,4 @@
-# RmlEventPhase
+# RMLEventPhase
 
 
 
@@ -8,7 +8,7 @@
 **Assembly:** `SDT4.Managed.UI.dll`
 
 ```csharp
-enum RmlEventPhase
+enum RMLEventPhase
 ```
 
 ---
@@ -17,10 +17,10 @@ enum RmlEventPhase
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `None` | [RmlEventPhase](./rmleventphase.md) |  |
-| `Capturing` | [RmlEventPhase](./rmleventphase.md) |  |
-| `AtTarget` | [RmlEventPhase](./rmleventphase.md) |  |
-| `Bubbling` | [RmlEventPhase](./rmleventphase.md) |  |
+| `None` | [RMLEventPhase](./rmleventphase.md) |  |
+| `Capturing` | [RMLEventPhase](./rmleventphase.md) |  |
+| `AtTarget` | [RMLEventPhase](./rmleventphase.md) |  |
+| `Bubbling` | [RMLEventPhase](./rmleventphase.md) |  |
 
 
 ---

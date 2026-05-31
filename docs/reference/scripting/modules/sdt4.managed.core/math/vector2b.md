@@ -1,4 +1,4 @@
-# Float3x3
+# Vector2b
 
 
 
@@ -8,20 +8,17 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-struct Float3x3
+struct Vector2b
 ```
 **Implements:**
 
-##### [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
+##### [IVectorComparable](./ivectorcomparable.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
 ---
 
 ## Fields
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public x` | [Float3](./float3.md) |  |
-| `public y` | [Float3](./float3.md) |  |
-| `public z` | [Float3](./float3.md) |  |
 
 
 ---
@@ -30,40 +27,32 @@ struct Float3x3
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; set; Item` | [Float3](./float3.md) |  |
+| `public get; x` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
+| `public get; y` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
+| `public get; Item` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
 
 ---
 
 ## Methods
 
-#### public [Float3x3](./float3x3.md) Transpose()
-
-**Returns:**
-
-- [Float3x3](./float3x3.md): 
-
----
-#### public virtual [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Object?](https://learn.microsoft.com/dotnet/api/system.object) obj)
-
-**Parameters:**
-
-- `obj` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): 
-
+#### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) All()
 
 **Returns:**
 
 - [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
 
 ---
-#### public virtual [Int32](https://learn.microsoft.com/dotnet/api/system.int32) GetHashCode()
+#### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Any()
 
 **Returns:**
 
-- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
+- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
 
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
+
+In format of (x, y)
 
 **Returns:**
 

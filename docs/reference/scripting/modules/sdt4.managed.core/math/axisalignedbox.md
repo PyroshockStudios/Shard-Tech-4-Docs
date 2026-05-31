@@ -1,4 +1,4 @@
-# AABB
+# AxisAlignedBox
 
 
 
@@ -8,7 +8,7 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-struct AABB
+struct AxisAlignedBox
 ```
 **Implements:**
 
@@ -19,8 +19,8 @@ struct AABB
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public Min` | [Float3](./float3.md) |  |
-| `public Max` | [Float3](./float3.md) |  |
+| `public Min` | [Vector3f](./vector3f.md) |  |
+| `public Max` | [Vector3f](./vector3f.md) |  |
 
 
 ---
@@ -29,8 +29,8 @@ struct AABB
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; set; Extent` | [Float3](./float3.md) |  |
-| `public get; set; Position` | [Float3](./float3.md) |  |
+| `public get; set; Extent` | [Vector3f](./vector3f.md) |  |
+| `public get; set; Position` | [Vector3f](./vector3f.md) |  |
 
 
 ---

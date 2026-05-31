@@ -49,6 +49,22 @@ interface IRemoteConnection
 
 
 ---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) AddPacketListener([PacketListenerDelegate](./packetlistenerdelegate.md) listener)
+
+**Parameters:**
+
+- `listener` ([PacketListenerDelegate](./packetlistenerdelegate.md)): 
+
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) RemovePacketListener([PacketListenerDelegate](./packetlistenerdelegate.md) listener)
+
+**Parameters:**
+
+- `listener` ([PacketListenerDelegate](./packetlistenerdelegate.md)): 
+
+
+---
 
 
 ---

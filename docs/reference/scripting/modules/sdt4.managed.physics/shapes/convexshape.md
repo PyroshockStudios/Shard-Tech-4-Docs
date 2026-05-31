@@ -23,7 +23,7 @@ sealed class ConvexShape
 | Name | Type | Description |
 | --- | --- | --- |
 | `public ConvexHull` | [IConvexHull?](../../sdt4.managed.core/asset/iconvexhull.md) |  |
-| `public Scale` | [Float3](../../sdt4.managed.core/math/float3.md) |  |
+| `public Scale` | [Vector3f](../../sdt4.managed.core/math/vector3f.md) |  |
 
 
 ---

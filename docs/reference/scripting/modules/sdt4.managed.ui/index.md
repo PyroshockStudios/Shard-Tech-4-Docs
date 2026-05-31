@@ -14,15 +14,15 @@
 | [RMLDocument](./rml/rmldocument.md) |  |
 | [RMLElement](./rml/rmlelement.md) | RmlUi element based on <a href="https://mikke89.github.io/RmlUiDoc/pages/cpp_manual/elements.html">the RML reference page</a> |
 | [RMLEvent](./rml/rmlevent.md) |  |
-| [RmlEventId](./rml/rmleventid.md) |  |
-| [RmlEventListener](./rml/rmleventlistener.md) | Event listener |
+| [RMLEventID](./rml/rmleventid.md) |  |
+| [RMLEventListener](./rml/rmleventlistener.md) | Event listener |
 | [RMLEventParameters](./rml/rmleventparameters.md) |  |
-| [RmlEventPhase](./rml/rmleventphase.md) |  |
+| [RMLEventPhase](./rml/rmleventphase.md) |  |
 | [RMLNamedNodeMap](./rml/rmlnamednodemap.md) |  |
-| [RmlTheme](./rml/rmltheme.md) |  |
+| [RMLTheme](./rml/rmltheme.md) |  |
 | [RMLThemeQuery](./rml/rmlthemequery.md) |  |
 | [RMLVariant](./rml/rmlvariant.md) |  |
-| [RmlVariantType](./rml/rmlvarianttype.md) |  |
+| [RMLVariantType](./rml/rmlvarianttype.md) |  |
 
 ### `SDT4.Managed.UI.RML.Attributes`
 
@@ -42,6 +42,6 @@
 | [IRMLDataArray](./rml/data/irmldataarray.md) | A generic specialisation of <see cref="T:SDT4.Managed.UI.RML.Data.IRMLDataArray`1" />  for untyped variables. |
 | [IRMLDataArray&lt;T&gt;](./rml/data/irmldataarray`1.md) |  |
 | [IRMLDataScalar](./rml/data/irmldatascalar.md) | A scalar data variable, that manages untyped variables. |
-| [IRMLDataStruct](./rml/data/irmldatastruct.md) | RML data structure containing members. A class implementing this should contain members with the [<see cref="T:SDT4.Managed.UI.RML.Attributes.RMLDataVariableAttribute" />] attribute. |
+| [IRMLDataStruct](./rml/data/irmldatastruct.md) | RML data structure containing members. A class implementing this should contain members with the [<see cref="T:SDT4.Managed.UI.RML.Attributes.RMLDataVariableAttribute" />] attribute. |
 | [RMLDataModel](./rml/data/rmldatamodel.md) |  |
 

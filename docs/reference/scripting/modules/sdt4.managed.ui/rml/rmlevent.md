@@ -33,11 +33,11 @@ sealed class RMLEvent
 | `public get; Type` | [String](https://learn.microsoft.com/dotnet/api/system.string) | Get the event type. |
 | `public get; set; CurrentTarget` | [RMLElement](./rmlelement.md) | Get/Set the current element in the propagation. |
 | `public get; Target` | [RMLElement](./rmlelement.md) | The original target of the event |
-| `public get; EventPhase` | [RmlEventPhase](./rmleventphase.md) | Indicates which phase of the event flow is being processed. |
+| `public get; EventPhase` | [RMLEventPhase](./rmleventphase.md) | Indicates which phase of the event flow is being processed. |
 | `public get; Interruptible` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | Returns true if the event can be interrupted, that is, stopped from propagating. |
 | `public get; Propagating` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | Returns true if the event is still propagating. |
 | `public get; ImmediatePropagating` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | Returns true if the event is still immediate propagating. |
-| `public get; Parameters` | [RMLEventParameters](./rmleventparameters.md) | The list of parameters provided by the event. This map is only valid during the execution of the event listener callback |
+| `public get; Parameters` | [RMLEventParameters](./rmleventparameters.md) | The list of parameters provided by the event. This map is only valid during the execution of the event listener callback |
 
 
 ---

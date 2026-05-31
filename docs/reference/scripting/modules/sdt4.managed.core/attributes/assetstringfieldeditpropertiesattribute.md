@@ -30,6 +30,7 @@ sealed class AssetStringFieldEditPropertiesAttribute
 
 | Name | Type | Description |
 | --- | --- | --- |
+| `public get; AssetType` | [AssetType](../asset/assettype.md) |  |
 
 
 ---

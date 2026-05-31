@@ -30,7 +30,7 @@ class PhysicsWorld
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; set; Gravity` | [Float3](../sdt4.managed.core/math/float3.md) |  |
+| `public get; set; Gravity` | [Vector3f](../sdt4.managed.core/math/vector3f.md) |  |
 
 
 ---
@@ -60,13 +60,13 @@ class PhysicsWorld
 - [PhysicsVehicleBuilder](./vehicle/physicsvehiclebuilder.md): 
 
 ---
-#### public [PhysicsRayHit](./physicsrayhit.md) RayCast([Float3](../sdt4.managed.core/math/float3.md) origin, [Float3](../sdt4.managed.core/math/float3.md) direction, [Single](https://learn.microsoft.com/dotnet/api/system.single) maxDistance, [PhysicsQueryFlags](./physicsqueryflags.md) flags, [PhysicsQueryFilterFlags](./physicsqueryfilterflags.md) filterFlags)
+#### public [PhysicsRayHit](./physicsrayhit.md) RayCast([Vector3f](../sdt4.managed.core/math/vector3f.md) origin, [Vector3f](../sdt4.managed.core/math/vector3f.md) direction, [Single](https://learn.microsoft.com/dotnet/api/system.single) maxDistance, [PhysicsQueryFlags](./physicsqueryflags.md) flags, [PhysicsQueryFilterFlags](./physicsqueryfilterflags.md) filterFlags)
 
 **Parameters:**
 
-- `origin` ([Float3](../sdt4.managed.core/math/float3.md)): 
+- `origin` ([Vector3f](../sdt4.managed.core/math/vector3f.md)): 
 
-- `direction` ([Float3](../sdt4.managed.core/math/float3.md)): 
+- `direction` ([Vector3f](../sdt4.managed.core/math/vector3f.md)): 
 
 - `maxDistance` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): 
 
@@ -80,13 +80,13 @@ class PhysicsWorld
 - [PhysicsRayHit](./physicsrayhit.md): 
 
 ---
-#### public [PhysicsRayHit[]](./physicsrayhit.md) RayCastAll([Float3](../sdt4.managed.core/math/float3.md) origin, [Float3](../sdt4.managed.core/math/float3.md) direction, [Single](https://learn.microsoft.com/dotnet/api/system.single) maxDistance, [PhysicsQueryFlags](./physicsqueryflags.md) flags, [PhysicsQueryFilterFlags](./physicsqueryfilterflags.md) filterFlags)
+#### public [PhysicsRayHit[]](./physicsrayhit.md) RayCastAll([Vector3f](../sdt4.managed.core/math/vector3f.md) origin, [Vector3f](../sdt4.managed.core/math/vector3f.md) direction, [Single](https://learn.microsoft.com/dotnet/api/system.single) maxDistance, [PhysicsQueryFlags](./physicsqueryflags.md) flags, [PhysicsQueryFilterFlags](./physicsqueryfilterflags.md) filterFlags)
 
 **Parameters:**
 
-- `origin` ([Float3](../sdt4.managed.core/math/float3.md)): 
+- `origin` ([Vector3f](../sdt4.managed.core/math/vector3f.md)): 
 
-- `direction` ([Float3](../sdt4.managed.core/math/float3.md)): 
+- `direction` ([Vector3f](../sdt4.managed.core/math/vector3f.md)): 
 
 - `maxDistance` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): 
 
@@ -100,13 +100,13 @@ class PhysicsWorld
 - [PhysicsRayHit[]](./physicsrayhit.md): 
 
 ---
-#### public [PhysicsSweepHit](./physicssweephit.md) Sweep([RigidShape](./rigidshape.md) shape, [Float3](../sdt4.managed.core/math/float3.md) direction, [Single](https://learn.microsoft.com/dotnet/api/system.single) maxDistance, [PhysicsQueryFlags](./physicsqueryflags.md) flags, [PhysicsQueryFilterFlags](./physicsqueryfilterflags.md) filterFlags)
+#### public [PhysicsSweepHit](./physicssweephit.md) Sweep([RigidShape](./rigidshape.md) shape, [Vector3f](../sdt4.managed.core/math/vector3f.md) direction, [Single](https://learn.microsoft.com/dotnet/api/system.single) maxDistance, [PhysicsQueryFlags](./physicsqueryflags.md) flags, [PhysicsQueryFilterFlags](./physicsqueryfilterflags.md) filterFlags)
 
 **Parameters:**
 
 - `shape` ([RigidShape](./rigidshape.md)): 
 
-- `direction` ([Float3](../sdt4.managed.core/math/float3.md)): 
+- `direction` ([Vector3f](../sdt4.managed.core/math/vector3f.md)): 
 
 - `maxDistance` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): 
 
@@ -120,13 +120,13 @@ class PhysicsWorld
 - [PhysicsSweepHit](./physicssweephit.md): 
 
 ---
-#### public [PhysicsSweepHit[]](./physicssweephit.md) SweepAll([RigidShape](./rigidshape.md) shape, [Float3](../sdt4.managed.core/math/float3.md) direction, [Single](https://learn.microsoft.com/dotnet/api/system.single) maxDistance, [PhysicsQueryFlags](./physicsqueryflags.md) flags, [PhysicsQueryFilterFlags](./physicsqueryfilterflags.md) filterFlags)
+#### public [PhysicsSweepHit[]](./physicssweephit.md) SweepAll([RigidShape](./rigidshape.md) shape, [Vector3f](../sdt4.managed.core/math/vector3f.md) direction, [Single](https://learn.microsoft.com/dotnet/api/system.single) maxDistance, [PhysicsQueryFlags](./physicsqueryflags.md) flags, [PhysicsQueryFilterFlags](./physicsqueryfilterflags.md) filterFlags)
 
 **Parameters:**
 
 - `shape` ([RigidShape](./rigidshape.md)): 
 
-- `direction` ([Float3](../sdt4.managed.core/math/float3.md)): 
+- `direction` ([Vector3f](../sdt4.managed.core/math/vector3f.md)): 
 
 - `maxDistance` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): 
 
