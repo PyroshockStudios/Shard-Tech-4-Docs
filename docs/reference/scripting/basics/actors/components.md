@@ -37,5 +37,5 @@ DebugConsole.Print($"{actor.HasComponent<Mesh3DComponent>()}"); // prints false
 var meshComp = actor.AddComponent<Mesh3DComponent>();
 DebugConsole.Print($"{actor.HasComponent<Mesh3DComponent>()}"); // prints true
 // start accessing the component
-meshComp.
+meshComp.Model = /*...*/;
 ```
