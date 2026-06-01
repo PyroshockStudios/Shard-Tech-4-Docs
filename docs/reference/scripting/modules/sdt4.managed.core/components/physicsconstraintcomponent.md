@@ -1,5 +1,8 @@
 # PhysicsConstraintComponent
 
+## Summary
+
+
 
 
 ## Definition
@@ -12,7 +15,7 @@ sealed class PhysicsConstraintComponent
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [AbstractComponent](./abstractcomponent.md) ➔  **PhysicsConstraintComponent**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Component](./component.md) ➔  **PhysicsConstraintComponent**
 **Implements:**
 
 ##### 
@@ -23,16 +26,17 @@ sealed class PhysicsConstraintComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
-
+| `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
 ---
+
 
 ## Methods
 

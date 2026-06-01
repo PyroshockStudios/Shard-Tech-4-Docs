@@ -1,5 +1,8 @@
 # AssetStringFieldEditPropertiesAttribute
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,16 +26,17 @@ sealed class AssetStringFieldEditPropertiesAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
-
+| `public get; AssetType` | [AssetType](../asset/assettype.md) |  |
 
 ---
+
 
 ## Methods
 

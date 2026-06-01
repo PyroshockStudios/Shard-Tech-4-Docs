@@ -1,4 +1,7 @@
-# RmlTheme
+# RMLTheme
+
+## Summary
+
 
 
 
@@ -8,11 +11,11 @@
 **Assembly:** `SDT4.Managed.UI.dll`
 
 ```csharp
-sealed class RmlTheme
+sealed class RMLTheme
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔  **RmlTheme**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔  **RMLTheme**
 **Implements:**
 
 ##### 
@@ -23,8 +26,8 @@ sealed class RmlTheme
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -32,8 +35,8 @@ sealed class RmlTheme
 | --- | --- | --- |
 | `public get; set; Active` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
-
 ---
+
 
 ## Methods
 

@@ -1,5 +1,8 @@
 # CameraComponent
 
+## Summary
+
+
 
 
 ## Definition
@@ -12,7 +15,7 @@ sealed class CameraComponent
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [AbstractComponent](./abstractcomponent.md) ➔  **CameraComponent**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Component](./component.md) ➔  **CameraComponent**
 **Implements:**
 
 ##### 
@@ -23,8 +26,8 @@ sealed class CameraComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -34,9 +37,10 @@ sealed class CameraComponent
 | `public get; set; FOV` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; set; NearClipPlane` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; set; FarClipPlane` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-
+| `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
 ---
+
 
 ## Methods
 

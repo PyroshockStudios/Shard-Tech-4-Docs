@@ -1,5 +1,8 @@
 # InstanceEnvironment
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,16 +23,16 @@ enum InstanceEnvironment
 | `Standalone` | [InstanceEnvironment](./instanceenvironment.md) |  |
 | `Editor` | [InstanceEnvironment](./instanceenvironment.md) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

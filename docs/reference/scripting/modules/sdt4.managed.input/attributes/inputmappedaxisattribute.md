@@ -1,6 +1,9 @@
 # InputMappedAxisAttribute
 
+## Summary
 To be used on an <em>enum</em> field. Marks input to be handled as a floating <strong>range</strong>
+
+
 
 ## Definition
 
@@ -23,16 +26,16 @@ sealed class InputMappedAxisAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

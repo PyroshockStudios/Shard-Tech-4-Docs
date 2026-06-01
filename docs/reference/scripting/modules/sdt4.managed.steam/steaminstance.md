@@ -1,5 +1,8 @@
 # SteamInstance
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,16 +26,16 @@ static class SteamInstance
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

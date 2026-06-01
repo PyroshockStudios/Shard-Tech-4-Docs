@@ -1,6 +1,13 @@
 # Scene
 
+## Summary
+Scene object that contains all actors and lifecycle.
 
+## Remarks
+!!! danger
+    All calls made within this class <strong>MUST</strong> be performed on the Main Thread. 
+    See <see cref="M:SDT4.Managed.Core.Thread.RunLater(System.Threading.ThreadStart)" /> on how to safely call this from an asynchronous thread.
+    Failure to comply with this can cause catastrophical failures as the engine is not designed for this.
 
 ## Definition
 
@@ -15,7 +22,7 @@ class Scene
 ##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔  **Scene**
 **Implements:**
 
-##### 
+##### [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 ---
 
 ## Fields
@@ -23,22 +30,23 @@ class Scene
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 
 #### public T AsScript&lt;T&gt;()
 
-Gets the [SceneScript](./script/scenescript.md) instance of this [Scene](./scene.md) class.
+##### Summary
+Gets the <see cref="T:SDT4.Managed.Core.Script.SceneScript" /> instance of this <see cref="T:SDT4.Managed.Core.Scene" /> class.
 
 **Returns:**
 
@@ -55,13 +63,13 @@ Gets the [SceneScript](./script/scenescript.md) instance of this [Scene](./scene
 
 
 ---
-#### public [Actor](./actor.md) CreateActor([String](https://learn.microsoft.com/dotnet/api/system.string) tag, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) stationary)
+#### public [Actor](./actor.md) CreateEmptyActor([String?](https://learn.microsoft.com/dotnet/api/system.string) name, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) isStationary)
 
 **Parameters:**
 
-- `tag` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
+- `name` ([String?](https://learn.microsoft.com/dotnet/api/system.string)): 
 
-- `stationary` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): 
+- `isStationary` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): 
 
 
 **Returns:**
@@ -69,17 +77,21 @@ Gets the [SceneScript](./script/scenescript.md) instance of this [Scene](./scene
 - [Actor](./actor.md): 
 
 ---
-#### public [Actor](./actor.md) CreateActorFromPrefab([IPrefab](./asset/iprefab.md) prefab, [String](https://learn.microsoft.com/dotnet/api/system.string) tag, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) stationary, [Object?](https://learn.microsoft.com/dotnet/api/system.object) state)
+#### public [Actor](./actor.md) CreatePrefabActor([IPrefabAsset](./asset/iprefabasset.md) prefab, [String?](https://learn.microsoft.com/dotnet/api/system.string) name, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) isStationary, [Object?](https://learn.microsoft.com/dotnet/api/system.object) payload)
+
+##### Summary
+Creates an actor from a prefab asset. This will instantiate a new instance of actors from the prefab chain,
+and optionally initialise a script if the prefab has one.
 
 **Parameters:**
 
-- `prefab` ([IPrefab](./asset/iprefab.md)): 
+- `prefab` ([IPrefabAsset](./asset/iprefabasset.md)): Prefab asset to create the actor from
 
-- `tag` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
+- `name` ([String?](https://learn.microsoft.com/dotnet/api/system.string)): Optional actor name, if null, no name is given.
 
-- `stationary` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): 
+- `isStationary` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): Advanced: if the actor should be treated as a stationary object. This means the actor is NOT allowed to alter positions or state.
 
-- `state` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): 
+- `payload` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): Optional script payload that is provided in the <see cref="M:SDT4.Managed.Core.Script.ActorScript.OnCreate(SDT4.Managed.Core.Script.ScriptPayload)" /> function
 
 
 **Returns:**
@@ -87,7 +99,7 @@ Gets the [SceneScript](./script/scenescript.md) instance of this [Scene](./scene
 - [Actor](./actor.md): 
 
 ---
-#### public static [Actor](./actor.md) GetActorFromId([UInt64](https://learn.microsoft.com/dotnet/api/system.uint64) id)
+#### public [Actor](./actor.md) GetActorFromId([UInt64](https://learn.microsoft.com/dotnet/api/system.uint64) id)
 
 **Parameters:**
 
@@ -99,11 +111,23 @@ Gets the [SceneScript](./script/scenescript.md) instance of this [Scene](./scene
 - [Actor](./actor.md): 
 
 ---
-#### public [Actor[]](./actor.md) GetActorsWithTag([String](https://learn.microsoft.com/dotnet/api/system.string) tag)
+#### public [Actor](./actor.md) GetActorFromGuid([Guid](https://learn.microsoft.com/dotnet/api/system.guid) guid)
 
 **Parameters:**
 
-- `tag` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
+- `guid` ([Guid](https://learn.microsoft.com/dotnet/api/system.guid)): 
+
+
+**Returns:**
+
+- [Actor](./actor.md): 
+
+---
+#### public [Actor[]](./actor.md) GetActorsWithName([String](https://learn.microsoft.com/dotnet/api/system.string) name)
+
+**Parameters:**
+
+- `name` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
 
 
 **Returns:**
@@ -111,7 +135,7 @@ Gets the [SceneScript](./script/scenescript.md) instance of this [Scene](./scene
 - [Actor[]](./actor.md): 
 
 ---
-#### public T[] GetActorsOfClass&lt;T&gt;([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) canBeDerived)
+#### public [IEnumerable&lt;TScript&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1) EnumerateActorsOfScript&lt;TScript&gt;([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) canBeDerived)
 
 **Parameters:**
 
@@ -120,14 +144,14 @@ Gets the [SceneScript](./script/scenescript.md) instance of this [Scene](./scene
 
 **Returns:**
 
-- T[]: 
+- [IEnumerable&lt;TScript&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1): 
 
 ---
-#### public [IEnumerable&lt;Actor&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1) EnumerateActorsWith&lt;T&gt;(T component)
+#### public [IEnumerable&lt;Actor&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1) EnumerateActorsWithComponent&lt;TComponent&gt;(TComponent component)
 
 **Parameters:**
 
-- `component` (T): 
+- `component` (TComponent): 
 
 
 **Returns:**
@@ -135,12 +159,29 @@ Gets the [SceneScript](./script/scenescript.md) instance of this [Scene](./scene
 - [IEnumerable&lt;Actor&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1): 
 
 ---
-#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) KillActor([Actor](./actor.md) actor)
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) RemoveActor([Actor](./actor.md) actor)
 
 **Parameters:**
 
 - `actor` ([Actor](./actor.md)): 
 
+
+---
+#### protected virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) Dispose([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) disposing)
+
+**Parameters:**
+
+- `disposing` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): 
+
+
+---
+#### protected virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) Finalize()
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Dispose()
+
+##### Summary
+Releases all scene resources and destroys all actors.
 
 ---
 

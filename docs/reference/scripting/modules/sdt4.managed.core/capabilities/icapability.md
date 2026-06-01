@@ -1,6 +1,9 @@
 # ICapability
 
+## Summary
 Base capabilities indicator
+
+
 
 ## Definition
 
@@ -20,16 +23,16 @@ interface ICapability
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

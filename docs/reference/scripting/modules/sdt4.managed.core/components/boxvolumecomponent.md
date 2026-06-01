@@ -1,5 +1,8 @@
 # BoxVolumeComponent
 
+## Summary
+
+
 
 
 ## Definition
@@ -12,7 +15,7 @@ sealed class BoxVolumeComponent
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [AbstractComponent](./abstractcomponent.md) ➔  **BoxVolumeComponent**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Component](./component.md) ➔  **BoxVolumeComponent**
 **Implements:**
 
 ##### 
@@ -23,25 +26,26 @@ sealed class BoxVolumeComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; set; Bounds` | [Float3](../math/float3.md) |  |
-
+| `public get; set; Bounds` | [Vector3f](../math/vector3f.md) |  |
+| `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
 ---
 
+
 ## Methods
 
-#### public [Single](https://learn.microsoft.com/dotnet/api/system.single) CalculateInfluence([Float3](../math/float3.md) point)
+#### public [Single](https://learn.microsoft.com/dotnet/api/system.single) CalculateInfluence([Vector3f](../math/vector3f.md) point)
 
 **Parameters:**
 
-- `point` ([Float3](../math/float3.md)): 
+- `point` ([Vector3f](../math/vector3f.md)): 
 
 
 **Returns:**

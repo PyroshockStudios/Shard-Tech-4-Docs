@@ -1,6 +1,9 @@
 # IRendererCapability
 
+## Summary
 Defines a renderer capability
+
+
 
 ## Definition
 
@@ -20,16 +23,16 @@ interface IRendererCapability
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

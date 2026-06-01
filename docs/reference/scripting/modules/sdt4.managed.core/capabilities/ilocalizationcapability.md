@@ -1,6 +1,9 @@
 # ILocalizationCapability
 
+## Summary
 Defines a localisation capability
+
+
 
 ## Definition
 
@@ -20,16 +23,16 @@ interface ILocalizationCapability
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

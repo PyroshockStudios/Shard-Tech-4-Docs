@@ -16,5 +16,5 @@ This means that the .NET project is entirely managed by the engine to ensure all
 
 The compiler used by Shard Tech 4 is the MSBuild that is included in your .NET SDK installation, and launches the *dotnet* process to perform script compilation.
 
-!!! warning
+!!! bug
     Sometimes .NET may hang and cause the engine to get stuck when booting. If boot times are prolongued and nothing happens, check with your system process manager if there are linguering .NET processes, and terminate them before restarting Shard Tech 4.

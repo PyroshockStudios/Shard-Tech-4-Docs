@@ -1,6 +1,9 @@
 # InputMapperAttribute
 
+## Summary
 To be used on an <em>enum</em>
+
+
 
 ## Definition
 
@@ -23,16 +26,16 @@ sealed class InputMapperAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

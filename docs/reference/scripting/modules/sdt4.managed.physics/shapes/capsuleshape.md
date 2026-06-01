@@ -1,5 +1,8 @@
 # CapsuleShape
 
+## Summary
+
+
 
 
 ## Definition
@@ -25,16 +28,16 @@ sealed class CapsuleShape
 | `public Radius` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public Length` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

@@ -1,5 +1,8 @@
 # RMLDocument
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,8 +26,8 @@ class RMLDocument
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -33,8 +36,8 @@ class RMLDocument
 | `public get; set; Title` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 | `public get; SourceURL` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 
-
 ---
+
 
 ## Methods
 
@@ -56,7 +59,9 @@ class RMLDocument
 ---
 #### public [RMLElement](./rmlelement.md) CreateElement([String](https://learn.microsoft.com/dotnet/api/system.string) name)
 
-Creates a new orphan element. This element has no parent and must be assigned immediately otherwise, it will be destroyed
+##### Summary
+Creates a new orphan element. This element has no parent and must be assigned immediately
+otherwise, it will be destroyed
 
 **Parameters:**
 

@@ -1,5 +1,8 @@
 # RMLLuaMethodAttribute
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,16 +26,16 @@ sealed class RMLLuaMethodAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

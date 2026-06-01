@@ -1,5 +1,8 @@
 # StringConstraint
 
+## Summary
+
+
 
 
 ## Definition
@@ -12,7 +15,7 @@ sealed class StringConstraint
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [PhysicsConstraint](../physicsconstraint.md) ➔  **StringConstraint**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [PhysicsConstraint](./physicsconstraint.md) ➔  **StringConstraint**
 **Implements:**
 
 ##### 
@@ -24,16 +27,16 @@ sealed class StringConstraint
 | --- | --- | --- |
 | `public MaxLength` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

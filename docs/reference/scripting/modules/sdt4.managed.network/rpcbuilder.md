@@ -1,6 +1,11 @@
 # RPCBuilder
 
+## Summary
+A reserved structure for defining a remote procedure call.
 
+## Remarks
+!!! warning
+    Do not use this structure, as this is used for engine reserved functionality.
 
 ## Definition
 
@@ -20,16 +25,16 @@ struct RPCBuilder
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

@@ -6,13 +6,13 @@
 
 | Type | Description |
 | --- | --- |
-| [Actor](./actor.md) |  |
+| [Actor](./actor.md) | Scene object that contains all actors and lifecycle. |
+| [AppExitRequest](./appexitrequest.md) |  |
 | [AppInstance](./appinstance.md) |  |
-| [Deferrable](./deferrable.md) |  |
-| [Game](./game.md) |  |
+| [AppLoadContext](./apploadcontext.md) | Contains the application load information when the game initially loads. |
 | [InstanceEnvironment](./instanceenvironment.md) |  |
 | [IResourceManager](./iresourcemanager.md) |  |
-| [Scene](./scene.md) |  |
+| [Scene](./scene.md) | Scene object that contains all actors and lifecycle. |
 | [Thread](./thread.md) |  |
 
 ### `SDT4.Managed.Core.Asset`
@@ -23,26 +23,29 @@
 | [AssetID](./asset/assetid.md) |  |
 | [AssetLoadResult&lt;TResource&gt;](./asset/assetloadresult`1.md) |  |
 | [AssetType](./asset/assettype.md) |  |
-| [IConvexHull](./asset/iconvexhull.md) |  |
-| [IMaterial](./asset/imaterial.md) |  |
-| [IModel](./asset/imodel.md) |  |
-| [IPrefab](./asset/iprefab.md) |  |
+| [IConvexHullAsset](./asset/iconvexhullasset.md) |  |
+| [IMaterialAsset](./asset/imaterialasset.md) |  |
+| [IModelAsset](./asset/imodelasset.md) |  |
+| [IPrefabAsset](./asset/iprefabasset.md) |  |
 | [IResource](./asset/iresource.md) |  |
-| [ISkeleton](./asset/iskeleton.md) |  |
-| [ITexture2D](./asset/itexture2d.md) |  |
-| [ITrimesh](./asset/itrimesh.md) |  |
+| [ISceneAsset](./asset/isceneasset.md) |  |
+| [ISkeletonAsset](./asset/iskeletonasset.md) |  |
+| [ITexture2DAsset](./asset/itexture2dasset.md) |  |
+| [ITrimeshAsset](./asset/itrimeshasset.md) |  |
 
 ### `SDT4.Managed.Core.Attributes`
 
 | Type | Description |
 | --- | --- |
+| [ActorReferenceAttribute](./attributes/actorreferenceattribute.md) | Allows referencing an actor either locally or globally by its ID. This automatically populates the field with a strong reference to the actor. It can be applied on <see cref="T:SDT4.Managed.Core.Actor" /> or any class deriving from <see cref="T:SDT4.Managed.Core.Script.ActorScript" />. |
 | [AssetStringFieldEditPropertiesAttribute](./attributes/assetstringfieldeditpropertiesattribute.md) |  |
 | [ExposeFieldAttribute](./attributes/exposefieldattribute.md) |  |
 | [ExposeMethodAttribute](./attributes/exposemethodattribute.md) |  |
+| [GameEntryAttribute](./attributes/gameentryattribute.md) | Defines the application entry point. Can only be applied on one single method in the entire application. Must be applied on a static method with a single <see cref="T:SDT4.Managed.Core.AppLoadContext" /> input parameter. |
 | [NumericFieldEditPropertiesAttribute](./attributes/numericfieldeditpropertiesattribute.md) |  |
 | [ReturnPinNameAttribute](./attributes/returnpinnameattribute.md) |  |
 | [ScriptEventAttribute](./attributes/scripteventattribute.md) |  |
-| [ScriptGeneratedAttribute](./attributes/scriptgeneratedattribute.md) |  |
+| [ScriptGeneratedAttribute](./attributes/scriptgeneratedattribute.md) | A reserved attribute for visual scripts. |
 | [ScriptHiddenAttribute](./attributes/scripthiddenattribute.md) |  |
 | [ScriptPure](./attributes/scriptpure.md) |  |
 | [ScriptWildcardAttribute](./attributes/scriptwildcardattribute.md) |  |
@@ -61,10 +64,10 @@
 
 | Type | Description |
 | --- | --- |
-| [AbstractComponent](./components/abstractcomponent.md) |  |
 | [BoxVolumeComponent](./components/boxvolumecomponent.md) |  |
 | [CameraComponent](./components/cameracomponent.md) |  |
 | [ColorGrading](./components/colorgrading.md) |  |
+| [Component](./components/component.md) |  |
 | [DeferredDecalComponent](./components/deferreddecalcomponent.md) |  |
 | [DirectionalLightComponent](./components/directionallightcomponent.md) |  |
 | [HDR](./components/hdr.md) |  |
@@ -92,36 +95,35 @@
 
 | Type | Description |
 | --- | --- |
-| [AABB](./math/aabb.md) |  |
-| [Bool2](./math/bool2.md) |  |
-| [Bool3](./math/bool3.md) |  |
-| [Bool4](./math/bool4.md) |  |
-| [Double2](./math/double2.md) |  |
-| [Double3](./math/double3.md) |  |
-| [Double4](./math/double4.md) |  |
-| [Float2](./math/float2.md) |  |
-| [Float3](./math/float3.md) |  |
-| [Float3x3](./math/float3x3.md) |  |
-| [Float4](./math/float4.md) |  |
-| [Float4x4](./math/float4x4.md) |  |
+| [AxisAlignedBox](./math/axisalignedbox.md) |  |
 | [ITransform3D](./math/itransform3d.md) |  |
 | [IVectorComparable](./math/ivectorcomparable.md) |  |
-| [IVectorSpacial&lt;TGenType&gt;](./math/ivectorspacial`1.md) |  |
+| [IVectorSpatial&lt;TGenType&gt;](./math/ivectorspatial`1.md) |  |
+| [Matrix3x3f](./math/matrix3x3f.md) |  |
+| [Matrix4x4f](./math/matrix4x4f.md) |  |
 | [Quaternion](./math/quaternion.md) |  |
 | [SMath](./math/smath.md) |  |
+| [Vector2b](./math/vector2b.md) |  |
+| [Vector2d](./math/vector2d.md) |  |
+| [Vector2f](./math/vector2f.md) |  |
+| [Vector3b](./math/vector3b.md) |  |
+| [Vector3d](./math/vector3d.md) |  |
+| [Vector3f](./math/vector3f.md) |  |
+| [Vector4b](./math/vector4b.md) |  |
+| [Vector4d](./math/vector4d.md) |  |
+| [Vector4f](./math/vector4f.md) |  |
 
 ### `SDT4.Managed.Core.Native`
 
 | Type | Description |
 | --- | --- |
-| [NativeDouble2](./native/nativedouble2.md) |  |
-| [NativeDouble3](./native/nativedouble3.md) |  |
-| [NativeDouble4](./native/nativedouble4.md) |  |
-| [NativeFloat2](./native/nativefloat2.md) |  |
-| [NativeFloat3](./native/nativefloat3.md) |  |
-| [NativeFloat4](./native/nativefloat4.md) |  |
-| [NativeFuture](./native/nativefuture.md) |  |
 | [NativeQuaternion](./native/nativequaternion.md) |  |
+| [NativeVector2d](./native/nativevector2d.md) |  |
+| [NativeVector2f](./native/nativevector2f.md) |  |
+| [NativeVector3d](./native/nativevector3d.md) |  |
+| [NativeVector3f](./native/nativevector3f.md) |  |
+| [NativeVector4d](./native/nativevector4d.md) |  |
+| [NativeVector4f](./native/nativevector4f.md) |  |
 
 ### `SDT4.Managed.Core.Script`
 

@@ -1,5 +1,8 @@
 # ReplicationPolicy
 
+## Summary
+
+
 
 
 ## Definition
@@ -21,16 +24,16 @@ enum ReplicationPolicy
 | `HostPeer` | [ReplicationPolicy](./replicationpolicy.md) |  |
 | `HostPeerClient` | [ReplicationPolicy](./replicationpolicy.md) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

@@ -1,5 +1,8 @@
 # ITransform3D
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,22 +23,22 @@ interface ITransform3D
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; Right` | [Float3](./float3.md) |  |
-| `public get; Up` | [Float3](./float3.md) |  |
-| `public get; Forward` | [Float3](./float3.md) |  |
-| `public get; Translation` | [Double3](./double3.md) |  |
+| `public get; Right` | [Vector3f](./vector3f.md) |  |
+| `public get; Up` | [Vector3f](./vector3f.md) |  |
+| `public get; Forward` | [Vector3f](./vector3f.md) |  |
+| `public get; Translation` | [Vector3d](./vector3d.md) |  |
 | `public get; Rotation` | [Quaternion](./quaternion.md) |  |
-| `public get; Scale` | [Float3](./float3.md) |  |
-
+| `public get; Scale` | [Vector3f](./vector3f.md) |  |
 
 ---
+
 
 ## Methods
 

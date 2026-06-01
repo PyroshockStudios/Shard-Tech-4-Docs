@@ -1,5 +1,8 @@
 # ColorGrading
 
+## Summary
+
+
 
 
 ## Definition
@@ -25,16 +28,16 @@ struct ColorGrading
 | `public Temperature` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public HueShift` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

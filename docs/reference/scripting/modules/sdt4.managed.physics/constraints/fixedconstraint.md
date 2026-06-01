@@ -1,5 +1,8 @@
 # FixedConstraint
 
+## Summary
+
+
 
 
 ## Definition
@@ -12,7 +15,7 @@ sealed class FixedConstraint
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [PhysicsConstraint](../physicsconstraint.md) ➔  **FixedConstraint**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [PhysicsConstraint](./physicsconstraint.md) ➔  **FixedConstraint**
 **Implements:**
 
 ##### 
@@ -23,16 +26,16 @@ sealed class FixedConstraint
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

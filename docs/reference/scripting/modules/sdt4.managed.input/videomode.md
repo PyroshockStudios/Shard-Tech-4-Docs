@@ -1,5 +1,8 @@
 # VideoMode
 
+## Summary
+
+
 
 
 ## Definition
@@ -19,22 +22,22 @@ struct VideoMode
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public Dimensions` | [Float2](../sdt4.managed.core/math/float2.md) |  |
+| `public Dimensions` | [Vector2f](../sdt4.managed.core/math/vector2f.md) |  |
 | `public RefreshRate` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 | `public RedBits` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 | `public GreenBits` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 | `public BlueBits` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

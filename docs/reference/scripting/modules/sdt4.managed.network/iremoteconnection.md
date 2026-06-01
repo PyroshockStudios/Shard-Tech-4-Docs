@@ -1,5 +1,8 @@
 # IRemoteConnection
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,8 +23,8 @@ interface IRemoteConnection
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -31,8 +34,8 @@ interface IRemoteConnection
 | `public get; RoundTripTime` | [Int64](https://learn.microsoft.com/dotnet/api/system.int64) |  |
 | `public get; ConnectionTime` | [Int64](https://learn.microsoft.com/dotnet/api/system.int64) |  |
 
-
 ---
+
 
 ## Methods
 
@@ -46,6 +49,22 @@ interface IRemoteConnection
 - `data` ([Byte[]](https://learn.microsoft.com/dotnet/api/system.byte)): 
 
 - `protocol` ([PacketProtocol](./packetprotocol.md)): 
+
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) AddPacketListener([PacketListenerDelegate](./packetlistenerdelegate.md) listener)
+
+**Parameters:**
+
+- `listener` ([PacketListenerDelegate](./packetlistenerdelegate.md)): 
+
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) RemovePacketListener([PacketListenerDelegate](./packetlistenerdelegate.md) listener)
+
+**Parameters:**
+
+- `listener` ([PacketListenerDelegate](./packetlistenerdelegate.md)): 
 
 
 ---

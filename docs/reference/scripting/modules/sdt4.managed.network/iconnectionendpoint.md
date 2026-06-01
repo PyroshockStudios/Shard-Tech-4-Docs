@@ -1,5 +1,8 @@
 # IConnectionEndpoint
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,16 +23,16 @@ interface IConnectionEndpoint
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

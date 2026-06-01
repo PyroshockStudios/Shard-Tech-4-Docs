@@ -1,5 +1,8 @@
 # RMLDataVariableAttribute
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,16 +26,16 @@ sealed class RMLDataVariableAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

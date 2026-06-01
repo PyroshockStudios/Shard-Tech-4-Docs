@@ -1,5 +1,8 @@
 # AssetLoadResult&lt;&gt;
 
+## Summary
+
+
 
 
 ## Definition
@@ -22,16 +25,16 @@ struct AssetLoadResult<>
 | `public ErrorCode` | [AssetErrorCode](./asseterrorcode.md) |  |
 | `public Resource` | TResource |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

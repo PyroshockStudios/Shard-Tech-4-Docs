@@ -1,5 +1,8 @@
 # BallConstraint
 
+## Summary
+
+
 
 
 ## Definition
@@ -12,7 +15,7 @@ sealed class BallConstraint
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [PhysicsConstraint](../physicsconstraint.md) ➔  **BallConstraint**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [PhysicsConstraint](./physicsconstraint.md) ➔  **BallConstraint**
 **Implements:**
 
 ##### 
@@ -23,16 +26,16 @@ sealed class BallConstraint
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

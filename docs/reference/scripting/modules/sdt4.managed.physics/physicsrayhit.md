@@ -1,5 +1,8 @@
 # PhysicsRayHit
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,23 +23,23 @@ struct PhysicsRayHit
 | Name | Type | Description |
 | --- | --- | --- |
 | `public actor` | [Actor](../sdt4.managed.core/actor.md) |  |
-| `public point` | [Float3](../sdt4.managed.core/math/float3.md) |  |
-| `public normal` | [Float3](../sdt4.managed.core/math/float3.md) |  |
+| `public point` | [Vector3f](../sdt4.managed.core/math/vector3f.md) |  |
+| `public normal` | [Vector3f](../sdt4.managed.core/math/vector3f.md) |  |
 | `public distance` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public shapeIndex` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 | `public faceIndex` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
-| `public uv` | [Float2](../sdt4.managed.core/math/float2.md) |  |
-
+| `public uv` | [Vector2f](../sdt4.managed.core/math/vector2f.md) |  |
 
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

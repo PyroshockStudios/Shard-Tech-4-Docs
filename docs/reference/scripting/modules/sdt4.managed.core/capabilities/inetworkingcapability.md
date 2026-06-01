@@ -1,6 +1,9 @@
 # INetworkingCapability
 
+## Summary
 Defines a networking capability
+
+
 
 ## Definition
 
@@ -20,16 +23,16 @@ interface INetworkingCapability
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

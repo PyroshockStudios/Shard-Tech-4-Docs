@@ -6,6 +6,5 @@
 
 | Type | Description |
 | --- | --- |
-| [ClientLocale](./clientlocale.md) |  |
 | [ILocale](./ilocale.md) |  |
 

@@ -1,9 +1,14 @@
 site_name: Shard Tech 4 SDK 
 
 theme: windmill
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+  - css/admonitions.css
 
 markdown_extensions:
   - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 nav:
   - Home: index.md
@@ -56,7 +61,9 @@ nav:
         - Scene:
           - Loading your Scene: reference/scripting/basics/scene/loading.md
           - Lifecycle: reference/scripting/basics/scene/lifecycle.md
+          - Best Practices: reference/scripting/basics/scene/bestpractices.md
         - Actors:
+          - Creating Actors: reference/scripting/basics/actors/creation.md
           - Hierarchy: reference/scripting/basics/actors/hierarchy.md
           - Components: reference/scripting/basics/actors/components.md
         - Scripts:
@@ -64,7 +71,8 @@ nav:
           - Spawning Scripts: reference/scripting/basics/scripts/spawningscripts.md
         - Viewports:
           - Attaching Main Window: reference/scripting/basics/viewports/attachingmainwindow.md
-          - Split-Screen: reference/scripting/basics/scripts/viewports/splitscreen.md
+          - Split-Screen: reference/scripting/basics/viewports/splitscreen.md
+        - Exit Point:  reference/scripting/basics/exitpoint.md
       - Advanced:
         - UI: 
           - RmlUi: reference/scripting/advanced/ui/rmlui.md
@@ -88,9 +96,9 @@ nav:
         - SDT4.Managed.Core:
           - "Overview": reference/scripting/modules/sdt4.managed.core/index.md
           - "Actor": reference/scripting/modules/sdt4.managed.core/actor.md
+          - "AppExitRequest": reference/scripting/modules/sdt4.managed.core/appexitrequest.md
           - "AppInstance": reference/scripting/modules/sdt4.managed.core/appinstance.md
-          - "Deferrable": reference/scripting/modules/sdt4.managed.core/deferrable.md
-          - "Game": reference/scripting/modules/sdt4.managed.core/game.md
+          - "AppLoadContext": reference/scripting/modules/sdt4.managed.core/apploadcontext.md
           - "InstanceEnvironment": reference/scripting/modules/sdt4.managed.core/instanceenvironment.md
           - "IResourceManager": reference/scripting/modules/sdt4.managed.core/iresourcemanager.md
           - "Scene": reference/scripting/modules/sdt4.managed.core/scene.md
@@ -100,18 +108,21 @@ nav:
             - "AssetID": reference/scripting/modules/sdt4.managed.core/asset/assetid.md
             - "AssetLoadResult&lt;TResource&gt;": reference/scripting/modules/sdt4.managed.core/asset/assetloadresult`1.md
             - "AssetType": reference/scripting/modules/sdt4.managed.core/asset/assettype.md
-            - "IConvexHull": reference/scripting/modules/sdt4.managed.core/asset/iconvexhull.md
-            - "IMaterial": reference/scripting/modules/sdt4.managed.core/asset/imaterial.md
-            - "IModel": reference/scripting/modules/sdt4.managed.core/asset/imodel.md
-            - "IPrefab": reference/scripting/modules/sdt4.managed.core/asset/iprefab.md
+            - "IConvexHullAsset": reference/scripting/modules/sdt4.managed.core/asset/iconvexhullasset.md
+            - "IMaterialAsset": reference/scripting/modules/sdt4.managed.core/asset/imaterialasset.md
+            - "IModelAsset": reference/scripting/modules/sdt4.managed.core/asset/imodelasset.md
+            - "IPrefabAsset": reference/scripting/modules/sdt4.managed.core/asset/iprefabasset.md
             - "IResource": reference/scripting/modules/sdt4.managed.core/asset/iresource.md
-            - "ISkeleton": reference/scripting/modules/sdt4.managed.core/asset/iskeleton.md
-            - "ITexture2D": reference/scripting/modules/sdt4.managed.core/asset/itexture2d.md
-            - "ITrimesh": reference/scripting/modules/sdt4.managed.core/asset/itrimesh.md
+            - "ISceneAsset": reference/scripting/modules/sdt4.managed.core/asset/isceneasset.md
+            - "ISkeletonAsset": reference/scripting/modules/sdt4.managed.core/asset/iskeletonasset.md
+            - "ITexture2DAsset": reference/scripting/modules/sdt4.managed.core/asset/itexture2dasset.md
+            - "ITrimeshAsset": reference/scripting/modules/sdt4.managed.core/asset/itrimeshasset.md
           - Attributes:
+            - "ActorReferenceAttribute": reference/scripting/modules/sdt4.managed.core/attributes/actorreferenceattribute.md
             - "AssetStringFieldEditPropertiesAttribute": reference/scripting/modules/sdt4.managed.core/attributes/assetstringfieldeditpropertiesattribute.md
             - "ExposeFieldAttribute": reference/scripting/modules/sdt4.managed.core/attributes/exposefieldattribute.md
             - "ExposeMethodAttribute": reference/scripting/modules/sdt4.managed.core/attributes/exposemethodattribute.md
+            - "GameEntryAttribute": reference/scripting/modules/sdt4.managed.core/attributes/gameentryattribute.md
             - "NumericFieldEditPropertiesAttribute": reference/scripting/modules/sdt4.managed.core/attributes/numericfieldeditpropertiesattribute.md
             - "ReturnPinNameAttribute": reference/scripting/modules/sdt4.managed.core/attributes/returnpinnameattribute.md
             - "ScriptEventAttribute": reference/scripting/modules/sdt4.managed.core/attributes/scripteventattribute.md
@@ -126,10 +137,10 @@ nav:
             - "IRendererCapability": reference/scripting/modules/sdt4.managed.core/capabilities/irenderercapability.md
             - "IWindowingCapability": reference/scripting/modules/sdt4.managed.core/capabilities/iwindowingcapability.md
           - Components:
-            - "AbstractComponent": reference/scripting/modules/sdt4.managed.core/components/abstractcomponent.md
             - "BoxVolumeComponent": reference/scripting/modules/sdt4.managed.core/components/boxvolumecomponent.md
             - "CameraComponent": reference/scripting/modules/sdt4.managed.core/components/cameracomponent.md
             - "ColorGrading": reference/scripting/modules/sdt4.managed.core/components/colorgrading.md
+            - "Component": reference/scripting/modules/sdt4.managed.core/components/component.md
             - "DeferredDecalComponent": reference/scripting/modules/sdt4.managed.core/components/deferreddecalcomponent.md
             - "DirectionalLightComponent": reference/scripting/modules/sdt4.managed.core/components/directionallightcomponent.md
             - "HDR": reference/scripting/modules/sdt4.managed.core/components/hdr.md
@@ -149,32 +160,31 @@ nav:
           - Graphics:
             - "CameraProjection": reference/scripting/modules/sdt4.managed.core/graphics/cameraprojection.md
           - Math:
-            - "AABB": reference/scripting/modules/sdt4.managed.core/math/aabb.md
-            - "Bool2": reference/scripting/modules/sdt4.managed.core/math/bool2.md
-            - "Bool3": reference/scripting/modules/sdt4.managed.core/math/bool3.md
-            - "Bool4": reference/scripting/modules/sdt4.managed.core/math/bool4.md
-            - "Double2": reference/scripting/modules/sdt4.managed.core/math/double2.md
-            - "Double3": reference/scripting/modules/sdt4.managed.core/math/double3.md
-            - "Double4": reference/scripting/modules/sdt4.managed.core/math/double4.md
-            - "Float2": reference/scripting/modules/sdt4.managed.core/math/float2.md
-            - "Float3": reference/scripting/modules/sdt4.managed.core/math/float3.md
-            - "Float3x3": reference/scripting/modules/sdt4.managed.core/math/float3x3.md
-            - "Float4": reference/scripting/modules/sdt4.managed.core/math/float4.md
-            - "Float4x4": reference/scripting/modules/sdt4.managed.core/math/float4x4.md
+            - "AxisAlignedBox": reference/scripting/modules/sdt4.managed.core/math/axisalignedbox.md
             - "ITransform3D": reference/scripting/modules/sdt4.managed.core/math/itransform3d.md
             - "IVectorComparable": reference/scripting/modules/sdt4.managed.core/math/ivectorcomparable.md
-            - "IVectorSpacial&lt;TGenType&gt;": reference/scripting/modules/sdt4.managed.core/math/ivectorspacial`1.md
+            - "IVectorSpatial&lt;TGenType&gt;": reference/scripting/modules/sdt4.managed.core/math/ivectorspatial`1.md
+            - "Matrix3x3f": reference/scripting/modules/sdt4.managed.core/math/matrix3x3f.md
+            - "Matrix4x4f": reference/scripting/modules/sdt4.managed.core/math/matrix4x4f.md
             - "Quaternion": reference/scripting/modules/sdt4.managed.core/math/quaternion.md
             - "SMath": reference/scripting/modules/sdt4.managed.core/math/smath.md
+            - "Vector2b": reference/scripting/modules/sdt4.managed.core/math/vector2b.md
+            - "Vector2d": reference/scripting/modules/sdt4.managed.core/math/vector2d.md
+            - "Vector2f": reference/scripting/modules/sdt4.managed.core/math/vector2f.md
+            - "Vector3b": reference/scripting/modules/sdt4.managed.core/math/vector3b.md
+            - "Vector3d": reference/scripting/modules/sdt4.managed.core/math/vector3d.md
+            - "Vector3f": reference/scripting/modules/sdt4.managed.core/math/vector3f.md
+            - "Vector4b": reference/scripting/modules/sdt4.managed.core/math/vector4b.md
+            - "Vector4d": reference/scripting/modules/sdt4.managed.core/math/vector4d.md
+            - "Vector4f": reference/scripting/modules/sdt4.managed.core/math/vector4f.md
           - Native:
-            - "NativeDouble2": reference/scripting/modules/sdt4.managed.core/native/nativedouble2.md
-            - "NativeDouble3": reference/scripting/modules/sdt4.managed.core/native/nativedouble3.md
-            - "NativeDouble4": reference/scripting/modules/sdt4.managed.core/native/nativedouble4.md
-            - "NativeFloat2": reference/scripting/modules/sdt4.managed.core/native/nativefloat2.md
-            - "NativeFloat3": reference/scripting/modules/sdt4.managed.core/native/nativefloat3.md
-            - "NativeFloat4": reference/scripting/modules/sdt4.managed.core/native/nativefloat4.md
-            - "NativeFuture": reference/scripting/modules/sdt4.managed.core/native/nativefuture.md
             - "NativeQuaternion": reference/scripting/modules/sdt4.managed.core/native/nativequaternion.md
+            - "NativeVector2d": reference/scripting/modules/sdt4.managed.core/native/nativevector2d.md
+            - "NativeVector2f": reference/scripting/modules/sdt4.managed.core/native/nativevector2f.md
+            - "NativeVector3d": reference/scripting/modules/sdt4.managed.core/native/nativevector3d.md
+            - "NativeVector3f": reference/scripting/modules/sdt4.managed.core/native/nativevector3f.md
+            - "NativeVector4d": reference/scripting/modules/sdt4.managed.core/native/nativevector4d.md
+            - "NativeVector4f": reference/scripting/modules/sdt4.managed.core/native/nativevector4f.md
           - Script:
             - "ActorScript": reference/scripting/modules/sdt4.managed.core/script/actorscript.md
             - "IScriptTarget": reference/scripting/modules/sdt4.managed.core/script/iscripttarget.md
@@ -187,6 +197,10 @@ nav:
           - "Overview": reference/scripting/modules/sdt4.managed.debugging/index.md
           - "DebugConsole": reference/scripting/modules/sdt4.managed.debugging/debugconsole.md
           - "LogSeverity": reference/scripting/modules/sdt4.managed.debugging/logseverity.md
+        - SDT4.Managed.Editor.AssetPipeline:
+          - "Overview": reference/scripting/modules/sdt4.managed.editor.assetpipeline/index.md
+        - SDT4.Managed.Editor.GUI:
+          - "Overview": reference/scripting/modules/sdt4.managed.editor.gui/index.md
         - SDT4.Managed.Input:
           - "Overview": reference/scripting/modules/sdt4.managed.input/index.md
           - "AnalogInputSign": reference/scripting/modules/sdt4.managed.input/analoginputsign.md
@@ -213,7 +227,6 @@ nav:
             - "InputMapperAttribute": reference/scripting/modules/sdt4.managed.input/attributes/inputmapperattribute.md
         - SDT4.Managed.Locale:
           - "Overview": reference/scripting/modules/sdt4.managed.locale/index.md
-          - "ClientLocale": reference/scripting/modules/sdt4.managed.locale/clientlocale.md
           - "ILocale": reference/scripting/modules/sdt4.managed.locale/ilocale.md
         - SDT4.Managed.Network:
           - "Overview": reference/scripting/modules/sdt4.managed.network/index.md
@@ -221,6 +234,7 @@ nav:
           - "INetworkSession": reference/scripting/modules/sdt4.managed.network/inetworksession.md
           - "IRemoteConnection": reference/scripting/modules/sdt4.managed.network/iremoteconnection.md
           - "PacketBroadcast": reference/scripting/modules/sdt4.managed.network/packetbroadcast.md
+          - "PacketListenerDelegate": reference/scripting/modules/sdt4.managed.network/packetlistenerdelegate.md
           - "PacketProtocol": reference/scripting/modules/sdt4.managed.network/packetprotocol.md
           - "RemoteConnectionStatus": reference/scripting/modules/sdt4.managed.network/remoteconnectionstatus.md
           - "RemoteConnectionStatusDelegate": reference/scripting/modules/sdt4.managed.network/remoteconnectionstatusdelegate.md
@@ -242,7 +256,6 @@ nav:
           - "Overview": reference/scripting/modules/sdt4.managed.network.server/index.md
         - SDT4.Managed.Physics:
           - "Overview": reference/scripting/modules/sdt4.managed.physics/index.md
-          - "PhysicsConstraint": reference/scripting/modules/sdt4.managed.physics/physicsconstraint.md
           - "PhysicsContactPatch": reference/scripting/modules/sdt4.managed.physics/physicscontactpatch.md
           - "PhysicsOverlapHit": reference/scripting/modules/sdt4.managed.physics/physicsoverlaphit.md
           - "PhysicsQueryFilterFlags": reference/scripting/modules/sdt4.managed.physics/physicsqueryfilterflags.md
@@ -254,6 +267,7 @@ nav:
           - Constraints:
             - "BallConstraint": reference/scripting/modules/sdt4.managed.physics/constraints/ballconstraint.md
             - "FixedConstraint": reference/scripting/modules/sdt4.managed.physics/constraints/fixedconstraint.md
+            - "PhysicsConstraint": reference/scripting/modules/sdt4.managed.physics/constraints/physicsconstraint.md
             - "PistonConstraint": reference/scripting/modules/sdt4.managed.physics/constraints/pistonconstraint.md
             - "StringConstraint": reference/scripting/modules/sdt4.managed.physics/constraints/stringconstraint.md
           - Events:
@@ -301,15 +315,15 @@ nav:
             - "RMLDocument": reference/scripting/modules/sdt4.managed.ui/rml/rmldocument.md
             - "RMLElement": reference/scripting/modules/sdt4.managed.ui/rml/rmlelement.md
             - "RMLEvent": reference/scripting/modules/sdt4.managed.ui/rml/rmlevent.md
-            - "RmlEventId": reference/scripting/modules/sdt4.managed.ui/rml/rmleventid.md
-            - "RmlEventListener": reference/scripting/modules/sdt4.managed.ui/rml/rmleventlistener.md
+            - "RMLEventID": reference/scripting/modules/sdt4.managed.ui/rml/rmleventid.md
+            - "RMLEventListener": reference/scripting/modules/sdt4.managed.ui/rml/rmleventlistener.md
             - "RMLEventParameters": reference/scripting/modules/sdt4.managed.ui/rml/rmleventparameters.md
-            - "RmlEventPhase": reference/scripting/modules/sdt4.managed.ui/rml/rmleventphase.md
+            - "RMLEventPhase": reference/scripting/modules/sdt4.managed.ui/rml/rmleventphase.md
             - "RMLNamedNodeMap": reference/scripting/modules/sdt4.managed.ui/rml/rmlnamednodemap.md
-            - "RmlTheme": reference/scripting/modules/sdt4.managed.ui/rml/rmltheme.md
+            - "RMLTheme": reference/scripting/modules/sdt4.managed.ui/rml/rmltheme.md
             - "RMLThemeQuery": reference/scripting/modules/sdt4.managed.ui/rml/rmlthemequery.md
             - "RMLVariant": reference/scripting/modules/sdt4.managed.ui/rml/rmlvariant.md
-            - "RmlVariantType": reference/scripting/modules/sdt4.managed.ui/rml/rmlvarianttype.md
+            - "RMLVariantType": reference/scripting/modules/sdt4.managed.ui/rml/rmlvarianttype.md
             - Attributes:
               - "RMLDataEventAttribute": reference/scripting/modules/sdt4.managed.ui/rml/attributes/rmldataeventattribute.md
               - "RMLDataVariableAttribute": reference/scripting/modules/sdt4.managed.ui/rml/attributes/rmldatavariableattribute.md
@@ -323,6 +337,7 @@ nav:
               - "IRMLDataScalar": reference/scripting/modules/sdt4.managed.ui/rml/data/irmldatascalar.md
               - "IRMLDataStruct": reference/scripting/modules/sdt4.managed.ui/rml/data/irmldatastruct.md
               - "RMLDataModel": reference/scripting/modules/sdt4.managed.ui/rml/data/rmldatamodel.md
+
 
       # - Extension API reference:
     #- Renderer: 

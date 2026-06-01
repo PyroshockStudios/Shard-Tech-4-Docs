@@ -1,5 +1,8 @@
 # Rigidbody3DComponent
 
+## Summary
+
+
 
 
 ## Definition
@@ -12,7 +15,7 @@ sealed class Rigidbody3DComponent
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [AbstractComponent](./abstractcomponent.md) ➔  **Rigidbody3DComponent**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Component](./component.md) ➔  **Rigidbody3DComponent**
 **Implements:**
 
 ##### 
@@ -23,16 +26,17 @@ sealed class Rigidbody3DComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
-
+| `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
 ---
+
 
 ## Methods
 

@@ -1,6 +1,9 @@
 # InputMappedButtonAttribute
 
+## Summary
 To be used on an <em>enum</em> field. Marks input to be handled as a boolean <strong>button</strong>
+
+
 
 ## Definition
 
@@ -23,16 +26,16 @@ sealed class InputMappedButtonAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

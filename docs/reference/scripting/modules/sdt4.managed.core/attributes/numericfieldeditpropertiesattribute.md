@@ -1,5 +1,8 @@
 # NumericFieldEditPropertiesAttribute
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,16 +26,19 @@ sealed class NumericFieldEditPropertiesAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
-
+| `public get; set; Min` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public get; set; Max` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public get; set; Speed` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
 ---
+
 
 ## Methods
 

@@ -1,5 +1,8 @@
 # MaterialInstanceProperty
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,16 +23,16 @@ struct MaterialInstanceProperty
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

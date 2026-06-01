@@ -6,7 +6,6 @@
 
 | Type | Description |
 | --- | --- |
-| [PhysicsConstraint](./physicsconstraint.md) |  |
 | [PhysicsContactPatch](./physicscontactpatch.md) |  |
 | [PhysicsOverlapHit](./physicsoverlaphit.md) |  |
 | [PhysicsQueryFilterFlags](./physicsqueryfilterflags.md) |  |
@@ -22,6 +21,7 @@
 | --- | --- |
 | [BallConstraint](./constraints/ballconstraint.md) |  |
 | [FixedConstraint](./constraints/fixedconstraint.md) |  |
+| [PhysicsConstraint](./constraints/physicsconstraint.md) |  |
 | [PistonConstraint](./constraints/pistonconstraint.md) |  |
 | [StringConstraint](./constraints/stringconstraint.md) |  |
 

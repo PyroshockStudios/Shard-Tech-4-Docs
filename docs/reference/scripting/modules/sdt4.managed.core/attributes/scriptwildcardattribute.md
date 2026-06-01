@@ -1,5 +1,8 @@
 # ScriptWildcardAttribute
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,16 +26,16 @@ sealed class ScriptWildcardAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

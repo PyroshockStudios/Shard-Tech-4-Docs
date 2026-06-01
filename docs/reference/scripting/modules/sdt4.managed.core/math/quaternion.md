@@ -1,5 +1,8 @@
 # Quaternion
 
+## Summary
+
+
 
 
 ## Definition
@@ -12,7 +15,7 @@ struct Quaternion
 ```
 **Implements:**
 
-##### [IVectorSpacial&lt;Single&gt;](./ivectorspacial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), [IEquatable&lt;Quaternion&gt;](https://learn.microsoft.com/dotnet/api/system.iequatable-1)
+##### [IVectorSpatial&lt;Single&gt;](./ivectorspatial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), [IEquatable&lt;Quaternion&gt;](https://learn.microsoft.com/dotnet/api/system.iequatable-1)
 ---
 
 ## Fields
@@ -20,8 +23,8 @@ struct Quaternion
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -34,8 +37,8 @@ struct Quaternion
 | `public get; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public static get; Identity` | [Quaternion](./quaternion.md) |  |
 
-
 ---
+
 
 ## Methods
 
@@ -76,6 +79,7 @@ struct Quaternion
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
+##### Summary
 In format of (w, x, y, z)
 
 **Returns:**

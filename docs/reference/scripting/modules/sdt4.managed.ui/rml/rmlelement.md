@@ -1,6 +1,9 @@
 # RMLElement
 
+## Summary
 RmlUi element based on <a href="https://mikke89.github.io/RmlUiDoc/pages/cpp_manual/elements.html">the RML reference page</a>
+
+
 
 ## Definition
 
@@ -23,15 +26,15 @@ class RMLElement
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `public get; Attributes` | [RMLNamedNodeMap](./rmlnamednodemap.md) |  |
-| `public get; Style` | [RCSSStyleDeclaration](./rcssstyledeclaration.md) | An object representing the declarations of an element’s style attributes |
+| `public get; Style` | [Object](https://learn.microsoft.com/dotnet/api/system.object) | An object representing the declarations of an element’s style attributes. Returns <see cref="T:SDT4.Managed.UI.RML.RCSSStyleDeclaration" /> |
 | `public get; set; ID` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 | `public get; set; ClassName` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 | `public get; set; InnerRML` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
@@ -55,17 +58,11 @@ class RMLElement
 | `public get; OffsetWidth` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; OffsetParent` | [RMLElement](./rmlelement.md) |  |
 
-
 ---
+
 
 ## Methods
 
-#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Dispose()
-
----
-#### protected virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) Finalize()
-
----
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Blur()
 
 ---
@@ -78,6 +75,194 @@ class RMLElement
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Click()
+
+---
+#### public [RMLElement?](./rmlelement.md) Closest([String](https://learn.microsoft.com/dotnet/api/system.string) selector)
+
+##### Summary
+Retrieve the first ancestor element matching the provided RCSS selector(s).	
+
+**Parameters:**
+
+- `selector` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
+
+
+**Returns:**
+
+- [RMLElement?](./rmlelement.md): 
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) DispatchEvent([String](https://learn.microsoft.com/dotnet/api/system.string) event)
+
+##### Summary
+Dispatch an event to this node in the DOM.
+<param name="event"></param>
+
+**Parameters:**
+
+- `event` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
+
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) AddEventListener([String](https://learn.microsoft.com/dotnet/api/system.string) type, [RMLEventListener](./rmleventlistener.md) listener, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) useCapture)
+
+##### Summary
+Register an event handler to a specific event type on the element.
+
+**Parameters:**
+
+- `type` ([String](https://learn.microsoft.com/dotnet/api/system.string)): Event type (same string name as javascript)
+
+- `listener` ([RMLEventListener](./rmleventlistener.md)): Delegate function to be called
+
+- `useCapture` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): 
+
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) AddEventListener([RMLEventID](./rmleventid.md) type, [RMLEventListener](./rmleventlistener.md) listener, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) useCapture)
+
+##### Summary
+Register an event handler to a specific event type on the element.
+
+**Parameters:**
+
+- `type` ([RMLEventID](./rmleventid.md)): Event type
+
+- `listener` ([RMLEventListener](./rmleventlistener.md)): Delegate function to be called
+
+- `useCapture` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): 
+
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) RemoveEventListener([String](https://learn.microsoft.com/dotnet/api/system.string) type, [RMLEventListener](./rmleventlistener.md) listener, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) useCapture)
+
+##### Summary
+Removes an event handler from a specific event type if it was registered.
+
+**Parameters:**
+
+- `type` ([String](https://learn.microsoft.com/dotnet/api/system.string)): Event type (same string name as javascript)
+
+- `listener` ([RMLEventListener](./rmleventlistener.md)): Exact delegate object that was added as a listener
+
+- `useCapture` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): 
+
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) RemoveEventListener([RMLEventID](./rmleventid.md) type, [RMLEventListener](./rmleventlistener.md) listener, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) useCapture)
+
+##### Summary
+Removes an event handler from a specific event type if it was registered.
+
+**Parameters:**
+
+- `type` ([RMLEventID](./rmleventid.md)): Event type
+
+- `listener` ([RMLEventListener](./rmleventlistener.md)): Exact delegate object that was added as a listener
+
+- `useCapture` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): 
+
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) AppendChild([RMLElement](./rmlelement.md) element)
+
+##### Summary
+Insert a node as the last child node of this element. The newly parented node must first be detached from its existing parent.
+
+**Parameters:**
+
+- `element` ([RMLElement](./rmlelement.md)): 
+
+
+---
+#### public [RMLElement](./rmlelement.md) RemoveChild([RMLElement](./rmlelement.md) element)
+
+##### Summary
+Removes a child node from the current element.
+
+**Parameters:**
+
+- `element` ([RMLElement](./rmlelement.md)): 
+
+
+**Returns:**
+
+- [RMLElement](./rmlelement.md): Element that has been removed. If this element is not reassigned nor kept alive, it will be destroyed.
+
+---
+#### public [RMLElement?](./rmlelement.md) GetElementById([String](https://learn.microsoft.com/dotnet/api/system.string) id)
+
+##### Summary
+Returns an element by its id.
+
+**Parameters:**
+
+- `id` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
+
+
+**Returns:**
+
+- [RMLElement?](./rmlelement.md): 
+
+---
+#### public [RMLElement[]](./rmlelement.md) GetElementsByClassName([String](https://learn.microsoft.com/dotnet/api/system.string) names)
+
+##### Summary
+Retrieve a set of all descendant elements with a particular class set.
+
+**Parameters:**
+
+- `names` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
+
+
+**Returns:**
+
+- [RMLElement[]](./rmlelement.md): 
+
+---
+#### public [RMLElement[]](./rmlelement.md) GetElementsByTagName([String](https://learn.microsoft.com/dotnet/api/system.string) name)
+
+##### Summary
+Retrieve a set of all descendant elements with a particular tag name.
+
+**Parameters:**
+
+- `name` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
+
+
+**Returns:**
+
+- [RMLElement[]](./rmlelement.md): 
+
+---
+#### public [RMLElement?](./rmlelement.md) QuerySelector([String](https://learn.microsoft.com/dotnet/api/system.string) selectors)
+
+##### Summary
+Retrieve the first descendant element matching the provided RCSS selector(s).
+
+**Parameters:**
+
+- `selectors` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
+
+
+**Returns:**
+
+- [RMLElement?](./rmlelement.md): 
+
+---
+#### public [RMLElement[]](./rmlelement.md) QuerySelectorAll([String](https://learn.microsoft.com/dotnet/api/system.string) selectors)
+
+##### Summary
+Retrieve a set of all descendant elements matching the provided RCSS selector(s).
+
+**Parameters:**
+
+- `selectors` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
+
+
+**Returns:**
+
+- [RMLElement[]](./rmlelement.md): 
 
 ---
 #### public virtual [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Object?](https://learn.microsoft.com/dotnet/api/system.object) obj)
@@ -104,6 +289,20 @@ class RMLElement
 **Returns:**
 
 - [String](https://learn.microsoft.com/dotnet/api/system.string): 
+
+---
+#### protected virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) Dispose([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) disposing)
+
+**Parameters:**
+
+- `disposing` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): 
+
+
+---
+#### protected virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) Finalize()
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Dispose()
 
 ---
 

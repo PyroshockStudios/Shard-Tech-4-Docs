@@ -1,5 +1,8 @@
 # GamepadConnectionStateDelegate
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,16 +26,16 @@ sealed class GamepadConnectionStateDelegate
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 
