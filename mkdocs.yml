@@ -91,7 +91,23 @@ nav:
           - Dynamic Textures: reference/scripting/advanced/renderer/dynamictextures.md
           - Dynamic Models: reference/scripting/advanced/renderer/dynamicmodels.md
           - XRP Frame Graph: reference/scripting/advanced/renderer/xrpframegraph.md
-      - Compilation: reference/scripting/compilation.md
+      - Compilation: 
+        - Overview: reference/scripting/compilation/index.md
+        - Rules: 
+          - SDT0401: reference/scripting/compilation/rules/sdt0401.md
+          - SDT0402: reference/scripting/compilation/rules/sdt0402.md
+          - SDT0403: reference/scripting/compilation/rules/sdt0403.md
+          
+          - SDT0601: reference/scripting/compilation/rules/sdt0601.md
+          - SDT0602: reference/scripting/compilation/rules/sdt0602.md
+          - SDT0603: reference/scripting/compilation/rules/sdt0603.md
+          - SDT0604: reference/scripting/compilation/rules/sdt0604.md
+          - SDT0605: reference/scripting/compilation/rules/sdt0605.md
+          - SDT0606: reference/scripting/compilation/rules/sdt0606.md
+          - SDT0607: reference/scripting/compilation/rules/sdt0607.md
+          - SDT0651: reference/scripting/compilation/rules/sdt0651.md
+          - SDT0652: reference/scripting/compilation/rules/sdt0652.md
+          - SDT0653: reference/scripting/compilation/rules/sdt0653.md
       - Module API Reference:
         - SDT4.Managed.Core:
           - "Overview": reference/scripting/modules/sdt4.managed.core/index.md
