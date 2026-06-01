@@ -6,8 +6,8 @@
 
 | Type | Description |
 | --- | --- |
-| [IGraphicsContext](./igraphicscontext.md) |  |
-| [IRendererHardwareInterface](./irendererhardwareinterface.md) |  |
+| [IRhiBackend](./irhibackend.md) |  |
+| [RendererPlatform](./rendererplatform.md) |  |
 
 ### `SDT4.Managed.Renderer.Extensions`
 
@@ -19,7 +19,16 @@
 
 | Type | Description |
 | --- | --- |
+| [IRenderCanvasAttacher](./graphics/irendercanvasattacher.md) |  |
 | [MaterialInstance](./graphics/materialinstance.md) |  |
 | [MaterialInstanceProperty](./graphics/materialinstanceproperty.md) |  |
 | [MaterialInstancePropertyMap](./graphics/materialinstancepropertymap.md) |  |
+| [RenderCanvas](./graphics/rendercanvas.md) |  |
+
+### `SDT4.Managed.Renderer.XRP`
+
+| Type | Description |
+| --- | --- |
+| [SceneRenderInstance](./xrp/scenerenderinstance.md) |  |
+| [ViewportRenderInstance](./xrp/viewportrenderinstance.md) |  |
 

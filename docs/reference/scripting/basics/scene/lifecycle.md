@@ -42,13 +42,12 @@ The power of Shard Tech 4 is to work concurrently with data, without arbitrary l
 using SDT4.Managed.Core;
 using SDT4.Managed.Core.Asset;
 // ...
-IResourceManager resourceManager = /*...*/;
 Scene lobby = /*...*/;
-var loadingScene = await resourceManager.LoadAssetAsync<ISceneAsset>(...);
+ISceneAsset loadingScene = /*...*/;
 
 // Lets say the user is doing a complex operation, and lets mask the loading with a nice loading screen.
 
-Scene loading = loadingScene.Resource!.CreateScene();
+Scene loading = loadingScene.CreateScene();
 loading.Start();
 
 // In the Viewports section, we will see how we can switch rendering scenes while simulating both simultanesously!

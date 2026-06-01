@@ -42,7 +42,7 @@ static class Thread
 #### public static [Void](https://learn.microsoft.com/dotnet/api/system.void) RunLater([ThreadStart](https://learn.microsoft.com/dotnet/api/system.threading.threadstart) thread)
 
 ##### Summary
-Executes a <see cref="T:SDT4.Managed.Core.Thread" /> on the main thread.
+Executes a subroutine on the master thread when possible.
 
 **Parameters:**
 

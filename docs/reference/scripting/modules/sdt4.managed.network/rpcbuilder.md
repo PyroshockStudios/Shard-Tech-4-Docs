@@ -48,13 +48,15 @@ struct RPCBuilder
 
 
 ---
-#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) AddStringParameter([String](https://learn.microsoft.com/dotnet/api/system.string) p, [Int32](https://learn.microsoft.com/dotnet/api/system.int32) maxLength)
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) AddStringParameter([String](https://learn.microsoft.com/dotnet/api/system.string) p, [Int32](https://learn.microsoft.com/dotnet/api/system.int32) maxLength, [Encoding](https://learn.microsoft.com/dotnet/api/system.text.encoding) encoding)
 
 **Parameters:**
 
 - `p` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
 
 - `maxLength` ([Int32](https://learn.microsoft.com/dotnet/api/system.int32)): 
+
+- `encoding` ([Encoding](https://learn.microsoft.com/dotnet/api/system.text.encoding)): 
 
 
 ---

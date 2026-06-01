@@ -32,10 +32,11 @@ Once the scene asset has been loaded, it is time to _instantiate_ it. This is se
 // You should check load results, however for the sake of brevity, 
 // we will assume it loaded correctly.
 Scene scene = mySceneResult.Resource!.CreateScene();
-// Start() initialises the scene script.
+// Start() initialises the scene script. This must be performed on the main thread!
 scene.Start();
+// scene.StartAsync() is an alternative, and allows concurrent ticking.
 // ... 
 ```
 
 !!! danger
-    Any calls to the [Scene](../../modules/sdt4.managed.core/scene.md) object **MUST** be performed on the [main thread](../../modules/sdt4.managed.core/thread.md).
+    Any calls to the [Scene](../../modules/sdt4.managed.core/scene.md) object **MUST** be performed on the [master thread](../../modules/sdt4.managed.core/thread.md).

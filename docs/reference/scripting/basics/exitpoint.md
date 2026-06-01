@@ -12,7 +12,8 @@ using SDT4.Managed.Core;
 // Use our app instance that we have gotten from the entry point!
 AppInstance instance = /*...*/;
 await request = instance.RequestAppExitAsync();
-if (request == AppExitRequest.Success) {
+if (request == AppExitRequest.Success) 
+{
     // Clean up our scenes and stop simulation
     // ...
     // Finally, terminate to stop the engine

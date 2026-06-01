@@ -57,7 +57,7 @@
 | [ICapability](./capabilities/icapability.md) | Base capabilities indicator |
 | [ILocalizationCapability](./capabilities/ilocalizationcapability.md) | Defines a localisation capability |
 | [INetworkingCapability](./capabilities/inetworkingcapability.md) | Defines a networking capability |
-| [IRendererCapability](./capabilities/irenderercapability.md) | Defines a renderer capability |
+| [IRenderingCapability](./capabilities/irenderingcapability.md) | Defines a renderer capability |
 | [IWindowingCapability](./capabilities/iwindowingcapability.md) |  |
 
 ### `SDT4.Managed.Core.Components`

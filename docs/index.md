@@ -9,7 +9,7 @@ Shard Tech 4 (abbreviated as SDT4) is a high performance game engine built aroun
 
 C# .NET is used for scripting as it is a high performance and extremely versatile programming language, making use of modern programming concepts (nullability, async and await), as well as offering a very performant JIT runtime, targetting a variety of platforms. 
 
-# Is it suported on my computer?
+# Is it supported on my computer?
 Yes! Shard Tech 4 has native support for 64 bit Windows and Linux operating systems, OSX support is work in progress, however development has been designed with multiple platforms in mind, and most underlying systems in the engine have already been designed for Mac support. 
 
 For usage on Linux, it is not needed to compile from source! This is thanks to clever design choices that prioritised windowing system and GUI agnosticity (by using X11 and external modules for dialogues), so you can install it and make use of it immediately!. 

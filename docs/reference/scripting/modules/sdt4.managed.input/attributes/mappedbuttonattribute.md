@@ -1,4 +1,4 @@
-# InputMappedButtonAttribute
+# MappedButtonAttribute
 
 ## Summary
 To be used on an <em>enum</em> field. Marks input to be handled as a boolean <strong>button</strong>
@@ -11,11 +11,11 @@ To be used on an <em>enum</em> field. Marks input to be handled as a boolean <st
 **Assembly:** `SDT4.Managed.Input.dll`
 
 ```csharp
-sealed class InputMappedButtonAttribute
+sealed class MappedButtonAttribute
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Attribute](https://learn.microsoft.com/dotnet/api/system.attribute) ➔  **InputMappedButtonAttribute**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Attribute](https://learn.microsoft.com/dotnet/api/system.attribute) ➔  **MappedButtonAttribute**
 **Implements:**
 
 ##### 

@@ -1,4 +1,4 @@
-# IRendererCapability
+# IRenderingCapability
 
 ## Summary
 Defines a renderer capability
@@ -11,7 +11,7 @@ Defines a renderer capability
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-interface IRendererCapability
+interface IRenderingCapability
 ```
 **Implements:**
 
