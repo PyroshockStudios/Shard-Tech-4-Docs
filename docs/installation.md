@@ -12,7 +12,7 @@ When installing Shard Tech 4, there are two options:
 - Portable binaries
 - Installer
 
-When using portable binaries, no environment variables are set, and thus may cause issues in certain cases, especially [Script Compilation](./reference/scripting/compilation.md)
+When using portable binaries, no environment variables are set, and thus may cause issues in certain cases, especially [Script Compilation](./reference/scripting/compilation/index.md)
 
 # Uninstalling
 

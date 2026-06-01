@@ -20,6 +20,10 @@
 }
 
 /* !!! info / ??? info */
+/* for some reason windmill does not style the info admonition */
+.admonition.info {
+  background-color: rgba(0, 114, 245, 0.2);
+}
 .admonition.info .admonition-title::before {
     content: "\f05a"; /* circle-info */
 }
