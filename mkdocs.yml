@@ -14,7 +14,10 @@ nav:
   - Home: index.md
   - Installation: installation.md
   - Getting started: gettingstarted.md
-  - Project Setup: reference/projectsetup.md
+  - Project Setup: 
+    - S3DCreatinator: reference/project/s3dcreatinator.md
+    - Configuring: reference/project/configuring.md
+    - Best Practices: reference/project/bestpractices.md
   - Reference:
     - Editor: 
       - Environment: reference/editor/environment.md 
@@ -69,6 +72,7 @@ nav:
         - Scripts:
           - SceneScript, PropScript and ActorScript: reference/scripting/basics/scripts/scenepropactorscript.md
           - Spawning Scripts: reference/scripting/basics/scripts/spawningscripts.md
+          - Phaseability: reference/scripting/basics/scripts/phaseability.md
         - Viewports:
           - Attaching Main Window: reference/scripting/basics/viewports/attachingmainwindow.md
           - Split-Screen: reference/scripting/basics/viewports/splitscreen.md
@@ -150,7 +154,7 @@ nav:
             - "ICapability": reference/scripting/modules/sdt4.managed.core/capabilities/icapability.md
             - "ILocalizationCapability": reference/scripting/modules/sdt4.managed.core/capabilities/ilocalizationcapability.md
             - "INetworkingCapability": reference/scripting/modules/sdt4.managed.core/capabilities/inetworkingcapability.md
-            - "IRendererCapability": reference/scripting/modules/sdt4.managed.core/capabilities/irenderercapability.md
+            - "IRenderingCapability": reference/scripting/modules/sdt4.managed.core/capabilities/irenderingcapability.md
             - "IWindowingCapability": reference/scripting/modules/sdt4.managed.core/capabilities/iwindowingcapability.md
           - Components:
             - "BoxVolumeComponent": reference/scripting/modules/sdt4.managed.core/components/boxvolumecomponent.md
@@ -227,20 +231,17 @@ nav:
           - "Input": reference/scripting/modules/sdt4.managed.input/input.md
           - "InputMapper": reference/scripting/modules/sdt4.managed.input/inputmapper.md
           - "InputModifier": reference/scripting/modules/sdt4.managed.input/inputmodifier.md
-          - "IWindowPlatform": reference/scripting/modules/sdt4.managed.input/iwindowplatform.md
           - "KeyInput": reference/scripting/modules/sdt4.managed.input/keyinput.md
-          - "Monitor": reference/scripting/modules/sdt4.managed.input/monitor.md
           - "MouseInput": reference/scripting/modules/sdt4.managed.input/mouseinput.md
           - "MouseMotionInput": reference/scripting/modules/sdt4.managed.input/mousemotioninput.md
-          - "VideoMode": reference/scripting/modules/sdt4.managed.input/videomode.md
-          - "Window": reference/scripting/modules/sdt4.managed.input/window.md
+          - "WindowExtensions": reference/scripting/modules/sdt4.managed.input/windowextensions.md
           - "WindowResizeCallback": reference/scripting/modules/sdt4.managed.input/windowresizecallback.md
           - Attributes:
             - "AxisInputAttribute": reference/scripting/modules/sdt4.managed.input/attributes/axisinputattribute.md
             - "ButtonInputAttribute": reference/scripting/modules/sdt4.managed.input/attributes/buttoninputattribute.md
-            - "InputMappedAxisAttribute": reference/scripting/modules/sdt4.managed.input/attributes/inputmappedaxisattribute.md
-            - "InputMappedButtonAttribute": reference/scripting/modules/sdt4.managed.input/attributes/inputmappedbuttonattribute.md
             - "InputMapperAttribute": reference/scripting/modules/sdt4.managed.input/attributes/inputmapperattribute.md
+            - "MappedAxisAttribute": reference/scripting/modules/sdt4.managed.input/attributes/mappedaxisattribute.md
+            - "MappedButtonAttribute": reference/scripting/modules/sdt4.managed.input/attributes/mappedbuttonattribute.md
         - SDT4.Managed.Locale:
           - "Overview": reference/scripting/modules/sdt4.managed.locale/index.md
           - "ILocale": reference/scripting/modules/sdt4.managed.locale/ilocale.md
@@ -258,6 +259,7 @@ nav:
           - Attributes:
             - "NetworkFieldNotificationDelegate": reference/scripting/modules/sdt4.managed.network/attributes/networkfieldnotificationdelegate.md
             - "NetworkReplicateFieldNotifierAttribute": reference/scripting/modules/sdt4.managed.network/attributes/networkreplicatefieldnotifierattribute.md
+            - "PacketCharSet": reference/scripting/modules/sdt4.managed.network/attributes/packetcharset.md
             - "ReplicateAttribute": reference/scripting/modules/sdt4.managed.network/attributes/replicateattribute.md
             - "ReplicateFieldAttribute": reference/scripting/modules/sdt4.managed.network/attributes/replicatefieldattribute.md
             - "ReplicationPolicy": reference/scripting/modules/sdt4.managed.network/attributes/replicationpolicy.md
@@ -305,14 +307,19 @@ nav:
             - "PhysicsVehicleBuilder": reference/scripting/modules/sdt4.managed.physics/vehicle/physicsvehiclebuilder.md
         - SDT4.Managed.Renderer:
           - "Overview": reference/scripting/modules/sdt4.managed.renderer/index.md
-          - "IGraphicsContext": reference/scripting/modules/sdt4.managed.renderer/igraphicscontext.md
-          - "IRendererHardwareInterface": reference/scripting/modules/sdt4.managed.renderer/irendererhardwareinterface.md
+          - "IRhiBackend": reference/scripting/modules/sdt4.managed.renderer/irhibackend.md
+          - "RendererPlatform": reference/scripting/modules/sdt4.managed.renderer/rendererplatform.md
           - Extensions:
             - "Mesh3DComponentExtensions": reference/scripting/modules/sdt4.managed.renderer/extensions/mesh3dcomponentextensions.md
           - Graphics:
+            - "IRenderCanvasAttacher": reference/scripting/modules/sdt4.managed.renderer/graphics/irendercanvasattacher.md
             - "MaterialInstance": reference/scripting/modules/sdt4.managed.renderer/graphics/materialinstance.md
             - "MaterialInstanceProperty": reference/scripting/modules/sdt4.managed.renderer/graphics/materialinstanceproperty.md
             - "MaterialInstancePropertyMap": reference/scripting/modules/sdt4.managed.renderer/graphics/materialinstancepropertymap.md
+            - "RenderCanvas": reference/scripting/modules/sdt4.managed.renderer/graphics/rendercanvas.md
+          - XRP:
+            - "SceneRenderInstance": reference/scripting/modules/sdt4.managed.renderer/xrp/scenerenderinstance.md
+            - "ViewportRenderInstance": reference/scripting/modules/sdt4.managed.renderer/xrp/viewportrenderinstance.md
         - SDT4.Managed.Steam:
           - "Overview": reference/scripting/modules/sdt4.managed.steam/index.md
           - "SteamInstance": reference/scripting/modules/sdt4.managed.steam/steaminstance.md
@@ -353,6 +360,13 @@ nav:
               - "IRMLDataScalar": reference/scripting/modules/sdt4.managed.ui/rml/data/irmldatascalar.md
               - "IRMLDataStruct": reference/scripting/modules/sdt4.managed.ui/rml/data/irmldatastruct.md
               - "RMLDataModel": reference/scripting/modules/sdt4.managed.ui/rml/data/rmldatamodel.md
+        - SDT4.Managed.Windowing:
+          - "Overview": reference/scripting/modules/sdt4.managed.windowing/index.md
+          - "Monitor": reference/scripting/modules/sdt4.managed.windowing/monitor.md
+          - "VideoMode": reference/scripting/modules/sdt4.managed.windowing/videomode.md
+          - "Window": reference/scripting/modules/sdt4.managed.windowing/window.md
+          - "WindowPlatform": reference/scripting/modules/sdt4.managed.windowing/windowplatform.md
+          - "WindowResizeCallback": reference/scripting/modules/sdt4.managed.windowing/windowresizecallback.md
 
 
       # - Extension API reference:

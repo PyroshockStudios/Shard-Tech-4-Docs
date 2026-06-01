@@ -1,4 +1,4 @@
-# IRendererHardwareInterface
+# IRhiBackend
 
 ## Summary
 
@@ -11,7 +11,7 @@
 **Assembly:** `SDT4.Managed.Renderer.dll`
 
 ```csharp
-interface IRendererHardwareInterface
+interface IRhiBackend
 ```
 **Implements:**
 

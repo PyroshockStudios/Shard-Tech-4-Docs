@@ -34,6 +34,7 @@ sealed class StringPacketAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 | `public get; MaxLength` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) | Maximum length for strings. Valid numbers range from 1 or above. |
+| `public get; set; CharSet` | [PacketCharSet](./packetcharset.md) | Character set used when marshalling characters. This property modifies the packet size. Default value is ASCII |
 
 ---
 

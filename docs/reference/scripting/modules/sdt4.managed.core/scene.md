@@ -5,7 +5,7 @@ Scene object that contains all actors and lifecycle.
 
 ## Remarks
 !!! danger
-    All calls made within this class <strong>MUST</strong> be performed on the Main Thread. 
+    All calls made within this class <strong>MUST</strong> be performed on the Master Thread. 
     See <see cref="M:SDT4.Managed.Core.Thread.RunLater(System.Threading.ThreadStart)" /> on how to safely call this from an asynchronous thread.
     Failure to comply with this can cause catastrophical failures as the engine is not designed for this.
 

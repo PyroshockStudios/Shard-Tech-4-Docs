@@ -1,4 +1,4 @@
-# IWindowPlatform
+# WindowPlatform
 
 ## Summary
 
@@ -7,12 +7,15 @@
 
 ## Definition
 
-**Namespace:** `SDT4.Managed.Input`  
-**Assembly:** `SDT4.Managed.Input.dll`
+**Namespace:** `SDT4.Managed.Windowing`  
+**Assembly:** `SDT4.Managed.Windowing.dll`
 
 ```csharp
-interface IWindowPlatform
+sealed class WindowPlatform
 ```
+**Inheritance:**
+
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔  **WindowPlatform**
 **Implements:**
 
 ##### [IWindowingCapability](../sdt4.managed.core/capabilities/iwindowingcapability.md), [ICapability](../sdt4.managed.core/capabilities/icapability.md)
@@ -31,9 +34,9 @@ interface IWindowPlatform
 | Name | Type | Description |
 | --- | --- | --- |
 | `public get; PrimaryWindow` | [Window](./window.md) |  |
-| `public get; PrimaryMonitor` | [Monitor](./monitor.md) | The primary monitor |
-| `public get; Monitors` | [Monitor[]](./monitor.md) | List of monitors that are available |
-| `public get; Windows` | [Window[]](./window.md) | List of windows that are available |
+| `public get; PrimaryMonitor` | [Monitor](./monitor.md) |  |
+| `public get; Monitors` | [Monitor[]](./monitor.md) |  |
+| `public get; Windows` | [Window[]](./window.md) |  |
 
 ---
 

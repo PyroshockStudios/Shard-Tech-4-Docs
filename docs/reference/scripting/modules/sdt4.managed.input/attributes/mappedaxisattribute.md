@@ -1,4 +1,4 @@
-# InputMappedAxisAttribute
+# MappedAxisAttribute
 
 ## Summary
 To be used on an <em>enum</em> field. Marks input to be handled as a floating <strong>range</strong>
@@ -11,11 +11,11 @@ To be used on an <em>enum</em> field. Marks input to be handled as a floating <s
 **Assembly:** `SDT4.Managed.Input.dll`
 
 ```csharp
-sealed class InputMappedAxisAttribute
+sealed class MappedAxisAttribute
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Attribute](https://learn.microsoft.com/dotnet/api/system.attribute) ➔  **InputMappedAxisAttribute**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Attribute](https://learn.microsoft.com/dotnet/api/system.attribute) ➔  **MappedAxisAttribute**
 **Implements:**
 
 ##### 

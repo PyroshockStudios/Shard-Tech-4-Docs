@@ -19,6 +19,14 @@
     content: "\f303"; /* pencil */
 }
 
+/* !!! tip / ??? tip */
+.admonition.tip {
+  background-color: rgba(12, 255, 223, 0.2);
+}
+.admonition.tip .admonition-title::before {
+    content: "\f06d"; /* fire */
+}
+
 /* !!! info / ??? info */
 /* for some reason windmill does not style the info admonition */
 .admonition.info {

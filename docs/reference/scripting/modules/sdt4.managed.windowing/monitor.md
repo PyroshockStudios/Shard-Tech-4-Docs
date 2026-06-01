@@ -7,8 +7,8 @@
 
 ## Definition
 
-**Namespace:** `SDT4.Managed.Input`  
-**Assembly:** `SDT4.Managed.Input.dll`
+**Namespace:** `SDT4.Managed.Windowing`  
+**Assembly:** `SDT4.Managed.Windowing.dll`
 
 ```csharp
 sealed class Monitor

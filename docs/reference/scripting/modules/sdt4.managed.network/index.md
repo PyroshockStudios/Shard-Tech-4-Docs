@@ -22,6 +22,7 @@
 | --- | --- |
 | [NetworkFieldNotificationDelegate](./attributes/networkfieldnotificationdelegate.md) |  |
 | [NetworkReplicateFieldNotifierAttribute](./attributes/networkreplicatefieldnotifierattribute.md) |  |
+| [PacketCharSet](./attributes/packetcharset.md) | Character set for string packet marshalling |
 | [ReplicateAttribute](./attributes/replicateattribute.md) |  |
 | [ReplicateFieldAttribute](./attributes/replicatefieldattribute.md) |  |
 | [ReplicationPolicy](./attributes/replicationpolicy.md) |  |

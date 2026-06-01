@@ -22,6 +22,7 @@ struct Vector2f
 
 | Name | Type | Description |
 | --- | --- | --- |
+| `public static readonly Zero` | [Vector2f](./vector2f.md) |  |
 
 ---
 

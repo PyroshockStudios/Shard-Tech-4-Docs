@@ -44,16 +44,18 @@ sealed class AppInstance
 
 ## Methods
 
-#### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) TryGetCapability&lt;TCapability&gt;(out TCapability capability)
-
-**Parameters:**
-
-- `capability` (TCapability): 
-
+#### public TCapability TryGetCapability&lt;TCapability&gt;()
 
 **Returns:**
 
-- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
+- TCapability: 
+
+---
+#### public [IEnumerable&lt;ICapability&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1) EnumerateCapabilities()
+
+**Returns:**
+
+- [IEnumerable&lt;ICapability&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1): 
 
 ---
 #### public [Task&lt;AppExitRequest&gt;](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1) RequestAppExitAsync()
