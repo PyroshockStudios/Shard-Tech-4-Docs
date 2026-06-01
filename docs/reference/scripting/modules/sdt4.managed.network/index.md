@@ -14,7 +14,7 @@
 | [PacketProtocol](./packetprotocol.md) |  |
 | [RemoteConnectionStatus](./remoteconnectionstatus.md) |  |
 | [RemoteConnectionStatusDelegate](./remoteconnectionstatusdelegate.md) |  |
-| [RPCBuilder](./rpcbuilder.md) |  |
+| [RPCBuilder](./rpcbuilder.md) | A reserved structure for defining a remote procedure call. |
 
 ### `SDT4.Managed.Network.Attributes`
 

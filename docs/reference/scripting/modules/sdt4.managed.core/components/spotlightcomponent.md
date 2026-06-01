@@ -1,5 +1,8 @@
 # SpotLightComponent
 
+## Summary
+
+
 
 
 ## Definition
@@ -12,7 +15,7 @@ sealed class SpotLightComponent
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [AbstractComponent](./abstractcomponent.md) ➔  **SpotLightComponent**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Component](./component.md) ➔  **SpotLightComponent**
 **Implements:**
 
 ##### 
@@ -23,8 +26,8 @@ sealed class SpotLightComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -34,9 +37,10 @@ sealed class SpotLightComponent
 | `public get; set; Intensity` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; set; OuterAngle` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; set; InnerAngle` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-
+| `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
 ---
+
 
 ## Methods
 

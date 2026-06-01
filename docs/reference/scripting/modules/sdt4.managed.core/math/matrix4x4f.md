@@ -1,5 +1,8 @@
 # Matrix4x4f
 
+## Summary
+
+
 
 
 ## Definition
@@ -24,8 +27,8 @@ struct Matrix4x4f
 | `public z` | [Vector4f](./vector4f.md) |  |
 | `public w` | [Vector4f](./vector4f.md) |  |
 
-
 ---
+
 
 ## Properties
 
@@ -33,8 +36,8 @@ struct Matrix4x4f
 | --- | --- | --- |
 | `public get; set; Item` | [Vector4f](./vector4f.md) |  |
 
-
 ---
+
 
 ## Methods
 

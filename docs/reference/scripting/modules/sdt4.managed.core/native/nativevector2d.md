@@ -1,5 +1,8 @@
 # NativeVector2d
 
+## Summary
+
+
 
 
 ## Definition
@@ -22,16 +25,16 @@ struct NativeVector2d
 | `public x` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 | `public y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

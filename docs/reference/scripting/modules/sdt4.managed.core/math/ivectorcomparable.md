@@ -1,5 +1,8 @@
 # IVectorComparable
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,16 +23,16 @@ interface IVectorComparable
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

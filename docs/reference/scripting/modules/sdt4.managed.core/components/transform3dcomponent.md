@@ -1,5 +1,8 @@
 # Transform3DComponent
 
+## Summary
+
+
 
 
 ## Definition
@@ -12,7 +15,7 @@ sealed class Transform3DComponent
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [AbstractComponent](./abstractcomponent.md) ➔  **Transform3DComponent**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Component](./component.md) ➔  **Transform3DComponent**
 **Implements:**
 
 ##### [ITransform3D](../math/itransform3d.md)
@@ -23,8 +26,8 @@ sealed class Transform3DComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -39,9 +42,10 @@ sealed class Transform3DComponent
 | `public get; set; WorldTranslation` | [Vector3d](../math/vector3d.md) |  |
 | `public get; set; WorldRotation` | [Quaternion](../math/quaternion.md) |  |
 | `public get; set; WorldRotationMatrix` | [Matrix3x3f](../math/matrix3x3f.md) |  |
-
+| `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
 ---
+
 
 ## Methods
 

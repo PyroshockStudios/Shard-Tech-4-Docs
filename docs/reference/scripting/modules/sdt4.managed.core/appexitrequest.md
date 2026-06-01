@@ -1,5 +1,8 @@
 # AppExitRequest
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,16 +23,16 @@ enum AppExitRequest
 | `Success` | [AppExitRequest](./appexitrequest.md) |  |
 | `Failed` | [AppExitRequest](./appexitrequest.md) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

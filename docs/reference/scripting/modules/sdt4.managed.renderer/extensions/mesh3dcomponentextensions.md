@@ -1,5 +1,8 @@
 # Mesh3DComponentExtensions
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,21 +26,22 @@ static class Mesh3DComponentExtensions
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 
 #### public static [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) BindMaterialInstance([Mesh3DComponent](../../sdt4.managed.core/components/mesh3dcomponent.md) component, [Int32](https://learn.microsoft.com/dotnet/api/system.int32) slot, [MaterialInstance](../graphics/materialinstance.md) instance)
 
+##### Summary
 Binds the given material instance to this mesh.
 
 **Parameters:**
@@ -56,6 +60,7 @@ Binds the given material instance to this mesh.
 ---
 #### public static [Void](https://learn.microsoft.com/dotnet/api/system.void) UnbindMaterialInstance([Mesh3DComponent](../../sdt4.managed.core/components/mesh3dcomponent.md) component, [Int32](https://learn.microsoft.com/dotnet/api/system.int32) slot)
 
+##### Summary
 Unbinds the material instance from this slot
 
 **Parameters:**

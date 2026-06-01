@@ -1,5 +1,8 @@
 # ButtonInputAttribute
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,8 +26,8 @@ sealed class ButtonInputAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -32,8 +35,8 @@ sealed class ButtonInputAttribute
 | --- | --- | --- |
 | `public get; Value` | [Object](https://learn.microsoft.com/dotnet/api/system.object) |  |
 
-
 ---
+
 
 ## Methods
 

@@ -1,5 +1,8 @@
 # IVectorSpatial&lt;&gt;
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,16 +23,16 @@ interface IVectorSpatial<>
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

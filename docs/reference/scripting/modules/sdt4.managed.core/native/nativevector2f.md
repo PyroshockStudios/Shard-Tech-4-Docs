@@ -1,5 +1,8 @@
 # NativeVector2f
 
+## Summary
+
+
 
 
 ## Definition
@@ -22,16 +25,16 @@ struct NativeVector2f
 | `public x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

@@ -1,5 +1,8 @@
 # RMLNamedNodeMap
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,8 +26,8 @@ sealed class RMLNamedNodeMap
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -33,8 +36,8 @@ sealed class RMLNamedNodeMap
 | `public get; set; Item` | [RMLVariant](./rmlvariant.md) |  |
 | `public get; Length` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 
-
 ---
+
 
 ## Methods
 

@@ -1,5 +1,8 @@
 # Monitor
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,8 +26,8 @@ sealed class Monitor
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -35,8 +38,8 @@ sealed class Monitor
 | `public get; CurrentVideoMode` | [VideoMode](./videomode.md) | Returns the current video mode. |
 | `public get; Name` | [String](https://learn.microsoft.com/dotnet/api/system.string) | Returns the monitor name |
 
-
 ---
+
 
 ## Methods
 

@@ -37,7 +37,7 @@ appLoadContext.InstanceReadyTask.ContinueWith(async (task) =>
     var instance = await task;
     // Now we can use the instance, let's load our scene
     var lobbyAsset = new AssetID("Master/S_Lobby.sdt");
-    var loadResult = await instance.ResourceManager.LoadAsset<ISceneAsset>(lobbyAsset);
+    var loadResult = await instance.ResourceManager.LoadAssetAsync<ISceneAsset>(lobbyAsset);
     // Now we can start using our scene 
     // ...
 });

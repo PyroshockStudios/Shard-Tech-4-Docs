@@ -1,5 +1,8 @@
 # Vector3b
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,8 +23,8 @@ struct Vector3b
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -32,8 +35,8 @@ struct Vector3b
 | `public get; z` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 | `public get; Item` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
-
 ---
+
 
 ## Methods
 
@@ -53,6 +56,7 @@ struct Vector3b
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
+##### Summary
 In format of (x, y, z)
 
 **Returns:**

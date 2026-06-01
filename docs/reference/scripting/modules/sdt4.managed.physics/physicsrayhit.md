@@ -1,5 +1,8 @@
 # PhysicsRayHit
 
+## Summary
+
+
 
 
 ## Definition
@@ -27,16 +30,16 @@ struct PhysicsRayHit
 | `public faceIndex` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 | `public uv` | [Vector2f](../sdt4.managed.core/math/vector2f.md) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

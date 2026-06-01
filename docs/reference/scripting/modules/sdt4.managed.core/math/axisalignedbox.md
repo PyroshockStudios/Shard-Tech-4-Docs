@@ -1,5 +1,8 @@
 # AxisAlignedBox
 
+## Summary
+
+
 
 
 ## Definition
@@ -22,8 +25,8 @@ struct AxisAlignedBox
 | `public Min` | [Vector3f](./vector3f.md) |  |
 | `public Max` | [Vector3f](./vector3f.md) |  |
 
-
 ---
+
 
 ## Properties
 
@@ -32,8 +35,8 @@ struct AxisAlignedBox
 | `public get; set; Extent` | [Vector3f](./vector3f.md) |  |
 | `public get; set; Position` | [Vector3f](./vector3f.md) |  |
 
-
 ---
+
 
 ## Methods
 

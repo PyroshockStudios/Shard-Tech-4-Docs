@@ -6,13 +6,13 @@
 
 | Type | Description |
 | --- | --- |
-| [Actor](./actor.md) |  |
+| [Actor](./actor.md) | Scene object that contains all actors and lifecycle. |
 | [AppExitRequest](./appexitrequest.md) |  |
 | [AppInstance](./appinstance.md) |  |
 | [AppLoadContext](./apploadcontext.md) | Contains the application load information when the game initially loads. |
 | [InstanceEnvironment](./instanceenvironment.md) |  |
 | [IResourceManager](./iresourcemanager.md) |  |
-| [Scene](./scene.md) |  |
+| [Scene](./scene.md) | Scene object that contains all actors and lifecycle. |
 | [Thread](./thread.md) |  |
 
 ### `SDT4.Managed.Core.Asset`
@@ -37,6 +37,7 @@
 
 | Type | Description |
 | --- | --- |
+| [ActorReferenceAttribute](./attributes/actorreferenceattribute.md) | Allows referencing an actor either locally or globally by its ID. This automatically populates the field with a strong reference to the actor. It can be applied on <see cref="T:SDT4.Managed.Core.Actor" /> or any class deriving from <see cref="T:SDT4.Managed.Core.Script.ActorScript" />. |
 | [AssetStringFieldEditPropertiesAttribute](./attributes/assetstringfieldeditpropertiesattribute.md) |  |
 | [ExposeFieldAttribute](./attributes/exposefieldattribute.md) |  |
 | [ExposeMethodAttribute](./attributes/exposemethodattribute.md) |  |
@@ -44,7 +45,7 @@
 | [NumericFieldEditPropertiesAttribute](./attributes/numericfieldeditpropertiesattribute.md) |  |
 | [ReturnPinNameAttribute](./attributes/returnpinnameattribute.md) |  |
 | [ScriptEventAttribute](./attributes/scripteventattribute.md) |  |
-| [ScriptGeneratedAttribute](./attributes/scriptgeneratedattribute.md) |  |
+| [ScriptGeneratedAttribute](./attributes/scriptgeneratedattribute.md) | A reserved attribute for visual scripts. |
 | [ScriptHiddenAttribute](./attributes/scripthiddenattribute.md) |  |
 | [ScriptPure](./attributes/scriptpure.md) |  |
 | [ScriptWildcardAttribute](./attributes/scriptwildcardattribute.md) |  |
@@ -63,10 +64,10 @@
 
 | Type | Description |
 | --- | --- |
-| [AbstractComponent](./components/abstractcomponent.md) |  |
 | [BoxVolumeComponent](./components/boxvolumecomponent.md) |  |
 | [CameraComponent](./components/cameracomponent.md) |  |
 | [ColorGrading](./components/colorgrading.md) |  |
+| [Component](./components/component.md) |  |
 | [DeferredDecalComponent](./components/deferreddecalcomponent.md) |  |
 | [DirectionalLightComponent](./components/directionallightcomponent.md) |  |
 | [HDR](./components/hdr.md) |  |

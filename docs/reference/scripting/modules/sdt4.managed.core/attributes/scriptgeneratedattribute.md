@@ -1,6 +1,11 @@
 # ScriptGeneratedAttribute
 
+## Summary
+A reserved attribute for visual scripts.
 
+## Remarks
+!!! warning
+    Do not use this attribute, it is not intended to be used on hand written methods, and is reserved for visual scripts.
 
 ## Definition
 
@@ -23,8 +28,8 @@ sealed class ScriptGeneratedAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -32,8 +37,8 @@ sealed class ScriptGeneratedAttribute
 | --- | --- | --- |
 | `public get; Source` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 
-
 ---
+
 
 ## Methods
 

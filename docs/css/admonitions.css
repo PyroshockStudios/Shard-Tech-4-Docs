@@ -1,0 +1,44 @@
+.admonition .admonition-title {
+    position: relative;
+    padding-left: 2.2em; 
+}
+
+.admonition .admonition-title::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0.1em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.1em;
+}
+
+/* !!! note / ??? note */
+.admonition.note .admonition-title::before {
+    content: "\f303"; /* pencil */
+}
+
+/* !!! info / ??? info */
+.admonition.info .admonition-title::before {
+    content: "\f05a"; /* circle-info */
+}
+
+/* !!! warning / ??? warning */
+.admonition.warning .admonition-title::before {
+    content: "\f071"; /* triangle-exclamation */
+}
+
+/* !!! danger / ??? danger */
+.admonition.danger .admonition-title::before {
+    content: "\f0e7"; /* bolt (lightning) */
+}
+
+/* !!! success / ??? success */
+.admonition.success .admonition-title::before {
+    content: "\f058"; /* circle-check */
+}
+
+/* !!! bug / ??? bug */
+.admonition.bug .admonition-title::before {
+    content: "\f188"; /* bug */
+}

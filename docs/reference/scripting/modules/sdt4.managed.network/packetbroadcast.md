@@ -1,5 +1,8 @@
 # PacketBroadcast
 
+## Summary
+
+
 
 
 ## Definition
@@ -21,16 +24,16 @@ enum PacketBroadcast
 | `Server` | [PacketBroadcast](./packetbroadcast.md) |  |
 | `Multicast` | [PacketBroadcast](./packetbroadcast.md) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

@@ -1,5 +1,8 @@
 # SteamConnectionEndpoint
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,16 +26,16 @@ class SteamConnectionEndpoint
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

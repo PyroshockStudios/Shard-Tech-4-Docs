@@ -1,5 +1,8 @@
 # Vector3f
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,8 +23,8 @@ struct Vector3f
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -32,8 +35,8 @@ struct Vector3f
 | `public get; z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
-
 ---
+
 
 ## Methods
 
@@ -46,6 +49,7 @@ struct Vector3f
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
+##### Summary
 In format of (x, y, z)
 
 **Returns:**

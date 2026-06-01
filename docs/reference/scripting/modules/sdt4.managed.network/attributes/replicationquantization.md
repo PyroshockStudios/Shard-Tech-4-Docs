@@ -1,5 +1,8 @@
 # ReplicationQuantization
 
+## Summary
+
+
 
 
 ## Definition
@@ -25,16 +28,16 @@ enum ReplicationQuantization
 | `Snorm16` | [ReplicationQuantization](./replicationquantization.md) |  |
 | `Float16` | [ReplicationQuantization](./replicationquantization.md) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

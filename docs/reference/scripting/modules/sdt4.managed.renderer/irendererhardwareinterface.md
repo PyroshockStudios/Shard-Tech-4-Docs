@@ -1,5 +1,8 @@
 # IRendererHardwareInterface
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,8 +23,8 @@ interface IRendererHardwareInterface
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -32,8 +35,8 @@ interface IRendererHardwareInterface
 | `public get; Api` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 | `public get; Version` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 
-
 ---
+
 
 ## Methods
 

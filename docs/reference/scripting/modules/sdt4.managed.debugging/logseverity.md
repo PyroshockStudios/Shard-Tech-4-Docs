@@ -1,5 +1,8 @@
 # LogSeverity
 
+## Summary
+
+
 
 
 ## Definition
@@ -22,16 +25,16 @@ enum LogSeverity
 | `Warn` | [LogSeverity](./logseverity.md) |  |
 | `Error` | [LogSeverity](./logseverity.md) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

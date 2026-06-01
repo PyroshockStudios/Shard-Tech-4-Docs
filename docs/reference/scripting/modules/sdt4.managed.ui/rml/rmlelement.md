@@ -1,6 +1,9 @@
 # RMLElement
 
+## Summary
 RmlUi element based on <a href="https://mikke89.github.io/RmlUiDoc/pages/cpp_manual/elements.html">the RML reference page</a>
+
+
 
 ## Definition
 
@@ -23,8 +26,8 @@ class RMLElement
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -55,8 +58,8 @@ class RMLElement
 | `public get; OffsetWidth` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; OffsetParent` | [RMLElement](./rmlelement.md) |  |
 
-
 ---
+
 
 ## Methods
 
@@ -76,7 +79,8 @@ class RMLElement
 ---
 #### public [RMLElement?](./rmlelement.md) Closest([String](https://learn.microsoft.com/dotnet/api/system.string) selector)
 
-Retrieve the first ancestor element matching the provided RCSS selector(s).
+##### Summary
+Retrieve the first ancestor element matching the provided RCSS selector(s).	
 
 **Parameters:**
 
@@ -90,7 +94,9 @@ Retrieve the first ancestor element matching the provided RCSS selector(s).
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) DispatchEvent([String](https://learn.microsoft.com/dotnet/api/system.string) event)
 
-Dispatch an event to this node in the DOM. <param name="event"></param>
+##### Summary
+Dispatch an event to this node in the DOM.
+<param name="event"></param>
 
 **Parameters:**
 
@@ -100,6 +106,7 @@ Dispatch an event to this node in the DOM. <param name="event"></param>
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) AddEventListener([String](https://learn.microsoft.com/dotnet/api/system.string) type, [RMLEventListener](./rmleventlistener.md) listener, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) useCapture)
 
+##### Summary
 Register an event handler to a specific event type on the element.
 
 **Parameters:**
@@ -114,6 +121,7 @@ Register an event handler to a specific event type on the element.
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) AddEventListener([RMLEventID](./rmleventid.md) type, [RMLEventListener](./rmleventlistener.md) listener, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) useCapture)
 
+##### Summary
 Register an event handler to a specific event type on the element.
 
 **Parameters:**
@@ -128,6 +136,7 @@ Register an event handler to a specific event type on the element.
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) RemoveEventListener([String](https://learn.microsoft.com/dotnet/api/system.string) type, [RMLEventListener](./rmleventlistener.md) listener, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) useCapture)
 
+##### Summary
 Removes an event handler from a specific event type if it was registered.
 
 **Parameters:**
@@ -142,6 +151,7 @@ Removes an event handler from a specific event type if it was registered.
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) RemoveEventListener([RMLEventID](./rmleventid.md) type, [RMLEventListener](./rmleventlistener.md) listener, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) useCapture)
 
+##### Summary
 Removes an event handler from a specific event type if it was registered.
 
 **Parameters:**
@@ -156,6 +166,7 @@ Removes an event handler from a specific event type if it was registered.
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) AppendChild([RMLElement](./rmlelement.md) element)
 
+##### Summary
 Insert a node as the last child node of this element. The newly parented node must first be detached from its existing parent.
 
 **Parameters:**
@@ -166,6 +177,7 @@ Insert a node as the last child node of this element. The newly parented node mu
 ---
 #### public [RMLElement](./rmlelement.md) RemoveChild([RMLElement](./rmlelement.md) element)
 
+##### Summary
 Removes a child node from the current element.
 
 **Parameters:**
@@ -180,6 +192,7 @@ Removes a child node from the current element.
 ---
 #### public [RMLElement?](./rmlelement.md) GetElementById([String](https://learn.microsoft.com/dotnet/api/system.string) id)
 
+##### Summary
 Returns an element by its id.
 
 **Parameters:**
@@ -194,6 +207,7 @@ Returns an element by its id.
 ---
 #### public [RMLElement[]](./rmlelement.md) GetElementsByClassName([String](https://learn.microsoft.com/dotnet/api/system.string) names)
 
+##### Summary
 Retrieve a set of all descendant elements with a particular class set.
 
 **Parameters:**
@@ -208,6 +222,7 @@ Retrieve a set of all descendant elements with a particular class set.
 ---
 #### public [RMLElement[]](./rmlelement.md) GetElementsByTagName([String](https://learn.microsoft.com/dotnet/api/system.string) name)
 
+##### Summary
 Retrieve a set of all descendant elements with a particular tag name.
 
 **Parameters:**
@@ -222,6 +237,7 @@ Retrieve a set of all descendant elements with a particular tag name.
 ---
 #### public [RMLElement?](./rmlelement.md) QuerySelector([String](https://learn.microsoft.com/dotnet/api/system.string) selectors)
 
+##### Summary
 Retrieve the first descendant element matching the provided RCSS selector(s).
 
 **Parameters:**
@@ -236,6 +252,7 @@ Retrieve the first descendant element matching the provided RCSS selector(s).
 ---
 #### public [RMLElement[]](./rmlelement.md) QuerySelectorAll([String](https://learn.microsoft.com/dotnet/api/system.string) selectors)
 
+##### Summary
 Retrieve a set of all descendant elements matching the provided RCSS selector(s).
 
 **Parameters:**

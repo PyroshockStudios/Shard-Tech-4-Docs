@@ -1,5 +1,8 @@
 # DebugConsole
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,16 +26,16 @@ static class DebugConsole
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

@@ -1,5 +1,8 @@
 # InputModifier
 
+## Summary
+
+
 
 
 ## Definition
@@ -25,16 +28,16 @@ enum InputModifier
 | `CapsLock` | [InputModifier](./inputmodifier.md) |  |
 | `NumLock` | [InputModifier](./inputmodifier.md) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

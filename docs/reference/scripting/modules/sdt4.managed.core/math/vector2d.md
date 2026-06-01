@@ -1,5 +1,8 @@
 # Vector2d
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,8 +23,8 @@ struct Vector2d
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -31,8 +34,8 @@ struct Vector2d
 | `public get; y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 | `public get; Item` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
-
 ---
+
 
 ## Methods
 
@@ -45,6 +48,7 @@ struct Vector2d
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
+##### Summary
 In format of (x, y)
 
 **Returns:**

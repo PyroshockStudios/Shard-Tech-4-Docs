@@ -1,10 +1,13 @@
 # PhysicsConstraint
 
+## Summary
+
+
 
 
 ## Definition
 
-**Namespace:** `SDT4.Managed.Physics`  
+**Namespace:** `SDT4.Managed.Physics.Constraints`  
 **Assembly:** `SDT4.Managed.Physics.dll`
 
 ```csharp
@@ -24,16 +27,16 @@ abstract class PhysicsConstraint
 | --- | --- | --- |
 | `public Tolerance` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

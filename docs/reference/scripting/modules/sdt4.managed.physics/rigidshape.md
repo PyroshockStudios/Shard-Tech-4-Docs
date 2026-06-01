@@ -1,5 +1,8 @@
 # RigidShape
 
+## Summary
+
+
 
 
 ## Definition
@@ -25,16 +28,16 @@ abstract class RigidShape
 | `public Position` | [Vector3f](../sdt4.managed.core/math/vector3f.md) |  |
 | `public Rotation` | [Quaternion](../sdt4.managed.core/math/quaternion.md) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

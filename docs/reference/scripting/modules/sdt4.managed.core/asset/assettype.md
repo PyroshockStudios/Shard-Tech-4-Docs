@@ -1,5 +1,8 @@
 # AssetType
 
+## Summary
+
+
 
 
 ## Definition
@@ -54,16 +57,16 @@ enum AssetType
 | `VisualScriptSource` | [AssetType](./assettype.md) |  |
 | `Count` | [AssetType](./assettype.md) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

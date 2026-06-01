@@ -1,5 +1,8 @@
 # Matrix3x3f
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,8 +26,8 @@ struct Matrix3x3f
 | `public y` | [Vector3f](./vector3f.md) |  |
 | `public z` | [Vector3f](./vector3f.md) |  |
 
-
 ---
+
 
 ## Properties
 
@@ -32,8 +35,8 @@ struct Matrix3x3f
 | --- | --- | --- |
 | `public get; set; Item` | [Vector3f](./vector3f.md) |  |
 
-
 ---
+
 
 ## Methods
 

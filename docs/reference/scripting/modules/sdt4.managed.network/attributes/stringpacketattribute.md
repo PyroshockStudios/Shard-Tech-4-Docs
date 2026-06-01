@@ -1,6 +1,9 @@
 # StringPacketAttribute
 
+## Summary
 Allows managed strings to be sent to remote connections.
+
+
 
 ## Definition
 
@@ -23,8 +26,8 @@ sealed class StringPacketAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -32,8 +35,8 @@ sealed class StringPacketAttribute
 | --- | --- | --- |
 | `public get; MaxLength` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) | Maximum length for strings. Valid numbers range from 1 or above. |
 
-
 ---
+
 
 ## Methods
 

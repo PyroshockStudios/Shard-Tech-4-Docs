@@ -1,4 +1,7 @@
-# AbstractComponent
+# Component
+
+## Summary
+
 
 
 
@@ -8,11 +11,11 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-abstract class AbstractComponent
+abstract class Component
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔  **AbstractComponent**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔  **Component**
 **Implements:**
 
 ##### 
@@ -23,17 +26,18 @@ abstract class AbstractComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 | `public get; set; Owner` | [Actor](../actor.md) | Actor owning the component |
-
+| `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
 ---
+
 
 ## Methods
 

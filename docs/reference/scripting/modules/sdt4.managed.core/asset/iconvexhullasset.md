@@ -1,5 +1,8 @@
 # IConvexHullAsset
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,16 +23,16 @@ interface IConvexHullAsset
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

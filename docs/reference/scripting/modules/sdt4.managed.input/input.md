@@ -1,5 +1,8 @@
 # Input
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,8 +26,8 @@ static class Input
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -32,8 +35,8 @@ static class Input
 | --- | --- | --- |
 | `public static get; Mappers` | [IReadOnlyList&lt;InputMapper&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1) |  |
 
-
 ---
+
 
 ## Methods
 

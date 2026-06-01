@@ -1,5 +1,8 @@
 # ConvexShape
 
+## Summary
+
+
 
 
 ## Definition
@@ -25,16 +28,16 @@ sealed class ConvexShape
 | `public ConvexHull` | [IConvexHullAsset?](../../sdt4.managed.core/asset/iconvexhullasset.md) |  |
 | `public Scale` | [Vector3f](../../sdt4.managed.core/math/vector3f.md) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

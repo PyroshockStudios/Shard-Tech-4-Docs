@@ -1,5 +1,8 @@
 # NativeVector4d
 
+## Summary
+
+
 
 
 ## Definition
@@ -24,16 +27,16 @@ struct NativeVector4d
 | `public z` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 | `public w` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

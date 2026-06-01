@@ -1,5 +1,8 @@
 # Vector2f
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,8 +23,8 @@ struct Vector2f
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -31,8 +34,8 @@ struct Vector2f
 | `public get; y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
-
 ---
+
 
 ## Methods
 
@@ -45,6 +48,7 @@ struct Vector2f
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
+##### Summary
 In format of (x, y)
 
 **Returns:**

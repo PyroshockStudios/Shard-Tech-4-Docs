@@ -1,5 +1,8 @@
 # IModelAsset
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,16 +23,16 @@ interface IModelAsset
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

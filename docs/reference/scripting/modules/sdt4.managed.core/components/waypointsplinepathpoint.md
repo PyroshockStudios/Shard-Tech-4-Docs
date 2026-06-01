@@ -1,5 +1,8 @@
 # WaypointSplinePathPoint
 
+## Summary
+
+
 
 
 ## Definition
@@ -24,16 +27,16 @@ struct WaypointSplinePathPoint
 | `public PositionDerivative` | [Vector3f](../math/vector3f.md) |  |
 | `public RadiusDerivative` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

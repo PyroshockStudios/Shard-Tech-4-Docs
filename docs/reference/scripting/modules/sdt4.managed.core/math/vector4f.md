@@ -1,5 +1,8 @@
 # Vector4f
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,8 +23,8 @@ struct Vector4f
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -33,8 +36,8 @@ struct Vector4f
 | `public get; w` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
-
 ---
+
 
 ## Methods
 
@@ -47,6 +50,7 @@ struct Vector4f
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
+##### Summary
 In format of (x, y, z, w)
 
 **Returns:**

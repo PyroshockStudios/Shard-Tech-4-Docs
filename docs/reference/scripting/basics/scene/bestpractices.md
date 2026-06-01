@@ -12,4 +12,4 @@ Scenes are the heaviest resources, as they hold many resources, contain a lot of
 ## DONT's
 
 - DONT: Omit Dispose() when finished with a scene.
-    - While the C# garbage collector will eventually clear the data from memory, it may not work expectedly, and if the object is referenced anywhere, it may prevent proper dstruction.
+    - While the C# garbage collector will eventually clear the data from memory, it may not work expectedly, and if the object is referenced anywhere, it may prevent proper destruction.

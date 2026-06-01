@@ -1,5 +1,8 @@
 # NativeVector3f
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,16 +26,16 @@ struct NativeVector3f
 | `public y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

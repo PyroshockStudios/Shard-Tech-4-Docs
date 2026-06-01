@@ -1,5 +1,8 @@
 # ITransform3D
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,8 +23,8 @@ interface ITransform3D
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -34,8 +37,8 @@ interface ITransform3D
 | `public get; Rotation` | [Quaternion](./quaternion.md) |  |
 | `public get; Scale` | [Vector3f](./vector3f.md) |  |
 
-
 ---
+
 
 ## Methods
 

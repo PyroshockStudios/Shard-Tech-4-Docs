@@ -1,5 +1,8 @@
 # RMLTheme
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,8 +26,8 @@ sealed class RMLTheme
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -32,8 +35,8 @@ sealed class RMLTheme
 | --- | --- | --- |
 | `public get; set; Active` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
-
 ---
+
 
 ## Methods
 

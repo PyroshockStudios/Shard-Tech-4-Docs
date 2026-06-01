@@ -1,5 +1,8 @@
 # PhysicsSweepHit
 
+## Summary
+
+
 
 
 ## Definition
@@ -26,16 +29,16 @@ struct PhysicsSweepHit
 | `public shapeIndex` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 | `public faceIndex` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

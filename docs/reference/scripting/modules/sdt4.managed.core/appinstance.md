@@ -1,5 +1,8 @@
 # AppInstance
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,8 +26,8 @@ sealed class AppInstance
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -36,8 +39,8 @@ sealed class AppInstance
 | `public get; Platform` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 | `public get; ResourceManager` | [IResourceManager](./iresourcemanager.md) |  |
 
-
 ---
+
 
 ## Methods
 
@@ -53,7 +56,7 @@ sealed class AppInstance
 - [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
 
 ---
-#### public [Task&lt;AppExitRequest&gt;](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1) RequestAppExist()
+#### public [Task&lt;AppExitRequest&gt;](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1) RequestAppExitAsync()
 
 **Returns:**
 

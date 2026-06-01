@@ -1,5 +1,8 @@
 # Vector3d
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,8 +23,8 @@ struct Vector3d
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -32,8 +35,8 @@ struct Vector3d
 | `public get; z` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 | `public get; Item` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
-
 ---
+
 
 ## Methods
 
@@ -46,6 +49,7 @@ struct Vector3d
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
+##### Summary
 In format of (x, y, z)
 
 **Returns:**

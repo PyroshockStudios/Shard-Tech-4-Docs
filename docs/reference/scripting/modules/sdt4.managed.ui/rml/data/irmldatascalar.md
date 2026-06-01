@@ -1,6 +1,9 @@
 # IRMLDataScalar
 
+## Summary
 A scalar data variable, that manages untyped variables.
+
+
 
 ## Definition
 
@@ -20,21 +23,22 @@ interface IRMLDataScalar
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 
 #### public [RMLVariant](../rmlvariant.md) Get()
 
+##### Summary
 Called by the DOM when the value is accessed.
 
 **Returns:**
@@ -44,6 +48,7 @@ Called by the DOM when the value is accessed.
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Set([RMLVariant](../rmlvariant.md) data)
 
+##### Summary
 Called by the DOM when the value has been modified (e.g. a checkbox has been checked)
 
 **Parameters:**

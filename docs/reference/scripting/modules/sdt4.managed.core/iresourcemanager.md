@@ -1,5 +1,8 @@
 # IResourceManager
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,21 +23,22 @@ interface IResourceManager
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 
-#### public [Task&lt;AssetLoadResult&lt;TResource&gt;&gt;](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1) LoadAsset&lt;TResource&gt;([AssetID](./asset/assetid.md) assetId)
+#### public [Task&lt;AssetLoadResult&lt;TResource&gt;&gt;](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1) LoadAssetAsync&lt;TResource&gt;([AssetID](./asset/assetid.md) assetId)
 
+##### Summary
 Returns an asynchronous task to an <see cref="T:SDT4.Managed.Core.Asset.AssetLoadResult`1" /> containing <typeparamref name="TResource" />
 
 **Parameters:**
@@ -49,7 +53,8 @@ Returns an asynchronous task to an <see cref="T:SDT4.Managed.Core.Asset.AssetLoa
 ---
 #### public TResource FromControlBlock&lt;TResource&gt;([IntPtr](https://learn.microsoft.com/dotnet/api/system.intptr) block)
 
-Converts control block pointer to a proper asset handle.
+##### Summary
+Converts control block pointer to a proper asset handle. 
 
 **Parameters:**
 

@@ -1,5 +1,8 @@
 # WindowResizeCallback
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,16 +26,16 @@ sealed class WindowResizeCallback
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

@@ -1,5 +1,8 @@
 # IGraphicsContext
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,8 +23,8 @@ interface IGraphicsContext
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -29,8 +32,8 @@ interface IGraphicsContext
 | --- | --- | --- |
 | `public get; Backend` | [IRendererHardwareInterface](./irendererhardwareinterface.md) |  |
 
-
 ---
+
 
 ## Methods
 

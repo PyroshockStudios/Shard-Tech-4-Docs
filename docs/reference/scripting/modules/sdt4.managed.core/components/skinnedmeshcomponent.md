@@ -1,5 +1,8 @@
 # SkinnedMeshComponent
 
+## Summary
+
+
 
 
 ## Definition
@@ -12,7 +15,7 @@ sealed class SkinnedMeshComponent
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [AbstractComponent](./abstractcomponent.md) ➔  **SkinnedMeshComponent**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Component](./component.md) ➔  **SkinnedMeshComponent**
 **Implements:**
 
 ##### 
@@ -23,8 +26,8 @@ sealed class SkinnedMeshComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -35,9 +38,10 @@ sealed class SkinnedMeshComponent
 | `public get; MorphTargets` | [IReadOnlyList&lt;Single&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1) |  |
 | `public get; set; EnabledBones` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 | `public get; set; EnabledMorphTargets` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
-
+| `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
 ---
+
 
 ## Methods
 

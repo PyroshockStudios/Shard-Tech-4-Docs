@@ -1,5 +1,8 @@
 # ITexture2DAsset
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,16 +23,16 @@ interface ITexture2DAsset
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

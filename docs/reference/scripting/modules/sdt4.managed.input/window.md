@@ -1,5 +1,8 @@
 # Window
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,8 +26,8 @@ sealed class Window
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -35,33 +38,38 @@ sealed class Window
 | `public get; set; Position` | [Vector2f](../sdt4.managed.core/math/vector2f.md) | Position of the window relative to the workspace |
 | `public get; set; Borderless` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | If the window has the title bar visible or not. |
 
-
 ---
+
 
 ## Methods
 
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Maximize()
 
+##### Summary
 Maximises the window
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Minimize()
 
+##### Summary
 Minimises the window
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Restore()
 
+##### Summary
 Restores the window after minimisation.
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Close()
 
+##### Summary
 Closes window immediately
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) SetMonitor([Monitor?](./monitor.md) monitor, [VideoMode](./videomode.md) mode)
 
+##### Summary
 Sets the <em>fullscreen</em> display monitor with the specified window mode. If monitor is <strong>NULL</strong> then it will revert to windowed mode.
 
 **Parameters:**
@@ -74,6 +82,7 @@ Sets the <em>fullscreen</em> display monitor with the specified window mode. If 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) AddWindowResizeCallback([WindowResizeCallback](./windowresizecallback.md) resizeCallback)
 
+##### Summary
 Registers a callback for whenever the window resizes.
 
 **Parameters:**
@@ -84,7 +93,9 @@ Registers a callback for whenever the window resizes.
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) RemoveWindowResizeCallback([WindowResizeCallback](./windowresizecallback.md) resizeCallback)
 
-Removes a previously registered callback for whenever the window resizes. If NO such delegate was registered, an <em>IndexOutOfRangeException</em> is thrown.
+##### Summary
+Removes a previously registered callback for whenever the window resizes.
+If NO such delegate was registered, an <em>IndexOutOfRangeException</em> is thrown.
 
 **Parameters:**
 

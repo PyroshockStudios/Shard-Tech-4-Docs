@@ -1,5 +1,8 @@
 # NativeVector3d
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,16 +26,16 @@ struct NativeVector3d
 | `public y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 | `public z` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

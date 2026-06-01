@@ -1,5 +1,8 @@
 # Mesh3DComponent
 
+## Summary
+
+
 
 
 ## Definition
@@ -12,7 +15,7 @@ sealed class Mesh3DComponent
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [AbstractComponent](./abstractcomponent.md) ➔  **Mesh3DComponent**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Component](./component.md) ➔  **Mesh3DComponent**
 **Implements:**
 
 ##### 
@@ -23,8 +26,8 @@ sealed class Mesh3DComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -34,9 +37,10 @@ sealed class Mesh3DComponent
 | `public get; set; CastShadows` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 | `public get; set; RenderMask` | [Bitmask&lt;UInt16&gt;](../utility/bitmask`1.md) |  |
 | `public get; Materials` | [IReadOnlyList&lt;IMaterialAsset&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1) |  |
-
+| `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
 ---
+
 
 ## Methods
 

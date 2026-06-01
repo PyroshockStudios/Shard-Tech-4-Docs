@@ -1,5 +1,8 @@
 # PostProcessingComponent
 
+## Summary
+
+
 
 
 ## Definition
@@ -12,7 +15,7 @@ sealed class PostProcessingComponent
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [AbstractComponent](./abstractcomponent.md) ➔  **PostProcessingComponent**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Component](./component.md) ➔  **PostProcessingComponent**
 **Implements:**
 
 ##### 
@@ -23,8 +26,8 @@ sealed class PostProcessingComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -32,9 +35,10 @@ sealed class PostProcessingComponent
 | --- | --- | --- |
 | `public get; set; Hdr` | [HDR](./hdr.md) |  |
 | `public get; set; ColorGrading` | [ColorGrading](./colorgrading.md) |  |
-
+| `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
 ---
+
 
 ## Methods
 

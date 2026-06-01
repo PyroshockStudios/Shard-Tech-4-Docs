@@ -1,5 +1,8 @@
 # PointLightComponent
 
+## Summary
+
+
 
 
 ## Definition
@@ -12,7 +15,7 @@ sealed class PointLightComponent
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [AbstractComponent](./abstractcomponent.md) ➔  **PointLightComponent**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Component](./component.md) ➔  **PointLightComponent**
 **Implements:**
 
 ##### 
@@ -23,8 +26,8 @@ sealed class PointLightComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -32,9 +35,10 @@ sealed class PointLightComponent
 | --- | --- | --- |
 | `public get; set; Color` | [Vector3f](../math/vector3f.md) |  |
 | `public get; set; Intensity` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-
+| `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
 ---
+
 
 ## Methods
 

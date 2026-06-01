@@ -1,5 +1,8 @@
 # WaypointComponent
 
+## Summary
+
+
 
 
 ## Definition
@@ -12,7 +15,7 @@ sealed class WaypointComponent
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [AbstractComponent](./abstractcomponent.md) ➔  **WaypointComponent**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Component](./component.md) ➔  **WaypointComponent**
 **Implements:**
 
 ##### 
@@ -23,8 +26,8 @@ sealed class WaypointComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -34,9 +37,10 @@ sealed class WaypointComponent
 | `public get; set; Granularity` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; set; Looping` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 | `public get; Points` | [IReadOnlyList&lt;WaypointSplinePoint&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1) |  |
-
+| `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
 ---
+
 
 ## Methods
 

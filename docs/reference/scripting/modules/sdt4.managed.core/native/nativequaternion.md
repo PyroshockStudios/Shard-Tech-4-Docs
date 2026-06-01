@@ -1,5 +1,8 @@
 # NativeQuaternion
 
+## Summary
+
+
 
 
 ## Definition
@@ -24,16 +27,16 @@ struct NativeQuaternion
 | `public y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

@@ -1,5 +1,8 @@
 # InputMapper
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,21 +26,22 @@ sealed class InputMapper
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindButtonMapping&lt;TEnum&gt;(TEnum mapping, [KeyInput](./keyinput.md) input, [InputModifier](./inputmodifier.md) modifier, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) registerRepeat, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) strictModifier)
 
+##### Summary
 Maps a button binding to a key input.
 
 **Parameters:**
@@ -57,6 +61,7 @@ Maps a button binding to a key input.
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindButtonMapping&lt;TEnum&gt;(TEnum mapping, [MouseInput](./mouseinput.md) input, [InputModifier](./inputmodifier.md) modifier, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) strictModifier)
 
+##### Summary
 Maps a button binding to a mouse input.
 
 **Parameters:**
@@ -74,6 +79,7 @@ Maps a button binding to a mouse input.
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindButtonMapping&lt;TEnum&gt;(TEnum mapping, [GamepadButtonInput](./gamepadbuttoninput.md) input, [Int32](https://learn.microsoft.com/dotnet/api/system.int32) gamepadIndex, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) registerRepeat)
 
+##### Summary
 Maps a button binding to a gamepad input.
 
 **Parameters:**
@@ -90,7 +96,10 @@ Maps a button binding to a gamepad input.
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindButtonMapping&lt;TEnum&gt;(TEnum mapping, [MouseMotionInput](./mousemotioninput.md) input)
 
-Maps a button binding to a mouse movement/scroll.<br /> <strong>NOTE:</strong> This will only trigger upon <strong>POSITIVE</strong> values! <strong>ZERO</strong> values will <strong>NOT</strong> It is thus recommended to use this solely for things such as event triggers, as opposed to field values
+##### Summary
+Maps a button binding to a mouse movement/scroll.<br />
+<strong>NOTE:</strong> This will only trigger upon <strong>POSITIVE</strong> values! <strong>ZERO</strong> values will <strong>NOT</strong>
+It is thus recommended to use this solely for things such as event triggers, as opposed to field values
 
 **Parameters:**
 
@@ -102,6 +111,7 @@ Maps a button binding to a mouse movement/scroll.<br /> <strong>NOTE:</strong> 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindAxisMapping&lt;TEnum&gt;(TEnum mapping, [KeyInput](./keyinput.md) input, [Single](https://learn.microsoft.com/dotnet/api/system.single) value, [InputModifier](./inputmodifier.md) modifier, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) strictModifier)
 
+##### Summary
 Maps a button binding to a key input.
 
 **Parameters:**
@@ -121,6 +131,7 @@ Maps a button binding to a key input.
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindAxisMapping&lt;TEnum&gt;(TEnum mapping, [MouseInput](./mouseinput.md) input, [Single](https://learn.microsoft.com/dotnet/api/system.single) value, [InputModifier](./inputmodifier.md) modifier, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) strictModifier)
 
+##### Summary
 Maps a button binding to a mouse input.
 
 **Parameters:**
@@ -140,6 +151,7 @@ Maps a button binding to a mouse input.
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindAxisMapping&lt;TEnum&gt;(TEnum mapping, [GamepadButtonInput](./gamepadbuttoninput.md) input, [Int32](https://learn.microsoft.com/dotnet/api/system.int32) gamepadIndex, [Single](https://learn.microsoft.com/dotnet/api/system.single) value)
 
+##### Summary
 Maps an axis binding to a joystick boolean input<br />
 
 **Parameters:**
@@ -156,7 +168,9 @@ Maps an axis binding to a joystick boolean input<br />
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindAxisMapping&lt;TEnum&gt;(TEnum mapping, [GamepadAnalogInput](./gamepadanaloginput.md) input, [Int32](https://learn.microsoft.com/dotnet/api/system.int32) gamepadIndex, [Single](https://learn.microsoft.com/dotnet/api/system.single) scale)
 
-Maps an axis binding to a joystick movement (thumbstick or triggers).<br /> This will trigger upon all movement deltas
+##### Summary
+Maps an axis binding to a joystick movement (thumbstick or triggers).<br />
+This will trigger upon all movement deltas
 
 **Parameters:**
 
@@ -172,7 +186,10 @@ Maps an axis binding to a joystick movement (thumbstick or triggers).<br /> Thi
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindAxisMapping&lt;TEnum&gt;(TEnum mapping, [MouseMotionInput](./mousemotioninput.md) input, [Single](https://learn.microsoft.com/dotnet/api/system.single) sensitivity)
 
-Maps an axis binding to a mouse movement/scroll.<br /> <strong>NOTE:</strong> This will only trigger upon <strong>POSITIVE</strong> values! <strong>ZERO</strong> values will <strong>NOT</strong> It is thus recommended to use this solely for things such as event triggers, as opposed to field values
+##### Summary
+Maps an axis binding to a mouse movement/scroll.<br />
+<strong>NOTE:</strong> This will only trigger upon <strong>POSITIVE</strong> values! <strong>ZERO</strong> values will <strong>NOT</strong>
+It is thus recommended to use this solely for things such as event triggers, as opposed to field values
 
 **Parameters:**
 

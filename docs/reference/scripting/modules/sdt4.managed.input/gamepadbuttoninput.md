@@ -1,5 +1,8 @@
 # GamepadButtonInput
 
+## Summary
+
+
 
 
 ## Definition
@@ -66,16 +69,16 @@ enum GamepadButtonInput
 | `Square` | [GamepadButtonInput](./gamepadbuttoninput.md) |  |
 | `Triangle` | [GamepadButtonInput](./gamepadbuttoninput.md) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

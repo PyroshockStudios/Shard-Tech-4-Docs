@@ -1,5 +1,8 @@
 # WaypointSplinePoint
 
+## Summary
+
+
 
 
 ## Definition
@@ -22,16 +25,16 @@ struct WaypointSplinePoint
 | `public Position` | [Vector3f](../math/vector3f.md) |  |
 | `public Radius` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

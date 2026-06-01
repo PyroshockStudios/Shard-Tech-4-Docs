@@ -1,5 +1,8 @@
 # Vector4b
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,8 +23,8 @@ struct Vector4b
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -33,8 +36,8 @@ struct Vector4b
 | `public get; w` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 | `public get; Item` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
-
 ---
+
 
 ## Methods
 
@@ -54,6 +57,7 @@ struct Vector4b
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
+##### Summary
 In format of (x, y, z, w)
 
 **Returns:**

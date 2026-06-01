@@ -1,5 +1,8 @@
 # MaterialInstancePropertyMap
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,8 +26,8 @@ sealed class MaterialInstancePropertyMap
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -33,8 +36,8 @@ sealed class MaterialInstancePropertyMap
 | `public get; set; Item` | [MaterialInstanceProperty](./materialinstanceproperty.md) |  |
 | `public set; Item` | [ITexture2DAsset](../../sdt4.managed.core/asset/itexture2dasset.md) |  |
 
-
 ---
+
 
 ## Methods
 

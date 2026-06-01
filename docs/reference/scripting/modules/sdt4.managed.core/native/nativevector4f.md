@@ -1,5 +1,8 @@
 # NativeVector4f
 
+## Summary
+
+
 
 
 ## Definition
@@ -24,16 +27,16 @@ struct NativeVector4f
 | `public z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public w` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

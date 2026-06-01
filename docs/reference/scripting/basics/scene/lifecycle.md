@@ -44,7 +44,7 @@ using SDT4.Managed.Core.Asset;
 // ...
 IResourceManager resourceManager = /*...*/;
 Scene lobby = /*...*/;
-var loadingScene = await resourceManager.LoadAsset<ISceneAsset>(...);
+var loadingScene = await resourceManager.LoadAssetAsync<ISceneAsset>(...);
 
 // Lets say the user is doing a complex operation, and lets mask the loading with a nice loading screen.
 

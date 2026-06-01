@@ -1,5 +1,8 @@
 # CameraProjection
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,16 +23,16 @@ enum CameraProjection
 | `Perspective` | [CameraProjection](./cameraprojection.md) |  |
 | `Orthographic` | [CameraProjection](./cameraprojection.md) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

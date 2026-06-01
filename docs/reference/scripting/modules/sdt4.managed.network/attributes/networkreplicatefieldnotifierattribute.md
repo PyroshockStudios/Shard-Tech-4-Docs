@@ -1,5 +1,8 @@
 # NetworkReplicateFieldNotifierAttribute
 
+## Summary
+
+
 
 
 ## Definition
@@ -23,8 +26,8 @@ sealed class NetworkReplicateFieldNotifierAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -32,8 +35,8 @@ sealed class NetworkReplicateFieldNotifierAttribute
 | --- | --- | --- |
 | `public get; Delegate` | [NetworkFieldNotificationDelegate](./networkfieldnotificationdelegate.md) |  |
 
-
 ---
+
 
 ## Methods
 

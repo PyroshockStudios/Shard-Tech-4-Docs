@@ -15,8 +15,8 @@ IResourceManager resourceManager = instance.ResourceManager;
 // Use use AssetID for referencing assets.
 var sceneAsset = new AssetID("Master/MyScene.sdt");
 
-// LoadAsset<TResource>() returns a Task on which we can await the ISceneAsset.
-var mySceneResult = await resourceManager.LoadAsset<ISceneAsset>(sceneAsset);
+// LoadAssetAsync<TResource>() returns a Task on which we can await the ISceneAsset.
+var mySceneResult = await resourceManager.LoadAssetAsync<ISceneAsset>(sceneAsset);
 // ...  
 ```
 
@@ -36,3 +36,6 @@ Scene scene = mySceneResult.Resource!.CreateScene();
 scene.Start();
 // ... 
 ```
+
+!!! danger
+    Any calls to the [Scene](../../modules/sdt4.managed.core/scene.md) object **MUST** be performed on the [main thread](../../modules/sdt4.managed.core/thread.md).

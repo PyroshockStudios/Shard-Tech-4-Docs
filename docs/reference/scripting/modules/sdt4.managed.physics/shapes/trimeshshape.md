@@ -1,5 +1,8 @@
 # TrimeshShape
 
+## Summary
+
+
 
 
 ## Definition
@@ -25,16 +28,16 @@ sealed class TrimeshShape
 | `public TrimeshAsset` | [ITrimeshAsset?](../../sdt4.managed.core/asset/itrimeshasset.md) |  |
 | `public Scale` | [Vector3f](../../sdt4.managed.core/math/vector3f.md) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 

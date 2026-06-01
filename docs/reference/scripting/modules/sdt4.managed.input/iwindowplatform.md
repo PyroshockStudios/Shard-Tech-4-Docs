@@ -1,5 +1,8 @@
 # IWindowPlatform
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,8 +23,8 @@ interface IWindowPlatform
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -32,8 +35,8 @@ interface IWindowPlatform
 | `public get; Monitors` | [Monitor[]](./monitor.md) | List of monitors that are available |
 | `public get; Windows` | [Window[]](./window.md) | List of windows that are available |
 
-
 ---
+
 
 ## Methods
 

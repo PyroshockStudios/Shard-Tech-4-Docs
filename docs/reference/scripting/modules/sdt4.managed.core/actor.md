@@ -1,6 +1,13 @@
 # Actor
 
+## Summary
+Scene object that contains all actors and lifecycle.
 
+## Remarks
+!!! danger
+    All calls made within this class <strong>MUST</strong> be performed on the Main Thread. 
+    See <see cref="M:SDT4.Managed.Core.Thread.RunLater(System.Threading.ThreadStart)" /> on how to safely call this from an asynchronous thread.
+    Failure to comply with this can cause catastrophical failures as the engine is not designed for this.
 
 ## Definition
 
@@ -23,25 +30,26 @@ class Actor
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; ScopeID` | [UInt64](https://learn.microsoft.com/dotnet/api/system.uint64) |  |
-| `public get; ID` | [UInt64](https://learn.microsoft.com/dotnet/api/system.uint64) |  |
+| `public get; GlobalId` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
+| `public get; ScopeId` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
+| `public get; LocalId` | [UInt64](https://learn.microsoft.com/dotnet/api/system.uint64) |  |
 | `public get; Mobility` | [Mobility](./components/mobility.md) |  |
 | `public get; Parent` | [Actor](./actor.md) |  |
 | `public get; Children` | [Actor[]](./actor.md) |  |
-| `public get; set; Tag` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
+| `public get; set; Name` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 | `public get; ScopeRoot` | [Actor](./actor.md) | Returns the top most actor in the current scope. |
 | `public get; IsValid` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 | `public get; IsAlive` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
-
 ---
+
 
 ## Methods
 
@@ -66,14 +74,21 @@ class Actor
 - T: 
 
 ---
-#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) KillComponent&lt;T&gt;()
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) RemoveComponent&lt;T&gt;()
 
 ---
-#### public [Actor](./actor.md) GetActor([UInt64](https://learn.microsoft.com/dotnet/api/system.uint64) uuid)
+#### public [IEnumerable&lt;Component&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1) EnumerateComponents()
+
+**Returns:**
+
+- [IEnumerable&lt;Component&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1): 
+
+---
+#### public [Actor](./actor.md) GetActorByLocalId([UInt64](https://learn.microsoft.com/dotnet/api/system.uint64) localId)
 
 **Parameters:**
 
-- `uuid` ([UInt64](https://learn.microsoft.com/dotnet/api/system.uint64)): 
+- `localId` ([UInt64](https://learn.microsoft.com/dotnet/api/system.uint64)): 
 
 
 **Returns:**

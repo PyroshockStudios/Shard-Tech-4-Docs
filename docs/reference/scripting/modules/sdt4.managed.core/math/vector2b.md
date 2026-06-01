@@ -1,5 +1,8 @@
 # Vector2b
 
+## Summary
+
+
 
 
 ## Definition
@@ -20,8 +23,8 @@ struct Vector2b
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Properties
 
@@ -31,8 +34,8 @@ struct Vector2b
 | `public get; y` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 | `public get; Item` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
-
 ---
+
 
 ## Methods
 
@@ -52,6 +55,7 @@ struct Vector2b
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
+##### Summary
 In format of (x, y)
 
 **Returns:**

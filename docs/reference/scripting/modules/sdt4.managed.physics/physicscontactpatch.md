@@ -1,5 +1,8 @@
 # PhysicsContactPatch
 
+## Summary
+
+
 
 
 ## Definition
@@ -25,16 +28,16 @@ struct PhysicsContactPatch
 | `public depth` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public surfaceIndex` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 
-
 ---
+
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
-
 ---
+
 
 ## Methods
 
