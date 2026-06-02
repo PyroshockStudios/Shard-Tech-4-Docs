@@ -8,9 +8,11 @@ An entry point is expected to be defined on a specific
 ```csharp
 using SDT4.Managed.Core;
 using SDT4.Managed.Core.Attributes;
-static class MyGame {
+static class MyGame 
+{
     [GameEntry]
-    static void OnInit(AppLoadContext appLoadContext) {
+    static void OnInit(AppLoadContext appLoadContext) 
+    {
         // set up your systems and contexts
     }
 }

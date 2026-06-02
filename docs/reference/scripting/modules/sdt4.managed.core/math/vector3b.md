@@ -15,13 +15,16 @@ struct Vector3b
 ```
 **Implements:**
 
-##### [IVectorComparable](./ivectorcomparable.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
+##### [IVectorComparable](./ivectorcomparable.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), [IEquatable&lt;Vector3b&gt;](https://learn.microsoft.com/dotnet/api/system.iequatable-1)
 ---
 
 ## Fields
 
 | Name | Type | Description |
 | --- | --- | --- |
+| `public x` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
+| `public y` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
+| `public z` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
 ---
 
@@ -30,10 +33,7 @@ struct Vector3b
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; x` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
-| `public get; y` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
-| `public get; z` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
-| `public get; Item` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
+| `public get; set; Item` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
 ---
 
@@ -56,12 +56,40 @@ struct Vector3b
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
-##### Summary
-In format of (x, y, z)
-
 **Returns:**
 
 - [String](https://learn.microsoft.com/dotnet/api/system.string): 
+
+---
+#### public virtual [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Object?](https://learn.microsoft.com/dotnet/api/system.object) obj)
+
+**Parameters:**
+
+- `obj` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): 
+
+
+**Returns:**
+
+- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
+
+---
+#### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Vector3b](./vector3b.md) other)
+
+**Parameters:**
+
+- `other` ([Vector3b](./vector3b.md)): 
+
+
+**Returns:**
+
+- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
+
+---
+#### public virtual [Int32](https://learn.microsoft.com/dotnet/api/system.int32) GetHashCode()
+
+**Returns:**
+
+- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) GetObjectData([SerializationInfo](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo) info, [StreamingContext](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext) context)

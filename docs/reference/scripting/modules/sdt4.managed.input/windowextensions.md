@@ -94,11 +94,11 @@ If NO such delegate was registered, an <em>IndexOutOfRangeException</em> is thro
 - [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
 
 ---
-#### public static [Vector2f](../sdt4.managed.core/math/vector2f.md) GetMousePosition()
+#### public static [Vector2i](../sdt4.managed.core/math/vector2i.md) GetMousePosition()
 
 **Returns:**
 
-- [Vector2f](../sdt4.managed.core/math/vector2f.md): 
+- [Vector2i](../sdt4.managed.core/math/vector2i.md): 
 
 ---
 

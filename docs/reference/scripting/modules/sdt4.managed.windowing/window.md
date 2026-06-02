@@ -35,9 +35,9 @@ sealed class Window
 | --- | --- | --- |
 | `public get; NativeWindow` | [IntPtr](https://learn.microsoft.com/dotnet/api/system.intptr) |  |
 | `public get; WindowMonitor` | [Monitor](./monitor.md) | The monitor that the window resides in.  This is <strong>NULL</strong> if the window is not in fullscreen mode! |
-| `public get; set; Size` | [Vector2f](../sdt4.managed.core/math/vector2f.md) | Size of the window in pixels |
-| `public get; FramebufferSize` | [Vector2f](../sdt4.managed.core/math/vector2f.md) | The renderable framebuffer region of the window in pixels |
-| `public get; set; Position` | [Vector2f](../sdt4.managed.core/math/vector2f.md) | Position of the window relative to the workspace |
+| `public get; set; Size` | [Vector2i](../sdt4.managed.core/math/vector2i.md) | Size of the window in pixels |
+| `public get; FramebufferSize` | [Vector2i](../sdt4.managed.core/math/vector2i.md) | The renderable framebuffer region of the window in pixels |
+| `public get; set; Position` | [Vector2i](../sdt4.managed.core/math/vector2i.md) | Position of the window relative to the workspace |
 | `public get; set; Borderless` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | If the window has the title bar visible or not. |
 | `public get; set; Resizable` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | If the window has the title bar visible or not. |
 

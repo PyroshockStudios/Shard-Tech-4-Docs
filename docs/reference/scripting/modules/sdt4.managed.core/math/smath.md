@@ -520,6 +520,18 @@ static class SMath
 - [Single](https://learn.microsoft.com/dotnet/api/system.single): 
 
 ---
+#### public static [Quaternion](./quaternion.md) Normalize([Quaternion](./quaternion.md) q)
+
+**Parameters:**
+
+- `q` ([Quaternion](./quaternion.md)): 
+
+
+**Returns:**
+
+- [Quaternion](./quaternion.md): 
+
+---
 #### public static [Quaternion](./quaternion.md) RotateAround([Quaternion](./quaternion.md) q, [Vector3f](./vector3f.md) axis, [Single](https://learn.microsoft.com/dotnet/api/system.single) angle)
 
 **Parameters:**
@@ -710,18 +722,6 @@ static class SMath
 - [Vector4f](./vector4f.md): 
 
 ---
-#### public static [Quaternion](./quaternion.md) Normalize([Quaternion](./quaternion.md) q)
-
-**Parameters:**
-
-- `q` ([Quaternion](./quaternion.md)): 
-
-
-**Returns:**
-
-- [Quaternion](./quaternion.md): 
-
----
 #### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) Dot([Vector2f](./vector2f.md) fa, [Vector2f](./vector2f.md) fb)
 
 **Parameters:**
@@ -764,6 +764,48 @@ static class SMath
 - [Single](https://learn.microsoft.com/dotnet/api/system.single): 
 
 ---
+#### public static [Int32](https://learn.microsoft.com/dotnet/api/system.int32) Dot([Vector2i](./vector2i.md) fa, [Vector2i](./vector2i.md) fb)
+
+**Parameters:**
+
+- `fa` ([Vector2i](./vector2i.md)): 
+
+- `fb` ([Vector2i](./vector2i.md)): 
+
+
+**Returns:**
+
+- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
+
+---
+#### public static [Int32](https://learn.microsoft.com/dotnet/api/system.int32) Dot([Vector3i](./vector3i.md) fa, [Vector3i](./vector3i.md) fb)
+
+**Parameters:**
+
+- `fa` ([Vector3i](./vector3i.md)): 
+
+- `fb` ([Vector3i](./vector3i.md)): 
+
+
+**Returns:**
+
+- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
+
+---
+#### public static [Int32](https://learn.microsoft.com/dotnet/api/system.int32) Dot([Vector4i](./vector4i.md) fa, [Vector4i](./vector4i.md) fb)
+
+**Parameters:**
+
+- `fa` ([Vector4i](./vector4i.md)): 
+
+- `fb` ([Vector4i](./vector4i.md)): 
+
+
+**Returns:**
+
+- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
+
+---
 #### public static [Vector3f](./vector3f.md) Cross([Vector3f](./vector3f.md) fa, [Vector3f](./vector3f.md) fb)
 
 **Parameters:**
@@ -776,6 +818,20 @@ static class SMath
 **Returns:**
 
 - [Vector3f](./vector3f.md): 
+
+---
+#### public static [Vector3i](./vector3i.md) Cross([Vector3i](./vector3i.md) fa, [Vector3i](./vector3i.md) fb)
+
+**Parameters:**
+
+- `fa` ([Vector3i](./vector3i.md)): 
+
+- `fb` ([Vector3i](./vector3i.md)): 
+
+
+**Returns:**
+
+- [Vector3i](./vector3i.md): 
 
 ---
 #### public static [Single](https://learn.microsoft.com/dotnet/api/system.single) Distance([Vector2f](./vector2f.md) fa, [Vector2f](./vector2f.md) fb)
@@ -818,6 +874,48 @@ static class SMath
 **Returns:**
 
 - [Single](https://learn.microsoft.com/dotnet/api/system.single): 
+
+---
+#### public static [Int32](https://learn.microsoft.com/dotnet/api/system.int32) Distance([Vector2i](./vector2i.md) fa, [Vector2i](./vector2i.md) fb)
+
+**Parameters:**
+
+- `fa` ([Vector2i](./vector2i.md)): 
+
+- `fb` ([Vector2i](./vector2i.md)): 
+
+
+**Returns:**
+
+- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
+
+---
+#### public static [Int32](https://learn.microsoft.com/dotnet/api/system.int32) Distance([Vector3i](./vector3i.md) fa, [Vector3i](./vector3i.md) fb)
+
+**Parameters:**
+
+- `fa` ([Vector3i](./vector3i.md)): 
+
+- `fb` ([Vector3i](./vector3i.md)): 
+
+
+**Returns:**
+
+- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
+
+---
+#### public static [Int32](https://learn.microsoft.com/dotnet/api/system.int32) Distance([Vector4i](./vector4i.md) fa, [Vector4i](./vector4i.md) fb)
+
+**Parameters:**
+
+- `fa` ([Vector4i](./vector4i.md)): 
+
+- `fb` ([Vector4i](./vector4i.md)): 
+
+
+**Returns:**
+
+- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
 
 ---
 

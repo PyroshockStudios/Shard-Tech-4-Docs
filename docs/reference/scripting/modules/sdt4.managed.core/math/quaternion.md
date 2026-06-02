@@ -22,6 +22,10 @@ struct Quaternion
 
 | Name | Type | Description |
 | --- | --- | --- |
+| `public w` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
 ---
 
@@ -30,11 +34,7 @@ struct Quaternion
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; w` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public get; x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public get; y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public get; z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public get; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public get; set; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public static get; Identity` | [Quaternion](./quaternion.md) |  |
 
 ---
@@ -78,9 +78,6 @@ struct Quaternion
 
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
-
-##### Summary
-In format of (w, x, y, z)
 
 **Returns:**
 

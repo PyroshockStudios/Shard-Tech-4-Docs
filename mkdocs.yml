@@ -76,6 +76,9 @@ nav:
         - Viewports:
           - Attaching Main Window: reference/scripting/basics/viewports/attachingmainwindow.md
           - Split-Screen: reference/scripting/basics/viewports/splitscreen.md
+        - Editor:
+          - Editor Entry: reference/scripting/basics/editor/editorentrypoint.md
+          - Editor Viewports: reference/scripting/basics/editor/editorviewports.md
         - Exit Point:  reference/scripting/basics/exitpoint.md
       - Advanced:
         - UI: 
@@ -191,20 +194,15 @@ nav:
             - "Vector2b": reference/scripting/modules/sdt4.managed.core/math/vector2b.md
             - "Vector2d": reference/scripting/modules/sdt4.managed.core/math/vector2d.md
             - "Vector2f": reference/scripting/modules/sdt4.managed.core/math/vector2f.md
+            - "Vector2i": reference/scripting/modules/sdt4.managed.core/math/vector2i.md
             - "Vector3b": reference/scripting/modules/sdt4.managed.core/math/vector3b.md
             - "Vector3d": reference/scripting/modules/sdt4.managed.core/math/vector3d.md
             - "Vector3f": reference/scripting/modules/sdt4.managed.core/math/vector3f.md
+            - "Vector3i": reference/scripting/modules/sdt4.managed.core/math/vector3i.md
             - "Vector4b": reference/scripting/modules/sdt4.managed.core/math/vector4b.md
             - "Vector4d": reference/scripting/modules/sdt4.managed.core/math/vector4d.md
             - "Vector4f": reference/scripting/modules/sdt4.managed.core/math/vector4f.md
-          - Native:
-            - "NativeQuaternion": reference/scripting/modules/sdt4.managed.core/native/nativequaternion.md
-            - "NativeVector2d": reference/scripting/modules/sdt4.managed.core/native/nativevector2d.md
-            - "NativeVector2f": reference/scripting/modules/sdt4.managed.core/native/nativevector2f.md
-            - "NativeVector3d": reference/scripting/modules/sdt4.managed.core/native/nativevector3d.md
-            - "NativeVector3f": reference/scripting/modules/sdt4.managed.core/native/nativevector3f.md
-            - "NativeVector4d": reference/scripting/modules/sdt4.managed.core/native/nativevector4d.md
-            - "NativeVector4f": reference/scripting/modules/sdt4.managed.core/native/nativevector4f.md
+            - "Vector4i": reference/scripting/modules/sdt4.managed.core/math/vector4i.md
           - Script:
             - "ActorScript": reference/scripting/modules/sdt4.managed.core/script/actorscript.md
             - "IScriptTarget": reference/scripting/modules/sdt4.managed.core/script/iscripttarget.md
@@ -217,10 +215,14 @@ nav:
           - "Overview": reference/scripting/modules/sdt4.managed.debugging/index.md
           - "DebugConsole": reference/scripting/modules/sdt4.managed.debugging/debugconsole.md
           - "LogSeverity": reference/scripting/modules/sdt4.managed.debugging/logseverity.md
+        - SDT4.Managed.Editor:
+          - "Overview": reference/scripting/modules/sdt4.managed.editor/index.md
+          - "EditorRunContext": reference/scripting/modules/sdt4.managed.editor/editorruncontext.md
+          - Attributes:
+            - "EditorEntryAttribute": reference/scripting/modules/sdt4.managed.editor/attributes/editorentryattribute.md
+            - "EditorExitAttribute": reference/scripting/modules/sdt4.managed.editor/attributes/editorexitattribute.md
         - SDT4.Managed.Editor.AssetPipeline:
           - "Overview": reference/scripting/modules/sdt4.managed.editor.assetpipeline/index.md
-        - SDT4.Managed.Editor.GUI:
-          - "Overview": reference/scripting/modules/sdt4.managed.editor.gui/index.md
         - SDT4.Managed.Input:
           - "Overview": reference/scripting/modules/sdt4.managed.input/index.md
           - "AnalogInputSign": reference/scripting/modules/sdt4.managed.input/analoginputsign.md
@@ -366,7 +368,7 @@ nav:
           - "VideoMode": reference/scripting/modules/sdt4.managed.windowing/videomode.md
           - "Window": reference/scripting/modules/sdt4.managed.windowing/window.md
           - "WindowPlatform": reference/scripting/modules/sdt4.managed.windowing/windowplatform.md
-          - "WindowResizeCallback": reference/scripting/modules/sdt4.managed.windowing/windowresizecallback.md
+
 
 
       # - Extension API reference:

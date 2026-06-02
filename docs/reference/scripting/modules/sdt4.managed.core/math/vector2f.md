@@ -15,14 +15,15 @@ struct Vector2f
 ```
 **Implements:**
 
-##### [IVectorSpatial&lt;Single&gt;](./ivectorspatial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
+##### [IVectorSpatial&lt;Single&gt;](./ivectorspatial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), [IEquatable&lt;Vector2f&gt;](https://learn.microsoft.com/dotnet/api/system.iequatable-1)
 ---
 
 ## Fields
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public static readonly Zero` | [Vector2f](./vector2f.md) |  |
+| `public x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
 ---
 
@@ -31,9 +32,8 @@ struct Vector2f
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public get; y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public get; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public static get; Zero` | [Vector2f](./vector2f.md) |  |
+| `public get; set; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
 ---
 
@@ -49,9 +49,6 @@ struct Vector2f
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
-##### Summary
-In format of (x, y)
-
 **Returns:**
 
 - [String](https://learn.microsoft.com/dotnet/api/system.string): 
@@ -62,6 +59,18 @@ In format of (x, y)
 **Parameters:**
 
 - `obj` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): 
+
+
+**Returns:**
+
+- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
+
+---
+#### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Vector2f](./vector2f.md) other)
+
+**Parameters:**
+
+- `other` ([Vector2f](./vector2f.md)): 
 
 
 **Returns:**

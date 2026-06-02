@@ -106,24 +106,15 @@
 | [Vector2b](./math/vector2b.md) |  |
 | [Vector2d](./math/vector2d.md) |  |
 | [Vector2f](./math/vector2f.md) |  |
+| [Vector2i](./math/vector2i.md) |  |
 | [Vector3b](./math/vector3b.md) |  |
 | [Vector3d](./math/vector3d.md) |  |
 | [Vector3f](./math/vector3f.md) |  |
+| [Vector3i](./math/vector3i.md) |  |
 | [Vector4b](./math/vector4b.md) |  |
 | [Vector4d](./math/vector4d.md) |  |
 | [Vector4f](./math/vector4f.md) |  |
-
-### `SDT4.Managed.Core.Native`
-
-| Type | Description |
-| --- | --- |
-| [NativeQuaternion](./native/nativequaternion.md) |  |
-| [NativeVector2d](./native/nativevector2d.md) |  |
-| [NativeVector2f](./native/nativevector2f.md) |  |
-| [NativeVector3d](./native/nativevector3d.md) |  |
-| [NativeVector3f](./native/nativevector3f.md) |  |
-| [NativeVector4d](./native/nativevector4d.md) |  |
-| [NativeVector4f](./native/nativevector4f.md) |  |
+| [Vector4i](./math/vector4i.md) |  |
 
 ### `SDT4.Managed.Core.Script`
 

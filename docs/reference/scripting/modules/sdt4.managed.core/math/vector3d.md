@@ -15,13 +15,16 @@ struct Vector3d
 ```
 **Implements:**
 
-##### [IVectorSpatial&lt;Double&gt;](./ivectorspatial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
+##### [IVectorSpatial&lt;Double&gt;](./ivectorspatial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), [IEquatable&lt;Vector3d&gt;](https://learn.microsoft.com/dotnet/api/system.iequatable-1)
 ---
 
 ## Fields
 
 | Name | Type | Description |
 | --- | --- | --- |
+| `public x` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public z` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
 ---
 
@@ -30,10 +33,8 @@ struct Vector3d
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; x` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
-| `public get; y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
-| `public get; z` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
-| `public get; Item` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public static get; Zero` | [Vector3d](./vector3d.md) |  |
+| `public get; set; Item` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
 ---
 
@@ -49,9 +50,6 @@ struct Vector3d
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
-##### Summary
-In format of (x, y, z)
-
 **Returns:**
 
 - [String](https://learn.microsoft.com/dotnet/api/system.string): 
@@ -62,6 +60,18 @@ In format of (x, y, z)
 **Parameters:**
 
 - `obj` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): 
+
+
+**Returns:**
+
+- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
+
+---
+#### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Vector3d](./vector3d.md) other)
+
+**Parameters:**
+
+- `other` ([Vector3d](./vector3d.md)): 
 
 
 **Returns:**
