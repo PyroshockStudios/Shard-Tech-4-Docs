@@ -22,7 +22,7 @@ struct VideoMode
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public Dimensions` | [Vector2f](../sdt4.managed.core/math/vector2f.md) |  |
+| `public Dimensions` | [Vector2i](../sdt4.managed.core/math/vector2i.md) |  |
 | `public RefreshRate` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 | `public RedBits` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 | `public GreenBits` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |

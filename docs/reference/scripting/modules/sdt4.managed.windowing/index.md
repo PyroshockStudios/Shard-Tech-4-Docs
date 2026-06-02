@@ -10,5 +10,4 @@
 | [VideoMode](./videomode.md) |  |
 | [Window](./window.md) |  |
 | [WindowPlatform](./windowplatform.md) |  |
-| [WindowResizeCallback](./windowresizecallback.md) |  |
 

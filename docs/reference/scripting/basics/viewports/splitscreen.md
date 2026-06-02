@@ -38,11 +38,11 @@ ViewportRenderInstance viewportRendererPlayer2 = sceneRenderer.CreateViewportRen
 viewportRendererPlayer2.SetCameraActor(player2);
 
 // Let's set up a vertical split-screen
-Vector2f region = window.FramebufferSize;
+Vector2i region = window.FramebufferSize;
 region.x /= 2;
 
-Vector2f offsetP1 = Vector2f.Zero;
-Vector2f offsetP2 = new Vector2f(region.x, 0);
+Vector2i offsetP1 = Vector2i.Zero;
+Vector2i offsetP2 = new Vector2i(region.x, 0);
 
 // and set our viewports!
 viewportRendererPlayer1.SetViewport(extent: region, offset: offsetP1);

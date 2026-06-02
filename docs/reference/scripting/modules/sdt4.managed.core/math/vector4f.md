@@ -22,6 +22,10 @@ struct Vector4f
 
 | Name | Type | Description |
 | --- | --- | --- |
+| `public x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public w` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
 ---
 
@@ -30,11 +34,8 @@ struct Vector4f
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public get; y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public get; z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public get; w` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public get; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public static get; Zero` | [Vector4f](./vector4f.md) |  |
+| `public get; set; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
 ---
 
@@ -49,9 +50,6 @@ struct Vector4f
 
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
-
-##### Summary
-In format of (x, y, z, w)
 
 **Returns:**
 

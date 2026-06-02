@@ -43,16 +43,6 @@ class Scene
 
 ## Methods
 
-#### public T AsScript&lt;T&gt;()
-
-##### Summary
-Gets the <see cref="T:SDT4.Managed.Core.Script.SceneScript" /> instance of this <see cref="T:SDT4.Managed.Core.Scene" /> class.
-
-**Returns:**
-
-- T: A valid T if it is a derived instance of a non-null SceneScript. Returns <strong>NULL</strong> otherwise.
-
----
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Reparent([Actor](./actor.md) newParent, [Actor](./actor.md) child)
 
 **Parameters:**
@@ -77,7 +67,22 @@ Gets the <see cref="T:SDT4.Managed.Core.Script.SceneScript" /> instance of this 
 - [Actor](./actor.md): 
 
 ---
-#### public [Actor](./actor.md) CreatePrefabActor([IPrefabAsset](./asset/iprefabasset.md) prefab, [String?](https://learn.microsoft.com/dotnet/api/system.string) name, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) isStationary, [Object?](https://learn.microsoft.com/dotnet/api/system.object) payload)
+#### public [PropScript?](./script/propscript.md) InvokeProp&lt;TProp&gt;([Object?](https://learn.microsoft.com/dotnet/api/system.object) payload)
+
+##### Summary
+Instantiates a prop from a script. 
+
+**Parameters:**
+
+- `payload` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): Optional script payload that is provided in the <see cref="M:SDT4.Managed.Core.Script.PropScript.OnCreate(SDT4.Managed.Core.Script.ScriptPayload)" /> function
+
+
+**Returns:**
+
+- [PropScript?](./script/propscript.md): A valid prop if the instantiation was <strong>NOT</strong> veto'd
+
+---
+#### public [Actor?](./actor.md) CreatePrefabActor([IPrefabAsset](./asset/iprefabasset.md) prefab, [String?](https://learn.microsoft.com/dotnet/api/system.string) name, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) isStationary, [Object?](https://learn.microsoft.com/dotnet/api/system.object) payload)
 
 ##### Summary
 Creates an actor from a prefab asset. This will instantiate a new instance of actors from the prefab chain,
@@ -96,7 +101,7 @@ and optionally initialise a script if the prefab has one.
 
 **Returns:**
 
-- [Actor](./actor.md): 
+- [Actor?](./actor.md): A valid actor if the instantiation was <strong>NOT</strong> veto'd
 
 ---
 #### public [Actor](./actor.md) GetActorFromId([UInt64](https://learn.microsoft.com/dotnet/api/system.uint64) id)
@@ -159,11 +164,19 @@ and optionally initialise a script if the prefab has one.
 - [IEnumerable&lt;Actor&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1): 
 
 ---
-#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) RemoveActor([Actor](./actor.md) actor)
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) KillActor([Actor](./actor.md) actor)
 
 **Parameters:**
 
 - `actor` ([Actor](./actor.md)): 
+
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) KillProp([PropScript](./script/propscript.md) prop)
+
+**Parameters:**
+
+- `prop` ([PropScript](./script/propscript.md)): 
 
 
 ---

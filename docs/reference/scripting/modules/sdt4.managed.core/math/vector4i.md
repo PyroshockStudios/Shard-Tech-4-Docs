@@ -1,4 +1,4 @@
-# Vector4d
+# Vector4i
 
 ## Summary
 
@@ -11,21 +11,21 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-struct Vector4d
+struct Vector4i
 ```
 **Implements:**
 
-##### [IVectorSpatial&lt;Double&gt;](./ivectorspatial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), [IEquatable&lt;Vector4d&gt;](https://learn.microsoft.com/dotnet/api/system.iequatable-1)
+##### [IVectorSpatial&lt;Int32&gt;](./ivectorspatial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), [IEquatable&lt;Vector4i&gt;](https://learn.microsoft.com/dotnet/api/system.iequatable-1)
 ---
 
 ## Fields
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public x` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
-| `public y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
-| `public z` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
-| `public w` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public x` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
+| `public y` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
+| `public z` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
+| `public w` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 
 ---
 
@@ -34,19 +34,19 @@ struct Vector4d
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public static get; Zero` | [Vector4d](./vector4d.md) |  |
-| `public get; set; Item` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public static get; Zero` | [Vector4i](./vector4i.md) |  |
+| `public get; set; Item` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 
 ---
 
 
 ## Methods
 
-#### public [Double](https://learn.microsoft.com/dotnet/api/system.double) Length()
+#### public [Int32](https://learn.microsoft.com/dotnet/api/system.int32) Length()
 
 **Returns:**
 
-- [Double](https://learn.microsoft.com/dotnet/api/system.double): 
+- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
 
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
@@ -68,11 +68,11 @@ struct Vector4d
 - [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
 
 ---
-#### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Vector4d](./vector4d.md) other)
+#### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Vector4i](./vector4i.md) other)
 
 **Parameters:**
 
-- `other` ([Vector4d](./vector4d.md)): 
+- `other` ([Vector4i](./vector4i.md)): 
 
 
 **Returns:**
