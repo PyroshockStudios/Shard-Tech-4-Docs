@@ -24,16 +24,18 @@ enum AnalogInputSign
 | `Negative` | [AnalogInputSign](./analoginputsign.md) |  |
 | `Both` | [AnalogInputSign](./analoginputsign.md) |  |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

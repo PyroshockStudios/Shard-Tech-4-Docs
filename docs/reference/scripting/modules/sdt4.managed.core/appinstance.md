@@ -26,8 +26,9 @@ sealed class AppInstance
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -39,8 +40,9 @@ sealed class AppInstance
 | `public get; Platform` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 | `public get; ResourceManager` | [IResourceManager](./iresourcemanager.md) |  |
 
----
 
+
+---
 
 ## Methods
 

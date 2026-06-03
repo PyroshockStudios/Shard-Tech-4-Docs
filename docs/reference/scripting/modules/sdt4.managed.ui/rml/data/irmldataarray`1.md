@@ -23,22 +23,25 @@ interface IRMLDataArray<>
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 
 #### public [Int32](https://learn.microsoft.com/dotnet/api/system.int32) Size()
 
-##### Summary
+
+**Summary:**
 Called by the DOM when it wants to know the size of the array.
 
 **Returns:**
@@ -48,9 +51,10 @@ Called by the DOM when it wants to know the size of the array.
 ---
 #### public T Get([Int32](https://learn.microsoft.com/dotnet/api/system.int32) index)
 
-##### Summary
+
+**Summary:**
 Called by the DOM when it wants to retrieve data at an array.
-This may be a scalar variable (such as a <see cref="T:SDT4.Managed.UI.RML.RMLVariant" />) or another structure (like <see cref="T:SDT4.Managed.UI.RML.Data.IRMLDataStruct" /> or <see cref="T:SDT4.Managed.UI.RML.Data.IRMLDataArray" />)
+This may be a scalar variable (such as a [RMLVariant](../rmlvariant.md)) or another structure (like [IRMLDataStruct](./irmldatastruct.md) or [IRMLDataArray](./irmldataarray.md))
 
 **Parameters:**
 
@@ -59,15 +63,16 @@ This may be a scalar variable (such as a <see cref="T:SDT4.Managed.UI.RML.RMLVar
 
 **Returns:**
 
-- T: Boxed variable. If you wish to return a scalar, this must be wrapped in <see cref="T:SDT4.Managed.UI.RML.Data.IRMLDataScalar" />. <seealso cref="T:SDT4.Managed.UI.RML.Data.IRMLDataArray" />
+- T: Boxed variable. If you wish to return a scalar, this must be wrapped in [IRMLDataScalar](./irmldatascalar.md). <seealso cref="T:SDT4.Managed.UI.RML.Data.IRMLDataArray" />
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Set([Int32](https://learn.microsoft.com/dotnet/api/system.int32) index, T value)
 
-##### Summary
+
+**Summary:**
 Sets variables for scalar arrays. This function can be disregarded if only non-scalars are accessed through arrays,
 unless you want to know that such a variable has been modified. If it's a reference type, it will be accurately modified anyway.
-This <strong>MUST</strong> be handled for both <see cref="T:SDT4.Managed.UI.RML.RMLVariant" /> and <see cref="T:SDT4.Managed.UI.RML.Data.IRMLDataScalar" /> (due to there being no way to infer the underlying reference type)
+This <strong>MUST</strong> be handled for both [RMLVariant](../rmlvariant.md) and [IRMLDataScalar](./irmldatascalar.md) (due to there being no way to infer the underlying reference type)
 
 **Parameters:**
 

@@ -25,8 +25,9 @@ struct Vector2b
 | `public x` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 | `public y` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
----
 
+
+---
 
 ## Properties
 
@@ -34,8 +35,9 @@ struct Vector2b
 | --- | --- | --- |
 | `public get; set; Item` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
----
 
+
+---
 
 ## Methods
 

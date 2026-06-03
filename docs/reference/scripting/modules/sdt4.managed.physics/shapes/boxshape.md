@@ -27,16 +27,18 @@ sealed class BoxShape
 | --- | --- | --- |
 | `public HalfExtents` | [Vector3f](../../sdt4.managed.core/math/vector3f.md) |  |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

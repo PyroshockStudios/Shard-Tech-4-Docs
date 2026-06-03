@@ -26,8 +26,9 @@ class RMLCanvas
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -36,14 +37,16 @@ class RMLCanvas
 | `public static get; PrimaryCanvas` | [RMLCanvas](./rmlcanvas.md) |  |
 | `public get; Themes` | [RMLThemeQuery](./rmlthemequery.md) |  |
 
----
 
+
+---
 
 ## Methods
 
 #### public T LoadDocument&lt;T&gt;([String](https://learn.microsoft.com/dotnet/api/system.string) document)
 
-##### Summary
+
+**Summary:**
 Loads the document from an rml source file
 
 **Parameters:**
@@ -58,7 +61,8 @@ Loads the document from an rml source file
 ---
 #### public [RMLDocument](./rmldocument.md) LoadDocument([String](https://learn.microsoft.com/dotnet/api/system.string) document)
 
-##### Summary
+
+**Summary:**
 Loads the document from an rml source file without any scripts attatched
 
 **Parameters:**
@@ -73,7 +77,8 @@ Loads the document from an rml source file without any scripts attatched
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) DestroyDocument([RMLDocument](./rmldocument.md) document)
 
-##### Summary
+
+**Summary:**
 Removes the document from the UI
 
 **Parameters:**
@@ -84,7 +89,8 @@ Removes the document from the UI
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) SetDpi([Single](https://learn.microsoft.com/dotnet/api/system.single) dpiScale)
 
-##### Summary
+
+**Summary:**
 Sets the ratio between the dp/px size
 
 **Parameters:**
@@ -95,7 +101,8 @@ Sets the ratio between the dp/px size
 ---
 #### public T GetDataModel&lt;T&gt;()
 
-##### Summary
+
+**Summary:**
 Retrives the data model instantiated for this context
 
 **Returns:**
@@ -105,7 +112,8 @@ Retrives the data model instantiated for this context
 ---
 #### public [RMLDocument[]](./rmldocument.md) GetAllDocuments()
 
-##### Summary
+
+**Summary:**
 Retrives all currently loaded documents
 
 **Returns:**

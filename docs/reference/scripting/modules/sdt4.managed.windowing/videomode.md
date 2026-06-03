@@ -28,16 +28,18 @@ struct VideoMode
 | `public GreenBits` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 | `public BlueBits` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

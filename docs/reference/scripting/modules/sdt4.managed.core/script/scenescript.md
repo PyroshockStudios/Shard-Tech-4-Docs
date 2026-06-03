@@ -26,8 +26,9 @@ class SceneScript
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,20 +36,23 @@ class SceneScript
 | --- | --- | --- |
 | `public get; UniqueIdentifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
----
 
+
+---
 
 ## Methods
 
 #### protected virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) OnPreBegin()
 
-##### Summary
+
+**Summary:**
 Called when the scene starts, before any other scripts have been called
 
 ---
 #### protected virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) OnPostBegin()
 
-##### Summary
+
+**Summary:**
 Called when the scene starts, after all actors have been instantiated
 
 ---

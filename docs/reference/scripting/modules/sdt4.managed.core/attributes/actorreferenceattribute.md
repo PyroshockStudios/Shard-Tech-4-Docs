@@ -2,7 +2,7 @@
 
 ## Summary
 Allows referencing an actor either locally or globally by its ID. This automatically populates the field with a strong reference to the actor.
-It can be applied on <see cref="T:SDT4.Managed.Core.Actor" /> or any class deriving from <see cref="T:SDT4.Managed.Core.Script.ActorScript" />.
+It can be applied on [Actor](../actor.md) or any class deriving from [ActorScript](../script/actorscript.md).
 
 
 
@@ -27,8 +27,9 @@ sealed class ActorReferenceAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -38,8 +39,9 @@ sealed class ActorReferenceAttribute
 | `public get; GlobalId` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 | `public get; IsGlobal` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
----
 
+
+---
 
 ## Methods
 

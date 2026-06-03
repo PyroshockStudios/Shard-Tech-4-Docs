@@ -27,8 +27,9 @@ struct Vector4d
 | `public z` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 | `public w` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
----
 
+
+---
 
 ## Properties
 
@@ -37,8 +38,9 @@ struct Vector4d
 | `public static get; Zero` | [Vector4d](./vector4d.md) |  |
 | `public get; set; Item` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
----
 
+
+---
 
 ## Methods
 

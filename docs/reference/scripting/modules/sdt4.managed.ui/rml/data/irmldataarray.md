@@ -1,7 +1,7 @@
 # IRMLDataArray
 
 ## Summary
-A generic specialisation of <see cref="T:SDT4.Managed.UI.RML.Data.IRMLDataArray`1" />  for untyped variables.
+A generic specialisation of [IRMLDataArray&lt;&gt;](./irmldataarray`1.md)  for untyped variables.
 
 
 
@@ -23,16 +23,18 @@ interface IRMLDataArray
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

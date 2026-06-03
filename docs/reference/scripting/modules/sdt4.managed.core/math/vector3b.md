@@ -26,8 +26,9 @@ struct Vector3b
 | `public y` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 | `public z` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,8 +36,9 @@ struct Vector3b
 | --- | --- | --- |
 | `public get; set; Item` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
----
 
+
+---
 
 ## Methods
 

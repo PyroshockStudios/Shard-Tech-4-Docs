@@ -26,8 +26,9 @@ sealed class RendererPlatform
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,19 +36,21 @@ sealed class RendererPlatform
 | --- | --- | --- |
 | `public get; Rhi` | [IRhiBackend](./irhibackend.md) |  |
 
----
 
+
+---
 
 ## Methods
 
 #### public [RenderCanvas](./graphics/rendercanvas.md) CreateWindowRenderCanvas([Window](../sdt4.managed.windowing/window.md) window)
 
-##### Summary
+
+**Summary:**
 Creates a new render canvas associated with the window
 
-##### Remarks
+**Remarks:**
 !!! warning
-    If <paramref name="window" /> already has a scene render instance, the existing <see cref="T:SDT4.Managed.Renderer.Graphics.RenderCanvas" /> is invalidated!
+    If `window` already has a scene render instance, the existing [RenderCanvas](./graphics/rendercanvas.md) is invalidated!
 
 **Parameters:**
 
@@ -61,11 +64,12 @@ Creates a new render canvas associated with the window
 ---
 #### public [SceneRenderInstance](./xrp/scenerenderinstance.md) CreateSceneRenderer([Scene](../sdt4.managed.core/scene.md) scene)
 
-##### Summary
+
+**Summary:**
 Creates a new render instance that allows rendering the scene. Only <strong>ONE</strong> is allowed be created per scene.
 
-##### Remarks
-If <paramref name="scene" /> already has a scene render instance, an <see cref="T:System.InvalidOperationException" /> is thrown.
+**Remarks:**
+If `scene` already has a scene render instance, an [InvalidOperationException](https://learn.microsoft.com/dotnet/api/system.invalidoperationexception) is thrown.
 
 **Parameters:**
 
@@ -79,7 +83,8 @@ If <paramref name="scene" /> already has a scene render instance, an <see cref="
 ---
 #### public [MaterialInstance?](./graphics/materialinstance.md) CreateMaterialInstance([IMaterialAsset](../sdt4.managed.core/asset/imaterialasset.md) material)
 
-##### Summary
+
+**Summary:**
 Creates a material instance
 
 **Parameters:**
@@ -89,12 +94,13 @@ Creates a material instance
 
 **Returns:**
 
-- [MaterialInstance?](./graphics/materialinstance.md): A new material instance based on <paramref name="material" />. If the renderer failed to allocate an instance, it will return null.
+- [MaterialInstance?](./graphics/materialinstance.md): A new material instance based on `material`. If the renderer failed to allocate an instance, it will return null.
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) DestroyMaterialInstance([MaterialInstance](./graphics/materialinstance.md) instance)
 
-##### Summary
+
+**Summary:**
 Releases a material instance
 
 **Parameters:**

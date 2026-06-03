@@ -27,16 +27,18 @@ abstract class PhysicsConstraint
 | --- | --- | --- |
 | `public Tolerance` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

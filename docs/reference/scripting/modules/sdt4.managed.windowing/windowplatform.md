@@ -26,8 +26,9 @@ sealed class WindowPlatform
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -38,8 +39,9 @@ sealed class WindowPlatform
 | `public get; Monitors` | [Monitor[]](./monitor.md) |  |
 | `public get; Windows` | [Window[]](./window.md) |  |
 
----
 
+
+---
 
 ## Methods
 

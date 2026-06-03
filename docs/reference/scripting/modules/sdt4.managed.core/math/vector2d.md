@@ -25,8 +25,9 @@ struct Vector2d
 | `public x` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 | `public y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,8 +36,9 @@ struct Vector2d
 | `public static get; Zero` | [Vector2d](./vector2d.md) |  |
 | `public get; set; Item` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
----
 
+
+---
 
 ## Methods
 

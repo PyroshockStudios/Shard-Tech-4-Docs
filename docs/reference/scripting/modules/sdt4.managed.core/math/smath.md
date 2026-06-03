@@ -33,16 +33,18 @@ static class SMath
 | `public static QUARTER_PI` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public static FLT_EPSILON` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

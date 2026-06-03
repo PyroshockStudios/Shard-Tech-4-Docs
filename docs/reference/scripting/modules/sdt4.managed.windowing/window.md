@@ -26,8 +26,9 @@ sealed class Window
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -41,43 +42,49 @@ sealed class Window
 | `public get; set; Borderless` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | If the window has the title bar visible or not. |
 | `public get; set; Resizable` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | If the window has the title bar visible or not. |
 
----
+
 ##### `Size` Remarks
 !!! warning
-    Do not use <see cref="P:SDT4.Managed.Windowing.Window.Size" /> for determining the size of the renderable region. 
-    Use <see cref="P:SDT4.Managed.Windowing.Window.FramebufferSize" /> to determine appropriate renderable regions for render targets.
+    Do not use [Window.Size](./window.md#size) for determining the size of the renderable region. 
+    Use [Window.FramebufferSize](./window.md#framebuffersize) to determine appropriate renderable regions for render targets.
 
 
+---
 
 ## Methods
 
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Maximize()
 
-##### Summary
+
+**Summary:**
 Maximises the window
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Minimize()
 
-##### Summary
+
+**Summary:**
 Minimises the window
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Restore()
 
-##### Summary
+
+**Summary:**
 Restores the window after minimisation.
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Close()
 
-##### Summary
+
+**Summary:**
 Closes window immediately
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) SetMonitor([Monitor?](./monitor.md) monitor, [VideoMode](./videomode.md) mode)
 
-##### Summary
+
+**Summary:**
 Sets the <em>fullscreen</em> display monitor with the specified window mode. If monitor is <strong>NULL</strong> then it will revert to windowed mode.
 
 **Parameters:**

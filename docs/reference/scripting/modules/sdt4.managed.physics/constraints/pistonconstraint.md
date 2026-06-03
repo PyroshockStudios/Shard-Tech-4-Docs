@@ -28,16 +28,18 @@ sealed class PistonConstraint
 | `public MinLength` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public MaxLength` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

@@ -39,9 +39,9 @@
 | Type | Description |
 | --- | --- |
 | [IRMLData](./rml/data/irmldata.md) | Base RML data variable interface |
-| [IRMLDataArray](./rml/data/irmldataarray.md) | A generic specialisation of <see cref="T:SDT4.Managed.UI.RML.Data.IRMLDataArray`1" />  for untyped variables. |
+| [IRMLDataArray](./rml/data/irmldataarray.md) | A generic specialisation of `IRMLDataArray`1`  for untyped variables. |
 | [IRMLDataArray&lt;T&gt;](./rml/data/irmldataarray`1.md) |  |
 | [IRMLDataScalar](./rml/data/irmldatascalar.md) | A scalar data variable, that manages untyped variables. |
-| [IRMLDataStruct](./rml/data/irmldatastruct.md) | RML data structure containing members. A class implementing this should contain members with the [<see cref="T:SDT4.Managed.UI.RML.Attributes.RMLDataVariableAttribute" />] attribute. |
+| [IRMLDataStruct](./rml/data/irmldatastruct.md) | RML data structure containing members. A class implementing this should contain members with the [`RMLDataVariableAttribute`] attribute. |
 | [RMLDataModel](./rml/data/rmldatamodel.md) |  |
 

@@ -25,8 +25,9 @@ struct Vector2f
 | `public x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,8 +36,9 @@ struct Vector2f
 | `public static get; Zero` | [Vector2f](./vector2f.md) |  |
 | `public get; set; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
----
 
+
+---
 
 ## Methods
 

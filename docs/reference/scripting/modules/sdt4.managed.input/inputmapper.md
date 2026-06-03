@@ -26,22 +26,25 @@ sealed class InputMapper
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindButtonMapping&lt;TEnum&gt;(TEnum mapping, [KeyInput](./keyinput.md) input, [InputModifier](./inputmodifier.md) modifier, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) registerRepeat, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) strictModifier)
 
-##### Summary
+
+**Summary:**
 Maps a button binding to a key input.
 
 **Parameters:**
@@ -55,13 +58,14 @@ Maps a button binding to a key input.
 - `registerRepeat` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): Should repeatedly trigger when the key is held down?
 
 - `strictModifier` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): Does the binding require exact modifiers? 
-            (If this is disabled, inputs <c>CTRL + A</c> and <c>A</c> will both be triggered if the user presses CTRL+A if <paramref name="strictModifier" /> is disabled!)
+            (If this is disabled, inputs <c>CTRL + A</c> and <c>A</c> will both be triggered if the user presses CTRL+A if `strictModifier` is disabled!)
 
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindButtonMapping&lt;TEnum&gt;(TEnum mapping, [MouseInput](./mouseinput.md) input, [InputModifier](./inputmodifier.md) modifier, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) strictModifier)
 
-##### Summary
+
+**Summary:**
 Maps a button binding to a mouse input.
 
 **Parameters:**
@@ -73,13 +77,14 @@ Maps a button binding to a mouse input.
 - `modifier` ([InputModifier](./inputmodifier.md)): Modifiers that must be held down for the input to trigger
 
 - `strictModifier` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): Does the binding require exact modifiers? 
-            (If this is disabled, inputs <c>CTRL + A</c> and <c>A</c> will both be triggered if the user presses CTRL+A if <paramref name="strictModifier" /> is disabled!)
+            (If this is disabled, inputs <c>CTRL + A</c> and <c>A</c> will both be triggered if the user presses CTRL+A if `strictModifier` is disabled!)
 
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindButtonMapping&lt;TEnum&gt;(TEnum mapping, [GamepadButtonInput](./gamepadbuttoninput.md) input, [Int32](https://learn.microsoft.com/dotnet/api/system.int32) gamepadIndex, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) registerRepeat)
 
-##### Summary
+
+**Summary:**
 Maps a button binding to a gamepad input.
 
 **Parameters:**
@@ -96,7 +101,8 @@ Maps a button binding to a gamepad input.
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindButtonMapping&lt;TEnum&gt;(TEnum mapping, [MouseMotionInput](./mousemotioninput.md) input)
 
-##### Summary
+
+**Summary:**
 Maps a button binding to a mouse movement/scroll.<br />
 <strong>NOTE:</strong> This will only trigger upon <strong>POSITIVE</strong> values! <strong>ZERO</strong> values will <strong>NOT</strong>
 It is thus recommended to use this solely for things such as event triggers, as opposed to field values
@@ -111,7 +117,8 @@ It is thus recommended to use this solely for things such as event triggers, as 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindAxisMapping&lt;TEnum&gt;(TEnum mapping, [KeyInput](./keyinput.md) input, [Single](https://learn.microsoft.com/dotnet/api/system.single) value, [InputModifier](./inputmodifier.md) modifier, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) strictModifier)
 
-##### Summary
+
+**Summary:**
 Maps a button binding to a key input.
 
 **Parameters:**
@@ -125,13 +132,14 @@ Maps a button binding to a key input.
 - `modifier` ([InputModifier](./inputmodifier.md)): Modifiers that must be held down for the input to trigger
 
 - `strictModifier` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): Does the binding require exact modifiers? 
-            (If this is disabled, inputs <c>CTRL + A</c> and <c>A</c> will both be triggered if the user presses CTRL+A if <paramref name="strictModifier" /> is disabled!)
+            (If this is disabled, inputs <c>CTRL + A</c> and <c>A</c> will both be triggered if the user presses CTRL+A if `strictModifier` is disabled!)
 
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindAxisMapping&lt;TEnum&gt;(TEnum mapping, [MouseInput](./mouseinput.md) input, [Single](https://learn.microsoft.com/dotnet/api/system.single) value, [InputModifier](./inputmodifier.md) modifier, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) strictModifier)
 
-##### Summary
+
+**Summary:**
 Maps a button binding to a mouse input.
 
 **Parameters:**
@@ -145,13 +153,14 @@ Maps a button binding to a mouse input.
 - `modifier` ([InputModifier](./inputmodifier.md)): Modifiers that must be held down for the input to trigger
 
 - `strictModifier` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): Does the binding require exact modifiers? 
-            (If this is disabled, inputs <c>CTRL + A</c> and <c>A</c> will both be triggered if the user presses CTRL+A if <paramref name="strictModifier" /> is disabled!)
+            (If this is disabled, inputs <c>CTRL + A</c> and <c>A</c> will both be triggered if the user presses CTRL+A if `strictModifier` is disabled!)
 
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindAxisMapping&lt;TEnum&gt;(TEnum mapping, [GamepadButtonInput](./gamepadbuttoninput.md) input, [Int32](https://learn.microsoft.com/dotnet/api/system.int32) gamepadIndex, [Single](https://learn.microsoft.com/dotnet/api/system.single) value)
 
-##### Summary
+
+**Summary:**
 Maps an axis binding to a joystick boolean input<br />
 
 **Parameters:**
@@ -168,7 +177,8 @@ Maps an axis binding to a joystick boolean input<br />
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindAxisMapping&lt;TEnum&gt;(TEnum mapping, [GamepadAnalogInput](./gamepadanaloginput.md) input, [Int32](https://learn.microsoft.com/dotnet/api/system.int32) gamepadIndex, [Single](https://learn.microsoft.com/dotnet/api/system.single) scale)
 
-##### Summary
+
+**Summary:**
 Maps an axis binding to a joystick movement (thumbstick or triggers).<br />
 This will trigger upon all movement deltas
 
@@ -186,7 +196,8 @@ This will trigger upon all movement deltas
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) BindAxisMapping&lt;TEnum&gt;(TEnum mapping, [MouseMotionInput](./mousemotioninput.md) input, [Single](https://learn.microsoft.com/dotnet/api/system.single) sensitivity)
 
-##### Summary
+
+**Summary:**
 Maps an axis binding to a mouse movement/scroll.<br />
 <strong>NOTE:</strong> This will only trigger upon <strong>POSITIVE</strong> values! <strong>ZERO</strong> values will <strong>NOT</strong>
 It is thus recommended to use this solely for things such as event triggers, as opposed to field values

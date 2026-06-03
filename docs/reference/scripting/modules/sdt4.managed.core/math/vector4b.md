@@ -27,8 +27,9 @@ struct Vector4b
 | `public z` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 | `public w` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
----
 
+
+---
 
 ## Properties
 
@@ -36,8 +37,9 @@ struct Vector4b
 | --- | --- | --- |
 | `public get; set; Item` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
----
 
+
+---
 
 ## Methods
 

@@ -26,8 +26,9 @@ sealed class RMLThemeQuery
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,8 +36,9 @@ sealed class RMLThemeQuery
 | --- | --- | --- |
 | `public get; Item` | [RMLTheme](./rmltheme.md) |  |
 
----
 
+
+---
 
 ## Methods
 

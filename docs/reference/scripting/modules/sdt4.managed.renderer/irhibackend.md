@@ -23,8 +23,9 @@ interface IRhiBackend
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,8 +36,9 @@ interface IRhiBackend
 | `public get; Api` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 | `public get; Version` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 
----
 
+
+---
 
 ## Methods
 

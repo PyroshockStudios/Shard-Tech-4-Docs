@@ -27,8 +27,9 @@ struct RMLColor
 | `public b` | [Byte](https://learn.microsoft.com/dotnet/api/system.byte) |  |
 | `public a` | [Byte](https://learn.microsoft.com/dotnet/api/system.byte) |  |
 
----
 
+
+---
 
 ## Properties
 
@@ -36,8 +37,9 @@ struct RMLColor
 | --- | --- | --- |
 | `public get; Premultiplied` | [RMLColorPremultiplied](./rmlcolorpremultiplied.md) |  |
 
----
 
+
+---
 
 ## Methods
 

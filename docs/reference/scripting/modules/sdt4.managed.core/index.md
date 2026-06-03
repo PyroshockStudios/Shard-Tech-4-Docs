@@ -37,11 +37,11 @@
 
 | Type | Description |
 | --- | --- |
-| [ActorReferenceAttribute](./attributes/actorreferenceattribute.md) | Allows referencing an actor either locally or globally by its ID. This automatically populates the field with a strong reference to the actor. It can be applied on <see cref="T:SDT4.Managed.Core.Actor" /> or any class deriving from <see cref="T:SDT4.Managed.Core.Script.ActorScript" />. |
+| [ActorReferenceAttribute](./attributes/actorreferenceattribute.md) | Allows referencing an actor either locally or globally by its ID. This automatically populates the field with a strong reference to the actor. It can be applied on `Actor` or any class deriving from `ActorScript`. |
 | [AssetStringFieldEditPropertiesAttribute](./attributes/assetstringfieldeditpropertiesattribute.md) |  |
 | [ExposeFieldAttribute](./attributes/exposefieldattribute.md) |  |
 | [ExposeMethodAttribute](./attributes/exposemethodattribute.md) |  |
-| [GameEntryAttribute](./attributes/gameentryattribute.md) | Defines the application entry point. Can only be applied on one single method in the entire application. Must be applied on a static method with a single <see cref="T:SDT4.Managed.Core.AppLoadContext" /> input parameter. |
+| [GameEntryAttribute](./attributes/gameentryattribute.md) | Defines the application entry point. Can only be applied on one single method in the entire application. Must be applied on a static method with a single `AppLoadContext` input parameter. |
 | [NumericFieldEditPropertiesAttribute](./attributes/numericfieldeditpropertiesattribute.md) |  |
 | [ReturnPinNameAttribute](./attributes/returnpinnameattribute.md) |  |
 | [ScriptEventAttribute](./attributes/scripteventattribute.md) |  |

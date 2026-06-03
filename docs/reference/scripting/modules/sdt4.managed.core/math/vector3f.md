@@ -26,8 +26,9 @@ struct Vector3f
 | `public y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
----
 
+
+---
 
 ## Properties
 
@@ -36,8 +37,9 @@ struct Vector3f
 | `public static get; Zero` | [Vector3f](./vector3f.md) |  |
 | `public get; set; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
----
 
+
+---
 
 ## Methods
 

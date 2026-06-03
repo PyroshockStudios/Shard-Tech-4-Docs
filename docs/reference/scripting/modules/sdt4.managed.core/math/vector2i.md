@@ -25,8 +25,9 @@ struct Vector2i
 | `public x` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 | `public y` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,8 +36,9 @@ struct Vector2i
 | `public static get; Zero` | [Vector2i](./vector2i.md) |  |
 | `public get; set; Item` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 
----
 
+
+---
 
 ## Methods
 

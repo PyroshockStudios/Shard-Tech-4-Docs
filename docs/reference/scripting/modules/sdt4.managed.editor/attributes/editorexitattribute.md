@@ -1,7 +1,7 @@
 # EditorExitAttribute
 
 ## Summary
-Defines the exit of an editor run instance. Requires a corresponding <see cref="T:SDT4.Managed.Editor.Attributes.EditorEntryAttribute" />
+Defines the exit of an editor run instance. Requires a corresponding [EditorEntryAttribute](./editorentryattribute.md)
 
 
 
@@ -26,16 +26,18 @@ sealed class EditorExitAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

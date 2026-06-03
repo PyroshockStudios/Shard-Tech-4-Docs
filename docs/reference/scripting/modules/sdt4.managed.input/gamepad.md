@@ -26,8 +26,9 @@ sealed class Gamepad
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -37,8 +38,9 @@ sealed class Gamepad
 | `public get; Index` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 | `public get; set; Deadzone` | [Single](https://learn.microsoft.com/dotnet/api/system.single) | Threshold as to when joystick movement is relevant. Not recommended to set to very low values, as minor stick drift is fairly common |
 
----
 
+
+---
 
 ## Methods
 

@@ -26,8 +26,9 @@ abstract class Component
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -36,8 +37,9 @@ abstract class Component
 | `public get; set; Owner` | [Actor](../actor.md) | Actor owning the component |
 | `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
----
 
+
+---
 
 ## Methods
 

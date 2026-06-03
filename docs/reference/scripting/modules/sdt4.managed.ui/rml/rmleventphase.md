@@ -25,16 +25,18 @@ enum RMLEventPhase
 | `AtTarget` | [RMLEventPhase](./rmleventphase.md) |  |
 | `Bubbling` | [RMLEventPhase](./rmleventphase.md) |  |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

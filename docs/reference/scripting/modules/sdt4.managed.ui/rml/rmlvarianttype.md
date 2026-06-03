@@ -47,16 +47,18 @@ enum RMLVariantType
 | `BoxshadowList` | [RMLVariantType](./rmlvarianttype.md) |  |
 | `VoidPtr` | [RMLVariantType](./rmlvarianttype.md) |  |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

@@ -26,8 +26,9 @@ sealed class PointLightComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -37,8 +38,9 @@ sealed class PointLightComponent
 | `public get; set; Intensity` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
----
 
+
+---
 
 ## Methods
 

@@ -27,16 +27,18 @@ enum RemoteConnectionStatus
 | `ClosedByPeer` | [RemoteConnectionStatus](./remoteconnectionstatus.md) |  |
 | `ProblemDetectedLocally` | [RemoteConnectionStatus](./remoteconnectionstatus.md) |  |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

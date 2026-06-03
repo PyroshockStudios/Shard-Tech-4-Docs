@@ -26,8 +26,9 @@ sealed class PostProcessingComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -37,8 +38,9 @@ sealed class PostProcessingComponent
 | `public get; set; ColorGrading` | [ColorGrading](./colorgrading.md) |  |
 | `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
----
 
+
+---
 
 ## Methods
 

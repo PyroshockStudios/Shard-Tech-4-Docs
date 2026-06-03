@@ -23,8 +23,9 @@ struct RMLVariant
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -33,8 +34,9 @@ struct RMLVariant
 | `public static get; Empty` | [RMLVariant](./rmlvariant.md) |  |
 | `public get; Type` | [RMLVariantType](./rmlvarianttype.md) |  |
 
----
 
+
+---
 
 ## Methods
 

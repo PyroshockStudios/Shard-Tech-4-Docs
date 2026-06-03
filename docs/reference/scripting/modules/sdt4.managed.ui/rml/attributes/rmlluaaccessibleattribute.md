@@ -26,8 +26,9 @@ sealed class RMLLuaAccessibleAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,8 +36,9 @@ sealed class RMLLuaAccessibleAttribute
 | --- | --- | --- |
 | `public get; AccessAs` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 
----
 
+
+---
 
 ## Methods
 

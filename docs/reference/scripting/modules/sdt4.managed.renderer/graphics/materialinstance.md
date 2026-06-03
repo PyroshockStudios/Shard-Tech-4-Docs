@@ -26,8 +26,9 @@ sealed class MaterialInstance
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,8 +36,9 @@ sealed class MaterialInstance
 | --- | --- | --- |
 | `public get; Properties` | [MaterialInstancePropertyMap](./materialinstancepropertymap.md) |  |
 
----
 
+
+---
 
 ## Methods
 

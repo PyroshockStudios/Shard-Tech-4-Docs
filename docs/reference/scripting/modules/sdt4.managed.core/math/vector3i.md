@@ -26,8 +26,9 @@ struct Vector3i
 | `public y` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 | `public z` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 
----
 
+
+---
 
 ## Properties
 
@@ -36,8 +37,9 @@ struct Vector3i
 | `public static get; Zero` | [Vector3i](./vector3i.md) |  |
 | `public get; set; Item` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 
----
 
+
+---
 
 ## Methods
 
