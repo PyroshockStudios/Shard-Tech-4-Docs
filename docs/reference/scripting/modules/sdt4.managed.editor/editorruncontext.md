@@ -29,16 +29,18 @@ struct EditorRunContext
 | `public Viewports` | [IReadOnlyList&lt;ViewportRenderInstance&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1) | Editor owned viewports. Includes master viewport. May change in size. |
 | `public SceneRenderer` | [SceneRenderInstance](../sdt4.managed.renderer/xrp/scenerenderinstance.md) | Active scene render instance. |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

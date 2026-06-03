@@ -26,16 +26,18 @@ sealed class PhysicsContactLostEvent
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

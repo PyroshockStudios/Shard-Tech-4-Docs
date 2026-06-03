@@ -2,7 +2,7 @@
 
 ## Summary
 Defines the application entry point. Can only be applied on one single method in the entire application.
-Must be applied on a static method with a single <see cref="T:SDT4.Managed.Core.AppLoadContext" /> input parameter.
+Must be applied on a static method with a single [AppLoadContext](../apploadcontext.md) input parameter.
 
 
 
@@ -27,16 +27,18 @@ sealed class GameEntryAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

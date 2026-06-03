@@ -28,8 +28,9 @@ sealed class ScriptGeneratedAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -37,8 +38,9 @@ sealed class ScriptGeneratedAttribute
 | --- | --- | --- |
 | `public get; Source` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 
----
 
+
+---
 
 ## Methods
 

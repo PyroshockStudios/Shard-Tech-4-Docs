@@ -23,16 +23,18 @@ interface ITrimeshAsset
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

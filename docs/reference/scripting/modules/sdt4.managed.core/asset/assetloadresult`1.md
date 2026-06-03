@@ -25,16 +25,18 @@ struct AssetLoadResult<>
 | `public ErrorCode` | [AssetErrorCode](./asseterrorcode.md) |  |
 | `public Resource` | TResource |  |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

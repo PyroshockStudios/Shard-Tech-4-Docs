@@ -26,8 +26,9 @@ sealed class RMLEvent
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -42,20 +43,23 @@ sealed class RMLEvent
 | `public get; ImmediatePropagating` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | Returns true if the event is still immediate propagating. |
 | `public get; Parameters` | [RMLEventParameters](./rmleventparameters.md) | The list of parameters provided by the event. This map is only valid during the execution of the event listener callback |
 
----
 
+
+---
 
 ## Methods
 
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) StopPropagation()
 
-##### Summary
+
+**Summary:**
 Stops propagation of the event if it is interruptible, but finish all listeners on the current element.
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) StopImmediatePropagation()
 
-##### Summary
+
+**Summary:**
 Stops propagation of the event if it is interruptible, including to any other listeners on the current element.
 
 ---

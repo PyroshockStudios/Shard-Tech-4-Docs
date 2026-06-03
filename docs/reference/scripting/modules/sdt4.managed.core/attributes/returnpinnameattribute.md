@@ -26,8 +26,9 @@ sealed class ReturnPinNameAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,8 +36,9 @@ sealed class ReturnPinNameAttribute
 | --- | --- | --- |
 | `public get; Name` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 
----
 
+
+---
 
 ## Methods
 

@@ -26,8 +26,9 @@ sealed class RenderCanvas
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -37,8 +38,9 @@ sealed class RenderCanvas
 | `public get; IsAttached` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | States if the canvas is at least used by 1 IRenderCanvasAttacher; |
 | `public get; SwapchainWindow` | [Window](../../sdt4.managed.windowing/window.md) | The window that defines this render canvas, if defined by a window. |
 
----
 
+
+---
 
 ## Methods
 

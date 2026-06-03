@@ -6,7 +6,7 @@
 ## Remarks
 !!! danger
     All calls made within this class <strong>MUST</strong> be performed on the Master Thread. 
-    See <see cref="M:SDT4.Managed.Core.Thread.RunLater(System.Threading.ThreadStart)" /> on how to safely call this from an asynchronous thread.
+    See [Thread.RunLater](../../sdt4.managed.core/thread.md#runlater) on how to safely call this from an asynchronous thread.
     Failure to comply with this can cause catastrophical failures as the engine is not designed for this.
 
 ## Definition
@@ -30,27 +30,30 @@ sealed class SceneRenderInstance
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 
 #### public [ViewportRenderInstance](./viewportrenderinstance.md) CreateViewportRenderer([String](https://learn.microsoft.com/dotnet/api/system.string) uniqueName, [RenderCanvas](../graphics/rendercanvas.md) renderCanvas)
 
-##### Summary
+
+**Summary:**
 Creates a viewport from a canvas.
 
-##### Remarks
-<paramref name="uniqueName" /> <strong>MUST</strong> be unique, otherwise an <see cref="T:System.InvalidOperationException" /> is thrown. 
-<paramref name="renderCanvas" /> <strong>MUST</strong> be valid, otherwise an <see cref="T:System.InvalidOperationException" /> is thrown.
+**Remarks:**
+`uniqueName` <strong>MUST</strong> be unique, otherwise an [InvalidOperationException](https://learn.microsoft.com/dotnet/api/system.invalidoperationexception) is thrown. 
+`renderCanvas` <strong>MUST</strong> be valid, otherwise an [InvalidOperationException](https://learn.microsoft.com/dotnet/api/system.invalidoperationexception) is thrown.
 
 **Parameters:**
 

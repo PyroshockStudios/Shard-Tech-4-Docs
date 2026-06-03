@@ -23,8 +23,9 @@ interface IScriptTarget
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -32,8 +33,9 @@ interface IScriptTarget
 | --- | --- | --- |
 | `public get; UniqueIdentifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
----
 
+
+---
 
 ## Methods
 

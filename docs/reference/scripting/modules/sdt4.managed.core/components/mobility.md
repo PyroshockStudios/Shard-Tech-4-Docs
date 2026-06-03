@@ -24,16 +24,18 @@ enum Mobility
 | `Stationary` | [Mobility](./mobility.md) |  |
 | `Dynamic` | [Mobility](./mobility.md) |  |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

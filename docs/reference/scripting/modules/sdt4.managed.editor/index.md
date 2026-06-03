@@ -13,5 +13,5 @@
 | Type | Description |
 | --- | --- |
 | [EditorEntryAttribute](./attributes/editorentryattribute.md) | Defines the entry of an editor run instance |
-| [EditorExitAttribute](./attributes/editorexitattribute.md) | Defines the exit of an editor run instance. Requires a corresponding <see cref="T:SDT4.Managed.Editor.Attributes.EditorEntryAttribute" /> |
+| [EditorExitAttribute](./attributes/editorexitattribute.md) | Defines the exit of an editor run instance. Requires a corresponding `EditorEntryAttribute` |
 

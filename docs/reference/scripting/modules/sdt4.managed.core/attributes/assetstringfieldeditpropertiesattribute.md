@@ -26,8 +26,9 @@ sealed class AssetStringFieldEditPropertiesAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,8 +36,9 @@ sealed class AssetStringFieldEditPropertiesAttribute
 | --- | --- | --- |
 | `public get; AssetType` | [AssetType](../asset/assettype.md) |  |
 
----
 
+
+---
 
 ## Methods
 

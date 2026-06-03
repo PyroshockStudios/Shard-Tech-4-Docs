@@ -23,8 +23,9 @@ interface IRemoteConnection
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -34,8 +35,9 @@ interface IRemoteConnection
 | `public get; RoundTripTime` | [Int64](https://learn.microsoft.com/dotnet/api/system.int64) |  |
 | `public get; ConnectionTime` | [Int64](https://learn.microsoft.com/dotnet/api/system.int64) |  |
 
----
 
+
+---
 
 ## Methods
 

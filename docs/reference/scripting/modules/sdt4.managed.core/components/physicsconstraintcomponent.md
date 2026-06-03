@@ -26,8 +26,9 @@ sealed class PhysicsConstraintComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,8 +36,9 @@ sealed class PhysicsConstraintComponent
 | --- | --- | --- |
 | `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
----
 
+
+---
 
 ## Methods
 

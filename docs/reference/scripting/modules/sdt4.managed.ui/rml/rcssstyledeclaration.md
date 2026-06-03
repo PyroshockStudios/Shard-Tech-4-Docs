@@ -26,8 +26,9 @@ sealed class RCSSStyleDeclaration
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,14 +36,16 @@ sealed class RCSSStyleDeclaration
 | --- | --- | --- |
 | `public get; set; Item` | [String](https://learn.microsoft.com/dotnet/api/system.string) | Access style value by exact string name (e.g., Style["background-color"]) |
 
----
 
+
+---
 
 ## Methods
 
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Remove([String](https://learn.microsoft.com/dotnet/api/system.string) name)
 
-##### Summary
+
+**Summary:**
 Removes style from element
 
 **Parameters:**
@@ -53,7 +56,8 @@ Removes style from element
 ---
 #### public virtual [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) TryGetMember([GetMemberBinder](https://learn.microsoft.com/dotnet/api/system.dynamic.getmemberbinder) binder, out [Object](https://learn.microsoft.com/dotnet/api/system.object) result)
 
-##### Summary
+
+**Summary:**
 Handles dynamic property reads (e.g., var color = Style.Color;)
 
 **Parameters:**
@@ -70,7 +74,8 @@ Handles dynamic property reads (e.g., var color = Style.Color;)
 ---
 #### public virtual [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) TrySetMember([SetMemberBinder](https://learn.microsoft.com/dotnet/api/system.dynamic.setmemberbinder) binder, [Object?](https://learn.microsoft.com/dotnet/api/system.object) value)
 
-##### Summary
+
+**Summary:**
 Handles dynamic property writes (e.g., Style.BackgroundColor = "red";)
 
 **Parameters:**

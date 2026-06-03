@@ -27,8 +27,9 @@ struct Vector4f
 | `public z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public w` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
----
 
+
+---
 
 ## Properties
 
@@ -37,8 +38,9 @@ struct Vector4f
 | `public static get; Zero` | [Vector4f](./vector4f.md) |  |
 | `public get; set; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
----
 
+
+---
 
 ## Methods
 

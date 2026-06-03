@@ -27,8 +27,9 @@ sealed class RPCAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -38,8 +39,9 @@ sealed class RPCAttribute
 | `public get; set; Protocol` | [PacketProtocol](../packetprotocol.md) | Protocol under which this call should follow |
 | `public get; set; Validation` | [String?](https://learn.microsoft.com/dotnet/api/system.string) | Name of validation method. Must be in the same scope. |
 
----
 
+
+---
 
 ## Methods
 

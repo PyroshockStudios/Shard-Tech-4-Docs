@@ -26,8 +26,9 @@ sealed class Mesh3DComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -39,8 +40,9 @@ sealed class Mesh3DComponent
 | `public get; Materials` | [IReadOnlyList&lt;IMaterialAsset&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1) |  |
 | `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
----
 
+
+---
 
 ## Methods
 

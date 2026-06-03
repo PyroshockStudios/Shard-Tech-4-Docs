@@ -33,16 +33,18 @@ enum MouseInput
 | `ButtonRight` | [MouseInput](./mouseinput.md) |  |
 | `ButtonMiddle` | [MouseInput](./mouseinput.md) |  |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

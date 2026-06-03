@@ -27,8 +27,9 @@ struct Vector4i
 | `public z` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 | `public w` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 
----
 
+
+---
 
 ## Properties
 
@@ -37,8 +38,9 @@ struct Vector4i
 | `public static get; Zero` | [Vector4i](./vector4i.md) |  |
 | `public get; set; Item` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 
----
 
+
+---
 
 ## Methods
 

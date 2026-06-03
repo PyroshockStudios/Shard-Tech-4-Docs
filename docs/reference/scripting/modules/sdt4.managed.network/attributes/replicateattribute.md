@@ -26,8 +26,9 @@ sealed class ReplicateAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -36,8 +37,9 @@ sealed class ReplicateAttribute
 | `public get; Policy` | [ReplicationPolicy](./replicationpolicy.md) |  |
 | `public get; set; CullDistance` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
----
 
+
+---
 
 ## Methods
 

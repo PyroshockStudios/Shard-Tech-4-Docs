@@ -27,8 +27,9 @@ struct Quaternion
 | `public y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
----
 
+
+---
 
 ## Properties
 
@@ -37,8 +38,9 @@ struct Quaternion
 | `public get; set; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public static get; Identity` | [Quaternion](./quaternion.md) |  |
 
----
 
+
+---
 
 ## Methods
 

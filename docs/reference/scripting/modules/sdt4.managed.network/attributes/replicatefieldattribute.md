@@ -26,8 +26,9 @@ sealed class ReplicateFieldAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -36,8 +37,9 @@ sealed class ReplicateFieldAttribute
 | `public get; set; Rate` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 | `public get; set; Quantization` | [ReplicationQuantization](./replicationquantization.md) |  |
 
----
 
+
+---
 
 ## Methods
 

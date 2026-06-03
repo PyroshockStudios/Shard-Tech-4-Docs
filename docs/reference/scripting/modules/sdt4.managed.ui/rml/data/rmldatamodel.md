@@ -26,8 +26,9 @@ abstract class RMLDataModel
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,22 +36,25 @@ abstract class RMLDataModel
 | --- | --- | --- |
 | `public get; Canvas` | [RMLCanvas](../rmlcanvas.md) |  |
 
----
 
+
+---
 
 ## Methods
 
 #### protected abstract [Void](https://learn.microsoft.com/dotnet/api/system.void) InitEvent()
 
-##### Summary
+
+**Summary:**
 Called when RmlUi constructs the data model
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) FlagDirty([String?](https://learn.microsoft.com/dotnet/api/system.string) variable)
 
-##### Summary
+
+**Summary:**
 Marks the data model as dirty to rebuild (part of) the DOM.
-If the <paramref name="variable" /> is null, then the entire model is assumed dirty
+If the `variable` is null, then the entire model is assumed dirty
 
 **Parameters:**
 

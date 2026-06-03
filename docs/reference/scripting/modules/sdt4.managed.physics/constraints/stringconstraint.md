@@ -27,16 +27,18 @@ sealed class StringConstraint
 | --- | --- | --- |
 | `public MaxLength` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

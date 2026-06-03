@@ -26,8 +26,9 @@ sealed class SkinnedMeshComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -40,8 +41,9 @@ sealed class SkinnedMeshComponent
 | `public get; set; EnabledMorphTargets` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 | `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
----
 
+
+---
 
 ## Methods
 

@@ -23,8 +23,9 @@ struct AppLoadContext
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -33,9 +34,9 @@ struct AppLoadContext
 | `public get; Args` | [String[]](https://learn.microsoft.com/dotnet/api/system.string) | The application arguments used when launching |
 | `public get; Env` | [String[]](https://learn.microsoft.com/dotnet/api/system.string) | The environment variables available when launching the application |
 | `public get; InstanceReadyTask` | [Task&lt;AppInstance&gt;](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1) | Task containing the app instance once the components are ready. |
-| `public get; GameReadyTask` | [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task) | Task that finishes once the opening screen finishes playing. In the event of <see cref="P:SDT4.Managed.Core.AppLoadContext.InstanceReadyTask" />  throws an exception, this task throws a <see cref="T:System.InvalidOperationException" />. |
+| `public get; GameReadyTask` | [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task) | Task that finishes once the opening screen finishes playing. In the event of [AppLoadContext.InstanceReadyTask](./apploadcontext.md#instancereadytask)  throws an exception, this task throws a [InvalidOperationException](https://learn.microsoft.com/dotnet/api/system.invalidoperationexception). |
 
----
+
 ##### `Args` Remarks
 !!! warning
     This includes engine specific arguments such as -rhi, 
@@ -43,7 +44,7 @@ struct AppLoadContext
 
 ##### `InstanceReadyTask` Remarks
 !!! warning
-    This task may throw a <see cref="T:System.InvalidOperationException" /> in case of the application 
+    This task may throw a [InvalidOperationException](https://learn.microsoft.com/dotnet/api/system.invalidoperationexception) in case of the application 
     failing to load any components. In this situation, the application cannot be loaded and 
     the app must be restarted by the user.
 
@@ -52,6 +53,7 @@ struct AppLoadContext
     In the case of a headless application, this task is <strong>NULL</strong>.
 
 
+---
 
 ## Methods
 

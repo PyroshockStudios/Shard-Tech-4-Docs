@@ -23,8 +23,9 @@ interface ILocale
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -32,8 +33,9 @@ interface ILocale
 | --- | --- | --- |
 | `public get; set; Region` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 
----
 
+
+---
 
 ## Methods
 

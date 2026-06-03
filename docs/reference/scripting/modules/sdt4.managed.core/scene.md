@@ -6,7 +6,7 @@ Scene object that contains all actors and lifecycle.
 ## Remarks
 !!! danger
     All calls made within this class <strong>MUST</strong> be performed on the Master Thread. 
-    See <see cref="M:SDT4.Managed.Core.Thread.RunLater(System.Threading.ThreadStart)" /> on how to safely call this from an asynchronous thread.
+    See [Thread.RunLater](./thread.md#runlater) on how to safely call this from an asynchronous thread.
     Failure to comply with this can cause catastrophical failures as the engine is not designed for this.
 
 ## Definition
@@ -30,16 +30,18 @@ class Scene
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 
@@ -69,12 +71,13 @@ class Scene
 ---
 #### public [PropScript?](./script/propscript.md) InvokeProp&lt;TProp&gt;([Object?](https://learn.microsoft.com/dotnet/api/system.object) payload)
 
-##### Summary
+
+**Summary:**
 Instantiates a prop from a script. 
 
 **Parameters:**
 
-- `payload` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): Optional script payload that is provided in the <see cref="M:SDT4.Managed.Core.Script.PropScript.OnCreate(SDT4.Managed.Core.Script.ScriptPayload)" /> function
+- `payload` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): Optional script payload that is provided in the [PropScript.OnCreate](./script/propscript.md#oncreate) function
 
 
 **Returns:**
@@ -84,7 +87,8 @@ Instantiates a prop from a script.
 ---
 #### public [Actor?](./actor.md) CreatePrefabActor([IPrefabAsset](./asset/iprefabasset.md) prefab, [String?](https://learn.microsoft.com/dotnet/api/system.string) name, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) isStationary, [Object?](https://learn.microsoft.com/dotnet/api/system.object) payload)
 
-##### Summary
+
+**Summary:**
 Creates an actor from a prefab asset. This will instantiate a new instance of actors from the prefab chain,
 and optionally initialise a script if the prefab has one.
 
@@ -96,7 +100,7 @@ and optionally initialise a script if the prefab has one.
 
 - `isStationary` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): Advanced: if the actor should be treated as a stationary object. This means the actor is NOT allowed to alter positions or state.
 
-- `payload` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): Optional script payload that is provided in the <see cref="M:SDT4.Managed.Core.Script.ActorScript.OnCreate(SDT4.Managed.Core.Script.ScriptPayload)" /> function
+- `payload` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): Optional script payload that is provided in the [ActorScript.OnCreate](./script/actorscript.md#oncreate) function
 
 
 **Returns:**
@@ -193,7 +197,8 @@ and optionally initialise a script if the prefab has one.
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Dispose()
 
-##### Summary
+
+**Summary:**
 Releases all scene resources and destroys all actors.
 
 ---

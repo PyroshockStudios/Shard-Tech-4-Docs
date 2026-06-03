@@ -6,7 +6,7 @@ Scene object that contains all actors and lifecycle.
 ## Remarks
 !!! danger
     All calls made within this class <strong>MUST</strong> be performed on the Master Thread. 
-    See <see cref="M:SDT4.Managed.Core.Thread.RunLater(System.Threading.ThreadStart)" /> on how to safely call this from an asynchronous thread.
+    See [Thread.RunLater](./thread.md#runlater) on how to safely call this from an asynchronous thread.
     Failure to comply with this can cause catastrophical failures as the engine is not designed for this.
 
 ## Definition
@@ -30,8 +30,9 @@ class Actor
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -49,8 +50,9 @@ class Actor
 | `public get; IsValid` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 | `public get; IsAlive` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |  |
 
----
 
+
+---
 
 ## Methods
 

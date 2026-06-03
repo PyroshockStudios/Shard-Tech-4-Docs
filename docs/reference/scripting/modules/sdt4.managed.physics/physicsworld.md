@@ -26,8 +26,9 @@ class PhysicsWorld
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -35,8 +36,9 @@ class PhysicsWorld
 | --- | --- | --- |
 | `public get; set; Gravity` | [Vector3f](../sdt4.managed.core/math/vector3f.md) |  |
 
----
 
+
+---
 
 ## Methods
 

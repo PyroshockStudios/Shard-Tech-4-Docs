@@ -25,16 +25,18 @@ enum MouseMotionInput
 | `ScrollX` | [MouseMotionInput](./mousemotioninput.md) |  |
 | `ScrollY` | [MouseMotionInput](./mousemotioninput.md) |  |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 

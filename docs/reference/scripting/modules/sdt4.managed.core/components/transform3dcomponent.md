@@ -26,8 +26,9 @@ sealed class Transform3DComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -44,8 +45,9 @@ sealed class Transform3DComponent
 | `public get; set; WorldRotationMatrix` | [Matrix3x3f](../math/matrix3x3f.md) |  |
 | `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
----
 
+
+---
 
 ## Methods
 

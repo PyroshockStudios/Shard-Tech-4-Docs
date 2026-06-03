@@ -26,22 +26,25 @@ static class Thread
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 
 #### public static [Void](https://learn.microsoft.com/dotnet/api/system.void) RunLater([ThreadStart](https://learn.microsoft.com/dotnet/api/system.threading.threadstart) thread)
 
-##### Summary
+
+**Summary:**
 Executes a subroutine on the master thread when possible.
 
 **Parameters:**

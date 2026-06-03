@@ -23,8 +23,9 @@ struct AssetID
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -33,8 +34,9 @@ struct AssetID
 | `public get; Asset` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 | `public get; ID` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
----
 
+
+---
 
 ## Methods
 

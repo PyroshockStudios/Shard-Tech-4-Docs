@@ -26,8 +26,9 @@ struct Vector3d
 | `public y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 | `public z` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
----
 
+
+---
 
 ## Properties
 
@@ -36,8 +37,9 @@ struct Vector3d
 | `public static get; Zero` | [Vector3d](./vector3d.md) |  |
 | `public get; set; Item` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
 
----
 
+
+---
 
 ## Methods
 

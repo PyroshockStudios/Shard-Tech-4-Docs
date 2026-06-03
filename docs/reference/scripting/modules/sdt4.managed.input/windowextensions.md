@@ -26,22 +26,25 @@ static class WindowExtensions
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 
 #### public static [Void](https://learn.microsoft.com/dotnet/api/system.void) AddWindowResizeCallback([Window](../sdt4.managed.windowing/window.md) window, [WindowResizeCallback](./windowresizecallback.md) resizeCallback)
 
-##### Summary
+
+**Summary:**
 Registers a callback for whenever the window resizes.
 
 **Parameters:**
@@ -54,7 +57,8 @@ Registers a callback for whenever the window resizes.
 ---
 #### public static [Void](https://learn.microsoft.com/dotnet/api/system.void) RemoveWindowResizeCallback([Window](../sdt4.managed.windowing/window.md) window, [WindowResizeCallback](./windowresizecallback.md) resizeCallback)
 
-##### Summary
+
+**Summary:**
 Removes a previously registered callback for whenever the window resizes.
 If NO such delegate was registered, an <em>IndexOutOfRangeException</em> is thrown.
 

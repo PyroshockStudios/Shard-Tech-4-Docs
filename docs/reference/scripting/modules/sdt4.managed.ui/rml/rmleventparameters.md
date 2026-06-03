@@ -26,8 +26,9 @@ sealed class RMLEventParameters
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -38,8 +39,9 @@ sealed class RMLEventParameters
 | `public get; Count` | [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |  |
 | `public get; Item` | [RMLVariant](./rmlvariant.md) |  |
 
----
 
+
+---
 
 ## Methods
 

@@ -26,8 +26,9 @@ sealed class CameraComponent
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Properties
 
@@ -39,8 +40,9 @@ sealed class CameraComponent
 | `public get; set; FarClipPlane` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
 | `public get; Identifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
----
 
+
+---
 
 ## Methods
 

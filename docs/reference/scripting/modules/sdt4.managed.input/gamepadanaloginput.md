@@ -35,16 +35,18 @@ enum GamepadAnalogInput
 | `L2` | [GamepadAnalogInput](./gamepadanaloginput.md) |  |
 | `R2` | [GamepadAnalogInput](./gamepadanaloginput.md) |  |
 
----
 
+
+---
 
 ## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 
----
 
+
+---
 
 ## Methods
 
