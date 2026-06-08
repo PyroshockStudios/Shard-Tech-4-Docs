@@ -59,7 +59,7 @@ Controls how the material will be shaded, and enables usage of certain material 
 - Subsurface BSDF
     - Adds subsurface shading parameters to give the material translucent effects. 
 - Thin Translucent BSDF
-    - Simplified version of *Surface BSDF* that assumes a thin surface. Lighting is more costly as it computes front and back side lighting simulatenously. Recommended for foliage.
+    - Simplified version of *Surface BSDF* that assumes a thin surface. Lighting is more costly as it computes front and back side lighting simulateneously. Recommended for foliage.
 
 ### Blend State
 
@@ -263,6 +263,9 @@ Enhance quality through MSAA usage. Only supported on Forward render modes.
 # Input Parameters
 
 To allow reusing shaders across multiple materials, input parameters are a powerful way of sending data to the GPU.
+
+## Colour parameters vs Vector parameters:
+Colour parameters are different from vector parameters, as colour parameters follow sRGB encoding, whilst vector parameters do not. It is important to use each case for their respective needs.
 
 # Shader Editor
 

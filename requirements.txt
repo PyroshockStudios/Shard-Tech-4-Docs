@@ -1,3 +1,4 @@
 mkdocs>=1.6.1
 mkdocs-windmill>=1.0.5
 pymdown-extensions>=10.0
+mkdocs-spellcheck[codespell]

@@ -49,11 +49,11 @@ to attach our newly acquired RenderCanvas.
 ## Rendering to the canvas
 
 To render to our render canvas, we can either render with custom [Render Effects](../../advanced/renderer/xrpframegraph.md), or 
-use the built-in high performance "eXtreem Render Pipeline (XRP)". The Shard Tech 4 XRP contains all the rendering features
+use the built-in high performance "eXtreme Render Pipeline (XRP)". The Shard Tech 4 XRP contains all the rendering features
 related to components in the scene, and allows seamless integration of rendering effects.
 
 ```csharp
-using SDT4.Managed.Renderer.XRP; // eXtreem Render pipeline
+using SDT4.Managed.Renderer.XRP; // eXtreme Render pipeline
 // ...
 Scene scene = /*...*/; // get our active scene!
 SceneRenderInstance sceneRenderer = rendererPlatform.CreateSceneRenderer(scene);
@@ -96,7 +96,7 @@ scene.Dispose();
 ## Window resizing
 
 As you may have noticed, since we manually define the viewport size and the render canvas is created from the window.
-Once the window has been resized, the render canvas is outdated, meaning rendering may cause artifacts.
+Once the window has been resized, the render canvas is outdated, meaning rendering may cause artefacts.
 
 !!! bug
     In some cases due to backend implementations and operating systems, the graphics device **may even crash** 

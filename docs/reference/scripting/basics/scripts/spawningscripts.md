@@ -2,7 +2,7 @@
 
 ## Invoking Props (PropScript)
 
-Props are the most straight forward to invoke, as they are [non-phaseable](./phaseability.md#non-phaseable), meaning they do not require any physical presence, and thus have no [IResource](../../modules/sdt4.managed.core/asset/iresource.md) to be loaded. This is the fastest way to invoke a script.
+Props are the most straight forward to invoke, as they are [non-phasable](./phasability.md#non-phasable), meaning they do not require any physical presence, and thus have no [IResource](../../modules/sdt4.managed.core/asset/iresource.md) to be loaded. This is the fastest way to invoke a script.
 
 ```csharp
 using SDT4.Managed.Core;
@@ -84,4 +84,4 @@ scene.CreatePrefabActor<MyPrefabScript>(prefab, payload: new Vector3d(1000.0, 10
 ```
 
 !!! note
-    Due to the possibility of Veto'ing the creation, `InvokeProp<>()` and `CreatePrefabActor<>()` may return **NULL**.
+    Due to the possibility of Vetoing the creation, `InvokeProp<>()` and `CreatePrefabActor<>()` may return **NULL**.
