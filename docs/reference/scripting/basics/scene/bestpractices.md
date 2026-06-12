@@ -7,7 +7,7 @@ Scenes are the heaviest resources, as they hold many resources, contain a lot of
 - DO: Dispose [SceneAsset](../../modules/sdt4.managed.core/asset/sceneasset.md) as soon as you are not creating the scene again.
     - This reduces memory usage, as well as removes references from assets that may no longer be loaded in the scene, that otherwise would take up precious system resources.
 - DO: Use async and await when managing scenes.
-    - C# is a very asynchronous capable language, and Shard Tech 4 accomodates that by providing many features to accompany this. Use them!
+    - C# is a very asynchronous capable language, and Shard Tech 4 accommodates that by providing many features to accompany this. Use them!
 - DO: Use `Scene.StartAsync()` and `Scene.StopAsync()` for maximum concurrency. This also allows the scene to (optionally) start ticking before the entire actor hierarchy has loaded in. 
 
 ## DONT's

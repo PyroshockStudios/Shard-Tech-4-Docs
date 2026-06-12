@@ -10,6 +10,33 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
 
+plugins:
+  - spellcheck:
+      backends:  # the backends you want to use
+      - codespell:  # or nested configs
+          dictionaries: [clear, rare, code]
+
+      # known_words can also be a list of words
+      # known_words: known_words.txt
+
+      # ignore words in <code> tags
+      ignore_code: yes
+
+      # minimum length of words to consider
+      min_length: 2
+
+      # maximum number of capital letters in a word
+      max_capital: 1
+
+      # keep unicode characters
+      allow_unicode: true
+
+      # skip files entirely (supports Unix shell-style wildcards)
+      # skip_files:
+
+      # whether to only check in strict mode
+      # strict_only: yes
+
 nav:
   - Home: index.md
   - Installation: installation.md
@@ -72,7 +99,7 @@ nav:
         - Scripts:
           - SceneScript, PropScript and ActorScript: reference/scripting/basics/scripts/scenepropactorscript.md
           - Spawning Scripts: reference/scripting/basics/scripts/spawningscripts.md
-          - Phaseability: reference/scripting/basics/scripts/phaseability.md
+          - Phasability: reference/scripting/basics/scripts/phasability.md
         - Viewports:
           - Attaching Main Window: reference/scripting/basics/viewports/attachingmainwindow.md
           - Split-Screen: reference/scripting/basics/viewports/splitscreen.md

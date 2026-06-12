@@ -42,7 +42,7 @@ Once `Scene.Start[Async]()` is called, `OnPreBegin()` is the first method called
 
 # Prop- and ActorScript
 
-[PropScript](../../modules/sdt4.managed.core/script/propscript.md) and [ActorScript](../../modules/sdt4.managed.core/script/actorscript.md) are very similar, as they share the same overridable *events*. The key difference in that a [PropScript](../../modules/sdt4.managed.core/script/propscript.md) is [*Non-phaseable*](./phaseability.md#non-phaseable) while an [ActorScript](../../modules/sdt4.managed.core/script/actorscript.md) is [*Phaseable*](./phaseability.md#phaseable). 
+[PropScript](../../modules/sdt4.managed.core/script/propscript.md) and [ActorScript](../../modules/sdt4.managed.core/script/actorscript.md) are very similar, as they share the same overridable *events*. The key difference in that a [PropScript](../../modules/sdt4.managed.core/script/propscript.md) is [*Non-phasable*](./phasability.md#non-phasable) while an [ActorScript](../../modules/sdt4.managed.core/script/actorscript.md) is [*phasable*](./phasability.md#phasable). 
 ## Making a Prop- and ActorScript
 Shard Tech 4 akin to SceneScript, offers two methods of creating prop/actor scripts:
 
@@ -91,4 +91,4 @@ These three look very similar in functionality, and may be called in close situa
 Once `Scene.Start[Async]()` is called, `OnCreate()` is called together with `OnBegin()` for persistent scripts (e.g. Actors present in the scene before `Scene.Start[Async]()` was called). OnSpawn() is only called when `Scene.CreatePrefabActor()` or `Scene.InvokeProp()` is explicitly called to spawn a script.
 
 !!! tip
-    See the [PropScript](../../modules/sdt4.managed.core/script/propscript.md) and [ActorScript](../../modules/sdt4.managed.core/script/actorscript.md) api reference for all possible overrides.
+    See the [PropScript](../../modules/sdt4.managed.core/script/propscript.md) and [ActorScript](../../modules/sdt4.managed.core/script/actorscript.md) API reference for all possible overrides.

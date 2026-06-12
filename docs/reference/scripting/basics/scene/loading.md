@@ -22,7 +22,7 @@ var mySceneResult = await resourceManager.LoadAssetAsync<SceneAsset>(sceneAsset)
 
 ## Instantiating the scene
 
-Once the scene asset has been loaded, it is time to _instantiate_ it. This is seperate from loading for the following reasons:
+Once the scene asset has been loaded, it is time to _instantiate_ it. This is separate from loading for the following reasons:
 
 1. It allows restoring scene state quickly without reloading the entire asset
 2. It enables easier management of multiple concurrent scene load operations.
