@@ -3,14 +3,14 @@
 When the game initialises, while loading the startup screen, the entry point is called. This allows for loading game assets and auto while the game starts in the background.
 
 ## Defining the entry
-An entry point is expected to be defined on a specific 
+An entry point is expected to be defined as `Game.OnInit`, where `OnInit` is a static method with [AppLoadContext](../modules/sdt4.managed.core/apploadcontext.md) as its
+sole input parameter. 
 
 ```csharp
 using SDT4.Managed.Core;
 using SDT4.Managed.Core.Attributes;
-static class MyGame 
+static class Game 
 {
-    [GameEntry]
     static void OnInit(AppLoadContext appLoadContext) 
     {
         // set up your systems and contexts
@@ -39,7 +39,7 @@ appLoadContext.InstanceReadyTask.ContinueWith(async (task) =>
     var instance = await task;
     // Now we can use the instance, let's load our scene
     var lobbyAsset = new AssetID("Master/S_Lobby.sdt");
-    var loadResult = await instance.ResourceManager.LoadAssetAsync<ISceneAsset>(lobbyAsset);
+    var loadResult = await instance.ResourceManager.LoadAssetAsync<SceneAsset>(lobbyAsset);
     // Now we can start using our scene 
     // ...
 });

@@ -24,6 +24,8 @@ namespace MyGame;
 
 public class MyScene : SceneScript 
 {
+    MyScene(SceneScriptToken token) : base(token) {}
+
     protected override void OnPreBegin() 
     {
 
@@ -62,6 +64,8 @@ namespace MyGame;
 
 public class MyProp : PropScript 
 {
+    MyProp(PropScriptToken token) : base(token) {}
+
     protected override void OnCreate(ScriptPayload payload) 
     {
 

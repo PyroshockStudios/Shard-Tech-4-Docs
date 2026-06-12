@@ -12,9 +12,8 @@ The editor may display multiple viewports, and they can be queried in the Viewpo
 using SDT4.Managed.Core;
 using SDT4.Managed.Debugging;
 using SDT4.Managed.Editor.Attributes;
-static class MyGame_Editor 
+static class GameEditor 
 {
-    [EditorEntry]
     static void OnEditorStart(EditorRunContext editorRunContext) 
     {
         if (editorRunContext.Viewports.Length > 1) 

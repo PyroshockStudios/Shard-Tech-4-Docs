@@ -2,7 +2,7 @@
 
 ## Invoking Props (PropScript)
 
-Props are the most straight forward to invoke, as they are [non-phaseable](./phaseability.md#non-phaseable), meaning they do not require any physical presence, and thus have no [IResource](../../modules/sdt4.managed.core/asset/iresource.md) to be loaded. This is the fastest way to invoke a script.
+Props are the most straight forward to invoke, as they are [non-phaseable](./phaseability.md#non-phaseable), meaning they do not require any physical presence, and thus have no [Resource](../../modules/sdt4.managed.core/asset/resource.md) to be loaded. This is the fastest way to invoke a script.
 
 ```csharp
 using SDT4.Managed.Core;
@@ -10,6 +10,9 @@ using SDT4.Managed.Core.Script;
 // ...
 class MyScript : PropScript 
 {
+    // REQUIRED: The engine initialises the prop by invoking it with a token.
+    MyScript(PropScriptToken token) : base(token) {}
+
     // Implementation
 }
 // ...
@@ -38,11 +41,14 @@ using SDT4.Managed.Core.Script;
 // ...
 class MyPrefabScript : ActorScript 
 {
+    // REQUIRED: The engine initialises the actor by invoking it with a token.
+    MyPrefabScript(ActorScriptToken token) : base(token) {}
+
     // Implementation
 }
 // ...
 Scene scene = /*...*/;
-IPrefabAsset prefab = /*...*/; // loaded using the IResourceManager from the AppInstance!
+PrefabAsset prefab = /*...*/; // loaded using the ResourceManager from the AppInstance!
 
 // OnCreate() is immediatelly called, together with OnSpawn() if the scene is running. 
 // If the scene is not running, the script is queued until Start[Async] is called,
@@ -65,6 +71,8 @@ using SDT4.Managed.Core.Script;
 // ...
 class MyPrefabScript : ActorScript 
 {
+    MyPrefabScript(ActorScriptToken token) : base(token) {}
+
     protected override void OnCreate(ScriptPayload payload) 
     {
         // payload.Veto allows cancelling the instantiation, 

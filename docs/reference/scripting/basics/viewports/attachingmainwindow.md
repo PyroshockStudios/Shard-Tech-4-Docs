@@ -22,8 +22,7 @@ using SDT4.Managed.Windowing;
 AppInstance instance = /*...*/;
 // We must query the IWindowingCapability interface, 
 // which is available in non-headless client builds
-var windowing = instance.TryGetCapability<IWindowingCapability>();
-if (windowing == null) 
+if (!instance.TryGetCapability<IWindowingCapability>(out var windowing)) 
 {
     throw new NotSupportedException("Windowing is not supported in this build.");
 }
@@ -32,13 +31,13 @@ var windowPlatform = (WindowPlatform)windowing;
 Window primaryWindow = windowPlatform.PrimaryWindow;
 
 // Now lets get the renderer
-var renderer = instance.TryGetCapability<IRenderingCapability>();
-if (renderer == null) 
+if (!instance.TryGetCapability<IRenderingCapability>(out var renderer)) 
 {
     throw new NotSupportedException("Rendering is not supported in this build.");
 }
 // RendererPlatform is the implementor for the IRenderingCapability 
 var rendererPlatform = (RendererPlatform)renderer;
+// Must be called on the master thread!
 RenderCanvas primaryCanvas = rendererPlatform.CreateWindowRenderCanvas(window);
 
 ```
@@ -114,7 +113,7 @@ RendererPlatform rendererPlatform = /*...*/;
 ViewportRenderInstance viewportRenderer = /*...*/;
 RenderCanvas primaryCanvas = /*...*/;
 
-window.AddEventListener(WindowEventID.Resize, e => 
+window.OnResize += (e) => 
 { 
     RenderCanvas oldCanvas = primaryCanvas;
     primaryCanvas = rendererPlatform.CreateWindowRenderCanvas(window);
@@ -122,6 +121,6 @@ window.AddEventListener(WindowEventID.Resize, e =>
     oldCanvas.Dispose(); // release the old canvas
     // update the viewport!
     viewportRenderer.SetViewport(extent: window.FramebufferSize);
-});
+};
 
 ```

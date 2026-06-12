@@ -10,8 +10,8 @@ We have loaded our scene, and let's say we want to load another scene in, and un
 using SDT4.Managed.Core;
 using SDT4.Managed.Core.Asset;
 // ...
-IResourceManager resourceManager = /*...*/;
-ISceneAsset myScene = /*...*/;
+ResourceManager resourceManager = /*...*/;
+SceneAsset sceneAsset = /*...*/;
 Scene scene = /*...*/;
 
 // Finish using the scene
@@ -22,15 +22,16 @@ scene.Stop();
 
 ```
 
-Now since the simulation has stopped, we must unload the resources to free up memory. Both [Scene](../../modules/sdt4.managed.core/scene.md) and [ISceneAsset](../../modules/sdt4.managed.core/asset/isceneasset.md) implement the [full Dispose() pattern](https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/implementing-dispose#dispose-and-disposebool). This is to ensure mistakes do not lead to memory leaks, and that explicit control can be given to the developer on when resources _must_ be freed.
+Now since the simulation has stopped, we must unload the resources to free up memory.  [SceneAsset](../../modules/sdt4.managed.core/asset/sceneasset.md) implements the [full Dispose() pattern](https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/implementing-dispose#dispose-and-disposebool). This is to ensure mistakes do not lead to memory leaks, and that explicit control can be given to the developer on when resources _must_ be freed. However, [Scene](../../modules/sdt4.managed.core/scene.md) does **not** and **requires** to be disposed. 
 
-To ensure the scene is destroyed and does not hold references to other resource, and all actors are destroyed, we can call `Dispose()` on the scene and scene asset.
+!!! important
+    To ensure the scene is destroyed and does not hold references to other resource, and all actors are destroyed, we **MUST** call `Dispose()` on the scene.
 
 ```csharp
 // ...
 scene.Dispose();
-// If you are not creating the scene anymore, you can dispose myScene.
-// myScene.Dispose();
+// If you are not creating the scene anymore, you can dispose sceneAsset.
+// sceneAsset.Dispose();
 ```
 
 ## Concurrent Scene Management
@@ -43,11 +44,11 @@ using SDT4.Managed.Core;
 using SDT4.Managed.Core.Asset;
 // ...
 Scene lobby = /*...*/;
-ISceneAsset loadingScene = /*...*/;
+SceneAsset loadingSceneAsset = /*...*/;
 
 // Lets say the user is doing a complex operation, and lets mask the loading with a nice loading screen.
 
-Scene loading = loadingScene.CreateScene();
+Scene loading = loadingSceneAsset.CreateScene();
 loading.Start();
 
 // In the Viewports section, we will see how we can switch rendering scenes while simulating both simultanesously!
@@ -64,6 +65,6 @@ lobby.Stop();
 lobby.Dispose();
 
 // Free our loading screen scene, we wont be using it anymore.
-loadingScene.Dispose();
+loadingSceneAsset.Dispose();
 
 ```

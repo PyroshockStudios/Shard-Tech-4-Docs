@@ -1,22 +1,22 @@
 # Loading the Scene
 
-As shown in the [Entry Point](../entrypoint.md) guide, to get our scene, we use the [IResourceManager](../../modules/sdt4.managed.core/iresourcemanager.md) to load our scene. 
+As shown in the [Entry Point](../entrypoint.md) guide, to get our scene, we use the [ResourceManager](../../modules/sdt4.managed.core/resourcemanager.md) to load our scene. 
 
 ## Loading Resources
 
-The asset interface for _Scenes_ is [ISceneAsset](../../modules/sdt4.managed.core/asset/isceneasset.md). Loading is very straightforward, and we will once again use modern C# async and await.
+The asset interface for _Scenes_ is [SceneAsset](../../modules/sdt4.managed.core/asset/sceneasset.md). Loading is very straightforward, and we will once again use modern C# async and await.
 
 ```csharp
 using SDT4.Managed.Core;
 using SDT4.Managed.Core.Asset;
 // ...
 AppInstance instance = /*...*/;
-IResourceManager resourceManager = instance.ResourceManager;
+ResourceManager resourceManager = instance.ResourceManager;
 // Use use AssetID for referencing assets.
 var sceneAsset = new AssetID("Master/MyScene.sdt");
 
-// LoadAssetAsync<TResource>() returns a Task on which we can await the ISceneAsset.
-var mySceneResult = await resourceManager.LoadAssetAsync<ISceneAsset>(sceneAsset);
+// LoadAssetAsync<TResource>() returns a Task on which we can await the SceneAsset.
+var mySceneResult = await resourceManager.LoadAssetAsync<SceneAsset>(sceneAsset);
 // ...  
 ```
 
@@ -31,7 +31,7 @@ Once the scene asset has been loaded, it is time to _instantiate_ it. This is se
 // ...  
 // You should check load results, however for the sake of brevity, 
 // we will assume it loaded correctly.
-Scene scene = mySceneResult.Resource!.CreateScene();
+Scene scene = mySceneResult.Resource!.CreateScene("My scene");
 // Start() initialises the scene script. This must be performed on the main thread!
 scene.Start();
 // scene.StartAsync() is an alternative, and allows concurrent ticking.
@@ -39,4 +39,4 @@ scene.Start();
 ```
 
 !!! danger
-    Any calls to the [Scene](../../modules/sdt4.managed.core/scene.md) object **MUST** be performed on the [master thread](../../modules/sdt4.managed.core/thread.md).
+    Any calls to the [Scene](../../modules/sdt4.managed.core/scene.md) object **MUST** be performed on the [master thread](../../modules/sdt4.managed.core/threads.md).
