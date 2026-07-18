@@ -68,3 +68,6 @@ lobby.Dispose();
 loadingSceneAsset.Dispose();
 
 ```
+
+!!! danger
+    It is NOT recommended to `Stop()` a scene, and then `Start()` it again. This is an anti pattern, as it assumes all scripts can be resurrected after `OnEnd()` is broadcasted.
