@@ -42,7 +42,7 @@ nav:
   - Installation: installation.md
   - Getting started: gettingstarted.md
   - Project Setup: 
-    - S3DCreatinator: reference/project/s3dcreatinator.md
+    - S3DProjectinator: reference/project/s3dprojectinator.md
     - Configuring: reference/project/configuring.md
     - Best Practices: reference/project/bestpractices.md
   - Reference:
@@ -246,11 +246,6 @@ nav:
           - "Overview": reference/scripting/modules/sdt4.managed.editor/index.md
           - "EditorRunContext": reference/scripting/modules/sdt4.managed.editor/editorruncontext.md
           - Attributes:
-            - "EditorEntryAttribute": reference/scripting/modules/sdt4.managed.editor/attributes/editorentryattribute.md
-            - "EditorExitAttribute": reference/scripting/modules/sdt4.managed.editor/attributes/editorexitattribute.md
-        - SDT4.Managed.Editor.AssetPipeline:
-          - "Overview": reference/scripting/modules/sdt4.managed.editor.assetpipeline/index.md
-        - SDT4.Managed.Input:
           - "Overview": reference/scripting/modules/sdt4.managed.input/index.md
           - "AnalogInputSign": reference/scripting/modules/sdt4.managed.input/analoginputsign.md
           - "Gamepad": reference/scripting/modules/sdt4.managed.input/gamepad.md

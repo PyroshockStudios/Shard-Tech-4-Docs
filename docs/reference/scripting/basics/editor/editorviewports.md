@@ -11,7 +11,7 @@ The editor may display multiple viewports, and they can be queried in the Viewpo
 ```csharp
 using SDT4.Managed.Core;
 using SDT4.Managed.Debugging;
-using SDT4.Managed.Editor.Attributes;
+using SDT4.Managed.Editor;
 static class GameEditor 
 {
     static void OnEditorStart(EditorRunContext editorRunContext) 

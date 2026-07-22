@@ -9,8 +9,7 @@ Unlike the [Game.OnInit](../entrypoint.md) entry point, the `Game.OnEditorStart`
 
 
 ```csharp
-using SDT4.Managed.Core;
-using SDT4.Managed.Editor.Attributes;
+using SDT4.Managed.Editor;
 static class GameEditor 
 {
     static void OnEditorStart(EditorRunContext editorRunContext) 
@@ -20,6 +19,9 @@ static class GameEditor
 }
 
 ```
+
+!!! important
+    Note that the `OnEditorStart` is called BEFORE any scripts have been initialised! This means, `OnCreate`, `On[Pre/Post]Begin`, have NOT been called yet. These will be instantiated in a defined order after the editor entry point has been run.
 
 Inside the [EditorRunContext](../../modules/sdt4.managed.editor/editorruncontext.md) structure, there are many useful fields, such as editor viewports, the running window, the app instance, the scene and the scene script.
 
@@ -51,6 +53,9 @@ static void OnEditorStop(EditorRunContext editorRunContext)
 }
 
 ```
+
+!!! important
+    Note that the `OnEditorStop` is called AFTER all scripts have been destroyed! This means, `OnDestroy`, `On[Pre/Post]End`, have ALREADY been called. 
 
 !!! note
     The standard [Game.OnInit](../entrypoint.md) logic applies when launching a preview build of the game in the editor. This is purely for running instances of a scene inside of the Shard Tech 4 editor. 
