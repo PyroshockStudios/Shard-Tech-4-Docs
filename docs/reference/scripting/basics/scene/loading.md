@@ -1,10 +1,10 @@
 # Loading the Scene
 
-As shown in the [Entry Point](../entrypoint.md) guide, to get our scene, we use the [ResourceManager](../../modules/sdt4.managed.core/resourcemanager.md) to load our scene. 
+As shown in the [Entry Point](../entrypoint.md) guide, to get our scene, we use the [ResourceManager](../../../../cs-api-ref/sdt4.managed.core/resourcemanager.md) to load our scene. 
 
 ## Loading Resources
 
-The asset interface for _Scenes_ is [SceneAsset](../../modules/sdt4.managed.core/asset/sceneasset.md). Loading is very straightforward, and we will once again use modern C# async and await.
+The asset interface for _Scenes_ is [SceneAsset](../../../../cs-api-ref/sdt4.managed.core/asset/sceneasset.md). Loading is very straightforward, and we will once again use modern C# async and await.
 
 ```csharp
 using SDT4.Managed.Core;
@@ -39,4 +39,4 @@ scene.Start();
 ```
 
 !!! danger
-    Any calls to the [Scene](../../modules/sdt4.managed.core/scene.md) object **MUST** be performed on the [master thread](../../modules/sdt4.managed.core/threads.md).
+    Any calls to the [Scene](../../../../cs-api-ref/sdt4.managed.core/scene.md) object **MUST** be performed on the [master thread](../../../../cs-api-ref/sdt4.managed.core/threads.md).

@@ -22,7 +22,7 @@ scene.Stop();
 
 ```
 
-Now since the simulation has stopped, we must unload the resources to free up memory.  [SceneAsset](../../modules/sdt4.managed.core/asset/sceneasset.md) implements the [full Dispose() pattern](https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/implementing-dispose#dispose-and-disposebool). This is to ensure mistakes do not lead to memory leaks, and that explicit control can be given to the developer on when resources _must_ be freed. However, [Scene](../../modules/sdt4.managed.core/scene.md) does **not** and **requires** to be disposed. 
+Now since the simulation has stopped, we must unload the resources to free up memory.  [SceneAsset](../../../../cs-api-ref/sdt4.managed.core/asset/sceneasset.md) implements the [full Dispose() pattern](https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/implementing-dispose#dispose-and-disposebool). This is to ensure mistakes do not lead to memory leaks, and that explicit control can be given to the developer on when resources _must_ be freed. However, [Scene](../../../../cs-api-ref/sdt4.managed.core/scene.md) does **not** and **requires** to be disposed. 
 
 !!! important
     To ensure the scene is destroyed and does not hold references to other resource, and all actors are destroyed, we **MUST** call `Dispose()` on the scene.

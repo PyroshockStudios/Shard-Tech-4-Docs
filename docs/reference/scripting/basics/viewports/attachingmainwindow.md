@@ -72,7 +72,7 @@ viewportRenderer.SetCameraActor(cameraActor);
 
 ## Disposing the canvas
 
-The renderer objects may be disposed when finished using, however when disposing the [Scene](../../modules/sdt4.managed.core/scene.md),
+The renderer objects may be disposed when finished using, however when disposing the [Scene](../../../../cs-api-ref/sdt4.managed.core/scene.md),
 all the renderer objects related to the scene are automatically disposed. It is still recommended however to manually dispose them.
 
 ```csharp

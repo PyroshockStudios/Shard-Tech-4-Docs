@@ -23,7 +23,7 @@ static class GameEditor
 !!! important
     Note that the `OnEditorStart` is called BEFORE any scripts have been initialised! This means, `OnCreate`, `On[Pre/Post]Begin`, have NOT been called yet. These will be instantiated in a defined order after the editor entry point has been run.
 
-Inside the [EditorRunContext](../../modules/sdt4.managed.editor/editorruncontext.md) structure, there are many useful fields, such as editor viewports, the running window, the app instance, the scene and the scene script.
+Inside the [EditorRunContext](../../../../cs-api-ref/sdt4.managed.editor/editorruncontext.md) structure, there are many useful fields, such as editor viewports, the running window, the app instance, the scene and the scene script.
 
 ```csharp
 

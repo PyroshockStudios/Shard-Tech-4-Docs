@@ -1,36 +1,5 @@
 # Spawning
 
-## Invoking Props (PropScript)
-
-Props are the most straight forward to invoke, as they are [non-phasable](./phasability.md#non-phasable), meaning they do not require any physical presence, and thus have no [Resource](../../modules/sdt4.managed.core/asset/resource.md) to be loaded. This is the fastest way to invoke a script.
-
-```csharp
-using SDT4.Managed.Core;
-using SDT4.Managed.Core.Script;
-// ...
-class MyScript : PropScript 
-{
-    // REQUIRED: The engine initialises the prop by invoking it with a token.
-    MyScript(PropScriptToken token) : base(token) {}
-
-    // Implementation
-}
-// ...
-Scene scene = /*...*/;
-// OnCreate() is immediatelly called, together with OnSpawn() if the scene is running. 
-// If the scene is not running, the script is queued until Start[Async] is called,
-// where OnBegin() is called instead 
-// Template argument is *required* to know which script to instantiate.
-MyScript? script = scene.InvokeProp<MyScript>();
-
-// Removing the prop from the scene is required, or the prop will not stop execution
-// This will invoke OnKill() and OnDestroy().
-// scene.KillProp(script);
-
-// If the prop is never removed, OnEnd() will be invoked once the scene stops, 
-// followed by OnDestroy().
-```
-
 ## Creating Prefabs (ActorScript)
 
 Prefabs are a bit more involved, as ActorScripts are **always** tied to a prefab. 
@@ -39,10 +8,10 @@ Prefabs are a bit more involved, as ActorScripts are **always** tied to a prefab
 using SDT4.Managed.Core;
 using SDT4.Managed.Core.Script;
 // ...
-class MyPrefabScript : ActorScript 
+public class MyPrefabScript : ActorScript 
 {
     // REQUIRED: The engine initialises the actor by invoking it with a token.
-    MyPrefabScript(ActorScriptToken token) : base(token) {}
+    protected MyPrefabScript(ActorScriptToken token) : base(token) {}
 
     // Implementation
 }
@@ -50,17 +19,17 @@ class MyPrefabScript : ActorScript
 Scene scene = /*...*/;
 PrefabAsset prefab = /*...*/; // loaded using the ResourceManager from the AppInstance!
 
-// OnCreate() is immediatelly called, together with OnSpawn() if the scene is running. 
-// If the scene is not running, the script is queued until Start[Async] is called,
-// where OnBegin() is called instead.
-// Template argument is *optional*, and will return an Actor by default.
-MyPrefabScript? script = scene.CreatePrefabActor<MyPrefabScript>(prefab);
+// OnCreate() is immediatelly called, together with OnSpawn() if the scene was already running. 
+// If the scene is not running, the script is queued until Start[Async] is called.
+// Finally OnBegin() is called before the first OnTick/OnStep of this actor.
+// A nullable Actor? is returned as the creation may be veto'ed.
+MyPrefabScript? script = scene.CreatePrefabActor(prefab) as MyPrefabScript;
 
 ```
 
 ## Payloads
 
-Prop- and ActorScripts may have a [payload](../../modules/sdt4.managed.core/script/scriptpayload.md) bound to them, which can be used for various state management.
+ActorScripts may have a [payload](../../../../cs-api-ref/sdt4.managed.core/script/scriptpayload.md) bound to them, which can be used for various state management.
 
 This payload is referenced in the `OnCreate` method, where it carries custom state information
 

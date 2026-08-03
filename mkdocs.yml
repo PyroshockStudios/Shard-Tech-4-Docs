@@ -97,9 +97,8 @@ nav:
           - Hierarchy: reference/scripting/basics/actors/hierarchy.md
           - Components: reference/scripting/basics/actors/components.md
         - Scripts:
-          - SceneScript, PropScript and ActorScript: reference/scripting/basics/scripts/scenepropactorscript.md
+          - SceneScript and ActorScript: reference/scripting/basics/scripts/sceneactorscript.md
           - Spawning Scripts: reference/scripting/basics/scripts/spawningscripts.md
-          - Phasability: reference/scripting/basics/scripts/phasability.md
         - Viewports:
           - Attaching Main Window: reference/scripting/basics/viewports/attachingmainwindow.md
           - Split-Screen: reference/scripting/basics/viewports/splitscreen.md
@@ -125,273 +124,278 @@ nav:
           - Dynamic Textures: reference/scripting/advanced/renderer/dynamictextures.md
           - Dynamic Models: reference/scripting/advanced/renderer/dynamicmodels.md
           - XRP Frame Graph: reference/scripting/advanced/renderer/xrpframegraph.md
-      - Compilation: 
-        - Overview: reference/scripting/compilation/index.md
-        - Rules: 
-          - SDT0401: reference/scripting/compilation/rules/sdt0401.md
-          - SDT0402: reference/scripting/compilation/rules/sdt0402.md
-          - SDT0403: reference/scripting/compilation/rules/sdt0403.md
-          
-          - SDT0601: reference/scripting/compilation/rules/sdt0601.md
-          - SDT0602: reference/scripting/compilation/rules/sdt0602.md
-          - SDT0603: reference/scripting/compilation/rules/sdt0603.md
-          - SDT0604: reference/scripting/compilation/rules/sdt0604.md
-          - SDT0605: reference/scripting/compilation/rules/sdt0605.md
-          - SDT0606: reference/scripting/compilation/rules/sdt0606.md
-          - SDT0607: reference/scripting/compilation/rules/sdt0607.md
-          - SDT0651: reference/scripting/compilation/rules/sdt0651.md
-          - SDT0652: reference/scripting/compilation/rules/sdt0652.md
-          - SDT0653: reference/scripting/compilation/rules/sdt0653.md
-      - Module API Reference:
-        - SDT4.Managed.Core:
-          - "Overview": reference/scripting/modules/sdt4.managed.core/index.md
-          - "Actor": reference/scripting/modules/sdt4.managed.core/actor.md
-          - "AppExitRequest": reference/scripting/modules/sdt4.managed.core/appexitrequest.md
-          - "AppInstance": reference/scripting/modules/sdt4.managed.core/appinstance.md
-          - "AppLoadContext": reference/scripting/modules/sdt4.managed.core/apploadcontext.md
-          - "InstanceEnvironment": reference/scripting/modules/sdt4.managed.core/instanceenvironment.md
-          - "IResourceManager": reference/scripting/modules/sdt4.managed.core/iresourcemanager.md
-          - "Scene": reference/scripting/modules/sdt4.managed.core/scene.md
-          - "Thread": reference/scripting/modules/sdt4.managed.core/thread.md
-          - Asset:
-            - "AssetErrorCode": reference/scripting/modules/sdt4.managed.core/asset/asseterrorcode.md
-            - "AssetID": reference/scripting/modules/sdt4.managed.core/asset/assetid.md
-            - "AssetLoadResult&lt;TResource&gt;": reference/scripting/modules/sdt4.managed.core/asset/assetloadresult`1.md
-            - "AssetType": reference/scripting/modules/sdt4.managed.core/asset/assettype.md
-            - "IConvexHullAsset": reference/scripting/modules/sdt4.managed.core/asset/iconvexhullasset.md
-            - "IMaterialAsset": reference/scripting/modules/sdt4.managed.core/asset/imaterialasset.md
-            - "IModelAsset": reference/scripting/modules/sdt4.managed.core/asset/imodelasset.md
-            - "IPrefabAsset": reference/scripting/modules/sdt4.managed.core/asset/iprefabasset.md
-            - "IResource": reference/scripting/modules/sdt4.managed.core/asset/iresource.md
-            - "ISceneAsset": reference/scripting/modules/sdt4.managed.core/asset/isceneasset.md
-            - "ISkeletonAsset": reference/scripting/modules/sdt4.managed.core/asset/iskeletonasset.md
-            - "ITexture2DAsset": reference/scripting/modules/sdt4.managed.core/asset/itexture2dasset.md
-            - "ITrimeshAsset": reference/scripting/modules/sdt4.managed.core/asset/itrimeshasset.md
-          - Attributes:
-            - "ActorReferenceAttribute": reference/scripting/modules/sdt4.managed.core/attributes/actorreferenceattribute.md
-            - "AssetStringFieldEditPropertiesAttribute": reference/scripting/modules/sdt4.managed.core/attributes/assetstringfieldeditpropertiesattribute.md
-            - "ExposeFieldAttribute": reference/scripting/modules/sdt4.managed.core/attributes/exposefieldattribute.md
-            - "ExposeMethodAttribute": reference/scripting/modules/sdt4.managed.core/attributes/exposemethodattribute.md
-            - "GameEntryAttribute": reference/scripting/modules/sdt4.managed.core/attributes/gameentryattribute.md
-            - "NumericFieldEditPropertiesAttribute": reference/scripting/modules/sdt4.managed.core/attributes/numericfieldeditpropertiesattribute.md
-            - "ReturnPinNameAttribute": reference/scripting/modules/sdt4.managed.core/attributes/returnpinnameattribute.md
-            - "ScriptEventAttribute": reference/scripting/modules/sdt4.managed.core/attributes/scripteventattribute.md
-            - "ScriptGeneratedAttribute": reference/scripting/modules/sdt4.managed.core/attributes/scriptgeneratedattribute.md
-            - "ScriptHiddenAttribute": reference/scripting/modules/sdt4.managed.core/attributes/scripthiddenattribute.md
-            - "ScriptPure": reference/scripting/modules/sdt4.managed.core/attributes/scriptpure.md
-            - "ScriptWildcardAttribute": reference/scripting/modules/sdt4.managed.core/attributes/scriptwildcardattribute.md
-          - Capabilities:
-            - "ICapability": reference/scripting/modules/sdt4.managed.core/capabilities/icapability.md
-            - "ILocalizationCapability": reference/scripting/modules/sdt4.managed.core/capabilities/ilocalizationcapability.md
-            - "INetworkingCapability": reference/scripting/modules/sdt4.managed.core/capabilities/inetworkingcapability.md
-            - "IRenderingCapability": reference/scripting/modules/sdt4.managed.core/capabilities/irenderingcapability.md
-            - "IWindowingCapability": reference/scripting/modules/sdt4.managed.core/capabilities/iwindowingcapability.md
-          - Components:
-            - "BoxVolumeComponent": reference/scripting/modules/sdt4.managed.core/components/boxvolumecomponent.md
-            - "CameraComponent": reference/scripting/modules/sdt4.managed.core/components/cameracomponent.md
-            - "ColorGrading": reference/scripting/modules/sdt4.managed.core/components/colorgrading.md
-            - "Component": reference/scripting/modules/sdt4.managed.core/components/component.md
-            - "DeferredDecalComponent": reference/scripting/modules/sdt4.managed.core/components/deferreddecalcomponent.md
-            - "DirectionalLightComponent": reference/scripting/modules/sdt4.managed.core/components/directionallightcomponent.md
-            - "HDR": reference/scripting/modules/sdt4.managed.core/components/hdr.md
-            - "Mesh3DComponent": reference/scripting/modules/sdt4.managed.core/components/mesh3dcomponent.md
-            - "Mobility": reference/scripting/modules/sdt4.managed.core/components/mobility.md
-            - "PhysicsConstraintComponent": reference/scripting/modules/sdt4.managed.core/components/physicsconstraintcomponent.md
-            - "PointLightComponent": reference/scripting/modules/sdt4.managed.core/components/pointlightcomponent.md
-            - "PostProcessingComponent": reference/scripting/modules/sdt4.managed.core/components/postprocessingcomponent.md
-            - "PostProcessingEffect": reference/scripting/modules/sdt4.managed.core/components/postprocessingeffect.md
-            - "Rigidbody3DComponent": reference/scripting/modules/sdt4.managed.core/components/rigidbody3dcomponent.md
-            - "SkinnedMeshComponent": reference/scripting/modules/sdt4.managed.core/components/skinnedmeshcomponent.md
-            - "SpotLightComponent": reference/scripting/modules/sdt4.managed.core/components/spotlightcomponent.md
-            - "Transform3DComponent": reference/scripting/modules/sdt4.managed.core/components/transform3dcomponent.md
-            - "WaypointComponent": reference/scripting/modules/sdt4.managed.core/components/waypointcomponent.md
-            - "WaypointSplinePathPoint": reference/scripting/modules/sdt4.managed.core/components/waypointsplinepathpoint.md
-            - "WaypointSplinePoint": reference/scripting/modules/sdt4.managed.core/components/waypointsplinepoint.md
-          - Graphics:
-            - "CameraProjection": reference/scripting/modules/sdt4.managed.core/graphics/cameraprojection.md
-          - Math:
-            - "AxisAlignedBox": reference/scripting/modules/sdt4.managed.core/math/axisalignedbox.md
-            - "ITransform3D": reference/scripting/modules/sdt4.managed.core/math/itransform3d.md
-            - "IVectorComparable": reference/scripting/modules/sdt4.managed.core/math/ivectorcomparable.md
-            - "IVectorSpatial&lt;TGenType&gt;": reference/scripting/modules/sdt4.managed.core/math/ivectorspatial`1.md
-            - "Matrix3x3f": reference/scripting/modules/sdt4.managed.core/math/matrix3x3f.md
-            - "Matrix4x4f": reference/scripting/modules/sdt4.managed.core/math/matrix4x4f.md
-            - "Quaternion": reference/scripting/modules/sdt4.managed.core/math/quaternion.md
-            - "SMath": reference/scripting/modules/sdt4.managed.core/math/smath.md
-            - "Vector2b": reference/scripting/modules/sdt4.managed.core/math/vector2b.md
-            - "Vector2d": reference/scripting/modules/sdt4.managed.core/math/vector2d.md
-            - "Vector2f": reference/scripting/modules/sdt4.managed.core/math/vector2f.md
-            - "Vector2i": reference/scripting/modules/sdt4.managed.core/math/vector2i.md
-            - "Vector3b": reference/scripting/modules/sdt4.managed.core/math/vector3b.md
-            - "Vector3d": reference/scripting/modules/sdt4.managed.core/math/vector3d.md
-            - "Vector3f": reference/scripting/modules/sdt4.managed.core/math/vector3f.md
-            - "Vector3i": reference/scripting/modules/sdt4.managed.core/math/vector3i.md
-            - "Vector4b": reference/scripting/modules/sdt4.managed.core/math/vector4b.md
-            - "Vector4d": reference/scripting/modules/sdt4.managed.core/math/vector4d.md
-            - "Vector4f": reference/scripting/modules/sdt4.managed.core/math/vector4f.md
-            - "Vector4i": reference/scripting/modules/sdt4.managed.core/math/vector4i.md
-          - Script:
-            - "ActorScript": reference/scripting/modules/sdt4.managed.core/script/actorscript.md
-            - "IScriptTarget": reference/scripting/modules/sdt4.managed.core/script/iscripttarget.md
-            - "PropScript": reference/scripting/modules/sdt4.managed.core/script/propscript.md
-            - "SceneScript": reference/scripting/modules/sdt4.managed.core/script/scenescript.md
-            - "ScriptPayload": reference/scripting/modules/sdt4.managed.core/script/scriptpayload.md
-          - Utility:
-            - "Bitmask&lt;T&gt;": reference/scripting/modules/sdt4.managed.core/utility/bitmask`1.md
-        - SDT4.Managed.Debugging:
-          - "Overview": reference/scripting/modules/sdt4.managed.debugging/index.md
-          - "DebugConsole": reference/scripting/modules/sdt4.managed.debugging/debugconsole.md
-          - "LogSeverity": reference/scripting/modules/sdt4.managed.debugging/logseverity.md
-        - SDT4.Managed.Editor:
-          - "Overview": reference/scripting/modules/sdt4.managed.editor/index.md
-          - "EditorRunContext": reference/scripting/modules/sdt4.managed.editor/editorruncontext.md
-          - Attributes:
-          - "Overview": reference/scripting/modules/sdt4.managed.input/index.md
-          - "AnalogInputSign": reference/scripting/modules/sdt4.managed.input/analoginputsign.md
-          - "Gamepad": reference/scripting/modules/sdt4.managed.input/gamepad.md
-          - "GamepadAnalogInput": reference/scripting/modules/sdt4.managed.input/gamepadanaloginput.md
-          - "GamepadButtonInput": reference/scripting/modules/sdt4.managed.input/gamepadbuttoninput.md
-          - "GamepadConnectionStateDelegate": reference/scripting/modules/sdt4.managed.input/gamepadconnectionstatedelegate.md
-          - "Input": reference/scripting/modules/sdt4.managed.input/input.md
-          - "InputMapper": reference/scripting/modules/sdt4.managed.input/inputmapper.md
-          - "InputModifier": reference/scripting/modules/sdt4.managed.input/inputmodifier.md
-          - "KeyInput": reference/scripting/modules/sdt4.managed.input/keyinput.md
-          - "MouseInput": reference/scripting/modules/sdt4.managed.input/mouseinput.md
-          - "MouseMotionInput": reference/scripting/modules/sdt4.managed.input/mousemotioninput.md
-          - "WindowExtensions": reference/scripting/modules/sdt4.managed.input/windowextensions.md
-          - "WindowResizeCallback": reference/scripting/modules/sdt4.managed.input/windowresizecallback.md
-          - Attributes:
-            - "AxisInputAttribute": reference/scripting/modules/sdt4.managed.input/attributes/axisinputattribute.md
-            - "ButtonInputAttribute": reference/scripting/modules/sdt4.managed.input/attributes/buttoninputattribute.md
-            - "InputMapperAttribute": reference/scripting/modules/sdt4.managed.input/attributes/inputmapperattribute.md
-            - "MappedAxisAttribute": reference/scripting/modules/sdt4.managed.input/attributes/mappedaxisattribute.md
-            - "MappedButtonAttribute": reference/scripting/modules/sdt4.managed.input/attributes/mappedbuttonattribute.md
-        - SDT4.Managed.Locale:
-          - "Overview": reference/scripting/modules/sdt4.managed.locale/index.md
-          - "ILocale": reference/scripting/modules/sdt4.managed.locale/ilocale.md
-        - SDT4.Managed.Network:
-          - "Overview": reference/scripting/modules/sdt4.managed.network/index.md
-          - "IConnectionEndpoint": reference/scripting/modules/sdt4.managed.network/iconnectionendpoint.md
-          - "INetworkSession": reference/scripting/modules/sdt4.managed.network/inetworksession.md
-          - "IRemoteConnection": reference/scripting/modules/sdt4.managed.network/iremoteconnection.md
-          - "PacketBroadcast": reference/scripting/modules/sdt4.managed.network/packetbroadcast.md
-          - "PacketListenerDelegate": reference/scripting/modules/sdt4.managed.network/packetlistenerdelegate.md
-          - "PacketProtocol": reference/scripting/modules/sdt4.managed.network/packetprotocol.md
-          - "RemoteConnectionStatus": reference/scripting/modules/sdt4.managed.network/remoteconnectionstatus.md
-          - "RemoteConnectionStatusDelegate": reference/scripting/modules/sdt4.managed.network/remoteconnectionstatusdelegate.md
-          - "RPCBuilder": reference/scripting/modules/sdt4.managed.network/rpcbuilder.md
-          - Attributes:
-            - "NetworkFieldNotificationDelegate": reference/scripting/modules/sdt4.managed.network/attributes/networkfieldnotificationdelegate.md
-            - "NetworkReplicateFieldNotifierAttribute": reference/scripting/modules/sdt4.managed.network/attributes/networkreplicatefieldnotifierattribute.md
-            - "PacketCharSet": reference/scripting/modules/sdt4.managed.network/attributes/packetcharset.md
-            - "ReplicateAttribute": reference/scripting/modules/sdt4.managed.network/attributes/replicateattribute.md
-            - "ReplicateFieldAttribute": reference/scripting/modules/sdt4.managed.network/attributes/replicatefieldattribute.md
-            - "ReplicationPolicy": reference/scripting/modules/sdt4.managed.network/attributes/replicationpolicy.md
-            - "ReplicationQuantization": reference/scripting/modules/sdt4.managed.network/attributes/replicationquantization.md
-            - "RPCAttribute": reference/scripting/modules/sdt4.managed.network/attributes/rpcattribute.md
-            - "StringPacketAttribute": reference/scripting/modules/sdt4.managed.network/attributes/stringpacketattribute.md
-        - SDT4.Managed.Network.Client:
-          - "Overview": reference/scripting/modules/sdt4.managed.network.client/index.md
-          - "ClientNetworkSession": reference/scripting/modules/sdt4.managed.network.client/clientnetworksession.md
-          - "P2PNetworkSession": reference/scripting/modules/sdt4.managed.network.client/p2pnetworksession.md
-        - SDT4.Managed.Network.Server:
-          - "Overview": reference/scripting/modules/sdt4.managed.network.server/index.md
-        - SDT4.Managed.Physics:
-          - "Overview": reference/scripting/modules/sdt4.managed.physics/index.md
-          - "PhysicsContactPatch": reference/scripting/modules/sdt4.managed.physics/physicscontactpatch.md
-          - "PhysicsOverlapHit": reference/scripting/modules/sdt4.managed.physics/physicsoverlaphit.md
-          - "PhysicsQueryFilterFlags": reference/scripting/modules/sdt4.managed.physics/physicsqueryfilterflags.md
-          - "PhysicsQueryFlags": reference/scripting/modules/sdt4.managed.physics/physicsqueryflags.md
-          - "PhysicsRayHit": reference/scripting/modules/sdt4.managed.physics/physicsrayhit.md
-          - "PhysicsSweepHit": reference/scripting/modules/sdt4.managed.physics/physicssweephit.md
-          - "PhysicsWorld": reference/scripting/modules/sdt4.managed.physics/physicsworld.md
-          - "RigidShape": reference/scripting/modules/sdt4.managed.physics/rigidshape.md
-          - Constraints:
-            - "BallConstraint": reference/scripting/modules/sdt4.managed.physics/constraints/ballconstraint.md
-            - "FixedConstraint": reference/scripting/modules/sdt4.managed.physics/constraints/fixedconstraint.md
-            - "PhysicsConstraint": reference/scripting/modules/sdt4.managed.physics/constraints/physicsconstraint.md
-            - "PistonConstraint": reference/scripting/modules/sdt4.managed.physics/constraints/pistonconstraint.md
-            - "StringConstraint": reference/scripting/modules/sdt4.managed.physics/constraints/stringconstraint.md
-          - Events:
-            - "PhysicsConstraintBreakEvent": reference/scripting/modules/sdt4.managed.physics/events/physicsconstraintbreakevent.md
-            - "PhysicsContactFoundEvent": reference/scripting/modules/sdt4.managed.physics/events/physicscontactfoundevent.md
-            - "PhysicsContactLostEvent": reference/scripting/modules/sdt4.managed.physics/events/physicscontactlostevent.md
-            - "PhysicsSleepEvent": reference/scripting/modules/sdt4.managed.physics/events/physicssleepevent.md
-            - "PhysicsVolumeEnterEvent": reference/scripting/modules/sdt4.managed.physics/events/physicsvolumeenterevent.md
-            - "PhysicsVolumeLeaveEvent": reference/scripting/modules/sdt4.managed.physics/events/physicsvolumeleaveevent.md
-            - "PhysicsWakeEvent": reference/scripting/modules/sdt4.managed.physics/events/physicswakeevent.md
-          - Shapes:
-            - "BoxShape": reference/scripting/modules/sdt4.managed.physics/shapes/boxshape.md
-            - "CapsuleShape": reference/scripting/modules/sdt4.managed.physics/shapes/capsuleshape.md
-            - "ConvexShape": reference/scripting/modules/sdt4.managed.physics/shapes/convexshape.md
-            - "CylinderShape": reference/scripting/modules/sdt4.managed.physics/shapes/cylindershape.md
-            - "SphereShape": reference/scripting/modules/sdt4.managed.physics/shapes/sphereshape.md
-            - "TrimeshShape": reference/scripting/modules/sdt4.managed.physics/shapes/trimeshshape.md
-          - Vehicle:
-            - "PhysicsVehicleBuilder": reference/scripting/modules/sdt4.managed.physics/vehicle/physicsvehiclebuilder.md
-        - SDT4.Managed.Renderer:
-          - "Overview": reference/scripting/modules/sdt4.managed.renderer/index.md
-          - "IRhiBackend": reference/scripting/modules/sdt4.managed.renderer/irhibackend.md
-          - "RendererPlatform": reference/scripting/modules/sdt4.managed.renderer/rendererplatform.md
-          - Extensions:
-            - "Mesh3DComponentExtensions": reference/scripting/modules/sdt4.managed.renderer/extensions/mesh3dcomponentextensions.md
-          - Graphics:
-            - "IRenderCanvasAttacher": reference/scripting/modules/sdt4.managed.renderer/graphics/irendercanvasattacher.md
-            - "MaterialInstance": reference/scripting/modules/sdt4.managed.renderer/graphics/materialinstance.md
-            - "MaterialInstanceProperty": reference/scripting/modules/sdt4.managed.renderer/graphics/materialinstanceproperty.md
-            - "MaterialInstancePropertyMap": reference/scripting/modules/sdt4.managed.renderer/graphics/materialinstancepropertymap.md
-            - "RenderCanvas": reference/scripting/modules/sdt4.managed.renderer/graphics/rendercanvas.md
-          - XRP:
-            - "SceneRenderInstance": reference/scripting/modules/sdt4.managed.renderer/xrp/scenerenderinstance.md
-            - "ViewportRenderInstance": reference/scripting/modules/sdt4.managed.renderer/xrp/viewportrenderinstance.md
-        - SDT4.Managed.Steam:
-          - "Overview": reference/scripting/modules/sdt4.managed.steam/index.md
-          - "SteamInstance": reference/scripting/modules/sdt4.managed.steam/steaminstance.md
-        - SDT4.Managed.Steam.Network:
-          - "Overview": reference/scripting/modules/sdt4.managed.steam.network/index.md
-          - "SteamConnectionEndpoint": reference/scripting/modules/sdt4.managed.steam.network/steamconnectionendpoint.md
-          - "SteamRemoteConnection": reference/scripting/modules/sdt4.managed.steam.network/steamremoteconnection.md
-        - SDT4.Managed.UI:
-          - "Overview": reference/scripting/modules/sdt4.managed.ui/index.md
-          - RML:
-            - "RCSSStyleDeclaration": reference/scripting/modules/sdt4.managed.ui/rml/rcssstyledeclaration.md
-            - "RMLCanvas": reference/scripting/modules/sdt4.managed.ui/rml/rmlcanvas.md
-            - "RMLClassTokenList": reference/scripting/modules/sdt4.managed.ui/rml/rmlclasstokenlist.md
-            - "RMLColor": reference/scripting/modules/sdt4.managed.ui/rml/rmlcolor.md
-            - "RMLColorPremultiplied": reference/scripting/modules/sdt4.managed.ui/rml/rmlcolorpremultiplied.md
-            - "RMLDocument": reference/scripting/modules/sdt4.managed.ui/rml/rmldocument.md
-            - "RMLElement": reference/scripting/modules/sdt4.managed.ui/rml/rmlelement.md
-            - "RMLEvent": reference/scripting/modules/sdt4.managed.ui/rml/rmlevent.md
-            - "RMLEventID": reference/scripting/modules/sdt4.managed.ui/rml/rmleventid.md
-            - "RMLEventListener": reference/scripting/modules/sdt4.managed.ui/rml/rmleventlistener.md
-            - "RMLEventParameters": reference/scripting/modules/sdt4.managed.ui/rml/rmleventparameters.md
-            - "RMLEventPhase": reference/scripting/modules/sdt4.managed.ui/rml/rmleventphase.md
-            - "RMLNamedNodeMap": reference/scripting/modules/sdt4.managed.ui/rml/rmlnamednodemap.md
-            - "RMLTheme": reference/scripting/modules/sdt4.managed.ui/rml/rmltheme.md
-            - "RMLThemeQuery": reference/scripting/modules/sdt4.managed.ui/rml/rmlthemequery.md
-            - "RMLVariant": reference/scripting/modules/sdt4.managed.ui/rml/rmlvariant.md
-            - "RMLVariantType": reference/scripting/modules/sdt4.managed.ui/rml/rmlvarianttype.md
-            - Attributes:
-              - "RMLDataEventAttribute": reference/scripting/modules/sdt4.managed.ui/rml/attributes/rmldataeventattribute.md
-              - "RMLDataVariableAttribute": reference/scripting/modules/sdt4.managed.ui/rml/attributes/rmldatavariableattribute.md
-              - "RMLLuaAccessibleAttribute": reference/scripting/modules/sdt4.managed.ui/rml/attributes/rmlluaaccessibleattribute.md
-              - "RMLLuaFieldAttribute": reference/scripting/modules/sdt4.managed.ui/rml/attributes/rmlluafieldattribute.md
-              - "RMLLuaMethodAttribute": reference/scripting/modules/sdt4.managed.ui/rml/attributes/rmlluamethodattribute.md
-            - Data:
-              - "IRMLData": reference/scripting/modules/sdt4.managed.ui/rml/data/irmldata.md
-              - "IRMLDataArray": reference/scripting/modules/sdt4.managed.ui/rml/data/irmldataarray.md
-              - "IRMLDataArray&lt;T&gt;": reference/scripting/modules/sdt4.managed.ui/rml/data/irmldataarray`1.md
-              - "IRMLDataScalar": reference/scripting/modules/sdt4.managed.ui/rml/data/irmldatascalar.md
-              - "IRMLDataStruct": reference/scripting/modules/sdt4.managed.ui/rml/data/irmldatastruct.md
-              - "RMLDataModel": reference/scripting/modules/sdt4.managed.ui/rml/data/rmldatamodel.md
-        - SDT4.Managed.Windowing:
-          - "Overview": reference/scripting/modules/sdt4.managed.windowing/index.md
-          - "Monitor": reference/scripting/modules/sdt4.managed.windowing/monitor.md
-          - "VideoMode": reference/scripting/modules/sdt4.managed.windowing/videomode.md
-          - "Window": reference/scripting/modules/sdt4.managed.windowing/window.md
-          - "WindowPlatform": reference/scripting/modules/sdt4.managed.windowing/windowplatform.md
+  - C# Api Reference:
+    - Compilation: 
+      - Overview: cs-api-ref/compilation/index.md
+      - Rules: 
+        - SDT0101: cs-api-ref/compilation/rules/sdt0101.md
 
-
+        - SDT0401: cs-api-ref/compilation/rules/sdt0401.md
+        - SDT0402: cs-api-ref/compilation/rules/sdt0402.md
+        - SDT0403: cs-api-ref/compilation/rules/sdt0403.md
+        
+        - SDT0601: cs-api-ref/compilation/rules/sdt0601.md
+        - SDT0602: cs-api-ref/compilation/rules/sdt0602.md
+        - SDT0603: cs-api-ref/compilation/rules/sdt0603.md
+        - SDT0604: cs-api-ref/compilation/rules/sdt0604.md
+        - SDT0605: cs-api-ref/compilation/rules/sdt0605.md
+        - SDT0606: cs-api-ref/compilation/rules/sdt0606.md
+        - SDT0607: cs-api-ref/compilation/rules/sdt0607.md
+        - SDT0651: cs-api-ref/compilation/rules/sdt0651.md
+        - SDT0652: cs-api-ref/compilation/rules/sdt0652.md
+        - SDT0653: cs-api-ref/compilation/rules/sdt0653.md
+    - SDT4.Managed.Core:
+      - "Overview": cs-api-ref/sdt4.managed.core/index.md
+      - "Actor": cs-api-ref/sdt4.managed.core/actor.md
+      - "AppInstance": cs-api-ref/sdt4.managed.core/appinstance.md
+      - "AppLoadContext": cs-api-ref/sdt4.managed.core/apploadcontext.md
+      - "InstanceBuild": cs-api-ref/sdt4.managed.core/instancebuild.md
+      - "Mobility": cs-api-ref/sdt4.managed.core/mobility.md
+      - "ResourceManager": cs-api-ref/sdt4.managed.core/resourcemanager.md
+      - "Scene": cs-api-ref/sdt4.managed.core/scene.md
+      - "Threads": cs-api-ref/sdt4.managed.core/threads.md
+      - Asset:
+        - "AssetErrorCode": cs-api-ref/sdt4.managed.core/asset/asseterrorcode.md
+        - "AssetID": cs-api-ref/sdt4.managed.core/asset/assetid.md
+        - "AssetLoadResult&lt;TResource&gt;": cs-api-ref/sdt4.managed.core/asset/assetloadresult`1.md
+        - "AssetType": cs-api-ref/sdt4.managed.core/asset/assettype.md
+        - "ConvexHullAsset": cs-api-ref/sdt4.managed.core/asset/convexhullasset.md
+        - "IResourceMapping": cs-api-ref/sdt4.managed.core/asset/iresourcemapping.md
+        - "MaterialAsset": cs-api-ref/sdt4.managed.core/asset/materialasset.md
+        - "ModelAsset": cs-api-ref/sdt4.managed.core/asset/modelasset.md
+        - "PrefabAsset": cs-api-ref/sdt4.managed.core/asset/prefabasset.md
+        - "Resource": cs-api-ref/sdt4.managed.core/asset/resource.md
+        - "SceneAsset": cs-api-ref/sdt4.managed.core/asset/sceneasset.md
+        - "SkeletonAsset": cs-api-ref/sdt4.managed.core/asset/skeletonasset.md
+        - "Texture2DAsset": cs-api-ref/sdt4.managed.core/asset/texture2dasset.md
+        - "TrimeshAsset": cs-api-ref/sdt4.managed.core/asset/trimeshasset.md
+      - Attributes:
+        - "ActorReferenceAttribute": cs-api-ref/sdt4.managed.core/attributes/actorreferenceattribute.md
+        - "AssetStringFieldEditPropertiesAttribute": cs-api-ref/sdt4.managed.core/attributes/assetstringfieldeditpropertiesattribute.md
+        - "ExposeFieldAttribute": cs-api-ref/sdt4.managed.core/attributes/exposefieldattribute.md
+        - "ExposeMethodAttribute": cs-api-ref/sdt4.managed.core/attributes/exposemethodattribute.md
+        - "NumericFieldEditPropertiesAttribute": cs-api-ref/sdt4.managed.core/attributes/numericfieldeditpropertiesattribute.md
+        - "ReturnPinNameAttribute": cs-api-ref/sdt4.managed.core/attributes/returnpinnameattribute.md
+        - "ScriptEventAttribute": cs-api-ref/sdt4.managed.core/attributes/scripteventattribute.md
+        - "ScriptGeneratedAttribute": cs-api-ref/sdt4.managed.core/attributes/scriptgeneratedattribute.md
+        - "ScriptHiddenAttribute": cs-api-ref/sdt4.managed.core/attributes/scripthiddenattribute.md
+        - "ScriptPureAttribute": cs-api-ref/sdt4.managed.core/attributes/scriptpureattribute.md
+        - "ScriptWildcardAttribute": cs-api-ref/sdt4.managed.core/attributes/scriptwildcardattribute.md
+      - Capabilities:
+        - "ICapability": cs-api-ref/sdt4.managed.core/capabilities/icapability.md
+        - "ILocalizationCapability": cs-api-ref/sdt4.managed.core/capabilities/ilocalizationcapability.md
+        - "INetworkingCapability": cs-api-ref/sdt4.managed.core/capabilities/inetworkingcapability.md
+        - "IRenderingCapability": cs-api-ref/sdt4.managed.core/capabilities/irenderingcapability.md
+        - "IWindowingCapability": cs-api-ref/sdt4.managed.core/capabilities/iwindowingcapability.md
+      - Components:
+        - "BoxVolumeComponent": cs-api-ref/sdt4.managed.core/components/boxvolumecomponent.md
+        - "CameraComponent": cs-api-ref/sdt4.managed.core/components/cameracomponent.md
+        - "ColorGrading": cs-api-ref/sdt4.managed.core/components/colorgrading.md
+        - "Component": cs-api-ref/sdt4.managed.core/components/component.md
+        - "DeferredDecalComponent": cs-api-ref/sdt4.managed.core/components/deferreddecalcomponent.md
+        - "DirectionalLightComponent": cs-api-ref/sdt4.managed.core/components/directionallightcomponent.md
+        - "HDR": cs-api-ref/sdt4.managed.core/components/hdr.md
+        - "Mesh3DComponent": cs-api-ref/sdt4.managed.core/components/mesh3dcomponent.md
+        - "PhysicsConstraintComponent": cs-api-ref/sdt4.managed.core/components/physicsconstraintcomponent.md
+        - "PointLightComponent": cs-api-ref/sdt4.managed.core/components/pointlightcomponent.md
+        - "PostProcessingComponent": cs-api-ref/sdt4.managed.core/components/postprocessingcomponent.md
+        - "PostProcessingEffect": cs-api-ref/sdt4.managed.core/components/postprocessingeffect.md
+        - "Rigidbody3DComponent": cs-api-ref/sdt4.managed.core/components/rigidbody3dcomponent.md
+        - "SkinnedMeshComponent": cs-api-ref/sdt4.managed.core/components/skinnedmeshcomponent.md
+        - "SpotLightComponent": cs-api-ref/sdt4.managed.core/components/spotlightcomponent.md
+        - "Transform3DComponent": cs-api-ref/sdt4.managed.core/components/transform3dcomponent.md
+        - "WaypointComponent": cs-api-ref/sdt4.managed.core/components/waypointcomponent.md
+        - "WaypointSplinePathPoint": cs-api-ref/sdt4.managed.core/components/waypointsplinepathpoint.md
+        - "WaypointSplinePoint": cs-api-ref/sdt4.managed.core/components/waypointsplinepoint.md
+      - Exceptions:
+        - "NativeEngineException": cs-api-ref/sdt4.managed.core/exceptions/nativeengineexception.md
+      - Graphics:
+        - "CameraProjection": cs-api-ref/sdt4.managed.core/graphics/cameraprojection.md
+      - Math:
+        - "AxisAlignedBox": cs-api-ref/sdt4.managed.core/math/axisalignedbox.md
+        - "IVectorComparable": cs-api-ref/sdt4.managed.core/math/ivectorcomparable.md
+        - "IVectorSpatial&lt;TGenType&gt;": cs-api-ref/sdt4.managed.core/math/ivectorspatial`1.md
+        - "Matrix3x3f": cs-api-ref/sdt4.managed.core/math/matrix3x3f.md
+        - "Matrix4x4f": cs-api-ref/sdt4.managed.core/math/matrix4x4f.md
+        - "Quaternion": cs-api-ref/sdt4.managed.core/math/quaternion.md
+        - "SMath": cs-api-ref/sdt4.managed.core/math/smath.md
+        - "Vector2b": cs-api-ref/sdt4.managed.core/math/vector2b.md
+        - "Vector2d": cs-api-ref/sdt4.managed.core/math/vector2d.md
+        - "Vector2f": cs-api-ref/sdt4.managed.core/math/vector2f.md
+        - "Vector2i": cs-api-ref/sdt4.managed.core/math/vector2i.md
+        - "Vector3b": cs-api-ref/sdt4.managed.core/math/vector3b.md
+        - "Vector3d": cs-api-ref/sdt4.managed.core/math/vector3d.md
+        - "Vector3f": cs-api-ref/sdt4.managed.core/math/vector3f.md
+        - "Vector3i": cs-api-ref/sdt4.managed.core/math/vector3i.md
+        - "Vector4b": cs-api-ref/sdt4.managed.core/math/vector4b.md
+        - "Vector4d": cs-api-ref/sdt4.managed.core/math/vector4d.md
+        - "Vector4f": cs-api-ref/sdt4.managed.core/math/vector4f.md
+        - "Vector4i": cs-api-ref/sdt4.managed.core/math/vector4i.md
+      - Script:
+        - "ActorScript": cs-api-ref/sdt4.managed.core/script/actorscript.md
+        - "ActorScriptToken": cs-api-ref/sdt4.managed.core/script/actorscripttoken.md
+        - "IScriptTarget": cs-api-ref/sdt4.managed.core/script/iscripttarget.md
+        - "SceneScript": cs-api-ref/sdt4.managed.core/script/scenescript.md
+        - "SceneScriptToken": cs-api-ref/sdt4.managed.core/script/scenescripttoken.md
+        - "ScriptPayload": cs-api-ref/sdt4.managed.core/script/scriptpayload.md
+      - Utility:
+        - "Bitmask&lt;T&gt;": cs-api-ref/sdt4.managed.core/utility/bitmask`1.md
+        - "DebugUtils": cs-api-ref/sdt4.managed.core/utility/debugutils.md
+        - "IDisposeTracker&lt;T&gt;": cs-api-ref/sdt4.managed.core/utility/idisposetracker`1.md
+    - SDT4.Managed.Debugging:
+      - "Overview": cs-api-ref/sdt4.managed.debugging/index.md
+      - "DebugConsole": cs-api-ref/sdt4.managed.debugging/debugconsole.md
+      - "LogSeverity": cs-api-ref/sdt4.managed.debugging/logseverity.md
+    - SDT4.Managed.Editor:
+      - "Overview": cs-api-ref/sdt4.managed.editor/index.md
+      - "EditorRunContext": cs-api-ref/sdt4.managed.editor/editorruncontext.md
+    - SDT4.Managed.Editor.AssetPipeline:
+      - "Overview": cs-api-ref/sdt4.managed.editor.assetpipeline/index.md
+    - SDT4.Managed.Input:
+      - "Overview": cs-api-ref/sdt4.managed.input/index.md
+      - "AnalogInputSign": cs-api-ref/sdt4.managed.input/analoginputsign.md
+      - "Gamepad": cs-api-ref/sdt4.managed.input/gamepad.md
+      - "GamepadAnalogInput": cs-api-ref/sdt4.managed.input/gamepadanaloginput.md
+      - "GamepadButtonInput": cs-api-ref/sdt4.managed.input/gamepadbuttoninput.md
+      - "GamepadConnectionStateDelegate": cs-api-ref/sdt4.managed.input/gamepadconnectionstatedelegate.md
+      - "Input": cs-api-ref/sdt4.managed.input/input.md
+      - "InputMapper": cs-api-ref/sdt4.managed.input/inputmapper.md
+      - "InputModifier": cs-api-ref/sdt4.managed.input/inputmodifier.md
+      - "KeyInput": cs-api-ref/sdt4.managed.input/keyinput.md
+      - "MouseInput": cs-api-ref/sdt4.managed.input/mouseinput.md
+      - "MouseMotionInput": cs-api-ref/sdt4.managed.input/mousemotioninput.md
+      - "WindowExtensions": cs-api-ref/sdt4.managed.input/windowextensions.md
+      - "WindowResizeCallback": cs-api-ref/sdt4.managed.input/windowresizecallback.md
+      - Attributes:
+        - "AxisInputAttribute": cs-api-ref/sdt4.managed.input/attributes/axisinputattribute.md
+        - "ButtonInputAttribute": cs-api-ref/sdt4.managed.input/attributes/buttoninputattribute.md
+        - "InputMapperAttribute": cs-api-ref/sdt4.managed.input/attributes/inputmapperattribute.md
+        - "MappedAxisAttribute": cs-api-ref/sdt4.managed.input/attributes/mappedaxisattribute.md
+        - "MappedButtonAttribute": cs-api-ref/sdt4.managed.input/attributes/mappedbuttonattribute.md
+    - SDT4.Managed.Locale:
+      - "Overview": cs-api-ref/sdt4.managed.locale/index.md
+      - "ILocale": cs-api-ref/sdt4.managed.locale/ilocale.md
+    - SDT4.Managed.Network:
+      - "Overview": cs-api-ref/sdt4.managed.network/index.md
+      - "IConnectionEndpoint": cs-api-ref/sdt4.managed.network/iconnectionendpoint.md
+      - "INetworkSession": cs-api-ref/sdt4.managed.network/inetworksession.md
+      - "IRemoteConnection": cs-api-ref/sdt4.managed.network/iremoteconnection.md
+      - "PacketBroadcast": cs-api-ref/sdt4.managed.network/packetbroadcast.md
+      - "PacketListenerDelegate": cs-api-ref/sdt4.managed.network/packetlistenerdelegate.md
+      - "PacketProtocol": cs-api-ref/sdt4.managed.network/packetprotocol.md
+      - "RemoteConnectionStatus": cs-api-ref/sdt4.managed.network/remoteconnectionstatus.md
+      - "RemoteConnectionStatusDelegate": cs-api-ref/sdt4.managed.network/remoteconnectionstatusdelegate.md
+      - "RPCBuilder": cs-api-ref/sdt4.managed.network/rpcbuilder.md
+      - Attributes:
+        - "NetworkFieldNotificationDelegate": cs-api-ref/sdt4.managed.network/attributes/networkfieldnotificationdelegate.md
+        - "NetworkReplicateFieldNotifierAttribute": cs-api-ref/sdt4.managed.network/attributes/networkreplicatefieldnotifierattribute.md
+        - "PacketCharSet": cs-api-ref/sdt4.managed.network/attributes/packetcharset.md
+        - "ReplicateAttribute": cs-api-ref/sdt4.managed.network/attributes/replicateattribute.md
+        - "ReplicateFieldAttribute": cs-api-ref/sdt4.managed.network/attributes/replicatefieldattribute.md
+        - "ReplicationPolicy": cs-api-ref/sdt4.managed.network/attributes/replicationpolicy.md
+        - "ReplicationQuantization": cs-api-ref/sdt4.managed.network/attributes/replicationquantization.md
+        - "RPCAttribute": cs-api-ref/sdt4.managed.network/attributes/rpcattribute.md
+        - "StringPacketAttribute": cs-api-ref/sdt4.managed.network/attributes/stringpacketattribute.md
+    - SDT4.Managed.Network.Client:
+      - "Overview": cs-api-ref/sdt4.managed.network.client/index.md
+      - "ClientNetworkSession": cs-api-ref/sdt4.managed.network.client/clientnetworksession.md
+      - "P2PNetworkSession": cs-api-ref/sdt4.managed.network.client/p2pnetworksession.md
+    - SDT4.Managed.Network.Server:
+      - "Overview": cs-api-ref/sdt4.managed.network.server/index.md
+    - SDT4.Managed.Physics:
+      - "Overview": cs-api-ref/sdt4.managed.physics/index.md
+      - "PhysicsContactPatch": cs-api-ref/sdt4.managed.physics/physicscontactpatch.md
+      - "PhysicsOverlapHit": cs-api-ref/sdt4.managed.physics/physicsoverlaphit.md
+      - "PhysicsQueryFilterFlags": cs-api-ref/sdt4.managed.physics/physicsqueryfilterflags.md
+      - "PhysicsQueryFlags": cs-api-ref/sdt4.managed.physics/physicsqueryflags.md
+      - "PhysicsRayHit": cs-api-ref/sdt4.managed.physics/physicsrayhit.md
+      - "PhysicsSweepHit": cs-api-ref/sdt4.managed.physics/physicssweephit.md
+      - "PhysicsWorld": cs-api-ref/sdt4.managed.physics/physicsworld.md
+      - "RigidShape": cs-api-ref/sdt4.managed.physics/rigidshape.md
+      - Constraints:
+        - "BallConstraint": cs-api-ref/sdt4.managed.physics/constraints/ballconstraint.md
+        - "FixedConstraint": cs-api-ref/sdt4.managed.physics/constraints/fixedconstraint.md
+        - "PhysicsConstraint": cs-api-ref/sdt4.managed.physics/constraints/physicsconstraint.md
+        - "PistonConstraint": cs-api-ref/sdt4.managed.physics/constraints/pistonconstraint.md
+        - "StringConstraint": cs-api-ref/sdt4.managed.physics/constraints/stringconstraint.md
+      - Events:
+        - "PhysicsConstraintBreakEvent": cs-api-ref/sdt4.managed.physics/events/physicsconstraintbreakevent.md
+        - "PhysicsContactFoundEvent": cs-api-ref/sdt4.managed.physics/events/physicscontactfoundevent.md
+        - "PhysicsContactLostEvent": cs-api-ref/sdt4.managed.physics/events/physicscontactlostevent.md
+        - "PhysicsSleepEvent": cs-api-ref/sdt4.managed.physics/events/physicssleepevent.md
+        - "PhysicsVolumeEnterEvent": cs-api-ref/sdt4.managed.physics/events/physicsvolumeenterevent.md
+        - "PhysicsVolumeLeaveEvent": cs-api-ref/sdt4.managed.physics/events/physicsvolumeleaveevent.md
+        - "PhysicsWakeEvent": cs-api-ref/sdt4.managed.physics/events/physicswakeevent.md
+      - Shapes:
+        - "BoxShape": cs-api-ref/sdt4.managed.physics/shapes/boxshape.md
+        - "CapsuleShape": cs-api-ref/sdt4.managed.physics/shapes/capsuleshape.md
+        - "ConvexShape": cs-api-ref/sdt4.managed.physics/shapes/convexshape.md
+        - "CylinderShape": cs-api-ref/sdt4.managed.physics/shapes/cylindershape.md
+        - "SphereShape": cs-api-ref/sdt4.managed.physics/shapes/sphereshape.md
+        - "TrimeshShape": cs-api-ref/sdt4.managed.physics/shapes/trimeshshape.md
+      - Vehicle:
+        - "PhysicsVehicleBuilder": cs-api-ref/sdt4.managed.physics/vehicle/physicsvehiclebuilder.md
+    - SDT4.Managed.Renderer:
+      - "Overview": cs-api-ref/sdt4.managed.renderer/index.md
+      - "RendererBackendInfo": cs-api-ref/sdt4.managed.renderer/rendererbackendinfo.md
+      - "RendererPlatform": cs-api-ref/sdt4.managed.renderer/rendererplatform.md
+      - Extensions:
+        - "Mesh3DComponentExtensions": cs-api-ref/sdt4.managed.renderer/extensions/mesh3dcomponentextensions.md
+      - Graphics:
+        - "IRenderCanvasAttacher": cs-api-ref/sdt4.managed.renderer/graphics/irendercanvasattacher.md
+        - "MaterialInstance": cs-api-ref/sdt4.managed.renderer/graphics/materialinstance.md
+        - "MaterialInstanceProperty": cs-api-ref/sdt4.managed.renderer/graphics/materialinstanceproperty.md
+        - "MaterialInstancePropertyMap": cs-api-ref/sdt4.managed.renderer/graphics/materialinstancepropertymap.md
+        - "RenderCanvas": cs-api-ref/sdt4.managed.renderer/graphics/rendercanvas.md
+      - XRP:
+        - "SceneRenderInstance": cs-api-ref/sdt4.managed.renderer/xrp/scenerenderinstance.md
+        - "ViewportRenderInstance": cs-api-ref/sdt4.managed.renderer/xrp/viewportrenderinstance.md
+    - SDT4.Managed.Steam:
+      - "Overview": cs-api-ref/sdt4.managed.steam/index.md
+      - "SteamInstance": cs-api-ref/sdt4.managed.steam/steaminstance.md
+    - SDT4.Managed.Steam.Network:
+      - "Overview": cs-api-ref/sdt4.managed.steam.network/index.md
+      - "SteamConnectionEndpoint": cs-api-ref/sdt4.managed.steam.network/steamconnectionendpoint.md
+      - "SteamRemoteConnection": cs-api-ref/sdt4.managed.steam.network/steamremoteconnection.md
+    - SDT4.Managed.UI:
+      - "Overview": cs-api-ref/sdt4.managed.ui/index.md
+      - RML:
+        - "RCSSStyleDeclaration": cs-api-ref/sdt4.managed.ui/rml/rcssstyledeclaration.md
+        - "RMLCanvas": cs-api-ref/sdt4.managed.ui/rml/rmlcanvas.md
+        - "RMLClassTokenList": cs-api-ref/sdt4.managed.ui/rml/rmlclasstokenlist.md
+        - "RMLColor": cs-api-ref/sdt4.managed.ui/rml/rmlcolor.md
+        - "RMLColorPremultiplied": cs-api-ref/sdt4.managed.ui/rml/rmlcolorpremultiplied.md
+        - "RMLDocument": cs-api-ref/sdt4.managed.ui/rml/rmldocument.md
+        - "RMLElement": cs-api-ref/sdt4.managed.ui/rml/rmlelement.md
+        - "RMLEvent": cs-api-ref/sdt4.managed.ui/rml/rmlevent.md
+        - "RMLEventID": cs-api-ref/sdt4.managed.ui/rml/rmleventid.md
+        - "RMLEventListener": cs-api-ref/sdt4.managed.ui/rml/rmleventlistener.md
+        - "RMLEventParameters": cs-api-ref/sdt4.managed.ui/rml/rmleventparameters.md
+        - "RMLEventPhase": cs-api-ref/sdt4.managed.ui/rml/rmleventphase.md
+        - "RMLNamedNodeMap": cs-api-ref/sdt4.managed.ui/rml/rmlnamednodemap.md
+        - "RMLTheme": cs-api-ref/sdt4.managed.ui/rml/rmltheme.md
+        - "RMLThemeQuery": cs-api-ref/sdt4.managed.ui/rml/rmlthemequery.md
+        - "RMLVariant": cs-api-ref/sdt4.managed.ui/rml/rmlvariant.md
+        - "RMLVariantType": cs-api-ref/sdt4.managed.ui/rml/rmlvarianttype.md
+        - Attributes:
+          - "RMLDataEventAttribute": cs-api-ref/sdt4.managed.ui/rml/attributes/rmldataeventattribute.md
+          - "RMLDataVariableAttribute": cs-api-ref/sdt4.managed.ui/rml/attributes/rmldatavariableattribute.md
+          - "RMLLuaAccessibleAttribute": cs-api-ref/sdt4.managed.ui/rml/attributes/rmlluaaccessibleattribute.md
+          - "RMLLuaFieldAttribute": cs-api-ref/sdt4.managed.ui/rml/attributes/rmlluafieldattribute.md
+          - "RMLLuaMethodAttribute": cs-api-ref/sdt4.managed.ui/rml/attributes/rmlluamethodattribute.md
+        - Data:
+          - "IRMLData": cs-api-ref/sdt4.managed.ui/rml/data/irmldata.md
+          - "IRMLDataArray": cs-api-ref/sdt4.managed.ui/rml/data/irmldataarray.md
+          - "IRMLDataArray&lt;T&gt;": cs-api-ref/sdt4.managed.ui/rml/data/irmldataarray`1.md
+          - "IRMLDataScalar": cs-api-ref/sdt4.managed.ui/rml/data/irmldatascalar.md
+          - "IRMLDataStruct": cs-api-ref/sdt4.managed.ui/rml/data/irmldatastruct.md
+          - "RMLDataModel": cs-api-ref/sdt4.managed.ui/rml/data/rmldatamodel.md
+    - SDT4.Managed.Windowing:
+      - "Overview": cs-api-ref/sdt4.managed.windowing/index.md
+      - "Monitor": cs-api-ref/sdt4.managed.windowing/monitor.md
+      - "VideoMode": cs-api-ref/sdt4.managed.windowing/videomode.md
+      - "Window": cs-api-ref/sdt4.managed.windowing/window.md
+      - "WindowPlatform": cs-api-ref/sdt4.managed.windowing/windowplatform.md
 
       # - Extension API reference:
     #- Renderer: 

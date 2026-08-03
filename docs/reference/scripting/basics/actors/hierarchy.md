@@ -25,4 +25,4 @@ DebugConsole.Print($"Scope GUID = {someActor.ScopeId}");
 DebugConsole.Print($"Scope GUID = {someActor.ScopeRoot?.GlobalId ?? Guid.Empty}");
 ```
 
-This is a powerful encapsulation as it allows retrieving actors deterministically by scope, once we get into referencing Actors in [ActorScripts](../scripts/scenepropactorscript.md).
+This is a powerful encapsulation as it allows retrieving actors deterministically by scope, once we get into referencing Actors in [ActorScripts](../scripts/sceneactorscript.md).

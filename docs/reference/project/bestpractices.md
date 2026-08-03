@@ -5,7 +5,6 @@ Projects are where the game development phase starts, and while getting it right
 ## DO's
 
 - DO: PLACE PROJECTS IN PATHS WITH NO SPACES! This avoids any possible bugs due to software not properly escaping paths! While Shard Tech 4 in principle *should* fare correctly under those circumstances, it is best to use whitespace-free paths.
-- DO: Set an upper limit on the SDK version, as the engine may introduce breaking changes in later versions!
 - DO: Use long-term support .NET versions, e.g. .NET 10
 
 ## DONT's

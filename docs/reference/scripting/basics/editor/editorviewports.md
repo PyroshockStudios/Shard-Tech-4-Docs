@@ -2,7 +2,7 @@
 
 The editor window's render canvas is owned by the GUI, and is thus not accessible. Attempting to create a render canvas for this window will result in an *InvalidOperationException*.
 
-Instead, the enabled viewport is the existing [ViewportRenderInstance](../../modules/sdt4.managed.renderer/xrp/viewportrenderinstance.md) provided in the entry and exit. This cannot be disposed as it is owned by the editor.
+Instead, the enabled viewport is the existing [ViewportRenderInstance](../../../../cs-api-ref/sdt4.managed.renderer/xrp/viewportrenderinstance.md) provided in the entry and exit. This cannot be disposed as it is owned by the editor.
 
 ## Additional viewports
 
