@@ -9,12 +9,26 @@ Unlike the [Game.OnInit](../entrypoint.md) entry point, the `Game.OnEditorStart`
 
 
 ```csharp
+using SDT4.Managed.Core;
 using SDT4.Managed.Editor;
+
+static class MyGameContext 
+{
+    public static MyGameContext? Instance { get; internal set; }
+
+    public AppInstance Inst { get; }
+
+    internal MyGameContext(AppInstance instance) 
+    {
+        Inst = instance;
+    }
+}
+
 static class GameEditor 
 {
     static void OnEditorStart(EditorRunContext editorRunContext) 
     {
-        // ...   
+        Instance = new MyGameContext(editorRunContext.Instance)
     }
 }
 
@@ -47,6 +61,7 @@ Unlike [Game.OnInit](../entrypoint.md), `Game.OnEditorStart` has a corresponding
 static void OnEditorStop(EditorRunContext editorRunContext) 
 {
     // Clean up state...
+    MyGameContext.Instance = null;
 
     // Do not dispose the viewports as they are owned by the editor.
     // And the original camera states are restored automatically.

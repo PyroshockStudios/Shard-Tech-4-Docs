@@ -50,15 +50,15 @@ class MyPrefabScript : ActorScript
         // payload.State holds an optional object with state. 
         // This is useful for physics actors where setting an 
         // initial transform is vital. 
-        var translation = (Vector3d)payload.State ?? Vector3d.Zero;
+        var translation = (payload.State as Vector3d) ?? Vector3d.Zero;
         this.GetComponent<Transform3DComponent>().Translation = translation;
     }
 }
 // ...
 Scene scene = /*...*/;
-scene.CreatePrefabActor<MyPrefabScript>(prefab, payload: new Vector3d(1000.0, 10.0, 5000.0));
+scene.CreatePrefabActor(prefab, payload: new Vector3d(1000.0, 10.0, 5000.0));
 
 ```
 
 !!! note
-    Due to the possibility of Vetoing the creation, `InvokeProp<>()` and `CreatePrefabActor<>()` may return **NULL**.
+    Due to the possibility of Vetoing the creation, `CreatePrefabActor()` may return **NULL**.
