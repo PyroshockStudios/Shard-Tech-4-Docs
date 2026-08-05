@@ -3,10 +3,8 @@
 - Requires Python
 
 ```bash
-pip install mkdocs
-pip install mkdocs-windmill
+pip install -r requirements.txt
 ```
-
 
 To preview the site, `mkdocs serve`
 

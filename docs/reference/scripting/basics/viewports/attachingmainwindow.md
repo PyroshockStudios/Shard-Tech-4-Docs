@@ -22,8 +22,7 @@ using SDT4.Managed.Windowing;
 AppInstance instance = /*...*/;
 // We must query the IWindowingCapability interface, 
 // which is available in non-headless client builds
-var windowing = instance.TryGetCapability<IWindowingCapability>();
-if (windowing == null) 
+if (!instance.TryGetCapability<IWindowingCapability>(out var windowing)) 
 {
     throw new NotSupportedException("Windowing is not supported in this build.");
 }
@@ -32,13 +31,13 @@ var windowPlatform = (WindowPlatform)windowing;
 Window primaryWindow = windowPlatform.PrimaryWindow;
 
 // Now lets get the renderer
-var renderer = instance.TryGetCapability<IRenderingCapability>();
-if (renderer == null) 
+if (!instance.TryGetCapability<IRenderingCapability>(out var renderer)) 
 {
     throw new NotSupportedException("Rendering is not supported in this build.");
 }
 // RendererPlatform is the implementor for the IRenderingCapability 
 var rendererPlatform = (RendererPlatform)renderer;
+// Must be called on the master thread!
 RenderCanvas primaryCanvas = rendererPlatform.CreateWindowRenderCanvas(window);
 
 ```
@@ -49,11 +48,11 @@ to attach our newly acquired RenderCanvas.
 ## Rendering to the canvas
 
 To render to our render canvas, we can either render with custom [Render Effects](../../advanced/renderer/xrpframegraph.md), or 
-use the built-in high performance "eXtreem Render Pipeline (XRP)". The Shard Tech 4 XRP contains all the rendering features
+use the built-in high performance "eXtreme Render Pipeline (XRP)". The Shard Tech 4 XRP contains all the rendering features
 related to components in the scene, and allows seamless integration of rendering effects.
 
 ```csharp
-using SDT4.Managed.Renderer.XRP; // eXtreem Render pipeline
+using SDT4.Managed.Renderer.XRP; // eXtreme Render pipeline
 // ...
 Scene scene = /*...*/; // get our active scene!
 SceneRenderInstance sceneRenderer = rendererPlatform.CreateSceneRenderer(scene);
@@ -73,7 +72,7 @@ viewportRenderer.SetCameraActor(cameraActor);
 
 ## Disposing the canvas
 
-The renderer objects may be disposed when finished using, however when disposing the [Scene](../../modules/sdt4.managed.core/scene.md),
+The renderer objects may be disposed when finished using, however when disposing the [Scene](../../../../cs-api-ref/sdt4.managed.core/scene.md),
 all the renderer objects related to the scene are automatically disposed. It is still recommended however to manually dispose them.
 
 ```csharp
@@ -96,7 +95,7 @@ scene.Dispose();
 ## Window resizing
 
 As you may have noticed, since we manually define the viewport size and the render canvas is created from the window.
-Once the window has been resized, the render canvas is outdated, meaning rendering may cause artifacts.
+Once the window has been resized, the render canvas is outdated, meaning rendering may cause artefacts.
 
 !!! bug
     In some cases due to backend implementations and operating systems, the graphics device **may even crash** 
@@ -104,6 +103,9 @@ Once the window has been resized, the render canvas is outdated, meaning renderi
     it is safe to continue rendering on an outdated render canvas!
 
 The easiest solution is to update the render canvas is to use a Window resize callback
+
+!!! note
+    Prototype code, this code is currently not possible
 
 ```csharp
 // For window input
@@ -114,7 +116,7 @@ RendererPlatform rendererPlatform = /*...*/;
 ViewportRenderInstance viewportRenderer = /*...*/;
 RenderCanvas primaryCanvas = /*...*/;
 
-window.AddEventListener(WindowEventID.Resize, e => 
+window.OnResize += (e) => 
 { 
     RenderCanvas oldCanvas = primaryCanvas;
     primaryCanvas = rendererPlatform.CreateWindowRenderCanvas(window);
@@ -122,6 +124,6 @@ window.AddEventListener(WindowEventID.Resize, e =>
     oldCanvas.Dispose(); // release the old canvas
     // update the viewport!
     viewportRenderer.SetViewport(extent: window.FramebufferSize);
-});
+};
 
 ```

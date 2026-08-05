@@ -1,4 +1,4 @@
-# Prerequesites
+# Prerequisites
 Installation is a very straight forward process. It does however require a couple prerequisites:
 
 - [.NET 8.0+ SDK](https://dotnet.microsoft.com/en-us/download) (For script development)
@@ -12,7 +12,7 @@ When installing Shard Tech 4, there are two options:
 - Portable binaries
 - Installer
 
-When using portable binaries, no environment variables are set, and thus may cause issues in certain cases, especially [Script Compilation](./reference/scripting/compilation/index.md)
+When using portable binaries, no environment variables are set, and thus may cause issues in certain cases, especially [Script Compilation](./cs-api-ref/compilation/index.md)
 
 # Uninstalling
 

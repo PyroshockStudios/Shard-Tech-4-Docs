@@ -17,7 +17,7 @@ Once an actor is no longer needed, you may remove it from the scene, and it will
 
 ```csharp
 
-scene.RemoveActor(gamingActor);
+scene.KillActor(gamingActor);
 // gamingActor is no longer valid, do not attempt to use it
 DebugConsole.Print($"{gamingActor.IsAlive}"); // prints false!
 

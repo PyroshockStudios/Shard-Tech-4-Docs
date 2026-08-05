@@ -4,19 +4,16 @@ After the user is finished playing the game, we should give him an option to qui
 
 ## Requesting exit
 
-[AppInstance](../modules/sdt4.managed.core/appinstance.md).RequestAppExitAsync() returns an exit code, if the application can be terminated. In most circumstances it will always return [AppExitRequest](../modules/sdt4.managed.core/appexitrequest.md).Success. In other cases, 
+[Window](../../../cs-api-ref/sdt4.managed.windowing/window.md).Close() is sufficient to request the exit of the application. Closing the Primary window will request a stop to the game loop and close the app resources.
 
 ```csharp
 using SDT4.Managed.Core;
 // ...
-// Use our app instance that we have gotten from the entry point!
-AppInstance instance = /*...*/;
-await request = instance.RequestAppExitAsync();
-if (request == AppExitRequest.Success) 
-{
-    // Clean up our scenes and stop simulation
-    // ...
-    // Finally, terminate to stop the engine
-    instance.Terminate();
-}
+// Use our Window Platform that we have gotten from the capabilities!
+WindowPlatform windowing = /*...*/;
+windowing.PrimaryWindow.Close();
+// Clean up our scenes and stop simulation
+// ...
+// Finally, terminate to stop the engine
+instance.Terminate();
 ```

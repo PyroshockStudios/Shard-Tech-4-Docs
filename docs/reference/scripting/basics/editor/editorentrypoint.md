@@ -5,25 +5,39 @@ developing with the editor in mind is no less important.
 
 ## Setting up the editor entry
 
-Unlike the [[GameEntry]](../../modules/sdt4.managed.core/attributes/gameentryattribute.md)
-attribute, the [[EditorEntry]](../../modules/sdt4.managed.editor/attributes/editorentryattribute.md) attribute provides an already loaded app instance, no arguments and a scene.
+Unlike the [Game.OnInit](../entrypoint.md) entry point, the `Game.OnEditorStart` entry provides an already loaded app instance, no arguments and a scene.
 
 
 ```csharp
 using SDT4.Managed.Core;
-using SDT4.Managed.Editor.Attributes;
-static class MyGame_Editor 
+using SDT4.Managed.Editor;
+
+static class MyGameContext 
 {
-    [EditorEntry]
+    public static MyGameContext? Instance { get; internal set; }
+
+    public AppInstance Inst { get; }
+
+    internal MyGameContext(AppInstance instance) 
+    {
+        Inst = instance;
+    }
+}
+
+static class GameEditor 
+{
     static void OnEditorStart(EditorRunContext editorRunContext) 
     {
-        // ...   
+        Instance = new MyGameContext(editorRunContext.Instance)
     }
 }
 
 ```
 
-Inside the [EditorRunContext](../../modules/sdt4.managed.editor/editorruncontext.md) structure, there are many useful fields, such as editor viewports, the running window, the app instance, the scene and the scene script.
+!!! important
+    Note that the `OnEditorStart` is called BEFORE any scripts have been initialised! This means, `OnCreate`, `On[Pre/Post]Begin`, have NOT been called yet. These will be instantiated in a defined order after the editor entry point has been run.
+
+Inside the [EditorRunContext](../../../../cs-api-ref/sdt4.managed.editor/editorruncontext.md) structure, there are many useful fields, such as editor viewports, the running window, the app instance, the scene and the scene script.
 
 ```csharp
 
@@ -40,14 +54,14 @@ editorRunContext.PrimaryViewport.SetCameraActor(/*...*/);
 
 ## The editor exit
 
-Unlike [[GameEntry]](../../modules/sdt4.managed.core/attributes/gameentryattribute.md), [[EditorEntry]](../../modules/sdt4.managed.editor/attributes/editorentryattribute.md) has a corresponding [[EditorExit]](../../modules/sdt4.managed.editor/attributes/editorexitattribute.md) that may be defined when the editor shuts down. This is useful for any manual clean up that may be needed to be performed
+Unlike [Game.OnInit](../entrypoint.md), `Game.OnEditorStart` has a corresponding `Game.OnEditorStop` that may be defined when the editor shuts down. This is useful for any manual clean up that may be needed to be performed
 
 ```csharp
 // ...
-[EditorExit]
 static void OnEditorStop(EditorRunContext editorRunContext) 
 {
     // Clean up state...
+    MyGameContext.Instance = null;
 
     // Do not dispose the viewports as they are owned by the editor.
     // And the original camera states are restored automatically.
@@ -55,5 +69,8 @@ static void OnEditorStop(EditorRunContext editorRunContext)
 
 ```
 
+!!! important
+    Note that the `OnEditorStop` is called AFTER all scripts have been destroyed! This means, `OnDestroy`, `On[Pre/Post]End`, have ALREADY been called. 
+
 !!! note
-    The standard [[GameEntry]](../../modules/sdt4.managed.core/attributes/gameentryattribute.md) logic applies when launching a preview build of the game in the editor. This is purely for running instances of a scene inside of the Shard Tech 4 editor. 
+    The standard [Game.OnInit](../entrypoint.md) logic applies when launching a preview build of the game in the editor. This is purely for running instances of a scene inside of the Shard Tech 4 editor. 

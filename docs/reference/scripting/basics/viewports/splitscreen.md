@@ -3,7 +3,7 @@
 Split screen is very versatile due to the render canvas system. 
 There are two ways of implementing split-screen:
 
-1. Render to seperate windows
+1. Render to separate windows
 2. Render in a standard "split-screen" fashion within 1 window.
 
 We will be looking at the second implementation, as it is the easiest to implement.

@@ -13,4 +13,4 @@ Sets the shader that defines the base properties of this material.
 Sets the material that inherits the shader, and allows property propagation.
 
 ## Parameter Overrides
-Material parameters are always opt-in, they derive the parameters for inherited materials and the base shader, meaning that any unchanged parameters will assume the parameter of the defining parent. Overriden parameters always reflect the changes defined within that material.
+Material parameters are always opt-in, they derive the parameters for inherited materials and the base shader, meaning that any unchanged parameters will assume the parameter of the defining parent. Overridden parameters always reflect the changes defined within that material.
