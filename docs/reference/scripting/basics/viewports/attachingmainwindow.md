@@ -104,19 +104,16 @@ Once the window has been resized, the render canvas is outdated, meaning renderi
 
 The easiest solution is to update the render canvas is to use a Window resize callback
 
-!!! note
-    Prototype code, this code is currently not possible
-
 ```csharp
 // For window input
-using SDT4.Managed.Input;
+using SDT4.Managed.Input; // for Window.GetInput() or Window.Input (.NET 10+)
 // ...
 Window window = /*...*/;
 RendererPlatform rendererPlatform = /*...*/;
 ViewportRenderInstance viewportRenderer = /*...*/;
 RenderCanvas primaryCanvas = /*...*/;
 
-window.OnResize += (e) => 
+window.GetInput().OnResize += e => 
 { 
     RenderCanvas oldCanvas = primaryCanvas;
     primaryCanvas = rendererPlatform.CreateWindowRenderCanvas(window);

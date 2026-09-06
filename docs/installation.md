@@ -6,13 +6,21 @@ Installation is a very straight forward process. It does however require a coupl
 
 The SDK installation binaries can be found here: [TODO]()
 
+# Supported Platforms
+
+Shard Tech 4 has been tested on the following systems:
+
+- Windows 10 22H2
+- Windows 11
+- Fedora 43
+
+Minimum requirements are expected to be:
+- Windows 10 22H2 or higher
+- Any modern Linux distro with X11 support (either native or via XWayland).
+
 # Installation Process
 
-When installing Shard Tech 4, there are two options:
-- Portable binaries
-- Installer
-
-When using portable binaries, no environment variables are set, and thus may cause issues in certain cases, especially [Script Compilation](./cs-api-ref/compilation/index.md)
+When installing Shard Tech 4, an installer script is provided for Linux based distros, and an installer executable for Windows systems.
 
 # Uninstalling
 
