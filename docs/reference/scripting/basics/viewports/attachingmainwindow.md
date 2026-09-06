@@ -59,7 +59,7 @@ SceneRenderInstance sceneRenderer = rendererPlatform.CreateSceneRenderer(scene);
 // Define a unique name, standard convention is "master" for the primary viewport.
 ViewportRenderInstance viewportRenderer = sceneRenderer.CreateViewportRenderer("master", primaryCanvas);
 // Make sure to use FramebufferSize instead of Size due to DPI awareness!
-viewportRenderer.SetViewport(extent: window.FramebufferSize);
+viewportRenderer.SetRenderArea(extent: window.FramebufferSize);
 // We can use the CameraComponent from an actor to render our canvas! 
 Actor cameraActor = /*...*/;
 viewportRenderer.SetCameraActor(cameraActor);
@@ -120,7 +120,7 @@ window.GetInput().OnResize += e =>
     viewportRenderer.RenderCanvas = primaryCanvas;
     oldCanvas.Dispose(); // release the old canvas
     // update the viewport!
-    viewportRenderer.SetViewport(extent: window.FramebufferSize);
+    viewportRenderer.SetRenderArea(extent: window.FramebufferSize);
 };
 
 ```
