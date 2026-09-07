@@ -9,8 +9,6 @@
 | [RCSSStyleDeclaration](./rml/rcssstyledeclaration.md) |  |
 | [RMLCanvas](./rml/rmlcanvas.md) |  |
 | [RMLClassTokenList](./rml/rmlclasstokenlist.md) |  |
-| [RMLColor](./rml/rmlcolor.md) |  |
-| [RMLColorPremultiplied](./rml/rmlcolorpremultiplied.md) |  |
 | [RMLDocument](./rml/rmldocument.md) |  |
 | [RMLElement](./rml/rmlelement.md) | RmlUi element based on <a href="https://mikke89.github.io/RmlUiDoc/pages/cpp_manual/elements.html">the RML reference page</a> |
 | [RMLEvent](./rml/rmlevent.md) |  |

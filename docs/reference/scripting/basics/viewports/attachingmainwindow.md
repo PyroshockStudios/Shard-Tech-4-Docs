@@ -59,7 +59,7 @@ SceneRenderInstance sceneRenderer = rendererPlatform.CreateSceneRenderer(scene);
 // Define a unique name, standard convention is "master" for the primary viewport.
 ViewportRenderInstance viewportRenderer = sceneRenderer.CreateViewportRenderer("master", primaryCanvas);
 // Make sure to use FramebufferSize instead of Size due to DPI awareness!
-viewportRenderer.SetViewport(extent: window.FramebufferSize);
+viewportRenderer.SetRenderArea(extent: window.FramebufferSize);
 // We can use the CameraComponent from an actor to render our canvas! 
 Actor cameraActor = /*...*/;
 viewportRenderer.SetCameraActor(cameraActor);
@@ -104,26 +104,23 @@ Once the window has been resized, the render canvas is outdated, meaning renderi
 
 The easiest solution is to update the render canvas is to use a Window resize callback
 
-!!! note
-    Prototype code, this code is currently not possible
-
 ```csharp
 // For window input
-using SDT4.Managed.Input;
+using SDT4.Managed.Input; // for Window.GetInput() or Window.Input (.NET 10+)
 // ...
 Window window = /*...*/;
 RendererPlatform rendererPlatform = /*...*/;
 ViewportRenderInstance viewportRenderer = /*...*/;
 RenderCanvas primaryCanvas = /*...*/;
 
-window.OnResize += (e) => 
+window.GetInput().OnResize += e => 
 { 
     RenderCanvas oldCanvas = primaryCanvas;
     primaryCanvas = rendererPlatform.CreateWindowRenderCanvas(window);
     viewportRenderer.RenderCanvas = primaryCanvas;
     oldCanvas.Dispose(); // release the old canvas
     // update the viewport!
-    viewportRenderer.SetViewport(extent: window.FramebufferSize);
+    viewportRenderer.SetRenderArea(extent: window.FramebufferSize);
 };
 
 ```

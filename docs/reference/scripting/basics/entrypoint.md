@@ -33,7 +33,7 @@ using SDT4.Managed.Core;
 // ...
 // Since the entry point is blocking, we should delegate expensive 
 // work to a seperate thread
-appLoadContext.InstanceReadyTask.ContinueWith(async (task) =>
+appLoadContext.InstanceReadyTask.ContinueWith(async task =>
 {
     // Wait for the instance
     var instance = await task;

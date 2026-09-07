@@ -54,7 +54,10 @@ enum AssetType
 | `ShaderFunction` | [AssetType](./assettype.md) |  |
 | `ShaderSource` | [AssetType](./assettype.md) |  |
 | `CsharpScriptSource` | [AssetType](./assettype.md) |  |
-| `VisualScriptSource` | [AssetType](./assettype.md) |  |
+| `VisualScriptClass` | [AssetType](./assettype.md) |  |
+| `VisualScriptEnumeration` | [AssetType](./assettype.md) |  |
+| `VisualScriptInterface` | [AssetType](./assettype.md) |  |
+| `VisualScriptStructure` | [AssetType](./assettype.md) |  |
 | `Count` | [AssetType](./assettype.md) |  |
 
 

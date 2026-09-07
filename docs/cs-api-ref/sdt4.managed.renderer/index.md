@@ -19,6 +19,7 @@
 
 | Type | Description |
 | --- | --- |
+| [DisplaySyncMode](./graphics/displaysyncmode.md) |  |
 | [IRenderCanvasAttacher](./graphics/irendercanvasattacher.md) |  |
 | [MaterialInstance](./graphics/materialinstance.md) |  |
 | [MaterialInstanceProperty](./graphics/materialinstanceproperty.md) |  |

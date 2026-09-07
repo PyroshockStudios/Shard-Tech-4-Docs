@@ -42,6 +42,7 @@ sealed class CameraComponent
 | `public get; set; OrthoTopPlane` | [Single](https://learn.microsoft.com/dotnet/api/system.single) | The top plane of the frustum. Only valid in [CameraProjection.Orthographic](../graphics/cameraprojection.md#orthographic) mode |
 | `public get; set; OrthoBottomPlane` | [Single](https://learn.microsoft.com/dotnet/api/system.single) | The bottom plane of the frustum. Only valid in [CameraProjection.Orthographic](../graphics/cameraprojection.md#orthographic) mode |
 | `public get; set; PerspectiveFov` | [Single](https://learn.microsoft.com/dotnet/api/system.single) | The FOV (in radians) when using the [CameraProjection.Perspective](../graphics/cameraprojection.md#perspective) mode |
+| `public get; set; AspectRatio` | [Nullable&lt;Single&gt;](https://learn.microsoft.com/dotnet/api/system.nullable-1) | The aspect ratio (width / height) used in [CameraProjection.Perspective](../graphics/cameraprojection.md#perspective) mode When set to <em>null</em>, the aspect ratio is computed automatically based off of the viewport's resolution. |
 
 
 ##### `OrthoLeftPlane` Remarks

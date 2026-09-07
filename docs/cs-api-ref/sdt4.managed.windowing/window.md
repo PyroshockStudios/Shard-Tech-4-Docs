@@ -5,9 +5,9 @@
 
 ## Remarks
 !!! danger
-    All calls made within this class <strong>MUST</strong> be performed on the same thread the window was created.
-    The default window provided by the engine is created on the master thread.
-    
+    All calls made within this class <strong>MUST</strong> be performed on the Master Thread. 
+    See [Threads.RunLater](../sdt4.managed.core/threads.md#runlater) on how to safely call this from an asynchronous thread.
+    Failure to comply with this can cause catastrophical failures as the engine is not designed for this.
 !!! important
     This class <strong>MUST</strong> be disposed manually.
 
@@ -40,7 +40,7 @@ sealed class Window
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; InternalWindowPtr` | [IntPtr](https://learn.microsoft.com/dotnet/api/system.intptr) |  |
+| `public get; NativeHandle` | [IntPtr](https://learn.microsoft.com/dotnet/api/system.intptr) |  |
 | `public get; WindowMonitor` | [Monitor](./monitor.md) | The monitor that the window resides in.  This is <strong>NULL</strong> if the window is not in fullscreen mode! |
 | `public get; set; Size` | [Vector2i](../sdt4.managed.core/math/vector2i.md) | Size of the window in pixels |
 | `public get; FramebufferSize` | [Vector2i](../sdt4.managed.core/math/vector2i.md) | The renderable framebuffer region of the window in pixels |
@@ -48,6 +48,10 @@ sealed class Window
 | `public get; set; Borderless` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | If the window has the title bar visible or not. |
 | `public get; set; Resizable` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | If the window has the title bar visible or not. |
 
+
+##### `NativeHandle` Remarks
+!!! warning
+    Not for public access, usually not needed anyway.
 
 ##### `Size` Remarks
 !!! warning

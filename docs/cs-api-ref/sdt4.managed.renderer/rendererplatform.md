@@ -46,7 +46,7 @@ sealed class RendererPlatform
 
 ## Methods
 
-#### public [RenderCanvas](./graphics/rendercanvas.md) CreateWindowRenderCanvas([Window](../sdt4.managed.windowing/window.md) window)
+#### public [RenderCanvas](./graphics/rendercanvas.md) CreateWindowRenderCanvas([Window](../sdt4.managed.windowing/window.md) window, [DisplaySyncMode](./graphics/displaysyncmode.md) syncMode, [Int32](https://learn.microsoft.com/dotnet/api/system.int32) bufferCount)
 
 
 **Summary:**
@@ -58,7 +58,11 @@ Creates a new render canvas associated with the window
 
 **Parameters:**
 
-- `window` ([Window](../sdt4.managed.windowing/window.md)): 
+- `window` ([Window](../sdt4.managed.windowing/window.md)): The window to create a render canvas out of.
+
+- `syncMode` ([DisplaySyncMode](./graphics/displaysyncmode.md)): The vertical synchronisation policy of this window render canvas.
+
+- `bufferCount` ([Int32](https://learn.microsoft.com/dotnet/api/system.int32)): How many swap chain back buffers to create. This parameter is a hint and may be
 
 
 **Returns:**

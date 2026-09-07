@@ -11,6 +11,7 @@ markdown_extensions:
   - pymdownx.superfences
 
 plugins:
+  - search
   - spellcheck:
       backends:  # the backends you want to use
       - codespell:  # or nested configs
@@ -133,6 +134,10 @@ nav:
         - SDT0401: cs-api-ref/compilation/rules/sdt0401.md
         - SDT0402: cs-api-ref/compilation/rules/sdt0402.md
         - SDT0403: cs-api-ref/compilation/rules/sdt0403.md
+        - SDT0404: cs-api-ref/compilation/rules/sdt0404.md
+        - SDT0405: cs-api-ref/compilation/rules/sdt0405.md
+        - SDT0406: cs-api-ref/compilation/rules/sdt0406.md
+        - SDT0451: cs-api-ref/compilation/rules/sdt0451.md
         
         - SDT0601: cs-api-ref/compilation/rules/sdt0601.md
         - SDT0602: cs-api-ref/compilation/rules/sdt0602.md
@@ -176,6 +181,7 @@ nav:
         - "ExposeMethodAttribute": cs-api-ref/sdt4.managed.core/attributes/exposemethodattribute.md
         - "NumericFieldEditPropertiesAttribute": cs-api-ref/sdt4.managed.core/attributes/numericfieldeditpropertiesattribute.md
         - "ReturnPinNameAttribute": cs-api-ref/sdt4.managed.core/attributes/returnpinnameattribute.md
+        - "ScriptCategoryAttribute": cs-api-ref/sdt4.managed.core/attributes/scriptcategoryattribute.md
         - "ScriptEventAttribute": cs-api-ref/sdt4.managed.core/attributes/scripteventattribute.md
         - "ScriptGeneratedAttribute": cs-api-ref/sdt4.managed.core/attributes/scriptgeneratedattribute.md
         - "ScriptHiddenAttribute": cs-api-ref/sdt4.managed.core/attributes/scripthiddenattribute.md
@@ -209,8 +215,12 @@ nav:
         - "WaypointSplinePoint": cs-api-ref/sdt4.managed.core/components/waypointsplinepoint.md
       - Exceptions:
         - "NativeEngineException": cs-api-ref/sdt4.managed.core/exceptions/nativeengineexception.md
+        - "VisualScriptAssertion": cs-api-ref/sdt4.managed.core/exceptions/visualscriptassertion.md
+        - "VisualScriptException": cs-api-ref/sdt4.managed.core/exceptions/visualscriptexception.md
+        - "VisualScriptExceptionType": cs-api-ref/sdt4.managed.core/exceptions/visualscriptexceptiontype.md
       - Graphics:
         - "CameraProjection": cs-api-ref/sdt4.managed.core/graphics/cameraprojection.md
+        - "ColorRgba": cs-api-ref/sdt4.managed.core/graphics/colorrgba.md
       - Math:
         - "AxisAlignedBox": cs-api-ref/sdt4.managed.core/math/axisalignedbox.md
         - "IVectorComparable": cs-api-ref/sdt4.managed.core/math/ivectorcomparable.md
@@ -253,25 +263,51 @@ nav:
       - "Overview": cs-api-ref/sdt4.managed.editor.assetpipeline/index.md
     - SDT4.Managed.Input:
       - "Overview": cs-api-ref/sdt4.managed.input/index.md
-      - "AnalogInputSign": cs-api-ref/sdt4.managed.input/analoginputsign.md
-      - "Gamepad": cs-api-ref/sdt4.managed.input/gamepad.md
-      - "GamepadAnalogInput": cs-api-ref/sdt4.managed.input/gamepadanaloginput.md
-      - "GamepadButtonInput": cs-api-ref/sdt4.managed.input/gamepadbuttoninput.md
-      - "GamepadConnectionStateDelegate": cs-api-ref/sdt4.managed.input/gamepadconnectionstatedelegate.md
-      - "Input": cs-api-ref/sdt4.managed.input/input.md
-      - "InputMapper": cs-api-ref/sdt4.managed.input/inputmapper.md
-      - "InputModifier": cs-api-ref/sdt4.managed.input/inputmodifier.md
-      - "KeyInput": cs-api-ref/sdt4.managed.input/keyinput.md
-      - "MouseInput": cs-api-ref/sdt4.managed.input/mouseinput.md
-      - "MouseMotionInput": cs-api-ref/sdt4.managed.input/mousemotioninput.md
       - "WindowExtensions": cs-api-ref/sdt4.managed.input/windowextensions.md
-      - "WindowResizeCallback": cs-api-ref/sdt4.managed.input/windowresizecallback.md
-      - Attributes:
-        - "AxisInputAttribute": cs-api-ref/sdt4.managed.input/attributes/axisinputattribute.md
-        - "ButtonInputAttribute": cs-api-ref/sdt4.managed.input/attributes/buttoninputattribute.md
-        - "InputMapperAttribute": cs-api-ref/sdt4.managed.input/attributes/inputmapperattribute.md
-        - "MappedAxisAttribute": cs-api-ref/sdt4.managed.input/attributes/mappedaxisattribute.md
-        - "MappedButtonAttribute": cs-api-ref/sdt4.managed.input/attributes/mappedbuttonattribute.md
+      - Custom:
+        - "IRawInputSource": cs-api-ref/sdt4.managed.input/custom/irawinputsource.md
+        - "RawInputCommands": cs-api-ref/sdt4.managed.input/custom/rawinputcommands.md
+        - "RawInputIngestion": cs-api-ref/sdt4.managed.input/custom/rawinputingestion.md
+        - Events:
+          - "CustomAxisInputEventArgs": cs-api-ref/sdt4.managed.input/custom/events/customaxisinputeventargs.md
+          - "CustomButtonInputEventArgs": cs-api-ref/sdt4.managed.input/custom/events/custombuttoninputeventargs.md
+      - Desktop:
+        - "InputModifiers": cs-api-ref/sdt4.managed.input/desktop/inputmodifiers.md
+        - "KeyCode": cs-api-ref/sdt4.managed.input/desktop/keycode.md
+        - "MouseButton": cs-api-ref/sdt4.managed.input/desktop/mousebutton.md
+        - "MouseMotionInput": cs-api-ref/sdt4.managed.input/desktop/mousemotioninput.md
+        - "WindowInput": cs-api-ref/sdt4.managed.input/desktop/windowinput.md
+        - Events:
+          - "CharInputEventArgs": cs-api-ref/sdt4.managed.input/desktop/events/charinputeventargs.md
+          - "KeyEventArgs": cs-api-ref/sdt4.managed.input/desktop/events/keyeventargs.md
+          - "MouseButtonEventArgs": cs-api-ref/sdt4.managed.input/desktop/events/mousebuttoneventargs.md
+          - "MouseMoveEventArgs": cs-api-ref/sdt4.managed.input/desktop/events/mousemoveeventargs.md
+          - "MouseScrollEventArgs": cs-api-ref/sdt4.managed.input/desktop/events/mousescrolleventargs.md
+          - "WindowCloseEventArgs": cs-api-ref/sdt4.managed.input/desktop/events/windowcloseeventargs.md
+          - "WindowCursorEnterEventArgs": cs-api-ref/sdt4.managed.input/desktop/events/windowcursorentereventargs.md
+          - "WindowDropEventArgs": cs-api-ref/sdt4.managed.input/desktop/events/windowdropeventargs.md
+          - "WindowFocusChangeEventArgs": cs-api-ref/sdt4.managed.input/desktop/events/windowfocuschangeeventargs.md
+          - "WindowMoveEventArgs": cs-api-ref/sdt4.managed.input/desktop/events/windowmoveeventargs.md
+          - "WindowResizeEventArgs": cs-api-ref/sdt4.managed.input/desktop/events/windowresizeeventargs.md
+      - Gamepad:
+        - "GamepadAxis": cs-api-ref/sdt4.managed.input/gamepad/gamepadaxis.md
+        - "GamepadButton": cs-api-ref/sdt4.managed.input/gamepad/gamepadbutton.md
+        - "GamepadDevice": cs-api-ref/sdt4.managed.input/gamepad/gamepaddevice.md
+        - "GamepadIdentifier": cs-api-ref/sdt4.managed.input/gamepad/gamepadidentifier.md
+        - "GamepadInput": cs-api-ref/sdt4.managed.input/gamepad/gamepadinput.md
+        - Events:
+          - "DeviceConnectionEventArgs": cs-api-ref/sdt4.managed.input/gamepad/events/deviceconnectioneventargs.md
+          - "GamepadAxisEventArgs": cs-api-ref/sdt4.managed.input/gamepad/events/gamepadaxiseventargs.md
+          - "GamepadButtonEventArgs": cs-api-ref/sdt4.managed.input/gamepad/events/gamepadbuttoneventargs.md
+      - Mapper:
+        - "IInputReceiver": cs-api-ref/sdt4.managed.input/mapper/iinputreceiver.md
+        - "InputMapper": cs-api-ref/sdt4.managed.input/mapper/inputmapper.md
+        - Attributes:
+          - "ActionAttribute": cs-api-ref/sdt4.managed.input/mapper/attributes/actionattribute.md
+          - "ActionInputAttribute": cs-api-ref/sdt4.managed.input/mapper/attributes/actioninputattribute.md
+          - "InputMapAttribute": cs-api-ref/sdt4.managed.input/mapper/attributes/inputmapattribute.md
+          - "RangeAttribute": cs-api-ref/sdt4.managed.input/mapper/attributes/rangeattribute.md
+          - "RangeInputAttribute": cs-api-ref/sdt4.managed.input/mapper/attributes/rangeinputattribute.md
     - SDT4.Managed.Locale:
       - "Overview": cs-api-ref/sdt4.managed.locale/index.md
       - "ILocale": cs-api-ref/sdt4.managed.locale/ilocale.md
@@ -342,6 +378,7 @@ nav:
       - Extensions:
         - "Mesh3DComponentExtensions": cs-api-ref/sdt4.managed.renderer/extensions/mesh3dcomponentextensions.md
       - Graphics:
+        - "DisplaySyncMode": cs-api-ref/sdt4.managed.renderer/graphics/displaysyncmode.md
         - "IRenderCanvasAttacher": cs-api-ref/sdt4.managed.renderer/graphics/irendercanvasattacher.md
         - "MaterialInstance": cs-api-ref/sdt4.managed.renderer/graphics/materialinstance.md
         - "MaterialInstanceProperty": cs-api-ref/sdt4.managed.renderer/graphics/materialinstanceproperty.md
@@ -363,8 +400,6 @@ nav:
         - "RCSSStyleDeclaration": cs-api-ref/sdt4.managed.ui/rml/rcssstyledeclaration.md
         - "RMLCanvas": cs-api-ref/sdt4.managed.ui/rml/rmlcanvas.md
         - "RMLClassTokenList": cs-api-ref/sdt4.managed.ui/rml/rmlclasstokenlist.md
-        - "RMLColor": cs-api-ref/sdt4.managed.ui/rml/rmlcolor.md
-        - "RMLColorPremultiplied": cs-api-ref/sdt4.managed.ui/rml/rmlcolorpremultiplied.md
         - "RMLDocument": cs-api-ref/sdt4.managed.ui/rml/rmldocument.md
         - "RMLElement": cs-api-ref/sdt4.managed.ui/rml/rmlelement.md
         - "RMLEvent": cs-api-ref/sdt4.managed.ui/rml/rmlevent.md

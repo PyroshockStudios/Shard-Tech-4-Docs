@@ -44,6 +44,7 @@
 | [ExposeMethodAttribute](./attributes/exposemethodattribute.md) |  |
 | [NumericFieldEditPropertiesAttribute](./attributes/numericfieldeditpropertiesattribute.md) |  |
 | [ReturnPinNameAttribute](./attributes/returnpinnameattribute.md) | Allows giving a name to a return value, reflecting in the visual script UI. |
+| [ScriptCategoryAttribute](./attributes/scriptcategoryattribute.md) | Allows categorising a member into a hierarchy in the V-Script Node Context Menu Valid categories contain strictly only alphanumeric characters, and are separated with a pipe \|              Valid categories include: * "Input\|Utility": all members fall under "Input" &gt; "Utility" * "MyHelpers": all members fall under "MyHelpers" * "Audio and Music\|Controls": all members fall under "Audio and Music" &gt; "Controls"              Note that if `FlattenType` is set to `false`, and this attribute is applied onto a class/struct/interface/enum, the type <em>itself</em> will fall under the category.  For instance for a class MyClass with  `FlattenType` set to false: * "Input\|Helpers": all members fall under "Input" &gt; "Utility" &gt; "MyClass" |
 | [ScriptEventAttribute](./attributes/scripteventattribute.md) | Defines a virtual method to be an event |
 | [ScriptGeneratedAttribute](./attributes/scriptgeneratedattribute.md) | A reserved attribute for visual scripts. |
 | [ScriptHiddenAttribute](./attributes/scripthiddenattribute.md) | Hides a target from the visual script environment |
@@ -89,12 +90,16 @@
 | Type | Description |
 | --- | --- |
 | [NativeEngineException](./exceptions/nativeengineexception.md) | Exception class for unexpected engine failure. Hopefully this never needs to be triggered, however this is thrown if an unexpected invalid state is reached, that would never in normal circumstances. |
+| [VisualScriptAssertion](./exceptions/visualscriptassertion.md) | A reserved class for visual scripts. |
+| [VisualScriptException](./exceptions/visualscriptexception.md) | Exception class for Visual Script. |
+| [VisualScriptExceptionType](./exceptions/visualscriptexceptiontype.md) |  |
 
 ### `SDT4.Managed.Core.Graphics`
 
 | Type | Description |
 | --- | --- |
 | [CameraProjection](./graphics/cameraprojection.md) |  |
+| [ColorRgba](./graphics/colorrgba.md) |  |
 
 ### `SDT4.Managed.Core.Math`
 
