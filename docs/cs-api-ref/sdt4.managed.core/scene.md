@@ -41,11 +41,11 @@ class Scene
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; InternalPtr` | [IntPtr](https://learn.microsoft.com/dotnet/api/system.intptr) | Throws an [ObjectDisposedException](https://learn.microsoft.com/dotnet/api/system.objectdisposedexception) if this is null. |
+| `public get; NativeHandle` | [IntPtr](https://learn.microsoft.com/dotnet/api/system.intptr) | Throws an [ObjectDisposedException](https://learn.microsoft.com/dotnet/api/system.objectdisposedexception) if this is null. |
 | `public get; Name` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
 
 
-##### `InternalPtr` Remarks
+##### `NativeHandle` Remarks
 !!! warning
     Not for public access, usually not needed anyway.
 

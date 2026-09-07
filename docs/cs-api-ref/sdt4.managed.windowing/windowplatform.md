@@ -37,7 +37,7 @@ sealed class WindowPlatform
 | `public get; PrimaryWindow` | [Window](./window.md) |  |
 | `public get; PrimaryMonitor` | [Monitor](./monitor.md) |  |
 | `public get; Monitors` | [Monitor[]](./monitor.md) |  |
-| `public get; protected set; Windows` | [IReadOnlyList&lt;Window&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1) |  |
+| `public get; Windows` | [Window[]](./window.md) |  |
 
 
 

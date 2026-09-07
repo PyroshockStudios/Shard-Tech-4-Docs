@@ -38,7 +38,7 @@ class Actor
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; InternalHandle` | [UInt32](https://learn.microsoft.com/dotnet/api/system.uint32) | Native entity handle |
+| `public get; NativeHandle` | [UInt32](https://learn.microsoft.com/dotnet/api/system.uint32) | Native entity handle |
 | `public get; Scene` | [Scene](./scene.md) | The scene in which this actor is held. |
 | `public get; GlobalId` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 | `public get; ScopeId` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |

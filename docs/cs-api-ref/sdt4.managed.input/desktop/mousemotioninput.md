@@ -7,7 +7,7 @@
 
 ## Definition
 
-**Namespace:** `SDT4.Managed.Input`  
+**Namespace:** `SDT4.Managed.Input.Desktop`  
 **Assembly:** `SDT4.Managed.Input.dll`
 
 ```csharp
