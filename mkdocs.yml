@@ -134,6 +134,10 @@ nav:
         - SDT0401: cs-api-ref/compilation/rules/sdt0401.md
         - SDT0402: cs-api-ref/compilation/rules/sdt0402.md
         - SDT0403: cs-api-ref/compilation/rules/sdt0403.md
+        - SDT0404: cs-api-ref/compilation/rules/sdt0404.md
+        - SDT0405: cs-api-ref/compilation/rules/sdt0405.md
+        - SDT0406: cs-api-ref/compilation/rules/sdt0406.md
+        - SDT0451: cs-api-ref/compilation/rules/sdt0451.md
         
         - SDT0601: cs-api-ref/compilation/rules/sdt0601.md
         - SDT0602: cs-api-ref/compilation/rules/sdt0602.md
