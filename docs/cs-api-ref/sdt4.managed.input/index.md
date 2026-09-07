@@ -6,8 +6,6 @@
 
 | Type | Description |
 | --- | --- |
-| [<G>$B1C23BA49A07DB14882849441674CB21](./<g>$b1c23ba49a07db14882849441674cb21.md) |  |
-| [<M>$59A91891F2B9DD755E0C7F607C5A8D25](./<m>$59a91891f2b9dd755e0c7f607c5a8d25.md) |  |
 | [WindowExtensions](./windowextensions.md) |  |
 
 ### `SDT4.Managed.Input.Custom`
