@@ -32,7 +32,7 @@ struct MouseMoveEventArgs
 | Name | Type | Description |
 | --- | --- | --- |
 | `public get; set; Sender` | [Object?](https://learn.microsoft.com/dotnet/api/system.object) | The source object that dispatched the event (typically a <c>WindowInput</c> instance or <see langword="null" />). |
-| `public get; set; Window` | [Window](../../../sdt4.managed.windowing/window.md) | The [MouseMoveEventArgs.Window](./mousemoveeventargs.md#window) where this event occured. |
+| `public get; set; Window` | [Window](../../../sdt4.managed.windowing/window.md) | The [MouseMoveEventArgs.Window](./mousemoveeventargs.md#window) where this event occurred. |
 | `public get; set; Position` | [Vector2i](../../../sdt4.managed.core/math/vector2i.md) | The current cursor position in window client-space coordinates. |
 | `public get; set; AbsolutePosition` | [Vector2i](../../../sdt4.managed.core/math/vector2i.md) | The current cursor position in absolute coordinates. |
 | `public get; set; Delta` | [Vector2i](../../../sdt4.managed.core/math/vector2i.md) | The relative movement delta since the last recorded mouse event. |

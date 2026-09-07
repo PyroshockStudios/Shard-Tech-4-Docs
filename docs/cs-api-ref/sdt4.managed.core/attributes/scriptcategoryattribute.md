@@ -2,7 +2,7 @@
 
 ## Summary
 Allows categorising a member into a hierarchy in the V-Script Node Context Menu
-Valid categories contain strictly only alphanumeric characters, and are seperated with a pipe |
+Valid categories contain strictly only alphanumeric characters, and are separated with a pipe |
             
 Valid categories include:
 * "Input|Utility": all members fall under "Input" &gt; "Utility"
