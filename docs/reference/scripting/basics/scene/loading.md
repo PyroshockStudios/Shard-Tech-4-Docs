@@ -12,8 +12,8 @@ using SDT4.Managed.Core.Asset;
 // ...
 AppInstance instance = /*...*/;
 ResourceManager resourceManager = instance.ResourceManager;
-// Use use AssetID for referencing assets.
-var sceneAsset = new AssetID("Master/MyScene.sdt");
+// Use use AssetId for referencing assets.
+var sceneAsset = new AssetId("Master/MyScene.sdtscene");
 
 // LoadAssetAsync<TResource>() returns a Task on which we can await the SceneAsset.
 var mySceneResult = await resourceManager.LoadAssetAsync<SceneAsset>(sceneAsset);

@@ -23,7 +23,7 @@ using SDT4.Managed.Windowing;
 // ...
 // recall our render objects
 Scene scene = /*...*/; 
-Actor player1 = /*...*/;
+ActorHandle player1 = /*...*/;
 Window window = /*...*/; 
 RenderCanvas windowCanvas = /*...*/
 SceneRenderInstance sceneRenderer = /*...*/;
@@ -31,9 +31,10 @@ ViewportRenderInstance viewportRendererPlayer1 = /*...*/;
 
 // Now our new player 2 render objects
 
-Actor player2 = /*...*/;
+ActorHandle player2 = /*...*/;
 
-ViewportRenderInstance viewportRendererPlayer2 = sceneRenderer.CreateViewportRenderer("player2", windowCanvas);
+ViewportRenderInstance viewportRendererPlayer2 = 
+    sceneRenderer.CreateViewportRenderer("player2", windowCanvas);
 // attach our camera
 viewportRendererPlayer2.SetCameraActor(player2);
 

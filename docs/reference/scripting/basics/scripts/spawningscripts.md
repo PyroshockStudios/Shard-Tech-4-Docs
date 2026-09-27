@@ -23,7 +23,7 @@ PrefabAsset prefab = /*...*/; // loaded using the ResourceManager from the AppIn
 // If the scene is not running, the script is queued until Start[Async] is called.
 // Finally OnBegin() is called before the first OnTick/OnStep of this actor.
 // A nullable Actor? is returned as the creation may be veto'ed.
-MyPrefabScript? script = scene.CreatePrefabActor(prefab) as MyPrefabScript;
+MyPrefabScript? script = scene.CreatePrefabActor(prefab)?.AsScript<MyPrefabScript>();
 
 ```
 
@@ -38,9 +38,9 @@ This payload is referenced in the `OnCreate` method, where it carries custom sta
 using SDT4.Managed.Core;
 using SDT4.Managed.Core.Script;
 // ...
-class MyPrefabScript : ActorScript 
+public class MyPrefabScript : ActorScript 
 {
-    MyPrefabScript(ActorScriptToken token) : base(token) {}
+    protected MyPrefabScript(ActorScriptToken token) : base(token) {}
 
     protected override void OnCreate(ScriptPayload payload) 
     {

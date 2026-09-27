@@ -9,7 +9,7 @@ using SDT4.Managed.Debugging;
 // ...
 Scene scene = /*...*/;
 // Each actor has a unique GUID, based on its scope and local id
-Actor someActor = scene.GetActorFromGuid(new Guid("0b2dec00-aa7d-447b-98ce-94e818ad6535"));
+ActorHandle someActor = scene.GetActorFromGuid(new Guid("0b2dec00-aa7d-447b-98ce-94e818ad6535"));
 
 DebugConsole.Print($"Local ID = {someActor.LocalId}"); 
 DebugConsole.Print($"Scope GUID = {someActor.ScopeId}");
@@ -22,7 +22,11 @@ The `LocalId` is relative to the current _scope_; the scope is the encapsulating
 ```csharp
 // These two print the same!
 DebugConsole.Print($"Scope GUID = {someActor.ScopeId}");
-DebugConsole.Print($"Scope GUID = {someActor.ScopeRoot?.GlobalId ?? Guid.Empty}");
+DebugConsole.Print($"Scope GUID = " +
+    someActor.ScopeRoot == someActor ? Guid.Empty : someActor.ScopeRoot.GlobalId);
 ```
+
+!!! note
+    If the actor is already the topmost scope, the scope root will return the same actor.
 
 This is a powerful encapsulation as it allows retrieving actors deterministically by scope, once we get into referencing Actors in [ActorScripts](../scripts/sceneactorscript.md).

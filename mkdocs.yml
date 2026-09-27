@@ -87,6 +87,7 @@ nav:
       - ViewportComponent: reference/acs/viewportcomponent.md
       - WaypointComponent: reference/acs/waypointcomponent.md
     - Scripting: 
+      - Overview: reference/scripting/index.md
       - Basics: 
         - Entry Point:  reference/scripting/basics/entrypoint.md
         - Scene:
@@ -97,6 +98,7 @@ nav:
           - Creating Actors: reference/scripting/basics/actors/creation.md
           - Hierarchy: reference/scripting/basics/actors/hierarchy.md
           - Components: reference/scripting/basics/actors/components.md
+          - Actor vs ActorHandle: reference/scripting/basics/actors/actorvsactorhandle.md
         - Scripts:
           - SceneScript and ActorScript: reference/scripting/basics/scripts/sceneactorscript.md
           - Spawning Scripts: reference/scripting/basics/scripts/spawningscripts.md
@@ -114,6 +116,7 @@ nav:
           - Document: reference/scripting/advanced/ui/document.md
           - Element: reference/scripting/advanced/ui/element.md
           - Data Model: reference/scripting/advanced/ui/datamodel.md
+          - Debugging: reference/scripting/advanced/ui/debughooks.md
         - Networking:
           - Session: reference/scripting/advanced/networking/session.md
           - Server-Client: reference/scripting/advanced/networking/serverclient.md

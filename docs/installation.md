@@ -11,12 +11,14 @@ The SDK installation binaries can be found here: [TODO]()
 Shard Tech 4 has been tested on the following systems:
 
 - Windows 10 22H2
-- Windows 11
-- Fedora 43
+- Windows 11 (various versions)
+- Linux, Fedora 43
 
 Minimum requirements are expected to be:
 - Windows 10 22H2 or higher
 - Any modern Linux distro with X11 support (either native or via XWayland).
+
+MacOS support is planned, however editor support is unsure as now.
 
 # Installation Process
 

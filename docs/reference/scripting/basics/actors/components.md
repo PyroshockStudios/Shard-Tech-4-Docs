@@ -6,9 +6,9 @@ Actors hold components that attach properties to them. Components are hard tied 
 using SDT4.Managed.Core;
 using SDT4.Managed.Debugging;
 // ...
-Actor actor = /*...*/;
+ActorHandle actor = /*...*/;
 
-foreach (var component in actor.EnumerateComponents())
+foreach (var component in actor.Components)
 {
     // Identifier is a GUID that is unique to each component type.
     DebugConsole.Print(component.Identifier.ToString());
@@ -29,10 +29,11 @@ Components can be added, removed, accessed, or queried with the following functi
 
 ```csharp
 using SDT4.Managed.Core;
+using SDT4.Managed.Core.Components;
 using SDT4.Managed.Debugging;
 // ...
 Scene scene = /*...*/;
-Actor actor = scene.CreateEmptyActor(name: "Mesh");
+ActorHandle actor = scene.CreateEmptyActor(name: "Mesh");
 DebugConsole.Print($"{actor.HasComponent<Mesh3DComponent>()}"); // prints false
 var meshComp = actor.AddComponent<Mesh3DComponent>();
 DebugConsole.Print($"{actor.HasComponent<Mesh3DComponent>()}"); // prints true
