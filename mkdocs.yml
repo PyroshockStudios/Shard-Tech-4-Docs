@@ -152,6 +152,18 @@ nav:
         - SDT0651: cs-api-ref/compilation/rules/sdt0651.md
         - SDT0652: cs-api-ref/compilation/rules/sdt0652.md
         - SDT0653: cs-api-ref/compilation/rules/sdt0653.md
+        
+        - SDT1301: cs-api-ref/compilation/rules/sdt1301.md
+        - SDT1302: cs-api-ref/compilation/rules/sdt1302.md
+        - SDT1304: cs-api-ref/compilation/rules/sdt1304.md
+        - SDT1305: cs-api-ref/compilation/rules/sdt1305.md
+        - SDT1306: cs-api-ref/compilation/rules/sdt1306.md
+        - SDT1307: cs-api-ref/compilation/rules/sdt1307.md
+        - SDT1308: cs-api-ref/compilation/rules/sdt1308.md
+        - SDT1309: cs-api-ref/compilation/rules/sdt1309.md
+        - SDT1310: cs-api-ref/compilation/rules/sdt1310.md
+        - SDT1311: cs-api-ref/compilation/rules/sdt1311.md
+        - SDT1351: cs-api-ref/compilation/rules/sdt1351.md
     - SDT4.Managed.Core:
       - "Overview": cs-api-ref/sdt4.managed.core/index.md
       - "Actor": cs-api-ref/sdt4.managed.core/actor.md
