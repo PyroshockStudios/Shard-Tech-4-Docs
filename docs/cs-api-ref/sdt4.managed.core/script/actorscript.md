@@ -1,9 +1,10 @@
 # ActorScript
 
 ## Summary
+Represents a scriptable actor that provides a foundational blank slate for custom gameplay behaviours.
 
-
-
+## Remarks
+<para><b>Master Thread:</b> Operations on this type interact directly with scene and engine state, and must be executed exclusively on the Master Thread.</para>
 
 ## Definition
 
@@ -34,7 +35,7 @@ class ActorScript
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; UniqueIdentifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) | The [Actor.GlobalId](../actor.md#globalid) |
+| `public get; UniqueIdentifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) | Gets the globally unique identifier of this actor, corresponding to [Actor.GlobalId](../actor.md#globalid). |
 
 
 
@@ -46,23 +47,22 @@ class ActorScript
 
 
 **Summary:**
-Gets called when script is being created. Level may not have started playing yet,
-and any rigid bodies will not have been added yet!
-Creation may be vetoed. If creation is vetoed, it is <em>strongly</em> assumed that 
-the actor is in a safe state to remove from memory (e.g. no dangling objects)!
-<list>
-<item><param name="payload">The creation payload.</param></item>
-</list>
-<strong>Actor States:</strong>
-<list>
-<item><strong>Script:</strong> <em>Valid</em></item>
-<item><strong>Physics:</strong> <em>INVALID</em></item>
-<item><strong>Renderer:</strong> <em>INVALID</em></item>
+Invoked when the script is being created.
+
+**Remarks:**
+The level may not have started playing yet, and rigid bodies will not have been added at this stage.
+Creation may be vetoed via [ScriptPayload.Veto](./scriptpayload.md#veto). If creation is vetoed, it is strongly 
+assumed that the actor is in a safe state to be removed from memory with no dangling references.
+<para><b>Actor States:</b></para>
+<list type="bullet">
+<item><description><b>Script:</b> <i>Valid</i></description></item>
+<item><description><b>Physics:</b> <i>Invalid</i></description></item>
+<item><description><b>Renderer:</b> <i>Invalid</i></description></item>
 </list>
 
 **Parameters:**
 
-- `payload` ([ScriptPayload](./scriptpayload.md)): 
+- `payload` ([ScriptPayload](./scriptpayload.md)): The creation payload containing initialisation state and veto controls.
 
 
 ---
@@ -70,13 +70,15 @@ the actor is in a safe state to remove from memory (e.g. no dangling objects)!
 
 
 **Summary:**
-Gets called when actor is fully initialised, but before it started ticking.
-This means that the level might not have been fully loaded in yet!
-<strong>Actor States:</strong>
-<list>
-<item><strong>Script:</strong> <em>Valid</em></item>
-<item><strong>Physics:</strong> <em>Valid</em></item>
-<item><strong>Renderer:</strong> <em>Valid</em></item>
+Invoked when the actor is fully initialised, but before it starts ticking.
+
+**Remarks:**
+The level might not have been fully loaded at this point.
+<para><b>Actor States:</b></para>
+<list type="bullet">
+<item><description><b>Script:</b> <i>Valid</i></description></item>
+<item><description><b>Physics:</b> <i>Valid</i></description></item>
+<item><description><b>Renderer:</b> <i>Valid</i></description></item>
 </list>
 
 ---
@@ -84,12 +86,14 @@ This means that the level might not have been fully loaded in yet!
 
 
 **Summary:**
-Gets called when this Actor starts ticking.
-<strong>Actor States:</strong>
-<list>
-<item><strong>Script:</strong> <em>Valid</em></item>
-<item><strong>Physics:</strong> <em>Valid</em></item>
-<item><strong>Renderer:</strong> <em>Valid</em></item>
+Invoked when this actor begins ticking.
+
+**Remarks:**
+<para><b>Actor States:</b></para>
+<list type="bullet">
+<item><description><b>Script:</b> <i>Valid</i></description></item>
+<item><description><b>Physics:</b> <i>Valid</i></description></item>
+<item><description><b>Renderer:</b> <i>Valid</i></description></item>
 </list>
 
 ---
@@ -97,14 +101,11 @@ Gets called when this Actor starts ticking.
 
 
 **Summary:**
-Gets called per frame.
-<list type="number">
-<item><param name="dt">Delta time in <em>seconds</em></param></item>
-</list>
+Invoked every frame during the engine update cycle.
 
 **Parameters:**
 
-- `dt` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): 
+- `dt` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): The delta time in seconds elapsed since the previous frame.
 
 
 ---
@@ -112,14 +113,11 @@ Gets called per frame.
 
 
 **Summary:**
-Gets called per fixed step. May be called multiple times per frame, or even be skipped!
-<list type="number">
-<item><param name="ts">Fixed step time in <em>seconds</em></param></item>
-</list>
+Invoked per fixed physics step. May be called multiple times per frame, or skipped entirely if frame rate permits.
 
 **Parameters:**
 
-- `ts` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): 
+- `ts` ([Single](https://learn.microsoft.com/dotnet/api/system.single)): The fixed timestep duration in seconds.
 
 
 ---
@@ -127,12 +125,14 @@ Gets called per fixed step. May be called multiple times per frame, or even be s
 
 
 **Summary:**
-Gets called when this Actor stops ticking.
-<strong>Actor States:</strong>
-<list>
-<item><strong>Script:</strong> <em>Valid</em></item>
-<item><strong>Physics:</strong> <em>Valid</em></item>
-<item><strong>Renderer:</strong> <em>Valid</em></item>
+Invoked when this actor ceases ticking.
+
+**Remarks:**
+<para><b>Actor States:</b></para>
+<list type="bullet">
+<item><description><b>Script:</b> <i>Valid</i></description></item>
+<item><description><b>Physics:</b> <i>Valid</i></description></item>
+<item><description><b>Renderer:</b> <i>Valid</i></description></item>
 </list>
 
 ---
@@ -140,12 +140,14 @@ Gets called when this Actor stops ticking.
 
 
 **Summary:**
-Gets called when this Actor is destroyed.
-<strong>Actor States:</strong>
-<list>
-<item><strong>Script:</strong> <em>Valid</em></item>
-<item><strong>Physics:</strong> <em>Valid</em></item>
-<item><strong>Renderer:</strong> <em>Valid</em></item>
+Invoked when this actor is killed or marked for destruction.
+
+**Remarks:**
+<para><b>Actor States:</b></para>
+<list type="bullet">
+<item><description><b>Script:</b> <i>Valid</i></description></item>
+<item><description><b>Physics:</b> <i>Valid</i></description></item>
+<item><description><b>Renderer:</b> <i>Valid</i></description></item>
 </list>
 
 ---
@@ -153,12 +155,14 @@ Gets called when this Actor is destroyed.
 
 
 **Summary:**
-Gets called when the script instance is destroyed.
-<strong>Actor States:</strong>
-<list>
-<item><strong>Script:</strong> <em>Valid</em></item>
-<item><strong>Physics:</strong> <em>INVALID</em></item>
-<item><strong>Renderer:</strong> <em>Unknown</em></item>
+Invoked when the script instance is destroyed.
+
+**Remarks:**
+<para><b>Actor States:</b></para>
+<list type="bullet">
+<item><description><b>Script:</b> <i>Valid</i></description></item>
+<item><description><b>Physics:</b> <i>Invalid</i></description></item>
+<item><description><b>Renderer:</b> <i>Unknown</i></description></item>
 </list>
 
 ---

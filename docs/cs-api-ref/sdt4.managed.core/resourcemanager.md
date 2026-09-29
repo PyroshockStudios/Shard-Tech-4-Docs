@@ -34,6 +34,7 @@ sealed class ResourceManager
 
 | Name | Type | Description |
 | --- | --- | --- |
+| `public get; NativeHandle` | [IntPtr](https://learn.microsoft.com/dotnet/api/system.intptr) |  |
 
 
 
@@ -41,7 +42,7 @@ sealed class ResourceManager
 
 ## Methods
 
-#### public [Task&lt;AssetLoadResult&lt;TResource&gt;&gt;](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1) LoadAssetAsync&lt;TResource&gt;([AssetID](./asset/assetid.md) assetId)
+#### public [Task&lt;AssetLoadResult&lt;TResource&gt;&gt;](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1) LoadAssetAsync&lt;TResource&gt;([AssetId](./asset/assetid.md) assetId)
 
 
 **Summary:**
@@ -49,7 +50,7 @@ Returns an asynchronous task to an [AssetLoadResult&lt;&gt;](./asset/assetloadre
 
 **Parameters:**
 
-- `assetId` ([AssetID](./asset/assetid.md)): A valid asset handle pointing to a resource described by <typeparamref name="TResource" />
+- `assetId` ([AssetId](./asset/assetid.md)): A valid asset handle pointing to a resource described by <typeparamref name="TResource" />
 
 
 **Returns:**

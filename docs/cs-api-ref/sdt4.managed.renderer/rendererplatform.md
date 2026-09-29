@@ -38,6 +38,8 @@ sealed class RendererPlatform
 
 | Name | Type | Description |
 | --- | --- | --- |
+| `public get; NativeXrpHandle` | [IntPtr](https://learn.microsoft.com/dotnet/api/system.intptr) |  |
+| `public get; NativeCtxHandle` | [IntPtr](https://learn.microsoft.com/dotnet/api/system.intptr) |  |
 | `public get; BackendInfo` | [RendererBackendInfo](./rendererbackendinfo.md) |  |
 
 
@@ -87,22 +89,6 @@ If `scene` already has a scene render instance, an [InvalidOperationException](h
 **Returns:**
 
 - [SceneRenderInstance](./xrp/scenerenderinstance.md): A new render instance for the scene.
-
----
-#### public [MaterialInstance?](./graphics/materialinstance.md) CreateMaterialInstance([MaterialAsset](../sdt4.managed.core/asset/materialasset.md) material)
-
-
-**Summary:**
-Creates a material instance
-
-**Parameters:**
-
-- `material` ([MaterialAsset](../sdt4.managed.core/asset/materialasset.md)): Material to create an instance out of
-
-
-**Returns:**
-
-- [MaterialInstance?](./graphics/materialinstance.md): A new material instance based on `material`. If the renderer failed to allocate an instance, it will return null.
 
 ---
 

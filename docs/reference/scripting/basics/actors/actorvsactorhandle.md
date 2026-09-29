@@ -1,6 +1,6 @@
 # Actor vs ActorHandle
 
-SDT4 offers a distinction between [ActorHandle](../../../../cs-api-ref/sdt4.managed.core/actorhandle.md) and [Actor](../../../../cs-api-ref/sdt4.managed.core/actor.md). This distinction is for performance reasons, as quering possibly up to thousands of actors will create unnecessary heap allocations.
+SDT4 offers a distinction between [ActorHandle](../../../../cs-api-ref/sdt4.managed.core/actorhandle.md) and [Actor](../../../../cs-api-ref/sdt4.managed.core/actor.md). This distinction is for performance reasons, as querying possibly up to thousands of actors will create unnecessary heap allocations.
 
 The difference is that [ActorHandle](../../../../cs-api-ref/sdt4.managed.core/actorhandle.md) is a *readonly struct* whilst [Actor](../../../../cs-api-ref/sdt4.managed.core/actor.md) is a *class*. They both contain the same functionality when it comes to the Actor Component System, however [Actor](../../../../cs-api-ref/sdt4.managed.core/actor.md) is the required class whenever dealing with scripts (see [Scene and Actor Scripts](../scripts/sceneactorscript.md))
 

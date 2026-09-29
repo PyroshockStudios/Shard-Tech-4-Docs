@@ -1,7 +1,7 @@
 # Vector3d
 
 ## Summary
-
+Represents a 3D double-precision floating-point vector.
 
 
 
@@ -15,16 +15,16 @@ struct Vector3d
 ```
 **Implements:**
 
-##### [IVectorSpatial&lt;Double&gt;](./ivectorspatial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), [IEquatable&lt;Vector3d&gt;](https://learn.microsoft.com/dotnet/api/system.iequatable-1)
+##### [IVectorSpatial&lt;Double, Double, Vector3d, Vector3d&gt;](./ivectorspatial`4.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), [IEquatable&lt;Vector3d&gt;](https://learn.microsoft.com/dotnet/api/system.iequatable-1)
 ---
 
 ## Fields
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public x` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
-| `public y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
-| `public z` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public x` | [Double](https://learn.microsoft.com/dotnet/api/system.double) | The X component of the vector. |
+| `public y` | [Double](https://learn.microsoft.com/dotnet/api/system.double) | The Y component of the vector. |
+| `public z` | [Double](https://learn.microsoft.com/dotnet/api/system.double) | The Z component of the vector. |
 
 
 
@@ -34,8 +34,10 @@ struct Vector3d
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public static get; Zero` | [Vector3d](./vector3d.md) |  |
-| `public get; set; Item` | [Double](https://learn.microsoft.com/dotnet/api/system.double) |  |
+| `public static get; Zero` | [Vector3d](./vector3d.md) | Gets a vector with all components set to zero. |
+| `public static get; One` | [Vector3d](./vector3d.md) | Gets a vector with all components set to one. |
+| `public get; set; Item` | [Double](https://learn.microsoft.com/dotnet/api/system.double) | Gets or sets the component at the specified zero-based index. |
+| `public get; IsNormalized` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | Gets a value indicating whether the vector is normalised to unit length within tolerance. |
 
 
 
@@ -55,14 +57,44 @@ Copies the vector values into a scalar value pointer.
 
 
 ---
-#### public [Double](https://learn.microsoft.com/dotnet/api/system.double) Length()
+#### public [Double](https://learn.microsoft.com/dotnet/api/system.double) LengthSq()
+
+
+**Summary:**
+Calculates the squared magnitude of the vector.
 
 **Returns:**
 
 - [Double](https://learn.microsoft.com/dotnet/api/system.double): 
 
 ---
+#### public [Double](https://learn.microsoft.com/dotnet/api/system.double) Length()
+
+
+**Summary:**
+Calculates the magnitude of the vector.
+
+**Returns:**
+
+- [Double](https://learn.microsoft.com/dotnet/api/system.double): 
+
+---
+#### public [Vector3d](./vector3d.md) Normalized()
+
+
+**Summary:**
+Returns a normalised copy of the vector scaled to unit length.
+
+**Returns:**
+
+- [Vector3d](./vector3d.md): 
+
+---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
+
+
+**Summary:**
+Returns a culture-invariant string representation of the vector.
 
 **Returns:**
 
@@ -70,6 +102,10 @@ Copies the vector values into a scalar value pointer.
 
 ---
 #### public virtual [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Object?](https://learn.microsoft.com/dotnet/api/system.object) obj)
+
+
+**Summary:**
+Determines whether the specified object is equal to the current vector.
 
 **Parameters:**
 
@@ -83,6 +119,10 @@ Copies the vector values into a scalar value pointer.
 ---
 #### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Vector3d](./vector3d.md) other)
 
+
+**Summary:**
+Determines whether the specified vector is equal to the current vector.
+
 **Parameters:**
 
 - `other` ([Vector3d](./vector3d.md)): 
@@ -95,12 +135,20 @@ Copies the vector values into a scalar value pointer.
 ---
 #### public virtual [Int32](https://learn.microsoft.com/dotnet/api/system.int32) GetHashCode()
 
+
+**Summary:**
+Returns the hash code for this vector.
+
 **Returns:**
 
 - [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) GetObjectData([SerializationInfo](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo) info, [StreamingContext](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext) context)
+
+
+**Summary:**
+Populates serialisation information with vector component data.
 
 **Parameters:**
 

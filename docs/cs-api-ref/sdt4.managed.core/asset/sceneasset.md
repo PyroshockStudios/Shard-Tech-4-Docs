@@ -1,7 +1,7 @@
 # SceneAsset
 
 ## Summary
-
+A scene asset
 
 
 
@@ -11,7 +11,7 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-class SceneAsset
+sealed class SceneAsset
 ```
 **Inheritance:**
 

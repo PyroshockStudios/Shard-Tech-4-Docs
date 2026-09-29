@@ -25,7 +25,7 @@ struct RendererBackendInfo
 | `public Shorthand` | [String](https://learn.microsoft.com/dotnet/api/system.string) | Shorthand name (used in app arguments) |
 | `public Name` | [String](https://learn.microsoft.com/dotnet/api/system.string) | Public name. Usually a codename |
 | `public Api` | [String](https://learn.microsoft.com/dotnet/api/system.string) | API name |
-| `public Version` | [String](https://learn.microsoft.com/dotnet/api/system.string) | API version |
+| `public ApiVersion` | [String](https://learn.microsoft.com/dotnet/api/system.string) | API version |
 
 
 

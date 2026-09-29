@@ -1,7 +1,7 @@
 # SceneScriptToken
 
 ## Summary
-Initialisation token for [SceneScript](./scenescript.md)
+Initialisation token for [SceneScript](./scenescript.md).
 
 
 

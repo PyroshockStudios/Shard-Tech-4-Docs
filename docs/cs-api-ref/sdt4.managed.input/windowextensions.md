@@ -53,18 +53,6 @@ static class WindowExtensions
 - [WindowInput](./desktop/windowinput.md): 
 
 ---
-#### public static [WindowInput](./desktop/windowinput.md) get_Input([Window](../sdt4.managed.windowing/window.md) window)
-
-**Parameters:**
-
-- `window` ([Window](../sdt4.managed.windowing/window.md)): 
-
-
-**Returns:**
-
-- [WindowInput](./desktop/windowinput.md): 
-
----
 
 
 ---

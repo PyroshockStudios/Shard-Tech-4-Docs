@@ -1,7 +1,7 @@
 # IScriptTarget
 
 ## Summary
-
+Defines a script execution target and is strictly local to the owning client or server.
 
 
 
@@ -31,7 +31,7 @@ interface IScriptTarget
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; UniqueIdentifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
+| `public get; UniqueIdentifier` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) | Gets the globally unique identifier associated with this script target. |
 
 
 

@@ -1,4 +1,4 @@
-# RMLTheme
+# RmlTheme
 
 ## Summary
 
@@ -11,15 +11,15 @@
 
 ## Definition
 
-**Namespace:** `SDT4.Managed.UI.RML`  
+**Namespace:** `SDT4.Managed.UI.Rml`  
 **Assembly:** `SDT4.Managed.UI.dll`
 
 ```csharp
-sealed class RMLTheme
+sealed class RmlTheme
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔  **RMLTheme**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔  **RmlTheme**
 **Implements:**
 
 ##### 

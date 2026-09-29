@@ -1,7 +1,7 @@
 # MaterialAsset
 
 ## Summary
-
+A material asset
 
 
 
@@ -11,7 +11,7 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-abstract class MaterialAsset
+sealed class MaterialAsset
 ```
 **Inheritance:**
 

@@ -1,7 +1,7 @@
 # Mobility
 
 ## Summary
-
+Defines the movement and transform mutability behaviour of an actor within a scene.
 
 
 
@@ -20,9 +20,9 @@ enum Mobility
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `Static` | [Mobility](./mobility.md) |  |
-| `Stationary` | [Mobility](./mobility.md) |  |
-| `Dynamic` | [Mobility](./mobility.md) |  |
+| `Static` | [Mobility](./mobility.md) | Indicates that the actor is completely static and cannot move or update its transform at runtime. |
+| `Stationary` | [Mobility](./mobility.md) | Indicates that the actor does not alter its position or spatial state during normal execution, but may undergo restricted state updates. |
+| `Dynamic` | [Mobility](./mobility.md) | Indicates that the actor can move, rotate, and freely alter its transform state dynamically at runtime. |
 
 
 

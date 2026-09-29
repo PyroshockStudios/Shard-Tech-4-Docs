@@ -1,7 +1,7 @@
 # ModelAsset
 
 ## Summary
-
+A 3D Model asset
 
 
 
@@ -11,7 +11,7 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-abstract class ModelAsset
+sealed class ModelAsset
 ```
 **Inheritance:**
 
@@ -35,6 +35,7 @@ abstract class ModelAsset
 | Name | Type | Description |
 | --- | --- | --- |
 | `public static get; ResourceType` | [AssetType](./assettype.md) |  |
+| `public get; MaterialSlots` | [String[]](https://learn.microsoft.com/dotnet/api/system.string) | Gets the array of material slot identifiers defined on this mesh. |
 
 
 

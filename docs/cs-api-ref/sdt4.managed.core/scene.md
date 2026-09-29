@@ -1,16 +1,16 @@
 # Scene
 
 ## Summary
-Scene object that contains all actors and lifecycle.
+Represents the primary scene graph container managing actor hierarchies, components, and execution lifecycles.
 
 ## Remarks
 !!! danger
     All calls made within this class <strong>MUST</strong> be performed on the Master Thread. 
     See [Threads.RunLater](./threads.md#runlater) on how to safely call this from an asynchronous thread.
-    Failure to comply with this can cause catastrophical failures as the engine is not designed for this.
+    Failure to comply with this can cause catastrophic failures as the engine is not designed for concurrent scene mutation.
     
 !!! important
-    This class <strong>MUST</strong> be disposed manually.
+    Instances of this class manage native engine allocations and <strong>MUST</strong> be disposed manually.
 
 ## Definition
 
@@ -41,13 +41,13 @@ class Scene
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; NativeHandle` | [IntPtr](https://learn.microsoft.com/dotnet/api/system.intptr) | Throws an [ObjectDisposedException](https://learn.microsoft.com/dotnet/api/system.objectdisposedexception) if this is null. |
-| `public get; Name` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
+| `public get; NativeHandle` | [IntPtr](https://learn.microsoft.com/dotnet/api/system.intptr) | Gets the pointer to the underlying native engine scene. |
+| `public get; Name` | [String](https://learn.microsoft.com/dotnet/api/system.string) | Gets the display name of this scene, or <see langword="null" /> if unnamed. |
 
 
 ##### `NativeHandle` Remarks
 !!! warning
-    Not for public access, usually not needed anyway.
+    Intended for internal engine interop; direct access by user scripts is typically unnecessary.
 
 
 ---
@@ -58,132 +58,161 @@ class Scene
 
 
 **Summary:**
-Creates an empty scene with no actors.
+Creates a new empty scene containing no actors.
 
 **Parameters:**
 
-- `name` ([String?](https://learn.microsoft.com/dotnet/api/system.string)): Optional debug name
+- `name` ([String?](https://learn.microsoft.com/dotnet/api/system.string)): An optional debug or display name to assign to the scene.
 
 
 **Returns:**
 
-- [Scene](./scene.md): 
+- [Scene](./scene.md): A newly instantiated and owned [Scene](./scene.md) instance.
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Start()
 
+
+**Summary:**
+Starts the scene runtime, transitioning all active actors and scripts into their execution state.
+
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Stop()
 
----
-#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Reparent([Actor](./actor.md) newParent, [Actor](./actor.md) child)
 
-**Parameters:**
-
-- `newParent` ([Actor](./actor.md)): 
-
-- `child` ([Actor](./actor.md)): 
-
+**Summary:**
+Stops the scene runtime, terminating ticking and active script execution.
 
 ---
-#### public [Actor](./actor.md) CreateEmptyActor([String?](https://learn.microsoft.com/dotnet/api/system.string) name, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) isStationary)
-
-**Parameters:**
-
-- `name` ([String?](https://learn.microsoft.com/dotnet/api/system.string)): 
-
-- `isStationary` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): 
-
-
-**Returns:**
-
-- [Actor](./actor.md): 
-
----
-#### public [Actor?](./actor.md) CreatePrefabActor([PrefabAsset](./asset/prefabasset.md) prefab, [String?](https://learn.microsoft.com/dotnet/api/system.string) name, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) isStationary, [Object?](https://learn.microsoft.com/dotnet/api/system.object) payload)
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) ParentActor([ActorHandle](./actorhandle.md) child, [Nullable&lt;ActorHandle&gt;](https://learn.microsoft.com/dotnet/api/system.nullable-1) parent)
 
 
 **Summary:**
-Creates an actor from a prefab asset. This will instantiate a new instance of actors from the prefab chain,
-and optionally initialise a script if the prefab has one.
+Attaches a child actor to a specified parent actor in the hierarchy. If the child is already parented, it is unparented first.
 
 **Parameters:**
 
-- `prefab` ([PrefabAsset](./asset/prefabasset.md)): Prefab asset to create the actor from
+- `child` ([ActorHandle](./actorhandle.md)): The child actor handle to parent.
 
-- `name` ([String?](https://learn.microsoft.com/dotnet/api/system.string)): Optional actor name, if null, no name is given.
+- `parent` ([Nullable&lt;ActorHandle&gt;](https://learn.microsoft.com/dotnet/api/system.nullable-1)): The target parent actor handle, or <see langword="null" /> to detach the child to the scene root.
 
-- `isStationary` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): Advanced: if the actor should be treated as a stationary object. This means the actor is NOT allowed to alter positions or state.
-
-- `payload` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): Optional script payload that is provided in the [ActorScript.OnCreate](./script/actorscript.md#oncreate) function
-
-
-**Returns:**
-
-- [Actor?](./actor.md): A valid actor if the instantiation was <strong>NOT</strong> veto'd
 
 ---
-#### public [Actor?](./actor.md) GetActorFromId([UInt64](https://learn.microsoft.com/dotnet/api/system.uint64) id)
+#### public [ActorHandle](./actorhandle.md) CreateEmptyActor([String?](https://learn.microsoft.com/dotnet/api/system.string) name)
 
 
 **Summary:**
-Gets an actor from an ID relative to the scene root.
+Spawns a new empty actor within the root scope of this scene.
 
 **Parameters:**
 
-- `id` ([UInt64](https://learn.microsoft.com/dotnet/api/system.uint64)): The ID relative to the scene root
+- `name` ([String?](https://learn.microsoft.com/dotnet/api/system.string)): An optional name to assign to the actor.
 
 
 **Returns:**
 
-- [Actor?](./actor.md): A valid actor if an actor with the ID exists
+- [ActorHandle](./actorhandle.md): The handle of the newly created actor.
 
 ---
-#### public [Actor?](./actor.md) GetActorFromGuid([Guid](https://learn.microsoft.com/dotnet/api/system.guid) guid)
+#### public [Nullable&lt;ActorHandle&gt;](https://learn.microsoft.com/dotnet/api/system.nullable-1) CreatePrefabActor([PrefabAsset](./asset/prefabasset.md) prefab, [String?](https://learn.microsoft.com/dotnet/api/system.string) name, [Object?](https://learn.microsoft.com/dotnet/api/system.object) payload)
 
 
 **Summary:**
-Gets an actor from an absolute GUID.
+Instantiates an actor hierarchy from a prefab asset into this scene, optionally initialising its attached script.
 
 **Parameters:**
 
-- `guid` ([Guid](https://learn.microsoft.com/dotnet/api/system.guid)): The GUID of the actor
+- `prefab` ([PrefabAsset](./asset/prefabasset.md)): The prefab asset to instantiate.
+
+- `name` ([String?](https://learn.microsoft.com/dotnet/api/system.string)): An optional name override for the root actor; if <see langword="null" />, default naming is used.
+
+- `payload` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): An optional script payload forwarded to the [ActorScript.OnCreate](./script/actorscript.md#oncreate) hook.
 
 
 **Returns:**
 
-- [Actor?](./actor.md): A valid actor if an actor with the GUID exists
+- [Nullable&lt;ActorHandle&gt;](https://learn.microsoft.com/dotnet/api/system.nullable-1): A valid [ActorHandle](./actorhandle.md) if instantiation succeeded; otherwise, <see langword="null" /> if creation was vetoed.
 
 ---
-#### public [IEnumerable&lt;TScript&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1) EnumerateActorsOfScript&lt;TScript&gt;([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) canBeDerived)
+#### public [Nullable&lt;ActorHandle&gt;](https://learn.microsoft.com/dotnet/api/system.nullable-1) GetActorFromId([UInt64](https://learn.microsoft.com/dotnet/api/system.uint64) id)
+
+
+**Summary:**
+Resolves an actor handle using an integer identifier relative to the scene root.
 
 **Parameters:**
 
-- `canBeDerived` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): 
+- `id` ([UInt64](https://learn.microsoft.com/dotnet/api/system.uint64)): The root-relative identifier to query.
 
 
 **Returns:**
 
-- [IEnumerable&lt;TScript&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1): 
+- [Nullable&lt;ActorHandle&gt;](https://learn.microsoft.com/dotnet/api/system.nullable-1): The resolved [ActorHandle](./actorhandle.md), or <see langword="null" /> if no matching actor exists.
 
 ---
-#### public [IEnumerable&lt;Actor&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1) EnumerateActorsWithComponent&lt;TComponent&gt;(TComponent component)
+#### public [Nullable&lt;ActorHandle&gt;](https://learn.microsoft.com/dotnet/api/system.nullable-1) GetActorFromGuid([Guid](https://learn.microsoft.com/dotnet/api/system.guid) guid)
+
+
+**Summary:**
+Resolves an actor handle matching a globally unique identifier.
 
 **Parameters:**
 
-- `component` (TComponent): 
+- `guid` ([Guid](https://learn.microsoft.com/dotnet/api/system.guid)): The globally unique identifier to query.
 
 
 **Returns:**
 
-- [IEnumerable&lt;Actor&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1): 
+- [Nullable&lt;ActorHandle&gt;](https://learn.microsoft.com/dotnet/api/system.nullable-1): The resolved [ActorHandle](./actorhandle.md), or <see langword="null" /> if no matching actor exists.
 
 ---
-#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) KillActor([Actor](./actor.md) actor)
+#### public [IEnumerable&lt;TComponent&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1) EnumerateComponents&lt;TComponent&gt;()
+
+
+**Summary:**
+Enumerates all active components of the specified type across all actors in this scene.
+
+**Returns:**
+
+- [IEnumerable&lt;TComponent&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1): An enumerable sequence of matching component instances.
+
+---
+#### public [IEnumerable&lt;ActorHandle&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1) EnumerateActorsByName([String](https://learn.microsoft.com/dotnet/api/system.string) name)
+
+
+**Summary:**
+Enumerates all actor handles in this scene that match a specified name string.
 
 **Parameters:**
 
-- `actor` ([Actor](./actor.md)): 
+- `name` ([String](https://learn.microsoft.com/dotnet/api/system.string)): The name string to match.
+
+
+**Returns:**
+
+- [IEnumerable&lt;ActorHandle&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1): An enumerable sequence of matching [ActorHandle](./actorhandle.md) instances.
+
+---
+#### public [IEnumerable&lt;TActor&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1) EnumerateActorsWithScript&lt;TActor&gt;()
+
+
+**Summary:**
+Enumerates all active actor scripts in this scene matching the specified script type.
+
+**Returns:**
+
+- [IEnumerable&lt;TActor&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1): An enumerable sequence of matching actor script instances.
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) KillActor([ActorHandle](./actorhandle.md) actor)
+
+
+**Summary:**
+Destroys the specified actor and cleans up its components, hierarchy bindings, and script instances.
+
+**Parameters:**
+
+- `actor` ([ActorHandle](./actorhandle.md)): The actor handle to destroy.
 
 
 ---
@@ -191,33 +220,45 @@ Gets an actor from an absolute GUID.
 
 
 **Summary:**
-Releases all scene resources and destroys all actors.
+Releases all unmanaged scene resources and destroys all associated actors.
 
 ---
 #### public virtual [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Object?](https://learn.microsoft.com/dotnet/api/system.object) obj)
 
+
+**Summary:**
+Determines whether the specified object is a [Scene](./scene.md) referencing the same native scene instance.
+
 **Parameters:**
 
-- `obj` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): 
+- `obj` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): The object to compare with this instance.
 
 
 **Returns:**
 
-- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
+- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): <see langword="true" /> if the object is a [Scene](./scene.md) with matching native pointers; otherwise, <see langword="false" />.
 
 ---
 #### public virtual [Int32](https://learn.microsoft.com/dotnet/api/system.int32) GetHashCode()
 
+
+**Summary:**
+Returns the hash code for this scene based on its native pointer address.
+
 **Returns:**
 
-- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
+- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): A 32-bit signed integer hash code.
 
 ---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
+
+**Summary:**
+Returns a formatted string representation of this scene.
+
 **Returns:**
 
-- [String](https://learn.microsoft.com/dotnet/api/system.string): 
+- [String](https://learn.microsoft.com/dotnet/api/system.string): A string identifying the scene pointer and name.
 
 ---
 

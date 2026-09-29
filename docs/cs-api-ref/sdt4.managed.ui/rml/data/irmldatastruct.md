@@ -1,22 +1,22 @@
-# IRMLDataStruct
+# IRmlDataStruct
 
 ## Summary
 RML data structure containing members.
-A class implementing this should contain members with the [[RMLDataVariableAttribute](../attributes/rmldatavariableattribute.md)] attribute.
+A class implementing this should contain members with the [[RmlDataVariableAttribute](./attributes/rmldatavariableattribute.md)] attribute.
 
 
 
 ## Definition
 
-**Namespace:** `SDT4.Managed.UI.RML.Data`  
+**Namespace:** `SDT4.Managed.UI.Rml.Data`  
 **Assembly:** `SDT4.Managed.UI.dll`
 
 ```csharp
-interface IRMLDataStruct
+interface IRmlDataStruct
 ```
 **Implements:**
 
-##### [IRMLData](./irmldata.md)
+##### [IRmlData](./irmldata.md)
 ---
 
 ## Fields

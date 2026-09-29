@@ -1,7 +1,7 @@
 # ScriptPayload
 
 ## Summary
-
+Represents payload data supplied during actor script initialisation and creation control.
 
 
 
@@ -34,8 +34,8 @@ class ScriptPayload
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; set; Veto` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | If set to true, cancels the creation of this actor. |
-| `public get; protected set; State` | [Object?](https://learn.microsoft.com/dotnet/api/system.object) | Custom initialization data passed via SpawnPrefab. Null if the actor is loading from a level file. |
+| `public get; set; Veto` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | Gets or sets a value indicating whether the creation of this actor should be cancelled. |
+| `public get; protected set; State` | [Object?](https://learn.microsoft.com/dotnet/api/system.object) | Gets custom initialisation data passed via <c>SpawnPrefab</c>, or <see langword="null" /> if the actor is being loaded from a level file. |
 
 
 

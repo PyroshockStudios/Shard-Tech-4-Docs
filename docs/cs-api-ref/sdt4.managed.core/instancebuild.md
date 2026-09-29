@@ -1,7 +1,7 @@
 # InstanceBuild
 
 ## Summary
-
+Specifies the target configuration and environment under which the application instance is executing.
 
 
 
@@ -20,9 +20,9 @@ enum InstanceBuild
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `Standalone` | [InstanceBuild](./instancebuild.md) |  |
-| `Dev` | [InstanceBuild](./instancebuild.md) |  |
-| `Editor` | [InstanceBuild](./instancebuild.md) |  |
+| `Standalone` | [InstanceBuild](./instancebuild.md) | A standalone production runtime build. |
+| `Dev` | [InstanceBuild](./instancebuild.md) | A development runtime build with debugging capabilities enabled. |
+| `Editor` | [InstanceBuild](./instancebuild.md) | An engine editor session build. |
 
 
 

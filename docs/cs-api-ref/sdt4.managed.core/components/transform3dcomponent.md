@@ -1,9 +1,13 @@
 # Transform3DComponent
 
 ## Summary
+Represents a 3D transformation component attached to an actor, defining position, rotation, and scale in local and world space.
 
-
-
+## Remarks
+!!! danger
+    All calls made within this class <strong>MUST</strong> be performed on the Master Thread. 
+    See [Threads.RunLater](../threads.md#runlater) on how to safely call this from an asynchronous thread.
+    Failure to comply with this can cause catastrophical failures as the engine is not designed for this.
 
 ## Definition
 
@@ -11,14 +15,11 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-sealed class Transform3DComponent
+struct Transform3DComponent
 ```
-**Inheritance:**
-
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Component](./component.md) ➔  **Transform3DComponent**
 **Implements:**
 
-##### 
+##### [IActorComponent](./iactorcomponent.md)
 ---
 
 ## Fields
@@ -34,15 +35,17 @@ sealed class Transform3DComponent
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; Right` | [Vector3f](../math/vector3f.md) |  |
-| `public get; Up` | [Vector3f](../math/vector3f.md) |  |
-| `public get; Forward` | [Vector3f](../math/vector3f.md) |  |
-| `public get; set; Translation` | [Vector3d](../math/vector3d.md) |  |
-| `public get; set; Rotation` | [Quaternion](../math/quaternion.md) |  |
-| `public get; set; Scale` | [Vector3f](../math/vector3f.md) |  |
-| `public get; set; WorldTranslation` | [Vector3d](../math/vector3d.md) |  |
-| `public get; set; WorldRotation` | [Quaternion](../math/quaternion.md) |  |
-| `public get; set; WorldScale` | [Vector3f](../math/vector3f.md) |  |
+| `public get; set; Owner` | [ActorHandle](../actorhandle.md) |  |
+| `public static get; ComponentId` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) | The unique identity of [Transform3DComponent](./transform3dcomponent.md). |
+| `public get; Right` | [Vector3f](../math/vector3f.md) | Gets the normalise-length right direction vector in world space. |
+| `public get; Up` | [Vector3f](../math/vector3f.md) | Gets the normalise-length upwards direction vector in world space. |
+| `public get; Forward` | [Vector3f](../math/vector3f.md) | Gets the normalise-length forward direction vector in world space. |
+| `public get; set; Translation` | [Vector3d](../math/vector3d.md) | Gets or sets the translation vector relative to the actor's parent. |
+| `public get; set; Rotation` | [Quaternion](../math/quaternion.md) | Gets or sets the orientation quaternion relative to the actor's parent. |
+| `public get; set; Scale` | [Vector3f](../math/vector3f.md) | Gets or sets the scale vector relative to the actor's parent. |
+| `public get; set; WorldTranslation` | [Vector3d](../math/vector3d.md) | Gets or sets the absolute position vector in world space. |
+| `public get; set; WorldRotation` | [Quaternion](../math/quaternion.md) | Gets or sets the absolute orientation quaternion in world space. |
+| `public get; set; WorldScale` | [Vector3f](../math/vector3f.md) | Gets or sets the absolute scale vector in world space. |
 
 
 
@@ -52,21 +55,40 @@ sealed class Transform3DComponent
 
 #### public virtual [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Object?](https://learn.microsoft.com/dotnet/api/system.object) obj)
 
+
+**Summary:**
+Determines whether the specified object is equal to the current component.
+
 **Parameters:**
 
-- `obj` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): 
+- `obj` ([Object?](https://learn.microsoft.com/dotnet/api/system.object)): The object to compare with the current component.
 
 
 **Returns:**
 
-- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
+- [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): <see langword="true" /> if the specified object is equivalent to this component; otherwise, <see langword="false" />.
 
 ---
 #### public virtual [Int32](https://learn.microsoft.com/dotnet/api/system.int32) GetHashCode()
 
+
+**Summary:**
+Returns the hash code for this component.
+
 **Returns:**
 
-- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
+- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): A 32-bit signed integer hash code.
+
+---
+#### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
+
+
+**Summary:**
+Returns a string representation of the component.
+
+**Returns:**
+
+- [String](https://learn.microsoft.com/dotnet/api/system.string): A string representing the component instance.
 
 ---
 

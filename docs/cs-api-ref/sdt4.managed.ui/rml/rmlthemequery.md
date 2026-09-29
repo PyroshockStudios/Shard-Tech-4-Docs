@@ -1,4 +1,4 @@
-# RMLThemeQuery
+# RmlThemeQuery
 
 ## Summary
 
@@ -7,15 +7,15 @@
 
 ## Definition
 
-**Namespace:** `SDT4.Managed.UI.RML`  
+**Namespace:** `SDT4.Managed.UI.Rml`  
 **Assembly:** `SDT4.Managed.UI.dll`
 
 ```csharp
-sealed class RMLThemeQuery
+sealed class RmlThemeQuery
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔  **RMLThemeQuery**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔  **RmlThemeQuery**
 **Implements:**
 
 ##### 
@@ -34,7 +34,7 @@ sealed class RMLThemeQuery
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; Item` | [RMLTheme](./rmltheme.md) |  |
+| `public get; Item` | [RmlTheme](./rmltheme.md) |  |
 
 
 
@@ -42,6 +42,18 @@ sealed class RMLThemeQuery
 
 ## Methods
 
+#### public [RmlTheme](./rmltheme.md) GetTheme([String](https://learn.microsoft.com/dotnet/api/system.string) name)
+
+**Parameters:**
+
+- `name` ([String](https://learn.microsoft.com/dotnet/api/system.string)): 
+
+
+**Returns:**
+
+- [RmlTheme](./rmltheme.md): 
+
+---
 
 
 ---

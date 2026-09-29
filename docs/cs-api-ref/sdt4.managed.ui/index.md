@@ -2,44 +2,49 @@
 
 ## Namespaces
 
-### `SDT4.Managed.UI.RML`
+### `SDT4.Managed.UI.Rml`
 
 | Type | Description |
 | --- | --- |
-| [RCSSStyleDeclaration](./rml/rcssstyledeclaration.md) |  |
-| [RMLCanvas](./rml/rmlcanvas.md) |  |
-| [RMLClassTokenList](./rml/rmlclasstokenlist.md) |  |
-| [RMLDocument](./rml/rmldocument.md) |  |
-| [RMLElement](./rml/rmlelement.md) | RmlUi element based on <a href="https://mikke89.github.io/RmlUiDoc/pages/cpp_manual/elements.html">the RML reference page</a> |
-| [RMLEvent](./rml/rmlevent.md) |  |
-| [RMLEventID](./rml/rmleventid.md) |  |
-| [RMLEventListener](./rml/rmleventlistener.md) | Event listener |
-| [RMLEventParameters](./rml/rmleventparameters.md) |  |
-| [RMLEventPhase](./rml/rmleventphase.md) |  |
-| [RMLNamedNodeMap](./rml/rmlnamednodemap.md) |  |
-| [RMLTheme](./rml/rmltheme.md) |  |
-| [RMLThemeQuery](./rml/rmlthemequery.md) |  |
-| [RMLVariant](./rml/rmlvariant.md) |  |
-| [RMLVariantType](./rml/rmlvarianttype.md) |  |
+| [DomTokenList](./rml/domtokenlist.md) | Represents a set of space-separated tokens corresponding to an element's <c>class</c> attribute, mirroring the JavaScript DOM <c>DOMTokenList</c> interface (<c>element.classList</c>). |
+| [NamedNodeMap](./rml/namednodemap.md) | Represents a collection of an element's attributes, exposing DOM-like attribute manipulation  methods and C# `DynamicObject` member dispatch with camelCase to kebab-case conversion. |
+| [RcssStyleDeclaration](./rml/rcssstyledeclaration.md) | Represents an element's inline RCSS style declarations, mirroring the DOM <c>CSSStyleDeclaration</c> interface. Supports direct property access, indexers, and dynamic PascalCase/camelCase to kebab-case resolution. |
+| [RmlContext](./rml/rmlcontext.md) |  |
+| [RmlDocument](./rml/rmldocument.md) | Represents the root RmlUi document window hosting a hierarchy of UI elements, styling rules, and layout contexts. |
+| [RmlElement](./rml/rmlelement.md) | Represents an element in the RmlUi DOM tree, providing DOM-like manipulation,  layout inspection, styling, and event handling based on the  <a href="https://mikke89.github.io/RmlUiDoc/pages/cpp_manual/elements.html">RmlUi C++ Element API</a>. |
+| [RmlEvent](./rml/rmlevent.md) |  |
+| [RmlEventId](./rml/rmleventid.md) |  |
+| [RmlEventListener](./rml/rmleventlistener.md) | Event listener |
+| [RmlEventParameters](./rml/rmleventparameters.md) |  |
+| [RmlEventPhase](./rml/rmleventphase.md) |  |
+| [RmlTheme](./rml/rmltheme.md) |  |
+| [RmlThemeQuery](./rml/rmlthemequery.md) |  |
+| [RmlUnit](./rml/rmlunit.md) |  |
+| [RmlVariant](./rml/rmlvariant.md) |  |
+| [RmlVariantType](./rml/rmlvarianttype.md) |  |
 
-### `SDT4.Managed.UI.RML.Attributes`
-
-| Type | Description |
-| --- | --- |
-| [RMLDataEventAttribute](./rml/attributes/rmldataeventattribute.md) |  |
-| [RMLDataVariableAttribute](./rml/attributes/rmldatavariableattribute.md) |  |
-| [RMLLuaAccessibleAttribute](./rml/attributes/rmlluaaccessibleattribute.md) |  |
-| [RMLLuaFieldAttribute](./rml/attributes/rmlluafieldattribute.md) |  |
-| [RMLLuaMethodAttribute](./rml/attributes/rmlluamethodattribute.md) |  |
-
-### `SDT4.Managed.UI.RML.Data`
+### `SDT4.Managed.UI.Rml.Data`
 
 | Type | Description |
 | --- | --- |
-| [IRMLData](./rml/data/irmldata.md) | Base RML data variable interface |
-| [IRMLDataArray](./rml/data/irmldataarray.md) | A generic specialisation of `IRMLDataArray`1`  for untyped variables. |
-| [IRMLDataArray&lt;T&gt;](./rml/data/irmldataarray`1.md) |  |
-| [IRMLDataScalar](./rml/data/irmldatascalar.md) | A scalar data variable, that manages untyped variables. |
-| [IRMLDataStruct](./rml/data/irmldatastruct.md) | RML data structure containing members. A class implementing this should contain members with the [`RMLDataVariableAttribute`] attribute. |
-| [RMLDataModel](./rml/data/rmldatamodel.md) |  |
+| [IRmlData](./rml/data/irmldata.md) | Base RML data variable interface |
+| [IRmlDataArray](./rml/data/irmldataarray.md) | A generic specialisation of `IRmlDataArray`1`  for untyped variables. |
+| [IRmlDataArray&lt;T&gt;](./rml/data/irmldataarray`1.md) |  |
+| [IRmlDataScalar](./rml/data/irmldatascalar.md) | A scalar data variable, that manages untyped variables. |
+| [IRmlDataStruct](./rml/data/irmldatastruct.md) | RML data structure containing members. A class implementing this should contain members with the [`RmlDataVariableAttribute`] attribute. |
+| [RmlDataModel](./rml/data/rmldatamodel.md) |  |
+| [RmlDataModelToken](./rml/data/rmldatamodeltoken.md) | Initialisation token for `RmlDataModel` |
+
+### `SDT4.Managed.UI.Rml.Data.Attributes`
+
+| Type | Description |
+| --- | --- |
+| [RmlDataEventAttribute](./rml/data/attributes/rmldataeventattribute.md) |  |
+| [RmlDataVariableAttribute](./rml/data/attributes/rmldatavariableattribute.md) |  |
+
+### `SDT4.Managed.UI.Rml.Debugging`
+
+| Type | Description |
+| --- | --- |
+| [RmlDebugHook](./rml/debugging/rmldebughook.md) | The class for specifying debug overlays |
 

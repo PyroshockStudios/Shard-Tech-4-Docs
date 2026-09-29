@@ -1,4 +1,4 @@
-# IRMLDataArray&lt;&gt;
+# IRmlDataArray&lt;&gt;
 
 ## Summary
 
@@ -7,15 +7,15 @@
 
 ## Definition
 
-**Namespace:** `SDT4.Managed.UI.RML.Data`  
+**Namespace:** `SDT4.Managed.UI.Rml.Data`  
 **Assembly:** `SDT4.Managed.UI.dll`
 
 ```csharp
-interface IRMLDataArray<>
+interface IRmlDataArray<>
 ```
 **Implements:**
 
-##### [IRMLData](./irmldata.md)
+##### [IRmlData](./irmldata.md), [IEnumerable&lt;T&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1), [IEnumerable](https://learn.microsoft.com/dotnet/api/system.collections.ienumerable)
 ---
 
 ## Fields
@@ -54,7 +54,7 @@ Called by the DOM when it wants to know the size of the array.
 
 **Summary:**
 Called by the DOM when it wants to retrieve data at an array.
-This may be a scalar variable (such as a [RMLVariant](../rmlvariant.md)) or another structure (like [IRMLDataStruct](./irmldatastruct.md) or [IRMLDataArray](./irmldataarray.md))
+This may be a scalar variable (such as a [RmlVariant](../rmlvariant.md)) or another structure (like [IRmlDataStruct](./irmldatastruct.md) or [IRmlDataArray](./irmldataarray.md))
 
 **Parameters:**
 
@@ -63,7 +63,7 @@ This may be a scalar variable (such as a [RMLVariant](../rmlvariant.md)) or anot
 
 **Returns:**
 
-- T: Boxed variable. If you wish to return a scalar, this must be wrapped in [IRMLDataScalar](./irmldatascalar.md). <seealso cref="T:SDT4.Managed.UI.RML.Data.IRMLDataArray" />
+- T: Boxed variable. If you wish to return a scalar, this must be wrapped in [IRmlDataScalar](./irmldatascalar.md). <seealso cref="T:SDT4.Managed.UI.Rml.Data.IRmlDataArray" />
 
 ---
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Set([Int32](https://learn.microsoft.com/dotnet/api/system.int32) index, T value)
@@ -72,7 +72,7 @@ This may be a scalar variable (such as a [RMLVariant](../rmlvariant.md)) or anot
 **Summary:**
 Sets variables for scalar arrays. This function can be disregarded if only non-scalars are accessed through arrays,
 unless you want to know that such a variable has been modified. If it's a reference type, it will be accurately modified anyway.
-This <strong>MUST</strong> be handled for both [RMLVariant](../rmlvariant.md) and [IRMLDataScalar](./irmldatascalar.md) (due to there being no way to infer the underlying reference type)
+This <strong>MUST</strong> be handled for both [RmlVariant](../rmlvariant.md) and [IRmlDataScalar](./irmldatascalar.md) (due to there being no way to infer the underlying reference type)
 
 **Parameters:**
 

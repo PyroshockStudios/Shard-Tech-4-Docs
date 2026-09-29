@@ -1,4 +1,4 @@
-# IRMLData
+# IRmlData
 
 ## Summary
 Base RML data variable interface
@@ -7,11 +7,11 @@ Base RML data variable interface
 
 ## Definition
 
-**Namespace:** `SDT4.Managed.UI.RML.Data`  
+**Namespace:** `SDT4.Managed.UI.Rml.Data`  
 **Assembly:** `SDT4.Managed.UI.dll`
 
 ```csharp
-interface IRMLData
+interface IRmlData
 ```
 **Implements:**
 

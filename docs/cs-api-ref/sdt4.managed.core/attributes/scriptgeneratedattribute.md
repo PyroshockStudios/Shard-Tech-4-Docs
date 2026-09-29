@@ -37,6 +37,7 @@ sealed class ScriptGeneratedAttribute
 | Name | Type | Description |
 | --- | --- | --- |
 | `public get; Source` | [String](https://learn.microsoft.com/dotnet/api/system.string) |  |
+| `public get; Guid` | [Guid](https://learn.microsoft.com/dotnet/api/system.guid) |  |
 
 
 

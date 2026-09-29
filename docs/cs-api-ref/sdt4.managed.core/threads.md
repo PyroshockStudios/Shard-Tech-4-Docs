@@ -94,7 +94,7 @@ Executes a subroutine on the master thread. If already on the master thread, exe
 
 
 ---
-#### public static [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task) RunLaterAsync([Action](https://learn.microsoft.com/dotnet/api/system.action) action)
+#### public static [OffThreadTask](./threading/offthreadtask.md) RunLaterAsync([Action](https://learn.microsoft.com/dotnet/api/system.action) action)
 
 
 **Summary:**
@@ -108,10 +108,10 @@ and allows you to await its completion.
 
 **Returns:**
 
-- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task): 
+- [OffThreadTask](./threading/offthreadtask.md): 
 
 ---
-#### public static [Task&lt;T&gt;](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1) RunLaterAsync&lt;T&gt;([Func&lt;T&gt;](https://learn.microsoft.com/dotnet/api/system.func-1) function)
+#### public static [OffThreadTask&lt;T&gt;](./threading/offthreadtask`1.md) RunLaterAsync&lt;T&gt;([Func&lt;T&gt;](https://learn.microsoft.com/dotnet/api/system.func-1) function)
 
 
 **Summary:**
@@ -125,7 +125,18 @@ awaits its completion, and returns the result.
 
 **Returns:**
 
-- [Task&lt;T&gt;](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1): 
+- [OffThreadTask&lt;T&gt;](./threading/offthreadtask`1.md): 
+
+---
+#### public static [Void](https://learn.microsoft.com/dotnet/api/system.void) RunDeferredTasks()
+
+
+**Summary:**
+Drains the deferred task queue on the current thread.
+
+**Remarks:**
+!!! danger
+    MUST BE THE MASTER THREAD!
 
 ---
 

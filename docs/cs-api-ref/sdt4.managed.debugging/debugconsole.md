@@ -41,7 +41,7 @@ static class DebugConsole
 
 ## Methods
 
-#### public static [Void](https://learn.microsoft.com/dotnet/api/system.void) Print([String](https://learn.microsoft.com/dotnet/api/system.string) message, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) printToConsole, [ColorRgba](../sdt4.managed.core/graphics/colorrgba.md) textColor, [Double](https://learn.microsoft.com/dotnet/api/system.double) duration)
+#### public static [Void](https://learn.microsoft.com/dotnet/api/system.void) Print([String](https://learn.microsoft.com/dotnet/api/system.string) message, [ColorRgba](../sdt4.managed.core/math/colorrgba.md) textColor, [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) printToConsole, [Double](https://learn.microsoft.com/dotnet/api/system.double) duration)
 
 
 **Summary:**
@@ -51,9 +51,9 @@ Prints text to the screen and console, with a certain colour and duration.
 
 - `message` ([String](https://learn.microsoft.com/dotnet/api/system.string)): The message to print
 
-- `printToConsole` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): Whether to log the message to the console (will show up in log files)
+- `textColor` ([ColorRgba](../sdt4.managed.core/math/colorrgba.md)): The colour of the printed text on screen
 
-- `textColor` ([ColorRgba](../sdt4.managed.core/graphics/colorrgba.md)): The colour of the printed text on screen
+- `printToConsole` ([Boolean](https://learn.microsoft.com/dotnet/api/system.boolean)): Whether to log the message to the console (will show up in log files)
 
 - `duration` ([Double](https://learn.microsoft.com/dotnet/api/system.double)): How long the text should be visible on screen
 
@@ -79,7 +79,7 @@ Prints text to the screen and console, with a duration.
 
 
 **Summary:**
-Prints text to the screen and console
+Prints text to the screen anDebugConsole_PrintToDebugOverlayd console
 
 **Parameters:**
 
@@ -97,13 +97,15 @@ Prints text to the screen and console
 
 
 ---
-#### public static [Void](https://learn.microsoft.com/dotnet/api/system.void) LogReferenceHazard([Object](https://learn.microsoft.com/dotnet/api/system.object) disposed, [Object](https://learn.microsoft.com/dotnet/api/system.object) notifier)
+#### public static [Void](https://learn.microsoft.com/dotnet/api/system.void) LogReferenceHazard([Object](https://learn.microsoft.com/dotnet/api/system.object) disposed, [Object](https://learn.microsoft.com/dotnet/api/system.object) notifier, [String?](https://learn.microsoft.com/dotnet/api/system.string) additionalMsg)
 
 **Parameters:**
 
 - `disposed` ([Object](https://learn.microsoft.com/dotnet/api/system.object)): 
 
 - `notifier` ([Object](https://learn.microsoft.com/dotnet/api/system.object)): 
+
+- `additionalMsg` ([String?](https://learn.microsoft.com/dotnet/api/system.string)): 
 
 
 ---
