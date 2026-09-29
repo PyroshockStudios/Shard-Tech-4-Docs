@@ -43,10 +43,8 @@
 | --- | --- |
 | [BoxShape](./shapes/boxshape.md) |  |
 | [CapsuleShape](./shapes/capsuleshape.md) |  |
-| [ConvexShape](./shapes/convexshape.md) |  |
 | [CylinderShape](./shapes/cylindershape.md) |  |
 | [SphereShape](./shapes/sphereshape.md) |  |
-| [TrimeshShape](./shapes/trimeshshape.md) |  |
 
 ### `SDT4.Managed.Physics.Vehicle`
 

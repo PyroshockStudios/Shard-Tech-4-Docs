@@ -1,7 +1,7 @@
 # PrefabAsset
 
 ## Summary
-
+A prefab asset
 
 
 
@@ -11,7 +11,7 @@
 **Assembly:** `SDT4.Managed.Core.dll`
 
 ```csharp
-class PrefabAsset
+sealed class PrefabAsset
 ```
 **Inheritance:**
 

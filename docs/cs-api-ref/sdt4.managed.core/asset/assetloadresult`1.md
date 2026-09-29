@@ -1,9 +1,10 @@
 # AssetLoadResult&lt;&gt;
 
 ## Summary
+Represents the result of an asset loading operation, encapsulating an outcome status code and the loaded resource instance if successful.
 
-
-
+## Remarks
+This struct is immutable and thread-safe for concurrent read access.
 
 ## Definition
 
@@ -31,8 +32,8 @@ struct AssetLoadResult<>
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; set; ErrorCode` | [AssetErrorCode](./asseterrorcode.md) |  |
-| `public get; set; Resource` | TResource |  |
+| `public get; set; ErrorCode` | [AssetErrorCode](./asseterrorcode.md) | The error or status code detailing the outcome of the load attempt. |
+| `public get; set; Resource` | TResource | The loaded resource instance, or <see langword="null" /> if the operation failed or produced no resource. |
 
 
 

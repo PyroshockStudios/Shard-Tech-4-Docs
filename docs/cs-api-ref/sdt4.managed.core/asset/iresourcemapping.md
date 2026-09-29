@@ -1,7 +1,7 @@
 # IResourceMapping
 
 ## Summary
-
+Defines a contract for associating a managed resource type with its engine-level [AssetType](./assettype.md).
 
 
 
@@ -31,7 +31,7 @@ interface IResourceMapping
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public static get; ResourceType` | [AssetType](./assettype.md) |  |
+| `public static get; ResourceType` | [AssetType](./assettype.md) | Gets the corresponding [AssetType](./assettype.md) mapped to this resource type. |
 
 
 

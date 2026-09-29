@@ -1,7 +1,7 @@
 # Vector3f
 
 ## Summary
-
+Represents a 3D single-precision floating-point vector.
 
 
 
@@ -15,16 +15,16 @@ struct Vector3f
 ```
 **Implements:**
 
-##### [IVectorSpatial&lt;Single&gt;](./ivectorspatial`1.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), [IEquatable&lt;Vector3f&gt;](https://learn.microsoft.com/dotnet/api/system.iequatable-1)
+##### [IVectorSpatial&lt;Single, Single, Vector3f, Vector3f&gt;](./ivectorspatial`4.md), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), [IEquatable&lt;Vector3f&gt;](https://learn.microsoft.com/dotnet/api/system.iequatable-1)
 ---
 
 ## Fields
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
-| `public z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public x` | [Single](https://learn.microsoft.com/dotnet/api/system.single) | The X component of the vector. |
+| `public y` | [Single](https://learn.microsoft.com/dotnet/api/system.single) | The Y component of the vector. |
+| `public z` | [Single](https://learn.microsoft.com/dotnet/api/system.single) | The Z component of the vector. |
 
 
 
@@ -34,8 +34,10 @@ struct Vector3f
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public static get; Zero` | [Vector3f](./vector3f.md) |  |
-| `public get; set; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) |  |
+| `public static get; Zero` | [Vector3f](./vector3f.md) | Gets a vector with all components set to zero. |
+| `public static get; One` | [Vector3f](./vector3f.md) | Gets a vector with all components set to one. |
+| `public get; set; Item` | [Single](https://learn.microsoft.com/dotnet/api/system.single) | Gets or sets the component at the specified zero-based index. |
+| `public get; IsNormalized` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | Gets a value indicating whether the vector is normalised to unit length within tolerance. |
 
 
 
@@ -55,14 +57,44 @@ Copies the vector values into a scalar value pointer.
 
 
 ---
-#### public [Single](https://learn.microsoft.com/dotnet/api/system.single) Length()
+#### public [Single](https://learn.microsoft.com/dotnet/api/system.single) LengthSq()
+
+
+**Summary:**
+Calculates the squared magnitude of the vector.
 
 **Returns:**
 
 - [Single](https://learn.microsoft.com/dotnet/api/system.single): 
 
 ---
+#### public [Single](https://learn.microsoft.com/dotnet/api/system.single) Length()
+
+
+**Summary:**
+Calculates the magnitude of the vector.
+
+**Returns:**
+
+- [Single](https://learn.microsoft.com/dotnet/api/system.single): 
+
+---
+#### public [Vector3f](./vector3f.md) Normalized()
+
+
+**Summary:**
+Returns a normalised copy of the vector scaled to unit length.
+
+**Returns:**
+
+- [Vector3f](./vector3f.md): 
+
+---
 #### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
+
+
+**Summary:**
+Returns a culture-invariant string representation of the vector.
 
 **Returns:**
 
@@ -70,6 +102,10 @@ Copies the vector values into a scalar value pointer.
 
 ---
 #### public virtual [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Object?](https://learn.microsoft.com/dotnet/api/system.object) obj)
+
+
+**Summary:**
+Determines whether the specified object is equal to the current vector.
 
 **Parameters:**
 
@@ -81,24 +117,11 @@ Copies the vector values into a scalar value pointer.
 - [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
 
 ---
-#### public virtual [Int32](https://learn.microsoft.com/dotnet/api/system.int32) GetHashCode()
-
-**Returns:**
-
-- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
-
----
-#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) GetObjectData([SerializationInfo](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo) info, [StreamingContext](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext) context)
-
-**Parameters:**
-
-- `info` ([SerializationInfo](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo)): 
-
-- `context` ([StreamingContext](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext)): 
-
-
----
 #### public [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) Equals([Vector3f](./vector3f.md) other)
+
+
+**Summary:**
+Determines whether the specified vector is equal to the current vector.
 
 **Parameters:**
 
@@ -108,6 +131,31 @@ Copies the vector values into a scalar value pointer.
 **Returns:**
 
 - [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean): 
+
+---
+#### public virtual [Int32](https://learn.microsoft.com/dotnet/api/system.int32) GetHashCode()
+
+
+**Summary:**
+Returns the hash code for this vector.
+
+**Returns:**
+
+- [Int32](https://learn.microsoft.com/dotnet/api/system.int32): 
+
+---
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) GetObjectData([SerializationInfo](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo) info, [StreamingContext](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext) context)
+
+
+**Summary:**
+Populates serialisation information with vector component data.
+
+**Parameters:**
+
+- `info` ([SerializationInfo](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo)): 
+
+- `context` ([StreamingContext](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext)): 
+
 
 ---
 

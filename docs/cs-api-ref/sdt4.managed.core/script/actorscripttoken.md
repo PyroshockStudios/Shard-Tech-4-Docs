@@ -1,7 +1,7 @@
 # ActorScriptToken
 
 ## Summary
-Initialisation token for [ActorScript](./actorscript.md)
+Initialisation token for [ActorScript](./actorscript.md).
 
 
 

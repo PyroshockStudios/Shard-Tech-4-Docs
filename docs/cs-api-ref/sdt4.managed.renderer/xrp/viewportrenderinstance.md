@@ -38,8 +38,10 @@ sealed class ViewportRenderInstance
 
 | Name | Type | Description |
 | --- | --- | --- |
+| `public get; NativeHandle` | [IntPtr](https://learn.microsoft.com/dotnet/api/system.intptr) |  |
 | `public get; set; RenderCanvas` | [RenderCanvas](../graphics/rendercanvas.md) | The render canvas attached to this viewport. This will throw an [InvalidOperationException](https://learn.microsoft.com/dotnet/api/system.invalidoperationexception) if [ViewportRenderInstance.OwnsCanvas](./viewportrenderinstance.md#ownscanvas) is false. |
 | `public get; OwnsCanvas` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | Denotes if the render canvas is owned by the viewport or not. If this is NOT owned by this viewport, the [ViewportRenderInstance.RenderCanvas](./viewportrenderinstance.md#rendercanvas) is invalid |
+| `public get; Extent` | [Vector2i](../../sdt4.managed.core/math/vector2i.md) | Gets the extent of the viewport on the canvas. This is the render area set by [ViewportRenderInstance.SetRenderArea](./viewportrenderinstance.md#setrenderarea). |
 
 
 
@@ -47,7 +49,7 @@ sealed class ViewportRenderInstance
 
 ## Methods
 
-#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) SetCameraActor([Actor](../../sdt4.managed.core/actor.md) actor)
+#### public [Void](https://learn.microsoft.com/dotnet/api/system.void) SetCameraActor([ActorHandle](../../sdt4.managed.core/actorhandle.md) actor)
 
 
 **Summary:**
@@ -58,7 +60,7 @@ If `actor` is not owned by the scene render instance that provided
 
 **Parameters:**
 
-- `actor` ([Actor](../../sdt4.managed.core/actor.md)): 
+- `actor` ([ActorHandle](../../sdt4.managed.core/actorhandle.md)): 
 
 
 ---

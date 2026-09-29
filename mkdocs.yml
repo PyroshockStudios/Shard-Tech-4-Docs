@@ -87,6 +87,7 @@ nav:
       - ViewportComponent: reference/acs/viewportcomponent.md
       - WaypointComponent: reference/acs/waypointcomponent.md
     - Scripting: 
+      - Overview: reference/scripting/index.md
       - Basics: 
         - Entry Point:  reference/scripting/basics/entrypoint.md
         - Scene:
@@ -97,6 +98,7 @@ nav:
           - Creating Actors: reference/scripting/basics/actors/creation.md
           - Hierarchy: reference/scripting/basics/actors/hierarchy.md
           - Components: reference/scripting/basics/actors/components.md
+          - Actor vs ActorHandle: reference/scripting/basics/actors/actorvsactorhandle.md
         - Scripts:
           - SceneScript and ActorScript: reference/scripting/basics/scripts/sceneactorscript.md
           - Spawning Scripts: reference/scripting/basics/scripts/spawningscripts.md
@@ -114,6 +116,7 @@ nav:
           - Document: reference/scripting/advanced/ui/document.md
           - Element: reference/scripting/advanced/ui/element.md
           - Data Model: reference/scripting/advanced/ui/datamodel.md
+          - Debugging: reference/scripting/advanced/ui/debughooks.md
         - Networking:
           - Session: reference/scripting/advanced/networking/session.md
           - Server-Client: reference/scripting/advanced/networking/serverclient.md
@@ -149,9 +152,23 @@ nav:
         - SDT0651: cs-api-ref/compilation/rules/sdt0651.md
         - SDT0652: cs-api-ref/compilation/rules/sdt0652.md
         - SDT0653: cs-api-ref/compilation/rules/sdt0653.md
+        
+        - SDT1301: cs-api-ref/compilation/rules/sdt1301.md
+        - SDT1302: cs-api-ref/compilation/rules/sdt1302.md
+        - SDT1304: cs-api-ref/compilation/rules/sdt1304.md
+        - SDT1305: cs-api-ref/compilation/rules/sdt1305.md
+        - SDT1306: cs-api-ref/compilation/rules/sdt1306.md
+        - SDT1307: cs-api-ref/compilation/rules/sdt1307.md
+        - SDT1308: cs-api-ref/compilation/rules/sdt1308.md
+        - SDT1309: cs-api-ref/compilation/rules/sdt1309.md
+        - SDT1310: cs-api-ref/compilation/rules/sdt1310.md
+        - SDT1311: cs-api-ref/compilation/rules/sdt1311.md
+        - SDT1351: cs-api-ref/compilation/rules/sdt1351.md
+        
     - SDT4.Managed.Core:
       - "Overview": cs-api-ref/sdt4.managed.core/index.md
       - "Actor": cs-api-ref/sdt4.managed.core/actor.md
+      - "ActorHandle": cs-api-ref/sdt4.managed.core/actorhandle.md
       - "AppInstance": cs-api-ref/sdt4.managed.core/appinstance.md
       - "AppLoadContext": cs-api-ref/sdt4.managed.core/apploadcontext.md
       - "InstanceBuild": cs-api-ref/sdt4.managed.core/instancebuild.md
@@ -161,30 +178,24 @@ nav:
       - "Threads": cs-api-ref/sdt4.managed.core/threads.md
       - Asset:
         - "AssetErrorCode": cs-api-ref/sdt4.managed.core/asset/asseterrorcode.md
-        - "AssetID": cs-api-ref/sdt4.managed.core/asset/assetid.md
+        - "AssetId": cs-api-ref/sdt4.managed.core/asset/assetid.md
         - "AssetLoadResult&lt;TResource&gt;": cs-api-ref/sdt4.managed.core/asset/assetloadresult`1.md
         - "AssetType": cs-api-ref/sdt4.managed.core/asset/assettype.md
-        - "ConvexHullAsset": cs-api-ref/sdt4.managed.core/asset/convexhullasset.md
         - "IResourceMapping": cs-api-ref/sdt4.managed.core/asset/iresourcemapping.md
         - "MaterialAsset": cs-api-ref/sdt4.managed.core/asset/materialasset.md
         - "ModelAsset": cs-api-ref/sdt4.managed.core/asset/modelasset.md
         - "PrefabAsset": cs-api-ref/sdt4.managed.core/asset/prefabasset.md
         - "Resource": cs-api-ref/sdt4.managed.core/asset/resource.md
         - "SceneAsset": cs-api-ref/sdt4.managed.core/asset/sceneasset.md
-        - "SkeletonAsset": cs-api-ref/sdt4.managed.core/asset/skeletonasset.md
-        - "Texture2DAsset": cs-api-ref/sdt4.managed.core/asset/texture2dasset.md
-        - "TrimeshAsset": cs-api-ref/sdt4.managed.core/asset/trimeshasset.md
       - Attributes:
-        - "ActorReferenceAttribute": cs-api-ref/sdt4.managed.core/attributes/actorreferenceattribute.md
-        - "AssetStringFieldEditPropertiesAttribute": cs-api-ref/sdt4.managed.core/attributes/assetstringfieldeditpropertiesattribute.md
-        - "ExposeFieldAttribute": cs-api-ref/sdt4.managed.core/attributes/exposefieldattribute.md
-        - "ExposeMethodAttribute": cs-api-ref/sdt4.managed.core/attributes/exposemethodattribute.md
-        - "NumericFieldEditPropertiesAttribute": cs-api-ref/sdt4.managed.core/attributes/numericfieldeditpropertiesattribute.md
         - "ReturnPinNameAttribute": cs-api-ref/sdt4.managed.core/attributes/returnpinnameattribute.md
         - "ScriptCategoryAttribute": cs-api-ref/sdt4.managed.core/attributes/scriptcategoryattribute.md
+        - "ScriptComplexityAttribute": cs-api-ref/sdt4.managed.core/attributes/scriptcomplexityattribute.md
+        - "ScriptComputationalComplexity": cs-api-ref/sdt4.managed.core/attributes/scriptcomputationalcomplexity.md
         - "ScriptEventAttribute": cs-api-ref/sdt4.managed.core/attributes/scripteventattribute.md
         - "ScriptGeneratedAttribute": cs-api-ref/sdt4.managed.core/attributes/scriptgeneratedattribute.md
         - "ScriptHiddenAttribute": cs-api-ref/sdt4.managed.core/attributes/scripthiddenattribute.md
+        - "ScriptImpureAttribute": cs-api-ref/sdt4.managed.core/attributes/scriptimpureattribute.md
         - "ScriptPureAttribute": cs-api-ref/sdt4.managed.core/attributes/scriptpureattribute.md
         - "ScriptWildcardAttribute": cs-api-ref/sdt4.managed.core/attributes/scriptwildcardattribute.md
       - Capabilities:
@@ -194,41 +205,34 @@ nav:
         - "IRenderingCapability": cs-api-ref/sdt4.managed.core/capabilities/irenderingcapability.md
         - "IWindowingCapability": cs-api-ref/sdt4.managed.core/capabilities/iwindowingcapability.md
       - Components:
-        - "BoxVolumeComponent": cs-api-ref/sdt4.managed.core/components/boxvolumecomponent.md
         - "CameraComponent": cs-api-ref/sdt4.managed.core/components/cameracomponent.md
-        - "ColorGrading": cs-api-ref/sdt4.managed.core/components/colorgrading.md
-        - "Component": cs-api-ref/sdt4.managed.core/components/component.md
-        - "DeferredDecalComponent": cs-api-ref/sdt4.managed.core/components/deferreddecalcomponent.md
         - "DirectionalLightComponent": cs-api-ref/sdt4.managed.core/components/directionallightcomponent.md
-        - "HDR": cs-api-ref/sdt4.managed.core/components/hdr.md
+        - "IActorComponent": cs-api-ref/sdt4.managed.core/components/iactorcomponent.md
         - "Mesh3DComponent": cs-api-ref/sdt4.managed.core/components/mesh3dcomponent.md
-        - "PhysicsConstraintComponent": cs-api-ref/sdt4.managed.core/components/physicsconstraintcomponent.md
+        - "MeshMaterialCollection": cs-api-ref/sdt4.managed.core/components/meshmaterialcollection.md
         - "PointLightComponent": cs-api-ref/sdt4.managed.core/components/pointlightcomponent.md
-        - "PostProcessingComponent": cs-api-ref/sdt4.managed.core/components/postprocessingcomponent.md
-        - "PostProcessingEffect": cs-api-ref/sdt4.managed.core/components/postprocessingeffect.md
-        - "Rigidbody3DComponent": cs-api-ref/sdt4.managed.core/components/rigidbody3dcomponent.md
-        - "SkinnedMeshComponent": cs-api-ref/sdt4.managed.core/components/skinnedmeshcomponent.md
+        - "ProjectionMode": cs-api-ref/sdt4.managed.core/components/projectionmode.md
         - "SpotLightComponent": cs-api-ref/sdt4.managed.core/components/spotlightcomponent.md
         - "Transform3DComponent": cs-api-ref/sdt4.managed.core/components/transform3dcomponent.md
-        - "WaypointComponent": cs-api-ref/sdt4.managed.core/components/waypointcomponent.md
-        - "WaypointSplinePathPoint": cs-api-ref/sdt4.managed.core/components/waypointsplinepathpoint.md
-        - "WaypointSplinePoint": cs-api-ref/sdt4.managed.core/components/waypointsplinepoint.md
       - Exceptions:
         - "NativeEngineException": cs-api-ref/sdt4.managed.core/exceptions/nativeengineexception.md
-        - "VisualScriptAssertion": cs-api-ref/sdt4.managed.core/exceptions/visualscriptassertion.md
-        - "VisualScriptException": cs-api-ref/sdt4.managed.core/exceptions/visualscriptexception.md
-        - "VisualScriptExceptionType": cs-api-ref/sdt4.managed.core/exceptions/visualscriptexceptiontype.md
-      - Graphics:
-        - "CameraProjection": cs-api-ref/sdt4.managed.core/graphics/cameraprojection.md
-        - "ColorRgba": cs-api-ref/sdt4.managed.core/graphics/colorrgba.md
       - Math:
         - "AxisAlignedBox": cs-api-ref/sdt4.managed.core/math/axisalignedbox.md
-        - "IVectorComparable": cs-api-ref/sdt4.managed.core/math/ivectorcomparable.md
-        - "IVectorSpatial&lt;TGenType&gt;": cs-api-ref/sdt4.managed.core/math/ivectorspatial`1.md
+        - "ColorRgba": cs-api-ref/sdt4.managed.core/math/colorrgba.md
+        - "Constants": cs-api-ref/sdt4.managed.core/math/constants.md
+        - "EulerAngle": cs-api-ref/sdt4.managed.core/math/eulerangle.md
+        - "EulerOrder": cs-api-ref/sdt4.managed.core/math/eulerorder.md
+        - "IMatrixSpatial&lt;TComponentType, TVectorType, TMatrixType&gt;": cs-api-ref/sdt4.managed.core/math/imatrixspatial`3.md
+        - "IVectorComparable&lt;TVectorType&gt;": cs-api-ref/sdt4.managed.core/math/ivectorcomparable`1.md
+        - "IVectorSpatial&lt;TComponentType, TLengthType, TVectorType, TNormalizedType&gt;": cs-api-ref/sdt4.managed.core/math/ivectorspatial`4.md
+        - "Matrix": cs-api-ref/sdt4.managed.core/math/matrix.md
+        - "Matrix2x2f": cs-api-ref/sdt4.managed.core/math/matrix2x2f.md
         - "Matrix3x3f": cs-api-ref/sdt4.managed.core/math/matrix3x3f.md
         - "Matrix4x4f": cs-api-ref/sdt4.managed.core/math/matrix4x4f.md
+        - "MatrixStorage": cs-api-ref/sdt4.managed.core/math/matrixstorage.md
         - "Quaternion": cs-api-ref/sdt4.managed.core/math/quaternion.md
-        - "SMath": cs-api-ref/sdt4.managed.core/math/smath.md
+        - "Scalar": cs-api-ref/sdt4.managed.core/math/scalar.md
+        - "Vector": cs-api-ref/sdt4.managed.core/math/vector.md
         - "Vector2b": cs-api-ref/sdt4.managed.core/math/vector2b.md
         - "Vector2d": cs-api-ref/sdt4.managed.core/math/vector2d.md
         - "Vector2f": cs-api-ref/sdt4.managed.core/math/vector2f.md
@@ -248,10 +252,22 @@ nav:
         - "SceneScript": cs-api-ref/sdt4.managed.core/script/scenescript.md
         - "SceneScriptToken": cs-api-ref/sdt4.managed.core/script/scenescripttoken.md
         - "ScriptPayload": cs-api-ref/sdt4.managed.core/script/scriptpayload.md
+      - Threading:
+        - "OffThreadAwaiter": cs-api-ref/sdt4.managed.core/threading/offthreadawaiter.md
+        - "OffThreadAwaiter&lt;T&gt;": cs-api-ref/sdt4.managed.core/threading/offthreadawaiter`1.md
+        - "OffThreadTask": cs-api-ref/sdt4.managed.core/threading/offthreadtask.md
+        - "OffThreadTask&lt;T&gt;": cs-api-ref/sdt4.managed.core/threading/offthreadtask`1.md
       - Utility:
         - "Bitmask&lt;T&gt;": cs-api-ref/sdt4.managed.core/utility/bitmask`1.md
         - "DebugUtils": cs-api-ref/sdt4.managed.core/utility/debugutils.md
         - "IDisposeTracker&lt;T&gt;": cs-api-ref/sdt4.managed.core/utility/idisposetracker`1.md
+      - VScript:
+        - Debugging:
+          - "VScriptAssertion": cs-api-ref/sdt4.managed.core/vscript/debugging/vscriptassertion.md
+          - "VScriptDebugHook": cs-api-ref/sdt4.managed.core/vscript/debugging/vscriptdebughook.md
+        - Exceptions:
+          - "VScriptException": cs-api-ref/sdt4.managed.core/vscript/exceptions/vscriptexception.md
+          - "VScriptExceptionType": cs-api-ref/sdt4.managed.core/vscript/exceptions/vscriptexceptiontype.md
     - SDT4.Managed.Debugging:
       - "Overview": cs-api-ref/sdt4.managed.debugging/index.md
       - "DebugConsole": cs-api-ref/sdt4.managed.debugging/debugconsole.md
@@ -365,24 +381,17 @@ nav:
       - Shapes:
         - "BoxShape": cs-api-ref/sdt4.managed.physics/shapes/boxshape.md
         - "CapsuleShape": cs-api-ref/sdt4.managed.physics/shapes/capsuleshape.md
-        - "ConvexShape": cs-api-ref/sdt4.managed.physics/shapes/convexshape.md
         - "CylinderShape": cs-api-ref/sdt4.managed.physics/shapes/cylindershape.md
         - "SphereShape": cs-api-ref/sdt4.managed.physics/shapes/sphereshape.md
-        - "TrimeshShape": cs-api-ref/sdt4.managed.physics/shapes/trimeshshape.md
       - Vehicle:
         - "PhysicsVehicleBuilder": cs-api-ref/sdt4.managed.physics/vehicle/physicsvehiclebuilder.md
     - SDT4.Managed.Renderer:
       - "Overview": cs-api-ref/sdt4.managed.renderer/index.md
       - "RendererBackendInfo": cs-api-ref/sdt4.managed.renderer/rendererbackendinfo.md
       - "RendererPlatform": cs-api-ref/sdt4.managed.renderer/rendererplatform.md
-      - Extensions:
-        - "Mesh3DComponentExtensions": cs-api-ref/sdt4.managed.renderer/extensions/mesh3dcomponentextensions.md
       - Graphics:
         - "DisplaySyncMode": cs-api-ref/sdt4.managed.renderer/graphics/displaysyncmode.md
         - "IRenderCanvasAttacher": cs-api-ref/sdt4.managed.renderer/graphics/irendercanvasattacher.md
-        - "MaterialInstance": cs-api-ref/sdt4.managed.renderer/graphics/materialinstance.md
-        - "MaterialInstanceProperty": cs-api-ref/sdt4.managed.renderer/graphics/materialinstanceproperty.md
-        - "MaterialInstancePropertyMap": cs-api-ref/sdt4.managed.renderer/graphics/materialinstancepropertymap.md
         - "RenderCanvas": cs-api-ref/sdt4.managed.renderer/graphics/rendercanvas.md
       - XRP:
         - "SceneRenderInstance": cs-api-ref/sdt4.managed.renderer/xrp/scenerenderinstance.md
@@ -396,41 +405,43 @@ nav:
       - "SteamRemoteConnection": cs-api-ref/sdt4.managed.steam.network/steamremoteconnection.md
     - SDT4.Managed.UI:
       - "Overview": cs-api-ref/sdt4.managed.ui/index.md
-      - RML:
-        - "RCSSStyleDeclaration": cs-api-ref/sdt4.managed.ui/rml/rcssstyledeclaration.md
-        - "RMLCanvas": cs-api-ref/sdt4.managed.ui/rml/rmlcanvas.md
-        - "RMLClassTokenList": cs-api-ref/sdt4.managed.ui/rml/rmlclasstokenlist.md
-        - "RMLDocument": cs-api-ref/sdt4.managed.ui/rml/rmldocument.md
-        - "RMLElement": cs-api-ref/sdt4.managed.ui/rml/rmlelement.md
-        - "RMLEvent": cs-api-ref/sdt4.managed.ui/rml/rmlevent.md
-        - "RMLEventID": cs-api-ref/sdt4.managed.ui/rml/rmleventid.md
-        - "RMLEventListener": cs-api-ref/sdt4.managed.ui/rml/rmleventlistener.md
-        - "RMLEventParameters": cs-api-ref/sdt4.managed.ui/rml/rmleventparameters.md
-        - "RMLEventPhase": cs-api-ref/sdt4.managed.ui/rml/rmleventphase.md
-        - "RMLNamedNodeMap": cs-api-ref/sdt4.managed.ui/rml/rmlnamednodemap.md
-        - "RMLTheme": cs-api-ref/sdt4.managed.ui/rml/rmltheme.md
-        - "RMLThemeQuery": cs-api-ref/sdt4.managed.ui/rml/rmlthemequery.md
-        - "RMLVariant": cs-api-ref/sdt4.managed.ui/rml/rmlvariant.md
-        - "RMLVariantType": cs-api-ref/sdt4.managed.ui/rml/rmlvarianttype.md
-        - Attributes:
-          - "RMLDataEventAttribute": cs-api-ref/sdt4.managed.ui/rml/attributes/rmldataeventattribute.md
-          - "RMLDataVariableAttribute": cs-api-ref/sdt4.managed.ui/rml/attributes/rmldatavariableattribute.md
-          - "RMLLuaAccessibleAttribute": cs-api-ref/sdt4.managed.ui/rml/attributes/rmlluaaccessibleattribute.md
-          - "RMLLuaFieldAttribute": cs-api-ref/sdt4.managed.ui/rml/attributes/rmlluafieldattribute.md
-          - "RMLLuaMethodAttribute": cs-api-ref/sdt4.managed.ui/rml/attributes/rmlluamethodattribute.md
+      - Rml:
+        - "DomTokenList": cs-api-ref/sdt4.managed.ui/rml/domtokenlist.md
+        - "NamedNodeMap": cs-api-ref/sdt4.managed.ui/rml/namednodemap.md
+        - "RcssStyleDeclaration": cs-api-ref/sdt4.managed.ui/rml/rcssstyledeclaration.md
+        - "RmlContext": cs-api-ref/sdt4.managed.ui/rml/rmlcontext.md
+        - "RmlDocument": cs-api-ref/sdt4.managed.ui/rml/rmldocument.md
+        - "RmlElement": cs-api-ref/sdt4.managed.ui/rml/rmlelement.md
+        - "RmlEvent": cs-api-ref/sdt4.managed.ui/rml/rmlevent.md
+        - "RmlEventId": cs-api-ref/sdt4.managed.ui/rml/rmleventid.md
+        - "RmlEventListener": cs-api-ref/sdt4.managed.ui/rml/rmleventlistener.md
+        - "RmlEventParameters": cs-api-ref/sdt4.managed.ui/rml/rmleventparameters.md
+        - "RmlEventPhase": cs-api-ref/sdt4.managed.ui/rml/rmleventphase.md
+        - "RmlTheme": cs-api-ref/sdt4.managed.ui/rml/rmltheme.md
+        - "RmlThemeQuery": cs-api-ref/sdt4.managed.ui/rml/rmlthemequery.md
+        - "RmlUnit": cs-api-ref/sdt4.managed.ui/rml/rmlunit.md
+        - "RmlVariant": cs-api-ref/sdt4.managed.ui/rml/rmlvariant.md
+        - "RmlVariantType": cs-api-ref/sdt4.managed.ui/rml/rmlvarianttype.md
         - Data:
-          - "IRMLData": cs-api-ref/sdt4.managed.ui/rml/data/irmldata.md
-          - "IRMLDataArray": cs-api-ref/sdt4.managed.ui/rml/data/irmldataarray.md
-          - "IRMLDataArray&lt;T&gt;": cs-api-ref/sdt4.managed.ui/rml/data/irmldataarray`1.md
-          - "IRMLDataScalar": cs-api-ref/sdt4.managed.ui/rml/data/irmldatascalar.md
-          - "IRMLDataStruct": cs-api-ref/sdt4.managed.ui/rml/data/irmldatastruct.md
-          - "RMLDataModel": cs-api-ref/sdt4.managed.ui/rml/data/rmldatamodel.md
+          - "IRmlData": cs-api-ref/sdt4.managed.ui/rml/data/irmldata.md
+          - "IRmlDataArray": cs-api-ref/sdt4.managed.ui/rml/data/irmldataarray.md
+          - "IRmlDataArray&lt;T&gt;": cs-api-ref/sdt4.managed.ui/rml/data/irmldataarray`1.md
+          - "IRmlDataScalar": cs-api-ref/sdt4.managed.ui/rml/data/irmldatascalar.md
+          - "IRmlDataStruct": cs-api-ref/sdt4.managed.ui/rml/data/irmldatastruct.md
+          - "RmlDataModel": cs-api-ref/sdt4.managed.ui/rml/data/rmldatamodel.md
+          - "RmlDataModelToken": cs-api-ref/sdt4.managed.ui/rml/data/rmldatamodeltoken.md
+          - Attributes:
+            - "RmlDataEventAttribute": cs-api-ref/sdt4.managed.ui/rml/data/attributes/rmldataeventattribute.md
+            - "RmlDataVariableAttribute": cs-api-ref/sdt4.managed.ui/rml/data/attributes/rmldatavariableattribute.md
+        - Debugging:
+          - "RmlDebugHook": cs-api-ref/sdt4.managed.ui/rml/debugging/rmldebughook.md
     - SDT4.Managed.Windowing:
       - "Overview": cs-api-ref/sdt4.managed.windowing/index.md
       - "Monitor": cs-api-ref/sdt4.managed.windowing/monitor.md
       - "VideoMode": cs-api-ref/sdt4.managed.windowing/videomode.md
       - "Window": cs-api-ref/sdt4.managed.windowing/window.md
       - "WindowPlatform": cs-api-ref/sdt4.managed.windowing/windowplatform.md
+
 
       # - Extension API reference:
     #- Renderer: 

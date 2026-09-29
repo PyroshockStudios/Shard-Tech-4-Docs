@@ -1,4 +1,4 @@
-# RMLEventListener
+# RmlEventListener
 
 ## Summary
 Event listener
@@ -7,15 +7,15 @@ Event listener
 
 ## Definition
 
-**Namespace:** `SDT4.Managed.UI.RML`  
+**Namespace:** `SDT4.Managed.UI.Rml`  
 **Assembly:** `SDT4.Managed.UI.dll`
 
 ```csharp
-sealed class RMLEventListener
+sealed class RmlEventListener
 ```
 **Inheritance:**
 
-##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Delegate](https://learn.microsoft.com/dotnet/api/system.delegate) ➔ [MulticastDelegate](https://learn.microsoft.com/dotnet/api/system.multicastdelegate) ➔  **RMLEventListener**
+##### [Object](https://learn.microsoft.com/dotnet/api/system.object) ➔ [Delegate](https://learn.microsoft.com/dotnet/api/system.delegate) ➔ [MulticastDelegate](https://learn.microsoft.com/dotnet/api/system.multicastdelegate) ➔  **RmlEventListener**
 **Implements:**
 
 ##### [ICloneable](https://learn.microsoft.com/dotnet/api/system.icloneable), [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable)
@@ -41,19 +41,19 @@ sealed class RMLEventListener
 
 ## Methods
 
-#### public virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) Invoke([RMLEvent](./rmlevent.md) event)
+#### public virtual [Void](https://learn.microsoft.com/dotnet/api/system.void) Invoke([RmlEvent](./rmlevent.md) event)
 
 **Parameters:**
 
-- `event` ([RMLEvent](./rmlevent.md)): 
+- `event` ([RmlEvent](./rmlevent.md)): 
 
 
 ---
-#### public virtual [IAsyncResult](https://learn.microsoft.com/dotnet/api/system.iasyncresult) BeginInvoke([RMLEvent](./rmlevent.md) event, [AsyncCallback](https://learn.microsoft.com/dotnet/api/system.asynccallback) callback, [Object](https://learn.microsoft.com/dotnet/api/system.object) object)
+#### public virtual [IAsyncResult](https://learn.microsoft.com/dotnet/api/system.iasyncresult) BeginInvoke([RmlEvent](./rmlevent.md) event, [AsyncCallback](https://learn.microsoft.com/dotnet/api/system.asynccallback) callback, [Object](https://learn.microsoft.com/dotnet/api/system.object) object)
 
 **Parameters:**
 
-- `event` ([RMLEvent](./rmlevent.md)): 
+- `event` ([RmlEvent](./rmlevent.md)): 
 
 - `callback` ([AsyncCallback](https://learn.microsoft.com/dotnet/api/system.asynccallback)): 
 

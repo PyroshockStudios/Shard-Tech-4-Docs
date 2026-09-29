@@ -18,3 +18,4 @@ The compiler used by Shard Tech 4 is the MSBuild that is included in your .NET S
 
 !!! bug
     Sometimes .NET may hang and cause the engine to get stuck when booting. If boot times are prolonged and nothing happens, check with your system process manager if there are lingering .NET processes, and terminate them before restarting Shard Tech 4.
+

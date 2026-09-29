@@ -8,7 +8,7 @@ using SDT4.Managed.Debugging;
 // ...
 Scene scene = /*...*/;
 // Each actor has a unique GUID, based on its scope and local id
-Actor gamingActor = scene.CreateEmptyActor(name: "Gaming");
+ActorHandle gamingActor = scene.CreateEmptyActor(name: "Gaming");
 
 DebugConsole.Print($"Hello {someActor.Name}!"); 
 ```

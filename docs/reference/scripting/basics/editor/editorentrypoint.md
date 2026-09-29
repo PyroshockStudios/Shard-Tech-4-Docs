@@ -14,7 +14,7 @@ using SDT4.Managed.Editor;
 
 static class MyGameContext 
 {
-    public static MyGameContext? Instance { get; internal set; }
+    public static MyGameContext Instance { get; set; } = null!;
 
     public AppInstance Inst { get; }
 

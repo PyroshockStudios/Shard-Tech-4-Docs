@@ -1,4 +1,4 @@
-# RMLVariantType
+# RmlVariantType
 
 ## Summary
 
@@ -7,11 +7,11 @@
 
 ## Definition
 
-**Namespace:** `SDT4.Managed.UI.RML`  
+**Namespace:** `SDT4.Managed.UI.Rml`  
 **Assembly:** `SDT4.Managed.UI.dll`
 
 ```csharp
-enum RMLVariantType
+enum RmlVariantType
 ```
 
 ---
@@ -20,32 +20,32 @@ enum RMLVariantType
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `None` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `Bool` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `Byte` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `Char` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `Float` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `Double` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `Int` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `Int64` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `Uint` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `Uint64` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `String` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `Vector2` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `Vector3` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `Vector4` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `Colourf` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `Colourb` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `ScriptInterface` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `TransformPtr` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `TransitionList` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `AnimationList` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `DecoratorsPtr` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `FiltersPtr` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `FonteffectsPtr` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `ColorstopList` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `BoxshadowList` | [RMLVariantType](./rmlvarianttype.md) |  |
-| `VoidPtr` | [RMLVariantType](./rmlvarianttype.md) |  |
+| `None` | [RmlVariantType](./rmlvarianttype.md) |  |
+| `Bool` | [RmlVariantType](./rmlvarianttype.md) |  |
+| `Byte` | [RmlVariantType](./rmlvarianttype.md) | Variant type corresponding to [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) |
+| `Char` | [RmlVariantType](./rmlvarianttype.md) | Variant type corresponding to [Byte](https://learn.microsoft.com/dotnet/api/system.byte) |
+| `Float` | [RmlVariantType](./rmlvarianttype.md) | Variant type corresponding to [Char](https://learn.microsoft.com/dotnet/api/system.char) |
+| `Double` | [RmlVariantType](./rmlvarianttype.md) | Variant type corresponding to [Single](https://learn.microsoft.com/dotnet/api/system.single) |
+| `Int` | [RmlVariantType](./rmlvarianttype.md) | Variant type corresponding to [Double](https://learn.microsoft.com/dotnet/api/system.double) |
+| `Int64` | [RmlVariantType](./rmlvarianttype.md) | Variant type corresponding to [Int32](https://learn.microsoft.com/dotnet/api/system.int32) |
+| `Uint` | [RmlVariantType](./rmlvarianttype.md) | Variant type corresponding to [Int64](https://learn.microsoft.com/dotnet/api/system.int64) |
+| `Uint64` | [RmlVariantType](./rmlvarianttype.md) | Variant type corresponding to [UInt32](https://learn.microsoft.com/dotnet/api/system.uint32) |
+| `String` | [RmlVariantType](./rmlvarianttype.md) | Variant type corresponding to [UInt64](https://learn.microsoft.com/dotnet/api/system.uint64) |
+| `Vector2` | [RmlVariantType](./rmlvarianttype.md) | Variant type corresponding to [String](https://learn.microsoft.com/dotnet/api/system.string) |
+| `Vector3` | [RmlVariantType](./rmlvarianttype.md) | Variant type corresponding to [Vector2f](../../sdt4.managed.core/math/vector2f.md) |
+| `Vector4` | [RmlVariantType](./rmlvarianttype.md) | Variant type corresponding to [Vector3f](../../sdt4.managed.core/math/vector3f.md) |
+| `Colourf` | [RmlVariantType](./rmlvarianttype.md) | Variant type corresponding to [Vector4f](../../sdt4.managed.core/math/vector4f.md) |
+| `Colourb` | [RmlVariantType](./rmlvarianttype.md) | Variant type corresponding to [ColorRgba](../../sdt4.managed.core/math/colorrgba.md) |
+| `ScriptInterface` | [RmlVariantType](./rmlvarianttype.md) | Variant type corresponding to [ColorRgba](../../sdt4.managed.core/math/colorrgba.md) |
+| `TransformPtr` | [RmlVariantType](./rmlvarianttype.md) |  |
+| `TransitionList` | [RmlVariantType](./rmlvarianttype.md) |  |
+| `AnimationList` | [RmlVariantType](./rmlvarianttype.md) |  |
+| `DecoratorsPtr` | [RmlVariantType](./rmlvarianttype.md) |  |
+| `FiltersPtr` | [RmlVariantType](./rmlvarianttype.md) |  |
+| `FontEffectsPtr` | [RmlVariantType](./rmlvarianttype.md) |  |
+| `ColorStopList` | [RmlVariantType](./rmlvarianttype.md) |  |
+| `BoxShadowList` | [RmlVariantType](./rmlvarianttype.md) |  |
+| `VoidPtr` | [RmlVariantType](./rmlvarianttype.md) |  |
 
 
 

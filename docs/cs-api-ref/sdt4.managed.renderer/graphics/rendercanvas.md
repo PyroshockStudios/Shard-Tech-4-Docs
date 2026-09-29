@@ -40,9 +40,9 @@ sealed class RenderCanvas
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `public get; IsValid` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | States if the render canvas is valid. Possible cases where the render canvas is invalid  includes if the object has been disposed, or if this is owned by a window and it has been resized. |
-| `public get; IsAttached` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | States if the canvas is at least used by 1 IRenderCanvasAttacher; |
+| `public get; IsValid` | [Boolean](https://learn.microsoft.com/dotnet/api/system.boolean) | States if the render canvas is valid. Possible cases where the render canvas is invalid  includes if the object has been disposed, or if this is owned by a window, and it has been resized. |
 | `public get; SwapChainWindow` | [Window](../../sdt4.managed.windowing/window.md) | The window that defines this render canvas, if defined by a window. |
+| `public get; Extent` | [Vector2i](../../sdt4.managed.core/math/vector2i.md) | Returns the extent of this render canvas. If the render canvas is invalid or disposed, (-1, -1) is returned. |
 
 
 
@@ -53,11 +53,11 @@ sealed class RenderCanvas
 #### public [Void](https://learn.microsoft.com/dotnet/api/system.void) Dispose()
 
 ---
-#### public virtual [String?](https://learn.microsoft.com/dotnet/api/system.string) ToString()
+#### public virtual [String](https://learn.microsoft.com/dotnet/api/system.string) ToString()
 
 **Returns:**
 
-- [String?](https://learn.microsoft.com/dotnet/api/system.string): 
+- [String](https://learn.microsoft.com/dotnet/api/system.string): 
 
 ---
 
