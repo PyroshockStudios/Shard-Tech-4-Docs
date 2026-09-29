@@ -41,8 +41,11 @@ public sealed class SimpleDataArray<T> : IRmlDataArray<T> where T : IRmlData
     public T Get(int index) => _items[index];
     public void Set(int index, T value) => _items[index] = value;
 
-    public IEnumerator<T> GetEnumerator() => _items.GetEnumerator();
-    IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+    // If you wish to use it as an enumerator, you may specify the implementation manually
+    // However, IRmlDataArray<> already implements it by default.
+
+    // public IEnumerator<T> GetEnumerator() => _items.GetEnumerator();
+    // IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 }
 
 // 3. The primary Data Model class
@@ -118,7 +121,7 @@ Declare `data-model="model_name"` on the root document or container element to a
 ```html
 <rml>
 <head>
-  <link type="text/rcss" href="Styles/Hud.rcss"></link>
+  <link type="text/rcss" href="Engine/UI/Styles/UI_Core.rcss"></link>
 </head>
 <body data-model="player_hud">
 

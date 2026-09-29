@@ -1,6 +1,3 @@
-
-# File 3: `loading-documents.md`
-
 # Loading Documents
 
 Documents are loaded via [AssetId](../../../../cs-api-ref/sdt4.managed.core/asset/assetid.md) paths pointing to `.rml` files. Every loaded document is represented by an [RmlDocument](../../../../cs-api-ref/sdt4.managed.ui/rml/rmldocument.md) instance, which inherits from [RmlElement](../../../../cs-api-ref/sdt4.managed.ui/rml/rmlelement.md).
@@ -24,33 +21,9 @@ if (menuDoc != null)
 
 ```
 
-## Asynchronous Loading
+!!! important
+    Unfortunately it's not possible to load documents asynchronously such as with the rest of the Resource management API, so any resources e.g. textures or shaders (planned for the future) may cause a stutter when loaded immediately. For heavy resources, recur to pre-loading them and holding onto the resources in C#.
 
-Large RML hierarchies with multiple nested style sheets can be loaded on a background task without causing framerate hitches:
-
-```csharp
-using System.Threading.Tasks;
-using SDT4.Managed.Core;
-using SDT4.Managed.Core.Asset;
-using SDT4.Managed.UI.Rml;
-
-public async Task LoadGameMenuAsync(RmlContext context, AssetId assetPath)
-{
-    // Thread-safe async load
-    RmlDocument? doc = await context.LoadDocumentAsync(assetPath);
-
-    // Manipulate DOM elements on the Master Thread
-    Threads.RunLater(() =>
-    {
-        if (doc != null)
-        {
-            doc.Show();
-            doc.PullToFront();
-        }
-    });
-}
-
-```
 
 ## Visibility and Z-Ordering
 

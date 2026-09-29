@@ -7,7 +7,7 @@ UIs in SDT4 are driven through managed C# scripts, rendering directly into an en
 ## Master Thread Invariant
 
 !!! danger
-    Except where explicitly noted (such as asynchronous document loading), all calls to RmlUi APIs **MUST** be performed on the Master Thread. Calling these functions from background worker threads or tasks will trigger native assertion failures or corrupt internal engine memory.
+    All calls to RmlUi APIs **MUST** be performed on the Master Thread. Calling these functions from background worker threads or tasks will trigger native assertion failures or corrupt internal engine memory.
 
     To execute UI operations safely from asynchronous code, dispatch them back to the main loop using [Threads.RunLater](../../../../cs-api-ref/sdt4.managed.core/threads.md):
     ```csharp
@@ -16,6 +16,24 @@ UIs in SDT4 are driven through managed C# scripts, rendering directly into an en
         myElement.InnerText = "Updated from task";
     });
     ```
+
+## Default styles
+
+RmlUi does not provide default styles, so basic layouts may be incorrect if not configured explicitly with styles.
+Thankfully, Shard Tech 4 provides a default style sheet
+
+```html
+<rml>
+<head>
+  <!-- Default style sheet is in Engine/UI/Styles/UI_Core.rcss -->
+  <link type="text/rcss" href="Engine/UI/Styles/UI_Core.rcss"></link>
+</head>
+<body>
+ <!-- Now the body will have a functional layout.
+  Flexbox, scroll bars, forms etc. will now work seamlessly -->
+</body>
+</rml>
+```
 
 ## Basic Script Setup
 
