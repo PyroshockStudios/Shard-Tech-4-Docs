@@ -165,6 +165,8 @@ nav:
         - SDT1311: cs-api-ref/compilation/rules/sdt1311.md
         - SDT1351: cs-api-ref/compilation/rules/sdt1351.md
         
+        - SDT9901: cs-api-ref/compilation/rules/sdt9901.md
+
     - SDT4.Managed.Core:
       - "Overview": cs-api-ref/sdt4.managed.core/index.md
       - "Actor": cs-api-ref/sdt4.managed.core/actor.md
